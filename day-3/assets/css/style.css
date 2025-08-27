@@ -1,0 +1,248 @@
+:root {
+  --bg-color: #f0eee4;
+  --white: #ffffff;
+  --whitesmoke: #f8f7f2;
+  --primary-color: #6b5843;
+  --secondary-text-color: #2f261d;
+  --teal-color: #487f6a;
+  --darkslategray: #2a5144;
+  --dimgray: #584837;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Common css */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--darkslategray);
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 99px;
+  font-size: 16px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--dimgray);
+}
+/* End Common css */
+
+/* Apps content */
+.apps-content-container {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.apps-content {
+  text-align: center;
+  margin-top: 96px;
+}
+
+.apps-content-paragraph {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.apps-content-title {
+  font-family: "Literata", serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+
+.apps-content-title span {
+  color: var(--teal-color);
+}
+/* End Apps content */
+
+/* Apps media */
+.apps-media-container {
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 64px;
+}
+
+.app-overlay {
+  width: 100%;
+  background-color: var(--whitesmoke);
+  color: var(--primary-color);
+  padding: 24px;
+  border: 1px solid var(--white);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-overlay:hover {
+  background-color: transparent;
+}
+
+.app-media-containt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.app-logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0, 32px, 0);
+  transition: ease 0.3s;
+}
+
+.app-overlay:hover .app-logo {
+  transform: translate3d(0, 0, 0);
+}
+
+.app-button {
+  opacity: 0;
+  transition: ease 0.3s;
+  transform: translate3d(0, 16px, 0);
+}
+
+.app-overlay:hover .app-button {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.bg-img-left {
+  position: absolute;
+  left: -63px;
+  top: -23px;
+  mix-blend-mode: multiply;
+  transform: translate3d(-12px, 0, 0) scale3d(1, 1, 1) rotateZ(-8deg);
+  opacity: 0;
+  transition: ease 0.3s;
+}
+
+.bg-img-right {
+  position: absolute;
+  right: -63px;
+  top: -23px;
+  mix-blend-mode: multiply;
+  transform: translate3d(12px, 0, 0) scale3d(1, 1, 1) rotateZ(8deg);
+  opacity: 0;
+  transition: ease 0.3s;
+}
+.app-overlay:hover .bg-img-left,
+.app-overlay:hover .bg-img-right {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.description {
+  max-width: 600px;
+  color: var(--primary-color);
+  font-size: 16px;
+  margin: 64px auto 64px;
+  text-align: center;
+  line-height: 1.75;
+}
+
+/* End Apps content */
+
+@media (max-width: 992px) {
+  .apps-content {
+    margin-top: 68px;
+  }
+
+  .apps-content-container {
+    max-width: 535px;
+  }
+
+  .apps-content-title {
+    font-size: 48px;
+    padding-top: 5px;
+    padding-bottom: 32px;
+  }
+  .apps-media-container {
+    margin-top: 54px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .description {
+    margin: 46px auto 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apps-content {
+    margin-top: 38px;
+  }
+
+  .apps-content-container {
+    max-width: 450px;
+  }
+
+  .apps-content-title {
+    font-size: 35px;
+    padding-bottom: 23px;
+  }
+
+  .apps-media-container {
+    margin-top: 45px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .description {
+    max-width: 560px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 14px;
+  }
+
+  .apps-content {
+    margin-top: 19px;
+  }
+
+  .apps-content-container {
+    max-width: 363px;
+  }
+
+  .apps-content-title {
+    font-size: 32px;
+  }
+
+  .description {
+    max-width: 440px;
+    font-size: 14px;
+    margin: 36px auto 64px;
+  }
+}
+
+@media (max-width: 484px) {
+  .apps-media-container {
+    grid-template-columns: 1fr;
+  }
+}
