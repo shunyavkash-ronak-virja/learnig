@@ -46,15 +46,15 @@ body {
 /* End Common css */
 
 /* Apps content */
-.apps-content-container {
-  max-width: 640px;
-  width: 100%;
-  margin: 0 auto;
+.apps-section {
+  margin-top: 96px;
+  margin-bottom: 64px;
 }
 
 .apps-content {
+  max-width: 640px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 96px;
 }
 
 .apps-content-paragraph {
@@ -67,8 +67,8 @@ body {
   font-size: 56px;
   font-weight: 500;
   color: var(--secondary-text-color);
-  padding-top: 8px;
-  padding-bottom: 40px;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }
 
 .apps-content-title span {
@@ -162,7 +162,7 @@ body {
   max-width: 600px;
   color: var(--primary-color);
   font-size: 16px;
-  margin: 64px auto 64px;
+  margin: 64px auto 0;
   text-align: center;
   line-height: 1.75;
 }
@@ -170,8 +170,9 @@ body {
 /* End Apps content */
 
 @media (max-width: 992px) {
-  .apps-content {
-    margin-top: 68px;
+  .apps-section {
+    margin-top: 56px;
+    margin-bottom: 50px;
   }
 
   .apps-content-container {
@@ -180,8 +181,7 @@ body {
 
   .apps-content-title {
     font-size: 48px;
-    padding-top: 5px;
-    padding-bottom: 32px;
+    margin-bottom: 30px;
   }
   .apps-media-container {
     margin-top: 54px;
@@ -189,13 +189,14 @@ body {
   }
 
   .description {
-    margin: 46px auto 64px;
+    margin: 46px auto 0;
   }
 }
 
 @media (max-width: 768px) {
-  .apps-content {
-    margin-top: 38px;
+  .apps-section {
+    margin-top: 45px;
+    margin-bottom: 44px;
   }
 
   .apps-content-container {
@@ -204,7 +205,8 @@ body {
 
   .apps-content-title {
     font-size: 35px;
-    padding-bottom: 23px;
+    margin-top: 6px;
+    margin-bottom: 26px;
   }
 
   .apps-media-container {
@@ -218,12 +220,13 @@ body {
 }
 
 @media (max-width: 576px) {
-  .btn {
-    font-size: 14px;
+  .apps-section {
+    margin-top: 36px;
+    margin-bottom: 42px;
   }
 
-  .apps-content {
-    margin-top: 19px;
+  .btn {
+    font-size: 14px;
   }
 
   .apps-content-container {
@@ -232,12 +235,14 @@ body {
 
   .apps-content-title {
     font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 22px;
   }
 
   .description {
     max-width: 440px;
     font-size: 14px;
-    margin: 36px auto 64px;
+    margin: 36px auto 0;
   }
 }
 
