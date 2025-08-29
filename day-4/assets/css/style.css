@@ -103,11 +103,13 @@ label {
 
 .textarea-input {
   min-height: 194px;
+  width: 100% !important;
   font-family: inherit;
   font-size: 16px;
   border-radius: 8px;
   padding: 12px 16px;
   border: 1px solid var(--lightgray);
+  resize: none;
 }
 
 .btn {
@@ -267,6 +269,7 @@ label {
   }
 
   .input-box input {
+    width: 100%;
     min-height: 47px;
     padding: 8px 12px;
     font-size: 15px;
