@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="form-section">
+        <div class="container">
+            <form>
+                <div class="flex-field">
+                    <label>First name
+                        <input type="text" class="input-box" required>
+                    </label>
+                    <label>Last name
+                        <input type="text" class="input-box" required>
+                    </label>
+                </div>
+
+                <label>Email
+                    <input type="email" class="input-box" required>
+                </label>
+
+                <div class="flex-field">
+                    <label>Password
+                        <input type="password" class="input-box" required>
+                    </label>
+                    <label>Confirm password
+                        <input type="password" class="input-box" required>
+                    </label>
+                </div>
+
+                <div class="flex-field">
+                    <label>Phone number
+                        <input type="number" class="input-box" required>
+                    </label>
+                    <label>B'date
+                        <input type="date" class="input-box" required>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="file">
+                </div>
+
+                <fieldset class="select-option">
+                    <legend>Select role</legend>
+                    <label>
+                        <input type="radio" name="field-role">
+                        Frontend</label>
+                    <label>
+                        <input type="radio" name="field-role">
+                        Backend</label>
+                    <label>
+                        <input type="radio" name="field-role">
+                        Fullstack</label>
+                </fieldset>
+
+
+                <fieldset class="select-option">
+                    <legend>Select language</legend>
+                    <label>
+                        <input type="checkbox" name="language">
+                        Html</label>
+
+                    <label>
+                        <input type="checkbox" name="language">
+                        Css</label>
+
+                    <label>
+                        <input type="checkbox" name="language">
+                        Javascript</label>
+
+                    <label>
+                        <input type="checkbox" name="language">
+                        Bootstrap</label>
+
+                    <label>
+                        <input type="checkbox" name="language">
+                        Tailwind</label>
+
+                    <label>
+                        <input type="checkbox" name="language">
+                        jquery</label>
+
+                    <label>
+                        <input type="checkbox" name="language">
+                        React</label>
+                </fieldset>
+
+
+                <div>
+                    <button class="form-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
