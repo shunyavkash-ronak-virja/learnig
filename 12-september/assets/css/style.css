@@ -1,0 +1,273 @@
+:root {
+  --white: #ffffff;
+  --mediumpurple: #9b87f5;
+  --darkslategray: #2d314a;
+  --lightgray: #d1d5db;
+  --darkgray: #9ca3af;
+  --whitesmoke: #f8fafc;
+  --black: #09090b;
+  --mediumspringgreen: #22c55e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.container {
+  max-width: 1280px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+header {
+  height: 100vh;
+  background-color: var(--darkslategray);
+  padding-top: 24px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.navbar-logo h3 {
+  color: var(--white);
+  font-size: 24px;
+  display: flex;
+}
+
+.navbar-logo h3 span {
+  color: var(--mediumpurple);
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--lightgray);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-login-button {
+  color: var(--lightgray);
+}
+
+.nav-buynow-button {
+  background-color: var(--mediumpurple);
+  color: var(--white);
+}
+
+/* Hero section */
+.hero-section {
+  width: 100%;
+  display: flex;
+  padding-top: 150px;
+  align-items: center;
+}
+
+.hero-section-content {
+  width: 50%;
+}
+
+.hero-new-feature-content {
+  color: var(--lightgray);
+  background-color: #ffffff0d;
+  width: fit-content;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  border: 1px solid #ffffff1a;
+  border-radius: 99999px;
+  padding: 6px 16px;
+  margin-bottom: 24px;
+}
+
+.hero-new-feature-content span:nth-child(1) {
+  color: var(--mediumpurple);
+}
+
+.hero-section-content-title {
+  font-size: 60px;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.hero-section-content-title span {
+  background: linear-gradient(
+    to right,
+    rgba(157, 137, 245, 1) 0%,
+    rgba(214, 188, 250, 1) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section-content-dec {
+  width: 500px;
+  font-size: 18px;
+  color: var(--lightgray);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.hero-section-content-btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.hero-start-trading-btn,
+.hero-start-view-demo-btn {
+  color: var(--white);
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-start-trading-btn {
+  background-color: var(--mediumpurple);
+}
+
+.hero-start-view-demo-btn {
+  background-color: var(--black);
+  border-color: #374151;
+}
+
+.hero-section-counter {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-section-counter hr {
+  border: 1px solid #374151;
+}
+
+.counter-number h3 {
+  font-size: 24px;
+}
+
+.counter-number span {
+  font-size: 14px;
+  color: var(--darkgray);
+}
+
+.hero-section-media {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-section-media-image {
+  max-width: 448px;
+  height: 298px;
+}
+
+.hero-section-media-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.Security-detail-card,
+.growth-detail-card {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #9b87f54d;
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  background-color: #9b87f533;
+}
+
+.Security-detail-card-media,
+.growth-detail-card-media {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Security-detail-card-media {
+  background-color: #9b87f533;
+}
+
+.growth-detail-card-media {
+  background-color: #22c55e33;
+}
+
+.Security-detail-card-media svg,
+.growth-detail-card-media svg {
+  width: 24px;
+  height: 24px;
+}
+
+.Security-detail-card-media svg {
+  color: var(--mediumpurple);
+}
+
+.growth-detail-card-media svg {
+  color: var(--mediumspringgreen);
+}
+
+.Security-detail-card-content p,
+.growth-detail-card-content p {
+  color: var(--darkgray);
+  font-size: 12px;
+}
+
+.Security-detail-card-content h5,
+.growth-detail-card-content h5 {
+  font-size: 18px;
+}
+
+.growth-detail-card-content h5 {
+  color: var(--mediumspringgreen);
+}
+
+.Security-detail-card {
+  left: 62px;
+  top: -24px;
+}
+
+.growth-detail-card {
+  right: 62 px;
+  bottom: -24px;
+}
