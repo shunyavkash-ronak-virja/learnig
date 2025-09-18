@@ -1,0 +1,29 @@
+:root {
+  --white: #ffffff;
+  --mediumpurple: #9b87f5;
+  --darkslateblue: #6e59a5;
+  --darkslategray: #2d314a;
+  --lightgray: #d1d5db;
+  --darkgray: #9ca3af;
+  --whitesmoke: #f8fafc;
+  --black: #09090b;
+  --mediumspringgreen: #22c55e;
+  --border-color: #ffffff1a;
+}
+
+.container {
+  max-width: 1280px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 10px 16px;
+}
