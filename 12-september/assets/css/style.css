@@ -370,14 +370,16 @@ header {
 
 .splide__pagination {
   bottom: -40px;
-}
-
-.presentation {
-  margin: 0 0 0 12px;
+  gap: 12px;
 }
 
 .splide__pagination__page {
   background-color: #6b7280;
+  margin: 0;
+}
+
+.presentation {
+  width: 32px;
 }
 
 .splide__pagination__page.is-active {
