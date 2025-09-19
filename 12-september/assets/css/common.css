@@ -6,9 +6,29 @@
   --lightgray: #d1d5db;
   --darkgray: #9ca3af;
   --whitesmoke: #f8fafc;
+  --card-bg-color: #ffffff0d;
   --black: #09090b;
   --mediumspringgreen: #22c55e;
   --border-color: #ffffff1a;
+  --goldenrod: #eab308;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white);
+  background-color: #1a1f2c;
+}
+
+section {
+  padding-block: 96px;
 }
 
 .container {
@@ -26,4 +46,134 @@ a {
   border-radius: 12px;
   font-size: 14px;
   padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.primary-btn {
+  background-color: var(--mediumpurple);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: var(--darkslateblue);
+}
+
+/*----- Common sections title  -----*/
+.section-title {
+  text-align: center;
+  max-width: 672px;
+  margin-inline: auto;
+  margin-bottom: 64px;
+}
+
+.section-title h3 {
+  color: var(--mediumpurple);
+  font-size: 36px;
+  margin-bottom: 16px;
+  background: linear-gradient(to right, #9b87f5 0%, #d6bcfa 87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title p {
+  color: var(--darkgray);
+}
+
+/*----- Common card grid layout -----*/
+.card-section-title {
+  text-align: center;
+  max-width: 672px;
+  margin-inline: auto;
+  margin-bottom: 64px;
+}
+
+.card-section-title h3 {
+  color: var(--mediumpurple);
+  font-size: 36px;
+  margin-bottom: 16px;
+  background: linear-gradient(to right, #9b87f5 0%, #d6bcfa 87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-section-title p {
+  color: var(--darkgray);
+}
+
+.cards-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: #ffffff0d;
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.card-media {
+  width: 48px;
+  height: 48px;
+  background-color: #9b87f533;
+  color: var(--mediumpurple);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.card-content p {
+  color: var(--darkgray);
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding-block: 45px;
+  }
+
+  /*----- Common sections title  -----*/
+  .section-title {
+    margin-bottom: 55px;
+  }
+
+  /*----- Common card grid layout -----*/
+  .cards-section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-block: 35px;
+  }
+
+  /*----- Common sections title  -----*/
+  .section-title {
+    margin-bottom: 34px;
+  }
+
+  .section-title h3 {
+    font-size: 30px;
+  }
+
+  /*----- Common card grid layout -----*/
+  .cards-section-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
