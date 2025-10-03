@@ -2,6 +2,7 @@
   --white: #ffffff;
   --mediumpurple: #9b87f5;
   --darkslateblue: #6e59a5;
+  --dark-blue: #1e293b;
   --darkslategray: #2d314a;
   --lightgray: #d1d5db;
   --darkgray: #9ca3af;
@@ -22,7 +23,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.5;
   color: var(--white);
   background-color: #1a1f2c;
 }
@@ -78,7 +79,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.section-title p {
+.common-dec-color {
   color: var(--darkgray);
 }
 
@@ -112,8 +113,7 @@ a {
 .card {
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  background-color: #ffffff0d;
-  padding: 24px;
+  background-color: var(--card-bg-color);
   transition: 0.3s ease;
 }
 

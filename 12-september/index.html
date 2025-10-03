@@ -14,38 +14,38 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!----- Header ----->
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="navbar-logo">
+                <a class="navbar-logo" href="index.html">
                     <h3>Crypto
                         <span>Flow</span>
                     </h3>
-                </div>
+                </a>
                 <button class="nav-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
-                <div class="nav-links-wrapper ">
+                <div class="nav-links-wrapper">
                     <div class="nav-links">
-                        <a href="javascript:void(0)">Features</a>
-                        <a href="javascript:void(0)">How it works</a>
-                        <a href="javascript:void(0)">Testimonials</a>
-                        <a href="javascript:void(0)">Pricing</a>
-                        <a href="javascript:void(0)">FAQ</a>
+                        <a href="#features" class="link">Features</a>
+                        <a href="#how-it-work" class="link">How it works</a>
+                        <a href="#testimonials" class="link">Testimonials</a>
+                        <a href="#pricing-cards" class="link">Pricing</a>
+                        <a href="#faq" class="link">FAQ</a>
                     </div>
                     <div class="nav-buttons">
                         <a class="nav-login-button btn" href="javascript:void(0)">Login</a>
-                        <a class="btn primary-btn" href="javascript:void(0)">Buy Now</a>
+                        <a class="nav-buynow-button btn primary-btn" href="javascript:void(0)">Buy Now</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero section -->
+    <!----- Hero section ----->
     <section class="hero-section">
         <div class="container">
             <div class="hero-section-wrapper">
@@ -110,7 +110,6 @@
                             <h5>Enterprise</h5>
                         </div>
                     </div>
-
                     <div class="growth-detail-card">
                         <div class="growth-detail-card-media">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -127,12 +126,12 @@
         </div>
     </section>
 
-    <!-- Features-card-section -->
-    <section>
+    <!----- Features card section ----->
+    <section class="features-section" id="features">
         <div class="container">
             <div class="section-title">
                 <h3>Powerful Features</h3>
-                <p>CryptoFlow gives you the edge with advanced tools designed for both beginners and professional traders.</p>
+                <p class="common-dec-color">CryptoFlow gives you the edge with advanced tools designed for both beginners and professional traders.</p>
             </div>
             <div class="cards-section-wrapper">
                 <div class="card features-card">
@@ -213,12 +212,12 @@
         </div>
     </section>
 
-    <!-- How-it-work-section -->
-    <section>
+    <!----- How it work section ----->
+    <section class="how-it-works-section" id="how-it-work">
         <div class="container">
             <div class="section-title">
                 <h3>How It Works</h3>
-                <p>Getting started with CryptoFlow is easy. Follow these simple steps to begin your crypto journey.</p>
+                <p class="common-dec-color">Getting started with CryptoFlow is easy. Follow these simple steps to begin your crypto journey.</p>
             </div>
 
             <div class="cards-section-wrapper">
@@ -280,12 +279,12 @@
     </section>
 
 
-    <!-- Review-section -->
-    <section>
+    <!----- Review section ----->
+    <section class="review-section" id="testimonials">
         <div class="container">
             <div class="section-title">
                 <h3>What Our Users Say</h3>
-                <p>Join thousands of satisfied traders who have transformed their trading experience with CryptoFlow.</p>
+                <p class="common-dec-color">Join thousands of satisfied traders who have transformed their trading experience with CryptoFlow.</p>
             </div>
             <div class="splide" aria-label="Basic Structure Example">
                 <div class="splide__track">
@@ -427,6 +426,271 @@
             </div>
         </div>
     </section>
+
+    <!----- pricing cards section ----->
+    <section class="pricing-cards-section" id="pricing-cards">
+        <div class="container">
+            <div class="section-title">
+                <h3>Simple, Transparent Pricing</h3>
+                <p class="common-dec-color">Choose the plan that best fits your trading needs. All plans include our core platform features.</p>
+                <div class="pricing-cards-filter-btn-bar">
+                    <button class="monthly-filter-btn active">Monthly</button>
+                    <button class="discount-filter-btn">Annual
+                        <span>Save 20%</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-section-wrapper">
+                <div class="pricing-card card">
+                    <h4>Basic</h4>
+                    <div class="pricing-card-price">
+                        <h3>$0</h3>
+                    </div>
+                    <p class="pricing-card-dec">Perfect for beginners getting started with crypto trading.</p>
+                    <a class="pricing-card-btn" href="javascript:void(0)">Get Started</a>
+                    <p class="about-services-title">What's included:</p>
+                    <ul>
+                        <li>Access to 20+ cryptocurrencies</li>
+                        <li>Basic charting tools</li>
+                        <li>Market data with 15-min delay</li>
+                        <li>Email support</li>
+                        <li>Mobile app access</li>
+                    </ul>
+                </div>
+                <div class="card most-popular-card">
+                    <div class="most-popular-card-tag">
+                        <p>Most Popular</p>
+                    </div>
+                    <div class="pricing-card">
+                        <h4>Pro</h4>
+                        <div class="pricing-card-price">
+                            <h3 class="pricing-card-regular-price">$19</h3>
+                            <h3 class="pricing-card-discount-price">$15</h3>
+                            <span>/month</span>
+                        </div>
+                        <p class=" pricing-card-dec">Designed for active traders seeking advanced tools.</p>
+                        <a class="pricing-card-btn  primary-btn" href="javascript:void(0)">Start 7-Day Free Trial</a>
+                        <p class="about-services-title">What's included:</p>
+                        <ul>
+                            <li>Access to 50+ cryptocurrencies</li>
+                            <li>Advanced charting tools</li>
+                            <li>Real-time market data</li>
+                            <li>Priority email support</li>
+                            <li>Reduced trading fees (0.1%)</li>
+                            <li>API access</li>
+                            <li>Portfolio analytics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing-card card">
+                    <h4>Enterprise</h4>
+                    <div class="pricing-card-price">
+                        <h3 class="pricing-card-regular-price">$49</h3>
+                        <h3 class="pricing-card-discount-price">$39</h3>
+                        <span>/month</span>
+                    </div>
+                    <p class="pricing-card-dec">Comprehensive solution for professional traders.</p>
+                    <a class="pricing-card-btn" href="javascript:void(0)">Contact Sales</a>
+                    <p class="about-services-title">What's included:</p>
+                    <ul>
+                        <li>Access to all cryptocurrencies</li>
+                        <li>Professional-grade charts</li>
+                        <li>Real-time market data</li>
+                        <li>24/7 dedicated support</li>
+                        <li>Zero trading fees</li>
+                        <li>Advanced API access</li>
+                        <li>Institutional-grade security</li>
+                        <li>Custom reporting</li>
+                        <li>Team management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- FAQ section ----->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h3>Frequently Asked Questions</h3>
+                <p class="common-dec-color">Got questions about CryptoFlow? We've got answers. If you don't see what you're looking for, reach out to our support team.</p>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-content-wrapper">
+                    <div class="faq-question">
+                        <p>How secure is CryptoFlow?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CryptoFlow employs bank-level security measures including 256-bit encryption, cold storage for 95% of assets, two-factor authentication, and regular security audits. Our platform has never been compromised and we maintain a comprehensive insurance policy to protect user funds.</p>
+                    </div>
+                </div>
+                <div class="faq-content-wrapper">
+                    <div class="faq-question">
+                        <p>What cryptocurrencies can I trade on CryptoFlow?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CryptoFlow supports trading of over 50 cryptocurrencies, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Cardano (ADA), Ripple (XRP), and many more. We regularly add new cryptocurrencies based on market trends and user demand.</p>
+                    </div>
+                </div>
+                <div class="faq-content-wrapper">
+                    <div class="faq-question">
+                        <p>What are the fees for using CryptoFlow?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our fee structure is transparent and competitive. Basic accounts pay 0.25% per trade, Pro accounts pay 0.1%, and Enterprise accounts pay no trading fees. There are no hidden fees, and we don't charge for deposits. Withdrawal fees vary by cryptocurrency to cover network costs.</p>
+                    </div>
+                </div>
+                <div class="faq-content-wrapper">
+                    <div class="faq-question">
+                        <p>How do I deposit funds into my CryptoFlow account?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can deposit funds via bank transfer, credit/debit card, or by transferring cryptocurrency from another wallet. Bank transfers typically process within 1-3 business days, while card payments and crypto transfers are nearly instant.</p>
+                    </div>
+                </div>
+                <div class="faq-content-wrapper">
+                    <div class="faq-question">
+                        <p>Is CryptoFlow available in my country?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CryptoFlow is available in over 140 countries worldwide. However, due to regulatory constraints, we cannot serve users from certain jurisdictions. Please check our Terms of Service or contact our support team to verify availability in your specific location.</p>
+                    </div>
+                </div>
+                <div class="faq-content-wrapper">
+                    <div class="faq-question">
+                        <p>How do I get started with CryptoFlow?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Getting started is simple. Create an account, complete the verification process (which typically takes less than 10 minutes), deposit funds using your preferred method, and you're ready to start trading. Our intuitive interface is designed to make cryptocurrency trading accessible for beginners while offering powerful tools for experienced traders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- CTA section ----->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content-wrapper">
+                <h3 class="cta-content-title">Ready to revolutionize your<span>crypto trading</span>?</h3>
+                <p class="cta-content-dec">Join thousands of traders who have already upgraded their crypto experience with CryptoFlow. Start today with zero risk.</p>
+                <div class="cta-content-btns">
+                    <a class="cta-content-get-started-btn primary-btn btn" href="javascript:void(0)">Get Started for Free
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-5 w-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a class="cta-content-schedule-demo-btn btn" href="javascript:voide(0)">Schedule Demo</a>
+                </div>
+                <p class="cta-content-small-dec">No credit card required. Cancel anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----- Footer section ----->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content-wrapper">
+                <div class="footer-content">
+                    <h3 class="footer-content-title">Crypto<span>Flow</span></h3>
+                    <p class="footer-content-dec common-dec-color">The most trusted cryptocurrency platform, empowering traders with innovative tools and unparalleled security.</p>
+                    <div class="footer-media">
+                        <a class="footer-logo" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook h-5 w-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="footer-logo" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter h-5 w-5">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a class="footer-logo" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram h-5 w-5">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a class="footer-logo" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-5 w-5">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a class="footer-logo" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <ul>
+                        <p>Products</p>
+                        <li><a href="javascript:void(0)">Exchange</li></a>
+                        <li><a href="javascript:void(0)">Wallet</li></a>
+                        <li><a href="javascript:void(0)">API</li></a>
+                        <li><a href="javascript:void(0)">Institutional</li></a>
+                        <li><a href="javascript:void(0)">DeFi Platform</li></a>
+                    </ul>
+                    <ul>
+                        <p>Resources</p>
+                        <li><a href="javascript:void(0)">Blog</li></a>
+                        <li><a href="javascript:void(0)">Tutorials</li></a>
+                        <li><a href="javascript:void(0)">Market Data</li></a>
+                        <li><a href="javascript:void(0)">Documentation</li></a>
+                        <li><a href="javascript:void(0)">Help Center</li></a>
+                    </ul>
+                    <ul>
+                        <p>Company</p>
+                        <li><a href="javascript:void(0)">About</li></a>
+                        <li><a href="javascript:void(0)">Careers</li></a>
+                        <li><a href="javascript:void(0)">Press</li></a>
+                        <li><a href="javascript:void(0)">Legal & Privacy</li></a>
+                        <li><a href="javascript:void(0)">Contact Us</li></a>
+                    </ul>
+
+                </ul>
+            </div>
+            <div class="footer-service">
+                <p class="footer-copyright-block"> © 2025 CryptoFlow. All rights reserved. ~ Distributed By<span>ThemeWagon</span></p>
+                <div class="footer-Policy">
+                    <a href="javascript:void(0)">Terms of Service</a>
+                    <a href="javascript:void(0)">Privacy Policy</a>
+                    <a href="javascript:void(0)">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="click-to-top" id="click-to-top">
+        <button class="click-to-top-btn" onclick="topFunction()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up h-6 w-6">
+                <path d="m18 15-6-6-6 6"></path>
+            </svg>
+        </button>
+    </div>
 
     <!-- Splide js -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>

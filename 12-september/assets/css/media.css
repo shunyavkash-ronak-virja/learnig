@@ -1,5 +1,5 @@
 @media (max-width: 992px) {
-  /*----- Header nav-bar -----*/
+  /* ----- Header nav-bar ----- */
   header {
     position: relative;
   }
@@ -13,12 +13,13 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    text-align: start;
+    text-align: center;
     background-color: #1c202d;
     padding-block: 20px;
     position: absolute;
     top: 55px;
     left: 0;
+    transition: all 0.3s ease;
   }
 
   .nav-links-wrapper.active {
@@ -28,7 +29,7 @@
   .nav-links,
   .nav-buttons {
     width: 100%;
-    max-width: 768px;
+    text-align: center;
     flex-direction: column;
     justify-content: flex-start;
     padding-inline: 20px;
@@ -39,14 +40,10 @@
     padding-top: 25px;
   }
 
-  .nav-login-button,
+  /* .nav-login-button,
   .nav-buynow-button {
-    width: 100%;
-  }
-
-  .nav-login-button {
-    padding-left: 0;
-  }
+    text-align: center;
+  } */
 
   .nav-buynow-button {
     text-align: center;
@@ -64,7 +61,7 @@
     transform: translateX(0px) rotate(-45deg);
   }
 
-  /*----- Hero section -----*/
+  /* ----- Hero section ----- */
   .hero-section {
     padding-top: 32px;
   }
@@ -91,14 +88,47 @@
     right: 116px;
   }
 
-  /*----- How-it-work-section -----*/
+  /* ----- How it work section ----- */
   .how-it-works-card-btn {
     margin-top: 50px;
+  }
+
+  /* ----- pricing cards section ----- */
+  .pricing-cards-section .cards-section-wrapper :nth-child(3).pricing-card {
+    grid-area: 2 / -3 / 2 / -1;
+    justify-self: center;
+  }
+
+  /* ----- Footer section ----- */
+  .footer-section {
+    padding-top: 45px;
+  }
+
+  .footer-content-wrapper {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .footer-content-dec {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-service {
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  /*----- Hero section -----*/
+  /* ----- Hero section ----- */
   .hero-section {
     padding-top: 15px;
   }
@@ -118,24 +148,84 @@
     right: 17px;
   }
 
-  /*----- How-it-work-section -----*/
+  /* ----- How it work section ----- */
   .how-it-works-card-btn {
     margin-top: 40px;
+  }
+
+  /* ----- Review section ----- */
+  .review-card {
+    padding: 28px;
+  }
+
+  .review-card-dec {
+    font-size: 18px;
+  }
+
+  /* ----- pricing cards section ----- */
+  .pricing-cards-section {
+    padding-top: 50px;
+  }
+
+  .pricing-cards-section .cards-section-wrapper :nth-child(3).pricing-card {
+    grid-area: auto;
+    justify-self: normal;
+  }
+
+  /* ----- CTA section ----- */
+  .cta-content-wrapper {
+    padding: 27px;
+  }
+
+  .cta-content-title {
+    font-size: 30px;
+  }
+
+  .cta-content-dec {
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 576px) {
-  /*----- Hero section -----*/
+  /* ----- Hero section ----- */
   .hero-section-content-dec {
     width: 100%;
-  }
-
-  .hero-section-content-btns {
-    flex-direction: column;
   }
 
   .hero-start-trading-btn,
   .hero-start-view-demo-btn {
     justify-content: center;
+  }
+
+  /* ----- CTA section ----- */
+  .cta-content-wrapper {
+    padding: 18px;
+  }
+
+  .cta-content-btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* ----- Footer section ----- */
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-Policy {
+    flex-direction: column;
+  }
+
+  .footer-Policy a {
+    margin-left: 0 !important;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 425px) {
+  /* ----- FAQ section ----- */
+  .faq-content-wrapper.active .faq-answer {
+    padding: 16px;
   }
 }
