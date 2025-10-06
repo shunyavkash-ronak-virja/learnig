@@ -294,6 +294,7 @@ header {
 /* ----- Features section ----- */
 .features-card {
   padding: 24px;
+  cursor: pointer;
 }
 
 .features-card:hover {
@@ -569,7 +570,7 @@ header {
 
 .faq-question {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
@@ -593,22 +594,21 @@ header {
 }
 
 .faq-answer {
+  height: 0;
+  overflow: hidden;
   font-size: 14px;
   line-height: 1.5;
   color: var(--darkgray);
-  transition: all 0.3s ease-in-out;
 }
 
-.faq-answer,
 .faq-answer p {
-  display: grid;
-  grid-template-rows: 0fr;
-  overflow: hidden;
+  padding: 0 24px 16px;
+  transition: all 16s ease-in-out;
 }
 
 .faq-content-wrapper.active .faq-answer {
-  grid-template-rows: 1fr;
-  padding: 0 24px 16px;
+  height: auto;
+  transition: all 1s ease-in-out;
 }
 
 /* ----- CTA section ----- */
@@ -632,7 +632,6 @@ header {
   background: linear-gradient(to right, #9b87f5 0%, #d6bcfa 87%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 10px;
 }
 
 .cta-content-dec {
@@ -757,6 +756,7 @@ header {
 
 .footer-service {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 14px;
   border-top: 1px solid var(--border-color);
@@ -767,7 +767,7 @@ header {
   color: var(--darkgray);
 }
 
-.footer-copyright-block span {
+.footer-copyright-block a {
   color: var(--mediumpurple);
   margin-left: 4px;
 }
@@ -775,10 +775,7 @@ header {
 .footer-Policy {
   display: flex;
   flex-wrap: wrap;
-}
-
-.footer-Policy a:not(:first-child) {
-  margin-left: 24px;
+  gap: 24px;
 }
 
 .footer-Policy a {

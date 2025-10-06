@@ -80,6 +80,10 @@
     font-size: 48px;
   }
 
+  .hero-section-content-dec {
+    width: 100%;
+  }
+
   .security-detail-card {
     left: 114px;
   }
@@ -163,6 +167,10 @@
   }
 
   /* ----- pricing cards section ----- */
+  .pricing-card {
+    padding: 25px 18px;
+  }
+
   .pricing-cards-section {
     padding-top: 50px;
   }
@@ -178,7 +186,7 @@
   }
 
   .cta-content-title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .cta-content-dec {
@@ -190,13 +198,44 @@
 
 @media (max-width: 576px) {
   /* ----- Hero section ----- */
-  .hero-section-content-dec {
-    width: 100%;
+  .hero-section-wrapper {
+    gap: 90px;
+  }
+
+  .hero-section-content-btns a {
+    padding: 11px 12px;
   }
 
   .hero-start-trading-btn,
   .hero-start-view-demo-btn {
     justify-content: center;
+  }
+
+  .hero-section-counter {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .security-detail-card {
+    top: -50px;
+  }
+
+  .growth-detail-card {
+    bottom: -50px;
+  }
+
+  /* ----- Review section ----- */
+  .splide__slide {
+    padding: 0;
+  }
+
+  /* ----- FAQ section ----- */
+  .faq-question {
+    padding: 16px;
+  }
+
+  .faq-answer p {
+    padding: 0 16px 16px;
   }
 
   /* ----- CTA section ----- */
@@ -207,25 +246,21 @@
   .cta-content-btns {
     flex-direction: column;
     gap: 12px;
+    align-items: center;
   }
 
   /* ----- Footer section ----- */
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .footer-Policy {
-    flex-direction: column;
+    gap: 5px 16px;
+    justify-content: center;
   }
 
   .footer-Policy a {
     margin-left: 0 !important;
     margin-top: 4px;
-  }
-}
-
-@media (max-width: 425px) {
-  /* ----- FAQ section ----- */
-  .faq-content-wrapper.active .faq-answer {
-    padding: 16px;
   }
 }
