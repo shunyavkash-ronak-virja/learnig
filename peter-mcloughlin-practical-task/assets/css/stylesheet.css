@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Maison Neue Demi";
+  src: url("../fonts/MaisonNeue-Demi.woff2");
+  src: url("../fonts/MaisonNeue-Demi.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Demi.woff") format("woff"),
+    url("../fonts/MaisonNeue-Demi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Demi";
+  src: url("../fonts/MaisonNeue-Demi_1.woff2");
+  src: url("../fonts/MaisonNeue-Demi_1.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Demi_1.woff") format("woff"),
+    url("../fonts/MaisonNeue-Demi_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Demi";
+  src: url("../fonts/MaisonNeue-Demi_2.woff2");
+  src: url("../fonts/MaisonNeue-Demi_2.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Demi_2.woff") format("woff"),
+    url("../fonts/MaisonNeue-Demi_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Demi";
+  src: url("../fonts/MaisonNeue-Demi_3.woff2");
+  src: url("../fonts/MaisonNeue-Demi_3.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Demi_3.woff") format("woff"),
+    url("../fonts/MaisonNeue-Demi_3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

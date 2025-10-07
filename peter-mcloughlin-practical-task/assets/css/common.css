@@ -1,0 +1,54 @@
+:root {
+  --white: #ffffff;
+  --blue-850: #1c2645;
+  --blue-950: #192647;
+  --blue-900: #1c2644;
+  --stone-500: #707070;
+  --neutral-200: #f8f8f8;
+  --neutral-300: #eceded;
+  --stone-200: #ebebeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Maison Neue";
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1280px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 26px;
+  padding: 13px 20px;
+}
+
+h1,
+.h1 {
+  font-size: 55px;
+}
+
+h2,
+.h2 {
+  font-size: 45px;
+}
+
+h3,
+.h3 {
+  font-size: 35px;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+}

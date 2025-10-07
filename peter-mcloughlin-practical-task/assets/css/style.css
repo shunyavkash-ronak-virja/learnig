@@ -1,0 +1,46 @@
+/* ----- Nav bar ----- */
+nav {
+  padding-block: 26px;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-align: start;
+}
+
+.logo h3 {
+  font-family: "Lyon";
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.logo span {
+  font-size: 12px;
+  font-weight: 300;
+  border-left: 1px solid var(--blue-850);
+  padding-left: 6px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  font-family: "Maison Neue Demi";
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--blue-950);
+  font-weight: 300;
+}
+
+.nav-get-in-touch-btn {
+  background-color: var(--neutral-200);
+  border-color: var(--stone-200);
+}
