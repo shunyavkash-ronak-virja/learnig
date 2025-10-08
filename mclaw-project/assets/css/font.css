@@ -1,29 +1,45 @@
 @font-face {
-  font-family: "Lyon";
-  src: url("../fonts/Lyon.woff2");
-  src: url("../fonts/Lyon.woff2") format("woff2"),
-    url("../fonts/Lyon.woff") format("woff"),
-    url("../fonts/Lyon.ttf") format("truetype");
+  font-family: "FONTSPRING DEMO - Lyon";
+  src: url("../fonts/FONTSPRINGDEMO-LyonBold.eot");
+  src: url("../fonts/FONTSPRINGDEMO-LyonBold.eot") format("embedded-opentype"),
+    url("../fonts/FONTSPRINGDEMO-LyonBold.woff2") format("woff2"),
+    url("../fonts/FONTSPRINGDEMO-LyonBold.woff") format("woff"),
+    url("../fonts/FONTSPRINGDEMO-LyonBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Lyon";
+  src: url("../fonts/FONTSPRINGDEMO-LyonItalic.eot");
+  src: url("../fonts/FONTSPRINGDEMO-LyonItalic.eot") format("embedded-opentype"),
+    url("../fonts/FONTSPRINGDEMO-LyonItalic.woff2") format("woff2"),
+    url("../fonts/FONTSPRINGDEMO-LyonItalic.woff") format("woff"),
+    url("../fonts/FONTSPRINGDEMO-LyonItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Lyon";
+  src: url("../fonts/FONTSPRINGDEMO-LyonRegular.eot");
+  src: url("../fonts/FONTSPRINGDEMO-LyonRegular.eot")
+      format("embedded-opentype"),
+    url("../fonts/FONTSPRINGDEMO-LyonRegular.woff2") format("woff2"),
+    url("../fonts/FONTSPRINGDEMO-LyonRegular.woff") format("woff"),
+    url("../fonts/FONTSPRINGDEMO-LyonRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Maison Neue";
-  src: url("../fonts/MaisonNeue-Light.woff2");
-  src: url("../fonts/MaisonNeue-Light.woff2") format("woff2"),
-    url("../fonts/MaisonNeue-Light.woff") format("woff"),
-    url("../fonts/MaisonNeue-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Maison Neue Book";
-  src: url("../fonts/MaisonNeue-Book.woff2");
-  src: url("../fonts/MaisonNeue-Book.woff2") format("woff2"),
+  src: url("../fonts/MaisonNeue-Book.eot");
+  src: url("../fonts/MaisonNeue-Book.eot") format("embedded-opentype"),
+    url("../fonts/MaisonNeue-Book.woff2") format("woff2"),
     url("../fonts/MaisonNeue-Book.woff") format("woff"),
     url("../fonts/MaisonNeue-Book.ttf") format("truetype");
   font-weight: normal;
@@ -33,8 +49,9 @@
 
 @font-face {
   font-family: "Maison Neue";
-  src: url("../fonts/MaisonNeue-Bold.woff2");
-  src: url("../fonts/MaisonNeue-Bold.woff2") format("woff2"),
+  src: url("../fonts/MaisonNeue-Bold.eot");
+  src: url("../fonts/MaisonNeue-Bold.eot") format("embedded-opentype"),
+    url("../fonts/MaisonNeue-Bold.woff2") format("woff2"),
     url("../fonts/MaisonNeue-Bold.woff") format("woff"),
     url("../fonts/MaisonNeue-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -44,8 +61,21 @@
 
 @font-face {
   font-family: "Maison Neue";
-  src: url("../fonts/MaisonNeue-Mono.woff2");
-  src: url("../fonts/MaisonNeue-Mono.woff2") format("woff2"),
+  src: url("../fonts/MaisonNeue-Light.eot");
+  src: url("../fonts/MaisonNeue-Light.eot") format("embedded-opentype"),
+    url("../fonts/MaisonNeue-Light.woff2") format("woff2"),
+    url("../fonts/MaisonNeue-Light.woff") format("woff"),
+    url("../fonts/MaisonNeue-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url("../fonts/MaisonNeue-Mono.eot");
+  src: url("../fonts/MaisonNeue-Mono.eot") format("embedded-opentype"),
+    url("../fonts/MaisonNeue-Mono.woff2") format("woff2"),
     url("../fonts/MaisonNeue-Mono.woff") format("woff"),
     url("../fonts/MaisonNeue-Mono.ttf") format("truetype");
   font-weight: normal;
@@ -55,8 +85,9 @@
 
 @font-face {
   font-family: "Maison Neue Demi";
-  src: url("../fonts/MaisonNeue-Demi.woff2");
-  src: url("../fonts/MaisonNeue-Demi.woff2") format("woff2"),
+  src: url("../fonts/MaisonNeue-Demi.eot");
+  src: url("../fonts/MaisonNeue-Demi.eot") format("embedded-opentype"),
+    url("../fonts/MaisonNeue-Demi.woff2") format("woff2"),
     url("../fonts/MaisonNeue-Demi.woff") format("woff"),
     url("../fonts/MaisonNeue-Demi.ttf") format("truetype");
   font-weight: normal;
@@ -65,34 +96,13 @@
 }
 
 @font-face {
-  font-family: "Maison Neue Demi";
-  src: url("../fonts/MaisonNeue-Demi_1.woff2");
-  src: url("../fonts/MaisonNeue-Demi_1.woff2") format("woff2"),
-    url("../fonts/MaisonNeue-Demi_1.woff") format("woff"),
-    url("../fonts/MaisonNeue-Demi_1.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Maison Neue Demi";
-  src: url("../fonts/MaisonNeue-Demi_2.woff2");
-  src: url("../fonts/MaisonNeue-Demi_2.woff2") format("woff2"),
-    url("../fonts/MaisonNeue-Demi_2.woff") format("woff"),
-    url("../fonts/MaisonNeue-Demi_2.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Maison Neue Demi";
-  src: url("../fonts/MaisonNeue-Demi_3.woff2");
-  src: url("../fonts/MaisonNeue-Demi_3.woff2") format("woff2"),
-    url("../fonts/MaisonNeue-Demi_3.woff") format("woff"),
-    url("../fonts/MaisonNeue-Demi_3.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../fonts/NeueHaasDisplay-Black.eot");
+  src: url("../fonts/NeueHaasDisplay-Black.eot") format("embedded-opentype"),
+    url("../fonts/NeueHaasDisplay-Black.woff2") format("woff2"),
+    url("../fonts/NeueHaasDisplay-Black.woff") format("woff"),
+    url("../fonts/NeueHaasDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
