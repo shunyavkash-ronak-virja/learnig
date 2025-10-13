@@ -9,6 +9,9 @@
     <!----- Custom css ----->
     <link rel="stylesheet" href="./assets/css/main.css">
 
+    <!----- Splide css ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
 </head>
 
 <body>
@@ -29,6 +32,7 @@
                 </div>
                 <div class="nav-links-block">
                     <div class="nav-links-wrapper">
+
                         <a href="javascript:void(0)">what we do</a>
                         <a href="javascript:void(0)">how we do it</a>
                         <a href="javascript:void(0)">case studies</a>
@@ -41,10 +45,12 @@
 
     <!----- Hero section ----->
     <header class="hero-section">
+        <img class="hero-section-image" src="assets/image/image-hero-1.png" alt="image">
         <div class="container">
             <div class="hero-section-contents">
                 <p class="hero-section-contents-dec">welcome to peter mcloughlin mediation</p>
                 <h1 class="hero-section-contents-title">Mediation is a voluntary and flexible process</h1>
+
                 <div class="hero-section-btns">
                     <a class="btn hero-section-what-we-do-btn" href="javascript:void(0)">what we do</a>
                     <a class="btn hero-section-case-studies-btn" href="javascript:void(0)">case studies</a>
@@ -53,9 +59,36 @@
         </div>
     </header>
 
+    <!----- Slider section ----->
+    <section class="slider-section">
+        <div class="container">
+            <div class="">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div>
+                                    <div>“</div>
+                                    <h2>“Very personable and was particularly adept at making all parties feel at ease”</h2>
+                                    <span>2023</span>
+                                </div>
+
+                            </li>
+                            <li class="splide__slide">“Very personable and was particularly adept at making all parties feel at ease”</li>
+                            <li class="splide__slide">“Very personable and was particularly adept at making all parties feel at ease”</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!----- Custom js ----->
     <script src="assets/js/script.js"></script>
+
+    <!----- Splide js ----->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 
 </html>

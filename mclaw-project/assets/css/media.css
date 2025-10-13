@@ -28,7 +28,7 @@
 
   .nav-links-block {
     position: absolute;
-    top: 26px;
+    top: 0;
     right: -20px;
     width: 250px;
     height: 90vh;
@@ -40,7 +40,7 @@
 
   .nav-links-wrapper {
     position: absolute;
-    top: 76px;
+    top: 95px;
     right: 0;
     left: 0;
     padding-block: 30px;
@@ -71,5 +71,37 @@
 
   .nav-links-wrapper {
     top: 95px;
+  }
+
+  /* ----- Hero section ----- */
+  .hero-section-image {
+    position: static;
+  }
+
+  .hero-section-contents {
+    max-width: 318px;
+    margin-inline: auto;
+    padding-top: 50px;
+  }
+
+  .hero-section-contents-dec {
+    color: var(--stone-500);
+    opacity: 25%;
+  }
+
+  .hero-section-contents-title {
+    font-family: "Maison Neue";
+    font-weight: 300;
+    font-size: 40px;
+    color: var(--blue-950);
+  }
+
+  .hero-section-btns .btn {
+    padding: 13px 17px;
+  }
+
+  .hero-section-case-studies-btn {
+    border-color: var(--stone-200);
+    color: var(--blue-950);
   }
 }

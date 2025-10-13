@@ -5,3 +5,9 @@ navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
   navLinks.classList.toggle("active");
 });
+
+// Slider section - - - - - - - - - -
+new Splide(".splide", {
+  type: "loop",
+  perPage: 1,
+});
