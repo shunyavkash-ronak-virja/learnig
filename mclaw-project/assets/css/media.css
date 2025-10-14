@@ -1,3 +1,36 @@
+@media (max-width: 1023px) {
+  /* ----- Slider section ----- */
+  .slider-section {
+    padding-top: 57px;
+    padding-bottom: 140px;
+  }
+
+  .slider-content-tag {
+    margin-bottom: 22px;
+  }
+
+  .splide__pagination {
+    bottom: -64px !important;
+  }
+
+  /* -----  about mediation section ----- */
+  .about-mediation-section {
+    padding-block: 57px;
+  }
+
+  .about-mediation-content-tag {
+    margin-bottom: 26px;
+  }
+
+  .about-mediation-content-title {
+    margin-bottom: 22px;
+  }
+
+  .about-mediation-content-dec {
+    margin-bottom: 26px;
+  }
+}
+
 @media (max-width: 991px) {
   /* ----- Nav bar ----- */
 
@@ -74,14 +107,33 @@
   }
 
   /* ----- Hero section ----- */
+  .hero-section {
+    height: auto;
+    display: inline-block;
+  }
+
+  .image-div {
+    width: 100%;
+    height: 300px;
+  }
+
   .hero-section-image {
+    width: 100%;
+    height: 100%;
     position: static;
+  }
+
+  .hero-section .container {
+    height: auto;
+    margin-top: -7px;
   }
 
   .hero-section-contents {
     max-width: 318px;
+    height: auto;
     margin-inline: auto;
     padding-top: 50px;
+    padding-bottom: 45px;
   }
 
   .hero-section-contents-dec {
@@ -103,5 +155,27 @@
   .hero-section-case-studies-btn {
     border-color: var(--stone-200);
     color: var(--blue-950);
+  }
+}
+
+@media (max-width: 767px) {
+  /* ----- Slider section ----- */
+  .slider-section {
+    padding-top: 38px;
+    padding-bottom: 112px;
+  }
+
+  .slider-content-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .splide__pagination__page {
+    width: 25px !important;
+  }
+
+  .splide__pagination {
+    gap: 5px;
   }
 }
