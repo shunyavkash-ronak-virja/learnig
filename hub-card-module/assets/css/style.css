@@ -56,7 +56,7 @@ a {
 .filter-bar-sub-menu {
   width: 145px;
   position: absolute;
-  height: 0;
+  /* height: 0; */
   left: 0;
   top: 6px;
   border-radius: 10px;
