@@ -94,6 +94,20 @@
   .nav-links-wrapper a::before {
     display: none;
   }
+
+  /* ----- Faq section ----- */
+  .faq-section {
+    flex-direction: column-reverse;
+  }
+
+  .faq-section-wrapper-media,
+  .faq-section .container {
+    width: 100%;
+  }
+
+  .faq-section-content {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 575px) {

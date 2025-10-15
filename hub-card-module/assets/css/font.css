@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../font/PPNeueMontreal-Bold.eot");
+  src: url("../font/PPNeueMontreal-Bold.eot") format("embedded-opentype"),
+    url("../font/PPNeueMontreal-Bold.woff2") format("woff2"),
+    url("../font/PPNeueMontreal-Bold.woff") format("woff"),
+    url("../font/../font/PPNeueMontreal-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Book";
+  src: url("../font/PPNeueMontreal-Book.eot");
+  src: url("../font/PPNeueMontreal-Book.eot") format("embedded-opentype"),
+    url("../font/PPNeueMontreal-Book.woff2") format("woff2"),
+    url("../font/PPNeueMontreal-Book.woff") format("woff"),
+    url("../font/PPNeueMontreal-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../font/PPNeueMontreal-Italic.eot");
+  src: url("../font/PPNeueMontreal-Italic.eot") format("embedded-opentype"),
+    url("../font/PPNeueMontreal-Italic.woff2") format("woff2"),
+    url("../font/PPNeueMontreal-Italic.woff") format("woff"),
+    url("../font/PPNeueMontreal-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../font/PPNeueMontreal-Medium.eot");
+  src: url("../font/PPNeueMontreal-Medium.eot") format("embedded-opentype"),
+    url("../font/PPNeueMontreal-Medium.woff2") format("woff2"),
+    url("../font/PPNeueMontreal-Medium.woff") format("woff"),
+    url("../font/PPNeueMontreal-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../font/PPNeueMontreal-Thin.eot");
+  src: url("../font/PPNeueMontreal-Thin.eot") format("embedded-opentype"),
+    url("../font/PPNeueMontreal-Thin.woff2") format("woff2"),
+    url("../font/PPNeueMontreal-Thin.woff") format("woff"),
+    url("../font/PPNeueMontreal-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../font/PPNeueMontreal-SemiBolditalic.eot");
+  src: url("../font/PPNeueMontreal-SemiBolditalic.eot")
+      format("embedded-opentype"),
+    url("../font/PPNeueMontreal-SemiBolditalic.woff2") format("woff2"),
+    url("../font/PPNeueMontreal-SemiBolditalic.woff") format("woff"),
+    url("../font/PPNeueMontreal-SemiBolditalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-BoldItalic.eot");
+  src: url("../font/ACaslonPro-BoldItalic.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-BoldItalic.woff2") format("woff2"),
+    url("../font/ACaslonPro-BoldItalic.woff") format("woff"),
+    url("../font/ACaslonPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Italic.eot");
+  src: url("../font/ACaslonPro-Italic.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Italic.woff2") format("woff2"),
+    url("../font/ACaslonPro-Italic.woff") format("woff"),
+    url("../font/ACaslonPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Bold.eot");
+  src: url("../font/ACaslonPro-Bold.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Bold.woff2") format("woff2"),
+    url("../font/ACaslonPro-Bold.woff") format("woff"),
+    url("../font/ACaslonPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Bold_1.eot");
+  src: url("../font/ACaslonPro-Bold_1.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Bold_1.woff2") format("woff2"),
+    url("../font/ACaslonPro-Bold_1.woff") format("woff"),
+    url("../font/ACaslonPro-Bold_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Bold_2.eot");
+  src: url("../font/ACaslonPro-Bold_2.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Bold_2.woff2") format("woff2"),
+    url("../font/ACaslonPro-Bold_2.woff") format("woff"),
+    url("../font/ACaslonPro-Bold_2.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-BoldItalic_1.eot");
+  src: url("../font/ACaslonPro-BoldItalic_1.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-BoldItalic_1.woff2") format("woff2"),
+    url("../font/ACaslonPro-BoldItalic_1.woff") format("woff"),
+    url("../font/ACaslonPro-BoldItalic_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-BoldItalic_2.eot");
+  src: url("../font/ACaslonPro-BoldItalic_2.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-BoldItalic_2.woff2") format("woff2"),
+    url("../font/ACaslonPro-BoldItalic_2.woff") format("woff"),
+    url("../font/ACaslonPro-BoldItalic_2.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Italic_1.eot");
+  src: url("../font/ACaslonPro-Italic_1.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Italic_1.woff2") format("woff2"),
+    url("../font/ACaslonPro-Italic_1.woff") format("woff"),
+    url("../font/ACaslonPro-Italic_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Semibold.eot");
+  src: url("../font/ACaslonPro-Semibold.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Semibold.woff2") format("woff2"),
+    url("../font/ACaslonPro-Semibold.woff") format("woff"),
+    url("../font/ACaslonPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Italic_2.eot");
+  src: url("../font/ACaslonPro-Italic_2.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Italic_2.woff2") format("woff2"),
+    url("../font/ACaslonPro-Italic_2.woff") format("woff"),
+    url("../font/ACaslonPro-Italic_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Regular.eot");
+  src: url("../font/ACaslonPro-Regular.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Regular.woff2") format("woff2"),
+    url("../font/ACaslonPro-Regular.woff") format("woff"),
+    url("../font/ACaslonPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Regular_1.eot");
+  src: url("../font/ACaslonPro-Regular_1.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Regular_1.woff2") format("woff2"),
+    url("../font/ACaslonPro-Regular_1.woff") format("woff"),
+    url("../font/ACaslonPro-Regular_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Semibold_1.eot");
+  src: url("../font/ACaslonPro-Semibold_1.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Semibold_1.woff2") format("woff2"),
+    url("../font/ACaslonPro-Semibold_1.woff") format("woff"),
+    url("../font/ACaslonPro-Semibold_1.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Regular_2.eot");
+  src: url("../font/ACaslonPro-Regular_2.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Regular_2.woff2") format("woff2"),
+    url("../font/ACaslonPro-Regular_2.woff") format("woff"),
+    url("../font/ACaslonPro-Regular_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-SemiboldItalic.eot");
+  src: url("../font/ACaslonPro-SemiboldItalic.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-SemiboldItalic.woff2") format("woff2"),
+    url("../font/ACaslonPro-SemiboldItalic.woff") format("woff"),
+    url("../font/ACaslonPro-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-SemiboldItalic_1.eot");
+  src: url("../font/ACaslonPro-SemiboldItalic_1.eot")
+      format("embedded-opentype"),
+    url("../font/ACaslonPro-SemiboldItalic_1.woff2") format("woff2"),
+    url("../font/ACaslonPro-SemiboldItalic_1.woff") format("woff"),
+    url("../font/ACaslonPro-SemiboldItalic_1.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-SemiboldItalic_2.eot");
+  src: url("../font/ACaslonPro-SemiboldItalic_2.eot")
+      format("embedded-opentype"),
+    url("../font/ACaslonPro-SemiboldItalic_2.woff2") format("woff2"),
+    url("../font/ACaslonPro-SemiboldItalic_2.woff") format("woff"),
+    url("../font/ACaslonPro-SemiboldItalic_2.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Caslon Pro";
+  src: url("../font/ACaslonPro-Semibold_2.eot");
+  src: url("../font/ACaslonPro-Semibold_2.eot") format("embedded-opentype"),
+    url("../font/ACaslonPro-Semibold_2.woff2") format("woff2"),
+    url("../font/ACaslonPro-Semibold_2.woff") format("woff"),
+    url("../font/ACaslonPro-Semibold_2.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

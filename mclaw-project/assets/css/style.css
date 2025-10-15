@@ -273,7 +273,7 @@
   font-size: 20px;
   max-width: 740px;
   color: var(--blue-950);
-  opacity: 75%;
+  opacity: 0.75;
   margin-bottom: 40px;
 }
 
@@ -290,23 +290,25 @@
   color: var(--blue-950);
 }
 
-.about-mediation-content-btn a img {
-  width: 18px;
-  height: 18px;
+.about-mediation-content-btn a svg {
   transition: 0.3s ease-in-out;
 }
 
-.about-mediation-content-btn a:hover img {
+.about-mediation-content-btn a:hover svg {
   transform: translateX(4px);
 }
 
-/* ----- faq section ----- */
+/* ----- Faq section ----- */
 .faq-section {
+  width: 100%;
+  display: flex;
   background-color: var(--neutral-200);
+}
+.faq-section .container {
+  width: 50%;
 }
 
 .faq-section-content {
-  width: 50%;
   max-width: 540px;
   padding-block: 80px;
 }
@@ -320,4 +322,79 @@
   font-family: "Maison Neue";
   font-weight: 300;
   margin-bottom: 45px;
+}
+
+.faq-content {
+  border-bottom: 1px solid var(--stone-500-border);
+  height: 74px;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+
+.faq-content.active {
+  height: auto;
+  overflow: auto;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-block: 14px;
+  cursor: pointer;
+}
+
+.faq-question h4 {
+  font-family: "Maison Neue Book";
+}
+
+.faq-question-icon {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--stone-200);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-question-icon svg {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-content.active .faq-question-icon svg {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  font-family: "Maison Neue";
+  font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  color: var(--blue-950);
+  opacity: 0.75;
+}
+
+.faq-content.active .faq-answer {
+  max-height: 1000px;
+}
+
+.faq-content-wrapper :nth-child(1).faq-content {
+  border-top: 1px solid var(--stone-500-border);
+}
+
+.faq-section-wrapper-media {
+  width: 50%;
+}
+
+.faq-section-wrapper-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -23,3 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+// Faq section - - - - - - - - - -
+document.querySelectorAll(".faq-question").forEach((question) => {
+  question.addEventListener("click", () => {
+    const faqItem = question.parentElement;
+    // Close other open items
+    document.querySelectorAll(".faq-content").forEach((item) => {
+      if (item !== faqItem) {
+        item.classList.remove("active");
+      }
+    });
+    // Toggle current item
+    faqItem.classList.toggle("active");
+  });
+});
