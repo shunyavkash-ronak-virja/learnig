@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 /* Common css */
+body {
+  line-height: 1.629;
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   max-width: 1280px;
   padding-inline: 20px;
@@ -27,6 +31,7 @@ a {
   border-radius: 15px;
   display: flex;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .filter-bar-content-link {
@@ -56,15 +61,15 @@ a {
 .filter-bar-sub-menu {
   width: 145px;
   position: absolute;
-  /* height: 0; */
+  height: 0;
   left: 0;
-  top: 6px;
+  top: 0;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .filter-bar-content:hover .filter-bar-sub-menu {
@@ -113,4 +118,172 @@ a {
 
 .sub-menu-link.active::before {
   width: 20px;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42px 16px;
+}
+
+.card-blog-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.17);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-blog-wrapper:hover {
+  transform: scale(1.036);
+}
+
+.card-media {
+  width: 100%;
+  height: 213px;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-contents {
+  padding: 24px;
+}
+
+.card-contents-tags {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 13px;
+}
+
+.card-contents-tag {
+  width: fit-content;
+  background-color: #dbe4eb;
+  padding: 2px 15px;
+  font-size: 11px;
+  border-radius: 20px;
+}
+
+.card-contents-title {
+  font-family: "PP Neue Montreal";
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+}
+
+.card-contents-schedule-time {
+  font-size: 14px;
+  color: #a09e9e;
+  margin-bottom: 8px;
+}
+
+.card-contents-schedule-time span {
+  display: block;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.card-contents-schedule-time :nth-child(1) {
+  text-transform: uppercase;
+}
+
+.card-contents-schedule-time :nth-child(2) {
+  text-transform: capitalize;
+}
+
+.card-contents-dec {
+  font-size: 14px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+
+.card-contents-about-info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 0;
+}
+
+.card-contents-about-info-detail {
+  padding: 10px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.card-contents-about-info-detail-tag {
+  font-size: 9px;
+  color: #a09e9e;
+}
+
+.card-contents-about-info-detail-dec {
+  font-size: 10px;
+  font-weight: 500;
+  color: #535353;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 5px 0;
+  background-color: #f02a9c;
+  color: #ffffff;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: #cd2387;
+}
+
+@media (max-width: 1087px) {
+  .card-contents-tags {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .filter-bar-sub-menu-overlay {
+    max-width: 100%;
+    margin-top: 4px;
+  }
+
+  .filter-bar-sub-menu {
+    width: 100%;
+    position: static;
+  }
+
+  .card-filter-bar {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .cards-wrapper {
+    gap: 30px;
+  }
+
+  .card-media {
+    height: auto;
+  }
 }

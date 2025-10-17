@@ -92,16 +92,16 @@
 .nav-links-wrapper a::before {
   content: "";
   position: absolute;
-  z-index: -1;
   left: 0;
-  bottom: -3px;
   right: 100%;
+  bottom: -3px;
+  z-index: -1;
+  height: 3px;
   background-color: var(--blue-950);
   transition-property: right;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-property: right;
   -webkit-transition-timing-function: ease-out;
-  height: 3px;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
@@ -304,13 +304,9 @@
   display: flex;
   background-color: var(--neutral-200);
 }
-.faq-section .container {
-  width: 50%;
-}
 
 .faq-section-content {
-  /* max-width: 540px; */
-  padding-block: 80px;
+  padding-block: 40px;
 }
 
 .faq-section .section-tag {
@@ -391,6 +387,7 @@
 
 .faq-section-wrapper-media {
   width: 50%;
+  aspect-ratio: 1.8;
 }
 
 .faq-section-wrapper-media img {
