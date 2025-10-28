@@ -36,6 +36,29 @@ a {
   padding: 13px 20px;
 }
 
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Maison Neue Demi";
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 26px;
+  padding: 15px 28px;
+}
+
+.primary-btn {
+  background-color: var(--blue-950);
+  color: var(--white);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--blue-950);
+  border: 1px solid var(--stone-200);
+}
+
 h1,
 .h1 {
   font-size: 55px;
@@ -71,7 +94,6 @@ h6,
 .section-tag {
   font-family: "Maison Neue";
   font-weight: bold;
-  font-size: 14px;
   color: var(--stone-500);
   opacity: 50%;
   text-transform: uppercase;

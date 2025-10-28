@@ -1,3 +1,10 @@
+@media (max-width: 1150px) {
+  /* ----- Case studies section ----- */
+  .case-studies-cards-wrapper {
+    gap: 40px;
+  }
+}
+
 @media (max-width: 1023px) {
   /* ----- Slider section ----- */
   .slider-section {
@@ -29,11 +36,21 @@
   .about-mediation-content-dec {
     margin-bottom: 26px;
   }
+  /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
+  /* ----- Cta section ----- */
+  .cta-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* ----- Two column section ----- */
+  .two-column-content {
+    padding: 92px 30px 92px 64px;
+  }
 }
 
 @media (max-width: 991px) {
   /* ----- Nav bar ----- */
-
   .toggle-block {
     display: block;
   }
@@ -95,18 +112,72 @@
     display: none;
   }
 
-  /* ----- Faq section ----- */
-  .faq-section {
+  /* ----- Case studies section ----- */
+  .case-studies-section {
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  .case-studies-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
+}
+
+@media (max-width: 767px) {
+  /* ----- Slider section ----- */
+  .slider-section {
+    padding-top: 38px;
+    padding-bottom: 112px;
+  }
+
+  .slider-content-title {
+    font-size: 30px;
+  }
+
+  /* ----- Two column faq section ----- */
+  .faq-section-wrapper {
     flex-direction: column-reverse;
   }
 
-  .faq-section-wrapper-media,
-  .faq-section .container {
-    width: 100%;
+  .faq-section-wrapper-media {
+    width: auto;
+    height: auto;
+    position: static;
+    margin-inline: -20px;
   }
 
   .faq-section-content {
+    width: 100%;
     max-width: 100%;
+    padding-right: 0;
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  .two-column-faq-section .section-tag {
+    margin-bottom: 50px;
+  }
+  /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
+  /* ----- Two column section ----- */
+  .two-column-wrapper {
+    flex-direction: column;
+  }
+
+  .two-column-media {
+    width: auto;
+    position: static;
+    margin-inline: -20px;
+  }
+
+  .two-column-content {
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .two-column-content-title,
+  .two-column-content-dec {
+    margin-bottom: 30px;
   }
 }
 
@@ -170,26 +241,37 @@
     border-color: var(--stone-200);
     color: var(--blue-950);
   }
-}
 
-@media (max-width: 767px) {
-  /* ----- Slider section ----- */
-  .slider-section {
-    padding-top: 38px;
-    padding-bottom: 112px;
-  }
-
-  .slider-content-title {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 575px) {
+  /* -----  Slider section ----- */
   .splide__pagination__page {
     width: 25px !important;
   }
 
   .splide__pagination {
     gap: 5px;
+  }
+
+  /* ----- Case studies section ----- */
+  .case-studies-cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- Footer ----- */
+  .footer-title {
+    font-size: 35px;
+  }
+  /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
+  /* ----- Cta section ----- */
+  .cta-section-title {
+    font-size: 40px;
+  }
+
+  .cta-section-btns {
+    gap: 12px;
+  }
+
+  .cta-section .primary-btn,
+  .cta-section .secondary-btn {
+    padding: 15px 18px;
   }
 }

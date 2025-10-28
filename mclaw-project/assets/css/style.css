@@ -298,15 +298,23 @@
   transform: translateX(4px);
 }
 
-/* ----- Faq section ----- */
-.faq-section {
+/* ----- Two column faq section ----- */
+.two-column-faq-section {
   width: 100%;
-  display: flex;
+  min-height: 783px;
   background-color: var(--neutral-200);
+  position: relative;
+}
+
+.faq-section-wrapper {
+  display: flex;
 }
 
 .faq-section-content {
-  padding-block: 40px;
+  width: 50%;
+  max-width: 540px;
+  padding-block: 80px;
+  padding-right: 30px;
 }
 
 .faq-section .section-tag {
@@ -324,7 +332,7 @@
   border-bottom: 1px solid var(--stone-500-border);
   height: 74px;
   overflow: hidden;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-content.active {
@@ -341,12 +349,12 @@
   cursor: pointer;
 }
 
-.faq-question h4 {
+.faq-question-title {
   font-family: "Maison Neue Book";
 }
 
 .faq-question-icon {
-  width: 46px;
+  min-width: 46px;
   height: 46px;
   border: 1px solid var(--stone-200);
   border-radius: 50%;
@@ -368,17 +376,18 @@
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: all 1s ease-in-out;
   font-family: "Maison Neue";
   font-weight: 300;
   margin-top: 16px;
   margin-bottom: 30px;
   color: var(--blue-950);
   opacity: 0.75;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-content.active .faq-answer {
-  max-height: 1000px;
+  max-height: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-content-wrapper :nth-child(1).faq-content {
@@ -387,11 +396,223 @@
 
 .faq-section-wrapper-media {
   width: 50%;
-  aspect-ratio: 1.8;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .faq-section-wrapper-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* ----- Case studies section ----- */
+.case-studies-section {
+  padding-top: 145px;
+  padding-bottom: 130px;
+}
+
+.case-studies-section-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.case-studies-section-tag {
+  font-family: "Neue Haas Grotesk Display Pro";
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+}
+
+.case-studies-section-btn {
+  font-family: "Maison Neue Demi";
+  color: var(--blue-950);
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid var(--stone-200);
+  border-radius: 30px;
+  padding: 17px 24px;
+}
+
+.case-studies-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 73px;
+}
+
+.case-studies-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--stone-250);
+}
+
+.case-studies-card-media,
+.case-studies-card-media img {
+  width: 100%;
+  height: 100%;
+}
+
+.case-studies-card-media img {
+  object-fit: cover;
+}
+
+.case-studies-card-content {
+  padding: 30px 32px 20px;
+}
+
+.case-studies-card-content-dec {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--blue-950);
+  opacity: 75%;
+  margin-bottom: 10px;
+}
+
+.case-studies-card-content-title {
+  font-family: "Maison Neue Book";
+  color: var(--blue-950);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.case-studies-card-content-btn {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--blue-950);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-studies-card-content-btn svg {
+  color: var(--blue-950);
+}
+
+/* ----- Footer ----- */
+.footer-section {
+  background-color: var(--neutral-300);
+  padding-block: 120px;
+}
+
+.footer-title {
+  max-width: 576px;
+  font-family: "Maison Neue";
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.footer-call-btn {
+  display: inline-block;
+  font-family: "Maison Neue";
+  font-size: 14px;
+  background-color: var(--blue-950);
+  border: 1px solid var(--blue-950);
+  border-radius: 35px;
+  padding: 18px 26px;
+  color: var(--white);
+}
+
+/* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
+/* ----- Cta section ----- */
+.cta-section {
+  padding-top: 101px;
+  padding-bottom: 113px;
+}
+
+.cta-section-title,
+.cta-section-dec {
+  font-family: "Maison Neue";
+  font-weight: 300;
+}
+
+.cta-section-title {
+  max-width: 812px;
+  color: var(--blue-950);
+  margin-bottom: 30px;
+}
+
+.cta-section-dec {
+  max-width: 524px;
+  color: var(--blue-950);
+  opacity: 75%;
+  margin-bottom: 25px;
+}
+
+.cta-section-btns {
+  display: flex;
+  gap: 15px;
+}
+
+/* ----- Two column section ----- */
+.two-column-section {
+  background-color: var(--blue-950);
+  position: relative;
+}
+
+.two-column-wrapper {
+  display: flex;
+  min-height: 746px;
+  justify-content: end;
+}
+
+.two-column-media {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.two-column-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.two-column-content {
+  width: 50%;
+  padding: 92px 80px 92px 92px;
+}
+
+.two-column-section .section-tag {
+  color: var(--white);
+  opacity: 50%;
+}
+
+.two-column-content-title {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 45px;
+}
+
+.two-column-content-dec {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  color: var(--neutral-200);
+  opacity: 75%;
+  margin-bottom: 45px;
+}
+
+.two-column-content-btn {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-family: "Maison Neue Book";
+  color: var(--white);
+
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.two-column-content-btn:hover svg {
+  transform: translateX(5px);
 }
