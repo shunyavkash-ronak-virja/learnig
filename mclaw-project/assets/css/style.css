@@ -803,3 +803,7 @@
 .resource-hub-card-section .case-studies-card-content {
   padding: 54px 45px 40px;
 }
+
+.resource-hub-card-section .primary-btn {
+  margin-top: 80px;
+}
