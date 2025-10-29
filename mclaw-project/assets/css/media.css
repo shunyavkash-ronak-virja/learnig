@@ -47,6 +47,39 @@
   .two-column-content {
     padding: 92px 30px 92px 64px;
   }
+
+  /* ----- Mediation faq section ----- */
+  .mediation-faq-section {
+    padding-block: 70px;
+  }
+
+  .mediation-faq-section .section-tag {
+    margin-bottom: 34px;
+  }
+
+  .mediation-faq-content-title {
+    margin-bottom: 54px;
+  }
+  /* ---------------------------------------- PROCESS HTML ----------------------------------------*/
+  /* ----- Process Preparing mediation ----- */
+  .preparing-mediation-section {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    margin-bottom: 80px;
+  }
+  /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
+  /* ----- ResourceHub Card section ----- */
+  .resource-hub-card-wrapper {
+    gap: 40px;
+  }
+
+  .resource-hub-card-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -121,7 +154,11 @@
   .case-studies-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
+  /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
+  /* ----- ResourceHub Card section ----- */
+  .resource-hub-card-container {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -178,6 +215,25 @@
   .two-column-content-title,
   .two-column-content-dec {
     margin-bottom: 30px;
+  }
+  /* ---------------------------------------- PROCESS HTML ----------------------------------------*/
+  /* ----- Process Preparing mediation ----- */
+  .preparing-mediation-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
+
+  .section-title {
+    margin-bottom: 48px;
+  }
+  /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
+  /* ----- ResourceHub Card section ----- */
+  .resource-hub-card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .resource-hub-card-section .case-studies-card-content {
+    padding: 32px 35px 40px;
   }
 }
 
@@ -273,5 +329,51 @@
   .cta-section .primary-btn,
   .cta-section .secondary-btn {
     padding: 15px 18px;
+  }
+
+  /* ----- Two column section ----- */
+  .two-column-content-title {
+    font-size: 35px;
+  }
+
+  /* ----- Mediation faq section ----- */
+  .mediation-faq-section .section-tag {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+
+  .mediation-faq-content-title {
+    margin-bottom: 64px;
+  }
+
+  .mediation-faq-section .faq-question-title {
+    font-size: 22px;
+  }
+
+  .mediation-faq-section .faq-question {
+    padding-bottom: 16px;
+  }
+  /* ---------------------------------------- PROCESS HTML ----------------------------------------*/
+  /* ----- Process Preparing mediation ----- */
+  .preparing-mediation-section {
+    padding-top: 45px;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+  /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
+  /* ----- ResourceHub Card section ----- */
+  .resource-hub-card-wrapper {
+    gap: 26px;
+  }
+
+  .resource-hub-card-section .case-studies-card-content {
+    padding: 20px;
+  }
+
+  .resource-hub-card-container {
+    margin-top: 48px;
   }
 }

@@ -38,7 +38,7 @@ a {
 
 .primary-btn,
 .secondary-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: "Maison Neue Demi";
@@ -67,6 +67,13 @@ h1,
 h2,
 .h2 {
   font-size: 45px;
+}
+
+@media (max-width: 1023px) {
+  h2,
+  .h2 {
+    font-size: 40px;
+  }
 }
 
 h3,
