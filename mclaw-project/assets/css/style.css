@@ -782,6 +782,7 @@
 .resource-hub-card-filter-bar .active {
   background-color: var(--blue-950);
   color: var(--white);
+  border-color: var(--blue-950);
 }
 
 .resource-hub-card-wrapper {
