@@ -11,10 +11,10 @@ navToggle.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide", {
     type: "loop",
-    autoplay: true,
+    // autoplay: true,
     perPage: 1,
     arrows: false,
-    width: "80%",
+    focus: "center",
     breakpoints: {
       767: {
         width: "100%",

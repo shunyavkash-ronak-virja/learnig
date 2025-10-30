@@ -16,7 +16,7 @@
     margin-bottom: 22px;
   }
 
-  .splide__pagination {
+  .slider-section .splide__pagination {
     bottom: -64px !important;
   }
 
@@ -79,6 +79,16 @@
   .resource-hub-card-section {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  /* ---------------------------------------- FAQS HTML ----------------------------------------*/
+  /* ----- Faqs section ----- */
+  .faqs-section {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .faqs-section-info {
+    margin-bottom: 80px;
   }
 }
 
@@ -159,6 +169,39 @@
   .resource-hub-card-container {
     margin-top: 60px;
   }
+  /* ---------------------------------------- CASE_STUDY HTML ----------------------------------------*/
+  /* ----- Case-study Slider section ----- */
+  .case-study-slider-section {
+    padding-top: 52px;
+    padding-bottom: 60px;
+  }
+
+  .case-study-slider {
+    margin-top: 60px;
+  }
+
+  .case-study-slider-section .splide__pagination {
+    bottom: 40px;
+    left: 40px;
+  }
+  .case-study-slider-contents {
+    margin-top: 55px;
+  }
+
+  /* ----- Case-study Our solution section ----- */
+  .case-study-our-solution-section {
+    padding-top: 62px;
+    padding-bottom: 60px;
+  }
+
+  .case-study-our-solution-section .arrow-btn {
+    margin-top: 44px;
+  }
+  /* ---------------------------------------- FAQS HTML ----------------------------------------*/
+  /* ----- Faqs section ----- */
+  .faqs-section-info-title {
+    margin-bottom: 42px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -235,6 +278,39 @@
   .resource-hub-card-section .case-studies-card-content {
     padding: 32px 35px 40px;
   }
+  /* ---------------------------------------- CASE_STUDY HTML ----------------------------------------*/
+  /* ----- Case-study Slider section ----- */
+  .case-study-slider-contents {
+    flex-direction: column;
+    gap: 52px;
+  }
+
+  .case-study-slider-content-detail,
+  .case-study-slider-content-project-details {
+    width: 100%;
+  }
+  /* ----- Case-study Two column section ----- */
+  .case-study-two-column-section .section-tag {
+    margin-bottom: 66px;
+  }
+  /* ---------------------------------------- FAQS HTML ----------------------------------------*/
+  /* ----- Faqs section ----- */
+  .faqs-section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .faqs-section-info-title {
+    margin-bottom: 30px;
+  }
+
+  .faqs-section-info-dec {
+    margin-bottom: 40px;
+  }
+
+  .faqs-section-info {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -299,11 +375,11 @@
   }
 
   /* -----  Slider section ----- */
-  .splide__pagination__page {
+  .slider-section .splide__pagination__page {
     width: 25px !important;
   }
 
-  .splide__pagination {
+  .slider-section .splide__pagination {
     gap: 5px;
   }
 
@@ -375,5 +451,45 @@
 
   .resource-hub-card-container {
     margin-top: 48px;
+  }
+
+  .filter-bar-btn {
+    padding: 10px 23px;
+  }
+  /* ---------------------------------------- CASE_STUDY HTML ----------------------------------------*/
+  /* ----- Case-study Slider section ----- */
+  .case-study-slider {
+    margin-top: 42px;
+  }
+
+  .case-study-slider-section .splide__pagination {
+    bottom: 15px;
+    left: 6px;
+  }
+
+  .case-study-slider-section .splide__pagination__page {
+    width: 20px !important;
+  }
+
+  .case-study-slider-section .case-study-slider-content-detail .section-tag {
+    display: block;
+  }
+
+  /* ----- Case-study Our solution section ----- */
+  .case-study-our-solution-content-title {
+    margin-bottom: 32px;
+  }
+
+  .case-study-our-solution-content-details :first-child {
+    margin-bottom: 24px;
+  }
+
+  .case-study-our-solution-section .arrow-btn {
+    margin-top: 36px;
+  }
+  /* ---------------------------------------- FAQS HTML ----------------------------------------*/
+  /* ----- Faqs section ----- */
+  .faqs-section-info-search-box {
+    flex-direction: column;
   }
 }

@@ -46,9 +46,11 @@ a {
   text-transform: uppercase;
   border-radius: 26px;
   padding: 15px 28px;
+  cursor: pointer;
 }
 
 .primary-btn {
+  border: 1px solid var(--blue-950);
   background-color: var(--blue-950);
   color: var(--white);
 }
@@ -57,6 +59,22 @@ a {
   background-color: transparent;
   color: var(--blue-950);
   border: 1px solid var(--stone-200);
+}
+
+.arrow-btn {
+  font-size: 20px;
+  font-family: "Maison Neue Book";
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.arrow-btn:hover svg {
+  transform: translateX(5px);
 }
 
 h1,
