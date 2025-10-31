@@ -334,10 +334,8 @@
 
 .faq-content {
   border-bottom: 1px solid var(--stone-500-border);
-  height: 74px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  margin-top: 14px;
 }
 
 .faq-content.active {
@@ -350,8 +348,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  /* padding-top: 14px; */
-  padding-bottom: 14px;
+  padding: 14px 0;
   cursor: pointer;
 }
 
@@ -381,25 +378,24 @@
 }
 
 .faq-answer {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   font-family: "Maison Neue";
   font-weight: 300;
-  margin-top: 16px;
-  margin-bottom: 30px;
   color: var(--blue-950);
   opacity: 0.75;
   transition: all 0.3s ease-in-out;
 }
 
 .faq-content.active .faq-answer {
-  max-height: 100%;
+  height: auto;
+  padding-top: 16px;
+  padding-bottom: 30px;
   transition: all 0.3s ease-in-out;
 }
 
 .faq-content-wrapper :nth-child(1).faq-content {
   border-top: 1px solid var(--stone-500-border);
-  padding-top: 14px;
 }
 
 .faq-section-wrapper-media {
@@ -415,7 +411,6 @@
   height: 100%;
   object-fit: cover;
   -webkit-user-drag: none;
-  user-drag: none;
 }
 
 /* ----- Case studies section ----- */
@@ -611,10 +606,6 @@
   margin-bottom: 45px;
 }
 
-.process-two-column-section .arrow-btn {
-  color: var(--white);
-}
-
 /* ----- Mediation faq section ----- */
 .mediation-faq-section {
   padding-block: 169px;
@@ -644,23 +635,12 @@
   font-size: 24px;
 }
 
-.mediation-faq-section {
-  .faq-content {
-    margin-top: 26px;
-  }
-
-  .faq-question {
-    padding-top: 0;
-    padding-bottom: 26px;
-  }
-
-  .faq-answer {
-    margin-top: 6px;
-    margin-bottom: 33px;
-  }
+/* ---------------------------------------- PROCESS HTML ----------------------------------------*/
+/* ----- Process Process faq section ----- */
+.process-faq-section .faq-section-wrapper {
+  min-height: 870px;
 }
 
-/* ---------------------------------------- PROCESS HTML ----------------------------------------*/
 /* ----- Process Preparing mediation ----- */
 .preparing-mediation-section {
   background-color: var(--neutral-300);
@@ -711,6 +691,10 @@
   margin-bottom: 26px;
   margin-left: 20px;
   padding-left: 20px;
+}
+
+.process-two-column-section .arrow-btn {
+  color: var(--white);
 }
 
 /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
@@ -825,6 +809,8 @@
 
 .case-study-slider {
   margin-top: 80px;
+  --offset: ((100vw - var(--scrollbar-width, 0px) - 100%) / 2);
+  margin-left: calc(var(--offset, 0px) * -1);
 }
 
 .case-study-slider-section .splide {
@@ -1017,3 +1003,5 @@
 .faqs-section .faq-content-wrapper :nth-child(1).faq-content {
   border-top: none;
 }
+
+/* ----------------------------------------   HTML ----------------------------------------*/
