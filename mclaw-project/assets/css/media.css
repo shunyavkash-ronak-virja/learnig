@@ -36,6 +36,7 @@
   .about-mediation-content-dec {
     margin-bottom: 26px;
   }
+
   /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
   /* ----- Cta section ----- */
   .cta-section {
@@ -60,6 +61,7 @@
   .mediation-faq-content-title {
     margin-bottom: 54px;
   }
+
   /* ---------------------------------------- PROCESS HTML ----------------------------------------*/
   /* ----- Process Preparing mediation ----- */
   .preparing-mediation-section {
@@ -70,6 +72,7 @@
   .section-title {
     margin-bottom: 80px;
   }
+
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
   .x2-card-wrapper {
@@ -80,6 +83,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   /* ---------------------------------------- FAQS HTML ----------------------------------------*/
   /* ----- Faqs section ----- */
   .faqs-section {
@@ -90,6 +94,9 @@
   .faqs-section-info {
     margin-bottom: 80px;
   }
+
+  /* ---------------------------------------- CONTACT US HTML ----------------------------------------*/
+  /* ----- Contact us section ----- */
 }
 
 @media (max-width: 991px) {
@@ -164,11 +171,13 @@
   .case-studies-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
   .resource-hub-card-container {
     margin-top: 60px;
   }
+
   /* ---------------------------------------- CASE_STUDY HTML ----------------------------------------*/
   /* ----- Case-study Slider section ----- */
   .case-study-slider-section {
@@ -197,10 +206,26 @@
   .case-study-our-solution-section .arrow-btn {
     margin-top: 44px;
   }
+
   /* ---------------------------------------- FAQS HTML ----------------------------------------*/
   /* ----- Faqs section ----- */
   .faqs-section-info-title {
     margin-bottom: 42px;
+  }
+
+  /* ---------------------------------------- CONTACT US HTML ----------------------------------------*/
+  /* ----- Contact us section ----- */
+  .contact-us-section {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+
+  .contact-us-section-title {
+    margin-bottom: 80px;
+  }
+
+  .contact-us-section-wrapper {
+    margin-bottom: 80px;
   }
 }
 
@@ -269,6 +294,7 @@
   .section-title {
     margin-bottom: 48px;
   }
+
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
   .x2-card-wrapper {
@@ -278,6 +304,7 @@
   .resource-hub-card-section .case-studies-card-content {
     padding: 32px 35px 40px;
   }
+
   /* ---------------------------------------- CASE_STUDY HTML ----------------------------------------*/
   /* ----- Case-study Slider section ----- */
   .case-study-slider-contents {
@@ -293,6 +320,7 @@
   .case-study-two-column-section .section-tag {
     margin-bottom: 66px;
   }
+
   /* ---------------------------------------- FAQS HTML ----------------------------------------*/
   /* ----- Faqs section ----- */
   .faqs-section {
@@ -310,6 +338,35 @@
 
   .faqs-section-info {
     margin-bottom: 60px;
+  }
+
+  /* ---------------------------------------- CONTACT US HTML ----------------------------------------*/
+  /* ----- Contact us section ----- */
+  .contact-us-section {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
+  .contact-us-section-title {
+    margin-bottom: 46px;
+  }
+
+  .contact-us-section-wrapper {
+    flex-direction: column;
+    gap: 55px;
+    margin-bottom: 52px;
+  }
+
+  .contact-us-section-details-tag {
+    margin-bottom: 40px;
+  }
+
+  .contact-us-section-details-tell {
+    margin-bottom: 22px;
+  }
+
+  .contact-us-section-form {
+    width: 100%;
   }
 }
 
@@ -392,6 +449,7 @@
   .footer-title {
     font-size: 35px;
   }
+
   /* ---------------------------------------- MEDIATION HTML ----------------------------------------*/
   /* ----- Cta section ----- */
   .cta-section-title {
@@ -430,6 +488,7 @@
   .mediation-faq-section .faq-question {
     padding-bottom: 16px;
   }
+
   /* ---------------------------------------- PROCESS HTML ----------------------------------------*/
   /* ----- Process Preparing mediation ----- */
   .preparing-mediation-section {
@@ -439,6 +498,7 @@
   .section-title {
     font-size: 35px;
   }
+
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
   .x2-card-wrapper {
@@ -456,6 +516,7 @@
   .filter-bar-btn {
     padding: 10px 23px;
   }
+
   /* ---------------------------------------- CASE_STUDY HTML ----------------------------------------*/
   /* ----- Case-study Slider section ----- */
   .case-study-slider {
@@ -487,9 +548,17 @@
   .case-study-our-solution-section .arrow-btn {
     margin-top: 36px;
   }
+
   /* ---------------------------------------- FAQS HTML ----------------------------------------*/
   /* ----- Faqs section ----- */
   .faqs-section-info-search-box {
     flex-direction: column;
+  }
+
+  /* ---------------------------------------- CONTACT US HTML ----------------------------------------*/
+  /* ----- Contact us section ----- */
+  .contact-us-section-form-input-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 }
