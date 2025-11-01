@@ -72,7 +72,7 @@
   }
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
-  .resource-hub-card-wrapper {
+  .x2-card-wrapper {
     gap: 40px;
   }
 
@@ -178,7 +178,6 @@
 
   .case-study-slider {
     margin-top: 60px;
-    
   }
 
   .case-study-slider-section .splide__pagination {
@@ -272,7 +271,7 @@
   }
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
-  .resource-hub-card-wrapper {
+  .x2-card-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -442,7 +441,7 @@
   }
   /* ---------------------------------------- RESOURCE_HUB HTML ----------------------------------------*/
   /* ----- ResourceHub Card section ----- */
-  .resource-hub-card-wrapper {
+  .x2-card-wrapper {
     gap: 26px;
   }
 

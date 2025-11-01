@@ -28,8 +28,9 @@
 }
 
 .logo span {
-  font-size: 12px;
+  font-family: "Maison Neue";
   font-weight: 300;
+  font-size: 12px;
   border-left: 1px solid var(--blue-850);
   padding-left: 6px;
 }
@@ -456,7 +457,7 @@
 
 .case-studies-card-media {
   width: 100%;
-  height: 100%;
+  height: 398px;
 }
 
 .case-studies-card-media img {
@@ -763,7 +764,7 @@
   border-color: var(--blue-950);
 }
 
-.resource-hub-card-wrapper {
+.x2-card-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 72px 79px;
@@ -772,10 +773,6 @@
 
 .resource-hub-card-section .case-studies-card-content-title {
   max-width: 336px;
-}
-
-.resource-hub-card-section .case-studies-card-media {
-  max-height: 398px;
 }
 
 .resource-hub-card-section .case-studies-card-content {
@@ -980,6 +977,8 @@
 
 .faqs-section-info-search-box input {
   width: 100%;
+  font-family: "Maison Neue";
+  font-weight: 300;
   border: 1px solid #717171;
   border-radius: 24px;
   padding: 14px 24px;
@@ -993,15 +992,139 @@
   box-shadow: 0 0 2px rgb(113, 113, 113);
 }
 
-.faqs-section-info-search-box input::placeholder {
-  font-family: "Maison Neue";
-  font-weight: 300;
-  color: var(--blue-950);
-  opacity: 75%;
-}
-
 .faqs-section .faq-content-wrapper :nth-child(1).faq-content {
   border-top: none;
 }
 
-/* ----------------------------------------   HTML ----------------------------------------*/
+/* ---------------------------------------- CONTACT US HTML ----------------------------------------*/
+/* ----- Contact us section ----- */
+.contact-us-section {
+  padding-top: 104px;
+  padding-bottom: 143px;
+  background-color: var(--neutral-200);
+}
+
+.contact-us-section-title {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  color: var(--blue-950);
+  margin-bottom: 104px;
+}
+
+.contact-us-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 133px;
+}
+
+.contact-us-section-details {
+  max-width: 161px;
+}
+
+.contact-us-section-details-tag {
+  font-family: "Neue Haas Grotesk Display Pro";
+  color: var(--blue-950);
+  text-transform: uppercase;
+  margin-bottom: 54px;
+}
+
+.contact-us-section-details-tell {
+  font-family: "Maison Neue";
+  font-weight: normal;
+  color: var(--blue-950);
+  margin-bottom: 28px;
+}
+
+.contact-us-section-details-dec {
+  font-family: "Maison Neue";
+  font-weight: 300;
+  color: var(--blue-950);
+  margin-bottom: 9px;
+}
+
+.contact-us-section-details-small-dec {
+  display: inline-flex;
+  font-family: "Maison Neue";
+  font-weight: 300;
+  font-size: 10px;
+  color: var(--stone-500);
+  margin-bottom: 15px;
+}
+
+.contact-us-section-details-media {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--stone-200);
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-section-form {
+  width: 70%;
+}
+
+.contact-us-section-form-input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px 23px;
+  margin-bottom: 12px;
+}
+
+.contact-us-section-form-input-field {
+  width: 100%;
+  padding: 15px 25px;
+  font-family: "Maison Neue";
+  font-weight: 300;
+  border: 1px solid var(--stone-250);
+  color: var(--stone-500);
+  border-radius: 24px;
+}
+
+.contact-us-section-form-input-field:focus {
+  border-color: var(--stone-500);
+  outline: none;
+  box-shadow: 0px 0px 8px 2px var(--stone-250);
+}
+
+.contact-us-section-form textarea {
+  max-width: 100%;
+  min-height: 120px;
+}
+
+.contact-us-section-form-input-select-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-section-form-input-select-container select {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-section-form-input-select-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.contact-us-section-form-input-select-icon-container svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+}
+
+.contact-us-section .x2-card-wrapper .case-studies-card-content-title {
+  max-width: 236px;
+  font-size: 26x;
+}
