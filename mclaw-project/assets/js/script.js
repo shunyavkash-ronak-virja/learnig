@@ -39,6 +39,31 @@ document.querySelectorAll(".faq-question").forEach((question) => {
   });
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const links = document.querySelectorAll(".privacy-section-label-title");
+
+//   links.forEach((link) => {
+//     link.addEventListener("click", function (e) {
+//       e.preventDefault();
+
+//       const targetId = this.getAttribute("href").substring(1);
+//       const targetSection = document.getElementById(targetId);
+
+//       if (targetSection) {
+//         targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+//         document
+//           .querySelectorAll(".privacy-section-label-title")
+//           .forEach((anchor) => {
+//             anchor.classList.remove("active-link");
+//           });
+
+//         this.classList.add("active-link");
+//       }
+//     });
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".privacy-section-label-title");
 
@@ -49,17 +74,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = this.getAttribute("href").substring(1);
       const targetSection = document.getElementById(targetId);
 
+      // Scroll smoothly to section
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-
-        document
-          .querySelectorAll(".privacy-section-label-title")
-          .forEach((anchor) => {
-            anchor.classList.remove("active-link");
-          });
-
-        this.classList.add("active-link");
       }
+
+      // Remove active class from all
+      links.forEach((anchor) => anchor.classList.remove("active-link"));
+
+      // Add active class to clicked link
+      this.classList.add("active-link");
     });
   });
 });
