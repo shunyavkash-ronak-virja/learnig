@@ -93,6 +93,10 @@
   }
 
   /* ----- Hero section ----- */
+  .hero-section {
+    padding: 64px 0;
+  }
+
   .hero-dec {
     font-size: 18px;
   }
