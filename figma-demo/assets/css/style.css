@@ -1,5 +1,12 @@
+/* ----- Header ----- */
 .header {
   padding: 18px 0;
+  background-color: var(--white);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .header-wrapper {
@@ -18,6 +25,7 @@
   color: var(--text-primary);
   font-size: 22px;
   font-weight: 600;
+  z-index: 999;
 }
 
 .header-links-wrapper {
@@ -27,13 +35,12 @@
 
 .header-link-list {
   position: relative;
-  /* overflow: hidden; */
 }
 
 .header-link svg {
   margin-left: 4px;
   color: var(--darkgray-400);
-  transition: rotate 0.1s ease-in-out;
+  transition: rotate 0.2s ease-in-out;
 }
 
 .header-link,
@@ -61,6 +68,7 @@
   padding: 10px 10px;
   margin-top: 35px;
   border-radius: 8px;
+  background-color: var(--white);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
@@ -79,6 +87,13 @@
   rotate: 180deg;
 }
 
+.header-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  z-index: 999;
+}
+
 .header-btns {
   display: flex;
   gap: 12px;
@@ -90,6 +105,7 @@
 
 .toggle-overlay {
   display: none;
+  cursor: pointer;
 }
 
 .nav-toggle {
@@ -110,4 +126,48 @@
   height: 4px;
   background: var(--text-secondary);
   border-radius: 45px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ----- Hero section ----- */
+.hero-section {
+  padding-top: 96px;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 24px;
+}
+
+.hero-dec {
+  max-width: 768px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 auto 48px;
+  color: var(--dimgray-600);
+  opacity: 1;
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 64px;
+}
+
+.hero-media {
+  max-width: 1024px;
+  height: 100%;
+}
+
+.hero-media img {
+  -webkit-user-drag: none;
 }

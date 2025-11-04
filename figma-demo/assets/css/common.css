@@ -1,10 +1,12 @@
 :root {
   --brand-primary: #7f56d9;
+  --brand-primary-500: #7c5ebe;
   --brand-secondary: #f4ebff;
   --text-brand-secondary-700: #6941c6;
   --thistle: #e9d7fe;
   --text-primary: #181d27;
   --text-secondary: #414651;
+  --dimgray-600: #535862;
   --lightgray-700: #cecfd2;
   --darkgray-400: #a4a7ae;
   --darkgray-600: #94979c;
@@ -23,9 +25,10 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .container {
@@ -38,21 +41,37 @@ body {
   font-size: 16px;
   border: 1px solid transparent;
   padding: 12px 20px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 8px;
-  display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 .primary-btn {
   background-color: var(--brand-primary);
-  border-color: var(--brand-primary);
+  border-color: var(--brand-primary-500);
   color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: var(--brand-primary-500);
 }
 
 .secondary-btn {
   background-color: var(--white);
   color: var(--text-secondary);
   border-color: var(--border-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+  background-color: var(--border-primary);
+}
+
+.icon-color-darkgray {
+  color: var(--darkgray-400);
 }
 
 img {
@@ -75,4 +94,19 @@ li {
 .h1,
 h1 {
   font-size: 60px;
+  font-weight: 600;
+}
+
+@media (max-width: 1023px) {
+  .h1,
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 776px) {
+  .h1,
+  h1 {
+    font-size: 36px;
+  }
 }
