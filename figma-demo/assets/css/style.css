@@ -87,6 +87,10 @@
   rotate: 180deg;
 }
 
+.header-responsive-btn-wrapper {
+  display: none;
+}
+
 .header-content-wrapper {
   display: flex;
   align-items: center;
