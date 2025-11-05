@@ -12,10 +12,12 @@
   --darkgray-600: #94979c;
   --dimgray-400: #61656c;
   --white: #ffffff;
+  --whitesmoke: #e9eaeb;
   --bg-primary: #0c0e12;
   --bg-secondary: #fafafa;
   --border-primary: #373a41;
   --border-primary: #d5d7da;
+  --transparent: transparent;
 }
 
 * {
@@ -123,4 +125,34 @@ h1 {
   h1 {
     font-size: 36px;
   }
+}
+
+.h2,
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.h3,
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.h4,
+h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.h5,
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.h6,
+h6 {
+  font-size: 20px;
+  font-weight: 400;
 }

@@ -1,4 +1,9 @@
 @media (max-width: 1023px) {
+  /* ----- Social media section ----- */
+  .social-media-section {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -51,12 +56,22 @@
   .nav-toggle.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
+
+  /* ----- Social media section ----- */
+  .social-media-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .slide-media {
+    max-width: 130px;
+  }
 }
 
 @media (max-width: 767px) {
   /* ----- Hero section ----- */
   .hero-section {
-    padding-top: 64px;
+    padding: 64px 0;
   }
 
   .hero-dec {
@@ -65,6 +80,21 @@
 
   .hero-btn-wrapper {
     margin-bottom: 50px;
+  }
+
+  /* ----- Social media section ----- */
+  .social-media-section {
+    margin-top: 0;
+  }
+
+  .social-media-section::after {
+    display: none;
+  }
+
+  .client-logo-slider::after,
+  .client-logo-slider::before {
+    width: 90px;
+    min-height: 45px;
   }
 }
 
@@ -93,10 +123,6 @@
   }
 
   /* ----- Hero section ----- */
-  .hero-section {
-    padding: 64px 0;
-  }
-
   .hero-dec {
     font-size: 18px;
   }
@@ -110,4 +136,10 @@
     width: 100%;
     justify-content: center;
   }
+
+  .hero-media {
+    border-radius: 6px;
+  }
+
+  /* ----- Social media section ----- */
 }
