@@ -15,7 +15,7 @@
   --whitesmoke: #e9eaeb;
   --bg-primary: #0c0e12;
   --bg-secondary: #fafafa;
-  --border-primary: #373a41;
+  --darkslategray: #373a41;
   --border-primary: #d5d7da;
   --transparent: transparent;
 }
@@ -107,32 +107,86 @@ li {
   line-height: 1.2;
 }
 
+/* ----- Start Common section padding ----- */
 .section-padding {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-
 @media (max-width: 767px) {
   .section-padding {
     padding-top: 64px;
     padding-bottom: 64px;
   }
 }
+/* ----- End Common section padding ----- */
+
+/* ----- Start Common section heading ----- */
+.section-heading-wrapper {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.section-heading-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-secondary);
+  border-radius: 36px;
+  margin-bottom: 24px;
+}
+
+.section-heading-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-brand-secondary-700);
+  margin-bottom: 12px;
+}
+
+.section-heading-title {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.section-heading-dec {
+  font-size: 20px;
+  color: var(--dimgray-600);
+}
+@media (max-width: 767px) {
+  .section-heading-label {
+    font-size: 14px;
+  }
+
+  .section-heading-title {
+    margin-bottom: 16px;
+  }
+
+  .section-heading-dec {
+    font-size: 18px;
+  }
+  .section-heading-icon {
+    margin-bottom: 16px;
+  }
+}
+/* ----- End Common section heading ----- */
 
 .h1,
 h1 {
   font-size: 60px;
   font-weight: 600;
 }
-
 @media (max-width: 1023px) {
   .h1,
   h1 {
     font-size: 48px;
   }
 }
-
-@media (max-width: 776px) {
+@media (max-width: 767px) {
   .h1,
   h1 {
     font-size: 36px;
@@ -150,14 +204,19 @@ h3 {
   font-size: 36px;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .h3,
+  h3 {
+    font-size: 30px;
+  }
+}
 
 .h4,
 h4 {
   font-size: 30px;
   font-weight: 600;
 }
-
-@media (max-width: 776px) {
+@media (max-width: 767px) {
   .h4,
   h4 {
     font-size: 24px;

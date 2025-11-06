@@ -178,24 +178,9 @@
   background-color: var(--white);
   margin-top: -220px;
   position: relative;
-}
-
-.social-media-section::after,
-.social-media-section::before {
-  content: "";
-  position: absolute;
-  width: 95%;
   border-top: 1px solid var(--whitesmoke);
-  transform: translate(-50%, -50%);
-  left: 50%;
-}
-
-.social-media-section::after {
-  top: 0;
-}
-
-.social-media-section::before {
-  bottom: 0;
+  border-bottom: 1px solid var(--whitesmoke);
+  overflow: hidden;
 }
 
 .social-media-dec {
@@ -211,6 +196,10 @@
   position: relative;
 }
 
+.splide__track {
+  overflow: visible !important;
+}
+
 .splide__list {
   display: flex;
   gap: 24px;
@@ -223,22 +212,22 @@
   color: transparent;
 }
 
-.client-logo-slider::after,
-.client-logo-slider::before {
+.social-media-section::after,
+.social-media-section::before {
   content: "";
   width: 200px;
   min-height: 65px;
   position: absolute;
-  top: 0;
+  top: 50%;
   z-index: 2;
 }
 
-.client-logo-slider::after {
+.social-media-section::after {
   background-image: linear-gradient(90deg, var(--white), var(--transparent));
   left: 0;
 }
 
-.client-logo-slider::before {
+.social-media-section::before {
   background-image: linear-gradient(-90deg, var(--white), var(--transparent));
   right: 0;
 }
@@ -372,4 +361,101 @@
 
 .reports-card-wrapper .two-column-media {
   transform: translate(0%, -62%);
+}
+
+/* ----- Integrations section ----- */
+.company-logos-wrapper {
+  max-width: 1024px;
+  margin: 64px auto 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 32px;
+}
+
+.company-logo-container {
+  width: 88px;
+  height: 88px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.integrations-button {
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ----- Counter section ----- */
+.counter-section {
+  background-color: var(--white);
+}
+
+.section-heading-icon svg {
+  color: var(--brand-primary);
+}
+
+.counter-content-wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  margin-top: 64px;
+}
+
+.counter-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.counter-content-number {
+  font-size: 60px;
+  color: var(--brand-primary);
+}
+
+.counter-content-dec {
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.counter-content-wrapper-border {
+  border: 1px solid var(--whitesmoke);
+}
+
+/* ----- Cta section ----- */
+.cta-section {
+  background-color: var(--white);
+}
+
+.cta-content-wrapper {
+  max-width: 1216px;
+  display: flex;
+  gap: 32px;
+  align-items: start;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 64px;
+}
+
+.cta-content-title {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.cta-content-dec {
+  font-size: 20px;
+  color: var(--dimgray-600);
+}
+
+.cta-content-buttons {
+  display: flex;
+  gap: 12px;
 }

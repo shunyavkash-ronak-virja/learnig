@@ -79,6 +79,17 @@
   .slide-media {
     max-width: 130px;
   }
+
+  /* ----- Integrations section ----- */
+  .company-logos-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* ----- Cta section ----- */
+  .cta-content-wrapper {
+    flex-direction: column;
+    padding: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -158,6 +169,38 @@
   .instant-answers-card-wrapper .two-column-media {
     transform: none;
   }
+
+  /* ----- Integrations section ----- */
+  .company-logos-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+
+  .company-logo-container {
+    width: 75px;
+    height: 75px;
+  }
+
+  .company-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* ----- Counter section ----- */
+  .counter-content-wrapper {
+    flex-direction: column;
+    margin-top: 52px;
+    gap: 32px;
+  }
+
+  .counter-content-number {
+    font-size: 48px;
+  }
+
+  .counter-content-wrapper-border {
+    display: none;
+  }
+  /* ----- Counter section ----- */
 }
 
 @media (max-width: 575px) {
@@ -203,5 +246,33 @@
     border-radius: 6px;
   }
 
-  /* ----- Social media section ----- */
+  /* ----- Integrations section ----- */
+  .company-logos-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 48px;
+  }
+
+  .company-logo-container {
+    width: 56px;
+    height: 56px;
+  }
+
+  .company-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .integrations-button {
+    margin-top: 48px;
+  }
+
+  /* ----- Cta section ----- */
+  .cta-content-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-content-buttons .btn {
+    justify-content: center;
+  }
 }
