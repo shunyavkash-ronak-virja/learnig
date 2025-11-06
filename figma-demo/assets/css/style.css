@@ -133,7 +133,7 @@
 
 /* ----- Hero section ----- */
 .hero-section {
-  padding-top: 96px;
+  padding-bottom: 0;
 }
 
 .hero-content-wrapper {
@@ -175,10 +175,8 @@
 
 /* ----- Social media section ----- */
 .social-media-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
   background-color: var(--white);
-  margin-top: -17%;
+  margin-top: -220px;
   position: relative;
 }
 
@@ -246,12 +244,9 @@
 }
 
 /* ----- Features section ----- */
-.features-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+.features-section,
+.features-card-section {
   background-color: var(--white);
-  overflow: hidden;
-  position: relative;
 }
 
 .features-section-content {
@@ -279,17 +274,22 @@
   color: var(--dimgray-600);
 }
 
+.features-card-section {
+  position: relative;
+  min-height: 512px;
+  overflow: hidden;
+}
+
 .features-two-column-content-wrapper {
   display: flex;
   gap: 30px;
   align-items: center;
-  margin-top: 96px;
+  min-height: 512px;
 }
 
 .two-column-content {
   width: 50%;
   max-width: 560px;
-  padding: 89px 0 89px 32px;
 }
 
 .two-column-content-icon {
@@ -328,6 +328,7 @@
 
 .two-column-content-future svg {
   color: var(--brand-primary);
+  flex-shrink: 0;
 }
 
 .two-column-content-future-dec {
@@ -336,31 +337,39 @@
 }
 
 .two-column-media {
-  width: auto;
+  width: 50%;
   max-width: 762px;
   border: 1px solid var(--whitesmoke);
   border-radius: 17px;
   overflow: hidden;
-  margin-right: -50%;
-  /* position: absolute; */
-  /* top: 369px; */
-  /* right: -40px; */
+  position: absolute;
+  top: 50%;
+}
+
+.default-card-wrapper .two-column-media {
+  right: -40px;
+  transform: translate(0%, -50%);
+}
+
+.instant-answers-card {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .instant-answers-card-wrapper {
   flex-direction: row-reverse;
 }
 
-.instant-answers-card-wrapper .two-column-content {
-  padding: 89px 32px 89px 0;
+.instant-answers-card-wrapper .two-column-media {
+  left: 13%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.instant-answers-card-wrapper .two-column-media {
-  /* left: -40px;
-  top: 978px; */
-  margin-left: -30%;
+.reports-card {
+  padding-bottom: 96px;
 }
 
 .reports-card-wrapper .two-column-media {
-  margin-right: -50%;
+  transform: translate(0%, -62%);
 }

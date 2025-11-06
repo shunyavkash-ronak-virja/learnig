@@ -4,6 +4,24 @@
     padding-top: 66px;
     padding-bottom: 66px;
   }
+
+  /* ----- Features section ----- */
+  .features-two-column-content-wrapper {
+    min-height: 390px;
+  }
+
+  .two-column-content-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .two-column-content-dec {
+    margin-bottom: 16px;
+  }
+
+  .two-column-content-future-list {
+    gap: 13px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -58,11 +76,6 @@
   }
 
   /* ----- Social media section ----- */
-  .social-media-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
   .slide-media {
     max-width: 130px;
   }
@@ -71,7 +84,7 @@
 @media (max-width: 767px) {
   /* ----- Hero section ----- */
   .hero-section {
-    padding: 64px 0;
+    padding-bottom: 64px;
   }
 
   .hero-dec {
@@ -95,6 +108,55 @@
   .client-logo-slider::before {
     width: 90px;
     min-height: 45px;
+  }
+
+  /* ----- Features section ----- */
+  .features-section {
+    padding-bottom: 48px;
+  }
+
+  .instant-answers-card {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .reports-card {
+    padding-bottom: 48px;
+  }
+
+  .features-two-column-content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    min-height: auto;
+  }
+
+  .two-column-content-title {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .two-column-content-dec {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .two-column-content-future-dec {
+    font-size: 16px;
+  }
+
+  .two-column-content,
+  .two-column-media {
+    width: 100%;
+  }
+
+  .two-column-media {
+    position: static;
+    transform: none;
+  }
+
+  .default-card-wrapper .two-column-media,
+  .instant-answers-card-wrapper .two-column-media {
+    transform: none;
   }
 }
 
