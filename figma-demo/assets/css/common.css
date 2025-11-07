@@ -4,6 +4,7 @@
   --brand-secondary: #f4ebff;
   --text-brand-secondary-700: #6941c6;
   --thistle: #e9d7fe;
+  --text-primary-900: #f7f7f7;
   --text-primary: #181d27;
   --text-secondary: #414651;
   --dimgray-600: #535862;
@@ -42,7 +43,19 @@ body {
 
 .btn-wrapper {
   display: flex;
+  align-items: center;
   gap: 12px;
+}
+@media (max-width: 575px) {
+  .btn-wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .btn-wrapper .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .btn {
@@ -197,6 +210,12 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .h2,
+  h2 {
+    font-size: 30px;
+  }
 }
 
 .h3,

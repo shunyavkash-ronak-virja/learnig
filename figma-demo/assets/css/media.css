@@ -90,6 +90,20 @@
     flex-direction: column;
     padding: 40px;
   }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-title {
+    font-size: 38px;
+  }
+
+  /* ----- Cta two column section ----- */
+  .cta-two-column-title {
+    font-size: 38px;
+  }
+
+  .cta-two-column-section .btn-wrapper {
+    margin-top: 36px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -200,7 +214,46 @@
   .counter-content-wrapper-border {
     display: none;
   }
-  /* ----- Counter section ----- */
+  /* ----- Testimonial section ----- */
+  .testimonial-title {
+    font-size: 30px;
+  }
+
+  .testimonial-media-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .testimonial-logo {
+    min-width: 160px;
+  }
+
+  /* ----- Cta two column section ----- */
+  .cta-two-column-wrapper {
+    flex-direction: column;
+  }
+
+  .cta-two-column-content {
+    width: 100%;
+  }
+
+  .cta-two-column-title {
+    font-size: 30px;
+  }
+
+  .content-list-wrapper {
+    gap: 16px;
+  }
+
+  .content-list-dec {
+    font-size: 16px;
+  }
+
+  .cta-two-column-media {
+    width: 100%;
+    height: 100%;
+    position: static;
+    border-radius: 9px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -223,7 +276,7 @@
     justify-content: center;
   }
 
-  .btn-wrapper {
+  .header .btn-wrapper {
     display: none;
   }
 
@@ -264,15 +317,5 @@
 
   .integrations-button {
     margin-top: 48px;
-  }
-
-  /* ----- Cta section ----- */
-  .cta-content-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .cta-content-buttons .btn {
-    justify-content: center;
   }
 }
