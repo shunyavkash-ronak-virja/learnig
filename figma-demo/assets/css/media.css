@@ -22,6 +22,11 @@
   .two-column-content-future-list {
     gap: 13px;
   }
+
+  /* ----- Footer ----- */
+  .footer-wrapper {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 991px) {
@@ -254,6 +259,24 @@
     position: static;
     border-radius: 9px;
   }
+
+  /* ----- Footer ----- */
+  .footer-section {
+    padding: 48px 0;
+  }
+
+  .footer-wrapper {
+    gap: 48px;
+  }
+
+  .footer-social-media-section {
+    padding: 40px 0;
+  }
+
+  .footer-social-media {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 575px) {
@@ -317,5 +340,13 @@
 
   .integrations-button {
     margin-top: 48px;
+  }
+  /* ----- Footer ----- */
+  .footer-links-wrapper {
+    gap: 26px;
+  }
+
+  .footer-social-media-wrapper {
+    gap: 18px;
   }
 }

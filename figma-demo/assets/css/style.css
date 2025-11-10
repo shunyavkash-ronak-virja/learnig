@@ -225,8 +225,8 @@
 .social-media-section::after {
   background: linear-gradient(
     270deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0.25) 10%,
     rgba(255, 255, 255, 0.5) 20%,
     rgba(255, 255, 255, 0.75) 40%,
     rgba(255, 255, 255, 0.8) 60%,
@@ -239,7 +239,8 @@
 .social-media-section::before {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0.25) 10%,
     rgba(255, 255, 255, 0.5) 20%,
     rgba(255, 255, 255, 0.75) 40%,
     rgba(255, 255, 255, 0.8) 60%,
@@ -724,6 +725,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 
 .footer-copy-right {
