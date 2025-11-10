@@ -309,6 +309,10 @@
   background-color: var(--brand-secondary);
 }
 
+.two-column-content-icon svg {
+  color: var(--brand-primary);
+}
+
 .two-column-content-title {
   color: var(--text-primary);
   margin-top: 20px;
@@ -735,6 +739,7 @@
 
 .footer-social-media-wrapper {
   display: flex;
+  flex-wrap: wrap-reverse;
   gap: 24px;
 }
 

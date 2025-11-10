@@ -1,0 +1,35 @@
+.header {
+  background-color: var(--whitesmoke);
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.navbar,
+.nav-link-wrapper,
+.nav-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  width: 154px;
+  height: 24px;
+}
+
+.nav-link-wrapper {
+  gap: 50px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.nav-btn-wrapper {
+  gap: 14px;
+}

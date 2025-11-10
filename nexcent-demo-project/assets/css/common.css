@@ -1,0 +1,113 @@
+:root {
+  --darkslategray: #263238;
+  --dimgray: #4d4d4d;
+  --gray: #717171;
+  --gray-900: #18191f;
+  --lightslategray: #89939e;
+  --lightsteelblue: #abbed1;
+  --whitesmoke: #f5f7fa;
+  --white: #ffffff;
+  --primary: #4caf4f;
+  --green-light-600: #43a046;
+  --green-light-700: #388e3b;
+  --green-light-800: #237d31;
+  --green-light-900: #1b5e1f;
+  --green-light-100: #103e13;
+  --moss-500: #66bb69;
+  --moss-400: #81c784;
+  --moss-300: #a5d6a7;
+  --moss-200: #c8e6c9;
+  --moss-100: #e8f5e9;
+  --cornflowerblue: #2194f3;
+  /* ----- Line height variable ----- */
+  --line-height-1_2: 1.2;
+  --line-height-1_3: 1.3;
+  --line-height-1_4: 1.4;
+  --line-height-1_5: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.btn {
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.primary-btn {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 14px 32px;
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  font-size: 20px;
+  line-height: var(--line-height-1_4);
+  color: var(--primary);
+}
+
+.h1,
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.h2,
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: var(--line-height-1_2);
+}
+
+.h3,
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: var(--line-height-1_2);
+}
+
+.h4,
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
