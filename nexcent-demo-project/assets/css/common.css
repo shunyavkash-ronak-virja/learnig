@@ -72,6 +72,12 @@ img {
   background-color: var(--primary);
   color: var(--white);
   padding: 14px 32px;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: var(--green-light-700);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .secondary-btn {
@@ -82,6 +88,11 @@ img {
   font-size: 20px;
   line-height: var(--line-height-1_4);
   color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .h1,
