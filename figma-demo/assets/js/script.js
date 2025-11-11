@@ -12,6 +12,7 @@ if (document.querySelector(".client-logo-slider.splide"))
   new Splide(".client-logo-slider", {
     type: "loop",
     // autoplay: true,
+    gap: "24px",
     pagination: !1,
     arrows: !1,
     autoWidth: !0,

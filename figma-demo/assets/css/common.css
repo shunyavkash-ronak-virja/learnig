@@ -73,7 +73,6 @@ body {
   background-color: var(--brand-primary);
   border-color: var(--brand-primary-500);
   color: var(--white);
-  transition: all 0.3s ease-in-out;
 }
 
 .primary-btn:hover {
@@ -84,7 +83,6 @@ body {
   background-color: var(--white);
   color: var(--text-secondary);
   border-color: var(--border-primary);
-  transition: all 0.3s ease-in-out;
 }
 
 .secondary-btn:hover {
@@ -136,10 +134,7 @@ li {
 /* ----- Start Common section heading ----- */
 .section-heading-wrapper {
   max-width: 768px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -151,7 +146,7 @@ li {
   justify-content: center;
   background-color: var(--brand-secondary);
   border-radius: 36px;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
 }
 
 .section-heading-label {

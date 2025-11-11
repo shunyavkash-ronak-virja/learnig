@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <!----- Splide css ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
 </head>
 
 <body>
@@ -56,8 +59,23 @@
         </div>
     </header>
 
-    <!----- Header section ----->
+    <!----- Hero section ----->
+    <section class="hero-section">
+        <div class="container">
+            <div class="splide hero-slider" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track ">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!----- Splide js ----->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <!----- Custom js ----->
     <script src="assets/js/script.js"></script>

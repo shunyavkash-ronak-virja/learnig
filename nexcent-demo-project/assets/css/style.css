@@ -1,3 +1,4 @@
+/* ----- Header section ----- */
 .header {
   background-color: var(--whitesmoke);
   padding-top: 22px;
@@ -87,4 +88,11 @@
   background-color: var(--darkslategray);
   border-radius: 28px;
   transition: all 0.4s ease-in-out;
+}
+
+/* ----- Hero section ----- */
+.hero-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--whitesmoke);
 }
