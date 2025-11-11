@@ -12,8 +12,8 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 75px;
-    right: 0;
+    top: 58px;
+    right: -20px;
     padding: 22px 40px;
     transition: all 0.3s ease-in-out;
   }

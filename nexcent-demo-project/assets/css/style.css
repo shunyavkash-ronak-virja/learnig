@@ -3,8 +3,9 @@
   background-color: var(--whitesmoke);
   padding-top: 22px;
   padding-bottom: 22px;
-  position: relative;
   position: sticky;
+  top: 0;
+  left: 0;
   z-index: 999;
 }
 
@@ -19,6 +20,7 @@
 
 .navbar {
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar-logo {
@@ -95,4 +97,33 @@
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--whitesmoke);
+}
+
+.hero-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-content {
+  max-width: 657px;
+}
+
+.hero-title {
+  color: var(--dimgray);
+  margin-bottom: 16px;
+}
+
+.hero-title span {
+  color: var(--primary);
+}
+
+.hero-dec {
+  color: var(--gray);
+  margin-bottom: 32px;
+}
+
+.hero-media {
+  width: 391px;
+  height: 407px;
 }
