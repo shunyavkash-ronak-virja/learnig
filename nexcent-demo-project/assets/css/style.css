@@ -62,6 +62,10 @@
   padding: 10px 20px;
 }
 
+.login-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .toggle-container {
   display: none;
   width: 36px;
@@ -145,21 +149,7 @@
 /* ----- Our-Clients section ----- */
 .our-clients-section {
   padding-top: 40px;
-}
-
-.our-clients-content {
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-
-.our-clients-content-title {
-  color: var(--dimgray);
-  margin-bottom: 8px;
-}
-
-.our-clients-content-dec {
-  color: var(--gray);
+  padding-bottom: 40px;
 }
 
 .our-clients-media-wrapper {
@@ -168,7 +158,7 @@
   justify-content: space-between;
   gap: 35px;
   padding-top: 25px;
-  padding-bottom: 18px;
+  padding-bottom: 25px;
   overflow-y: auto;
 }
 
@@ -189,4 +179,226 @@
   border: 4px solid transparent;
   background-clip: padding-box;
   border-radius: 24px;
+}
+
+/* ----- Community section ----- */
+.community-section {
+  padding: 40px 0;
+}
+
+.community-content {
+  max-width: 542px;
+}
+
+.community-media-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.community-card-wrapper {
+  max-width: 299px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 #abbed133;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.community-card-wrapper:hover {
+  box-shadow: 0 1px 12px 4px #abbed133;
+}
+
+.community-card-media {
+  width: 65px;
+  height: 56px;
+  margin: 0 auto 16px;
+}
+
+.community-card-title {
+  color: var(--dimgray);
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: var(--line-height-1_2);
+}
+
+.community-card-dec {
+  max-width: 251px;
+  font-size: 14px;
+  color: var(--gray);
+  line-height: var(--line-height-1_4);
+}
+
+.national-associations-card .community-card-dec {
+  max-width: 240px;
+}
+
+.clubs-and-groups-card .community-card-title {
+  max-width: 231px;
+}
+
+/* ----- Pixelgrade section ----- */
+.pixelgrade-section {
+  padding: 42px 0;
+}
+
+.two-column-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 49px;
+}
+
+.two-column-media {
+  width: 50%;
+  max-width: 442px;
+  max-height: 433px;
+}
+
+.two-column-content {
+  width: 50%;
+  max-width: 661px;
+}
+
+.two-column-content-title {
+  color: var(--dimgray);
+  margin-bottom: 16px;
+}
+
+.two-column-content-dec {
+  font-size: 14px;
+  line-height: var(--line-height-1_4);
+  color: var(--gray);
+  margin-bottom: 32px;
+}
+
+/* ----- Counter section ----- */
+.counter-section {
+  padding: 64px 0;
+  background-color: var(--whitesmoke);
+}
+
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.counter-content {
+  width: 50%;
+  max-width: 540px;
+}
+
+.counter-content-title {
+  color: var(--dimgray);
+  margin-bottom: 8px;
+}
+
+.counter-content-title span {
+  color: var(--primary);
+}
+
+.counter-content-dec {
+  color: var(--gray-900);
+}
+
+.counter-number-wrapper {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+}
+
+.counter-number-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.counter-number-media {
+  max-width: 48px;
+  max-height: 48px;
+  flex-shrink: 0;
+}
+
+.counter-number {
+  color: var(--dimgray);
+  font-weight: 700;
+}
+
+.counter-number-dec {
+  color: var(--gray);
+}
+
+/* ----- How-to-work section ----- */
+.how-to-work-section {
+  padding: 48px 0;
+}
+
+/* ----- Our-customer section ----- */
+.our-customer-section {
+  padding: 32px 0;
+  background-color: var(--whitesmoke);
+}
+
+.our-customer-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-customer-media {
+  width: 30%;
+  min-width: 326px;
+  min-height: 326px;
+  border-radius: 8px;
+}
+
+.our-customer-content {
+  width: 70%;
+}
+
+.our-customer-content-dec {
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+
+.our-customer-content-tag {
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.our-customer-content-small-dec {
+  color: var(--lightslategray);
+  margin-bottom: 32px;
+}
+
+.our-customer-media-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.customer-img-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+
+.customer-img-content {
+  display: flex;
+  align-items: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.our-customer-btn svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.our-customer-btn:hover svg {
+  transform: translateX(5px);
 }

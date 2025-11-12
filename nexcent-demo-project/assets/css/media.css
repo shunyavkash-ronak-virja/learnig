@@ -52,6 +52,22 @@
   .hero-media {
     width: 54%;
   }
+
+  /* ----- Counter section ----- */
+  .counter-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .counter-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .counter-number-wrapper {
+    width: 100%;
+    max-width: 580px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -78,6 +94,25 @@
   .hero-media {
     display: none;
   }
+
+  /* ----- Community section ----- */
+  .community-media-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ----- Pixelgrade section ----- */
+  .two-column-wrapper {
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  .two-column-media {
+    width: 100%;
+  }
+
+  .two-column-content {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -95,5 +130,32 @@
   .responsive-nav-btn .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  /* ----- Our-Clients section ----- */
+  .our-clients-media {
+    min-width: 42px;
+    min-height: 42px;
+  }
+
+  /* ----- Community section ----- */
+  .community-media-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- Pixelgrade section ----- */
+  .two-column-wrapper {
+    gap: 24px;
+  }
+
+  /* ----- Counter section ----- */
+  .counter-number-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    gap: 30px 30px;
+  }
+
+  .counter-number-container {
+    justify-self: center;
   }
 }
