@@ -43,9 +43,41 @@
     transform: translateY(-3px);
     opacity: 0;
   }
+
+  /* ----- Hero section ----- */
+  .hero-content {
+    width: 46%;
+  }
+
+  .hero-media {
+    width: 54%;
+  }
 }
 
 @media (max-width: 767px) {
+  /* ----- Hero section ----- */
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .splide__pagination {
+    bottom: -2.3em !important;
+  }
+
+  /* ----- Hero section ----- */
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-dec {
+    margin-bottom: 23px;
+  }
+
+  .hero-media {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {

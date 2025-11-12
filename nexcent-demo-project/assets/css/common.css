@@ -101,6 +101,18 @@ h1 {
   font-weight: 600;
   line-height: 1.1;
 }
+@media (max-width: 991px) {
+  .h1,
+  h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .h1,
+  h1 {
+    font-size: 46px;
+  }
+}
 
 .h2,
 h2 {
@@ -108,7 +120,12 @@ h2 {
   font-weight: 600;
   line-height: var(--line-height-1_2);
 }
-
+@media (max-width: 767px) {
+  .h2,
+  h2 {
+    font-size: 32px;
+  }
+}
 .h3,
 h3 {
   font-size: 28px;

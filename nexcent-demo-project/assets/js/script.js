@@ -9,9 +9,12 @@ navToggle.addEventListener("click", () => {
 
 //Splide js
 document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide", {
+  var splide = new Splide(".hero-slider", {
     type: "loop",
+    // autoplay: true,
+    pauseOnFocus: true,
     perPage: 1,
+    arrows: false,
   });
   splide.mount();
 });
