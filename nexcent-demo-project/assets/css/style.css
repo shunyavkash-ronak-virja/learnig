@@ -80,7 +80,6 @@
   gap: 4px;
   align-items: center;
   justify-content: center;
-  outline: none;
   background-color: transparent;
   border: 1px solid var(--darkslategray);
   border-radius: 4px;
@@ -203,6 +202,7 @@
   box-shadow: 0 2px 4px 0 #abbed133;
   text-align: center;
   margin: 0 auto;
+  transition: all 0.3s ease-in-out;
 }
 
 .community-card-wrapper:hover {
