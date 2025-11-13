@@ -158,7 +158,7 @@
   gap: 35px;
   padding-top: 25px;
   padding-bottom: 25px;
-  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .our-clients-media {
@@ -388,7 +388,7 @@
   align-items: center;
   gap: 41px;
   padding-bottom: 12px;
-  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .customer-img-wrapper::-webkit-scrollbar {
