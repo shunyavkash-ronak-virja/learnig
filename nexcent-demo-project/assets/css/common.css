@@ -62,9 +62,19 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   border-radius: 4px;
   display: inline-flex;
+}
+
+.primary-btn,
+.secondary-btn {
+  align-items: center;
+  gap: 8px;
 }
 
 .primary-btn {
@@ -82,14 +92,20 @@ img {
 }
 
 .secondary-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   padding: 8px;
   font-size: 20px;
+  font-weight: 600;
   line-height: var(--line-height-1_4);
   color: var(--primary);
   transition: all 0.3s ease-in-out;
+}
+
+.right-arrow svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.right-arrow:hover svg {
+  transform: translateX(5px);
 }
 
 .section-heading-wrapper {

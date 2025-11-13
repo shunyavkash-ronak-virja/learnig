@@ -11,7 +11,7 @@ navToggle.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".hero-slider", {
     type: "loop",
-    // autoplay: true,
+    autoplay: true,
     pauseOnFocus: true,
     perPage: 1,
     arrows: false,
