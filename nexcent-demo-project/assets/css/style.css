@@ -23,11 +23,6 @@
   position: relative;
 }
 
-.navbar-logo {
-  width: 154px;
-  height: 24px;
-}
-
 .nav-link-wrapper {
   gap: 50px;
 }
@@ -108,11 +103,6 @@
   justify-content: space-around;
 }
 
-.hero-content {
-  width: 50%;
-  max-width: 657px;
-}
-
 .hero-title {
   color: var(--dimgray);
   margin-bottom: 16px;
@@ -125,12 +115,6 @@
 .hero-dec {
   color: var(--gray);
   margin-bottom: 32px;
-}
-
-.hero-media {
-  width: 50%;
-  max-width: 391px;
-  height: 407px;
 }
 
 .splide__pagination {
@@ -196,12 +180,10 @@
 }
 
 .community-card-wrapper {
-  max-width: 299px;
   padding: 24px 16px;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 #abbed133;
   text-align: center;
-  margin: 0 auto;
   transition: all 0.3s ease-in-out;
 }
 
@@ -215,7 +197,13 @@
   margin: 0 auto 16px;
 }
 
+.community-card-content {
+  max-width: 299px;
+  margin: 0 auto;
+}
+
 .community-card-title {
+  margin: 0 auto;
   color: var(--dimgray);
   font-weight: 700;
   margin-bottom: 8px;
@@ -224,6 +212,7 @@
 
 .community-card-dec {
   max-width: 251px;
+  margin: 0 auto;
   font-size: 14px;
   color: var(--gray);
   line-height: var(--line-height-1_4);
@@ -250,13 +239,10 @@
 
 .two-column-media {
   width: 50%;
-  max-width: 442px;
-  max-height: 433px;
 }
 
 .two-column-content {
   width: 50%;
-  max-width: 661px;
 }
 
 .two-column-content-title {
@@ -278,15 +264,12 @@
 }
 
 .counter-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  text-align: center;
 }
 
 .counter-content {
-  width: 50%;
   max-width: 540px;
+  margin: 0 auto 30px;
 }
 
 .counter-content-title {
@@ -303,10 +286,11 @@
 }
 
 .counter-number-wrapper {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px 60px;
+  flex-wrap: wrap;
 }
 
 .counter-number-container {
@@ -349,10 +333,8 @@
 }
 
 .our-customer-media {
-  width: 30%;
-  min-width: 326px;
-  min-height: 326px;
-  border-radius: 8px;
+  max-width: 326px;
+  aspect-ratio: 1;
 }
 
 .our-customer-content {
@@ -435,12 +417,12 @@
 
 .marketing-image-content {
   max-width: 368px;
-  max-height: 286px;
+  aspect-ratio: 1;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .marketing-content-container {
-  max-width: 317px;
   text-align: center;
   background-color: var(--whitesmoke);
   border-radius: 8px;
@@ -450,16 +432,13 @@
 }
 
 .marketing-card-dec {
+  max-width: 282px;
   font-size: 20px;
   font-weight: 600;
   line-height: var(--line-height-1_4);
   color: var(--gray);
   margin-bottom: 16px;
   letter-spacing: 0.2px;
-}
-
-.marketing-content-container .secondary-btn {
-  justify-content: center;
 }
 
 /* ----- Marketing section ----- */
@@ -544,7 +523,7 @@
 }
 
 .footer-links-container {
-  width: 160px;
+  min-width: 160px;
   display: flex;
   flex-direction: column;
   gap: 12px;

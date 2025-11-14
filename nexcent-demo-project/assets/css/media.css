@@ -69,10 +69,6 @@
     text-align: center;
   }
 
-  .counter-number-wrapper {
-    width: 100%;
-    max-width: 580px;
-  }
   /* ----- Footer ----- */
   .footer-content-wrapper {
     flex-direction: column;
@@ -134,20 +130,12 @@
     flex-direction: column;
   }
 
-  .our-customer-media,
   .our-customer-content {
     width: 100%;
   }
 
   .customer-img-wrapper {
     max-width: 100%;
-  }
-
-  .our-customer-media {
-    max-width: 280px;
-    max-height: 280px;
-    min-width: auto;
-    min-height: auto;
   }
 
   /* ----- Marketing section ----- */
@@ -191,8 +179,7 @@
 
   /* ----- Counter section ----- */
   .counter-number-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 100%;
+    flex-direction: column;
     gap: 30px 30px;
   }
 
@@ -210,7 +197,6 @@
   }
 
   .marketing-content-container {
-    max-width: 100%;
     margin-top: 0;
     box-shadow: none;
   }
