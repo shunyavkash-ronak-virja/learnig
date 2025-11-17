@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.content-tag {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/* ----- btn-hover-section ----- */
+.btn-hover-section {
+  padding: 40px 0;
+}
+
+.btn-wrapper {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ----- btn-1 ----- */
+.btn-1 {
+  flex-direction: column;
+  color: gray;
+  border: 1px solid gray;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.btn-1::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  opacity: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-1:hover,
+.btn-1:hover::after {
+  transform: translateY(-6px);
+  opacity: 1;
+}
+
+/* ----- btn-2 ----- */
+.btn-2 {
+  border: 1px solid pink;
+  color: pink;
+  box-shadow: 5px 5px 0 0 rgb(255, 143, 162);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-2:hover {
+  background-color: rgba(210, 54, 80, 0.858);
+  color: white;
+  box-shadow: -5px -5px 0 0 rgba(222, 68, 94, 0.581);
+}
+
+/* ----- btn-3 ----- */
+.btn-3 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(23, 69, 176, 0.651);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-3,
+.click-me-btn,
+.hover-me-btn {
+  transition: all 0.4s ease-in-out;
+}
+
+.click-me-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-74px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-3:hover {
+  transform: translateY(-8px);
+
+  .click-me-btn {
+    transform: translateX(25px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hover-me-btn {
+    transform: translateX(104px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ----- btn-4 ----- */
+.btn-4 {
+  align-items: center;
+  border: 1px solid rgb(0, 123, 255);
+  color: #042568;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-4::before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: rgb(0, 123, 255);
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  transform: translate(0, -50%);
+  transition: all 0.2s ease-in;
+}
+
+.btn-4:hover::before {
+  left: 100%;
+  transform: translate(-100%, -50%);
+  background-color: white;
+}
+
+.btn-4:hover {
+  background-color: rgb(0, 123, 255);
+  color: white;
+}
