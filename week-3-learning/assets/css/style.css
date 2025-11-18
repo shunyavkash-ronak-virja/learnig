@@ -324,13 +324,11 @@ a {
 }
 
 /* ----- Loading section ----- */
-
 .loading-section {
   padding: 40px 0;
   height: 100vh;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   background-color: #f2efe7;
 }
 
@@ -338,6 +336,7 @@ a {
   display: flex;
   -webkit-perspective: 700px;
   /* perspective: 700px; */
+  margin: 0 auto;
   gap: 6px;
 }
 
