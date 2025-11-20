@@ -207,7 +207,7 @@ a {
   z-index: -2;
   background-color: #f0e4d3;
   transform: rotate(-136deg) translate(6px, -17px);
-  transition: all 0.38s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-7:hover::before {
@@ -339,9 +339,8 @@ a {
   left: 0;
   z-index: -2;
   background-color: #97dece;
-  /* transform: rotate(45deg) translate(-7px, 18px); */
   transform: rotate(220deg) translate(6px, -17px);
-  transition: all 0.38s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-10:hover::before {
