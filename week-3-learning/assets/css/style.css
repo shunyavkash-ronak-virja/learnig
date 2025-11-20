@@ -46,7 +46,6 @@ a {
 
 /* ----- btn-1 ----- */
 .btn-1 {
-  flex-direction: column;
   color: gray;
   border-color: gray;
   transition: all 0.3s ease-in-out;
@@ -148,7 +147,7 @@ a {
   left: 0;
   z-index: -2;
   transform: translate(0, -50%);
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .btn-4:hover::before {
@@ -207,13 +206,13 @@ a {
   left: 0;
   z-index: -2;
   background-color: #f0e4d3;
-  transform: rotate(45deg) translate(-7px, 18px);
+  transform: rotate(-136deg) translate(6px, -17px);
   transition: all 0.38s ease-in-out;
 }
 
 .btn-7:hover::before {
   width: 100%;
-  transform: rotate(0) translate(-0);
+  transform: rotate(-180deg) translate(0, 0);
 }
 
 /* ----- btn-8 ----- */
@@ -321,6 +320,33 @@ a {
   &::before {
     transform: translateX(0);
   }
+}
+/* ----- btn-10 ----- */
+.btn-10 {
+  border-color: #62b6b7;
+  color: #439a97;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-10::before {
+  content: "";
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #97dece;
+  /* transform: rotate(45deg) translate(-7px, 18px); */
+  transform: rotate(220deg) translate(6px, -17px);
+  transition: all 0.38s ease-in-out;
+}
+
+.btn-10:hover::before {
+  width: 100%;
+  transform: rotate(0) translate(-0);
 }
 
 /* ----- Loading section ----- */

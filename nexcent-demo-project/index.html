@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-
     <!----- Splide css ----->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
@@ -68,12 +67,14 @@
                         <li class="splide__slide hero-content-wrapper">
                             <div class="hero-content-container">
                                 <div class="hero-content">
-                                    <h1 class="hero-title">Lessons and insights<br><span> from 8 years</span></h1>
+                                    <h1 class="hero-title">Lessons and insights<span> from 8 years</span></h1>
                                     <p class="hero-dec">Where to grow your business as a photographer: site or social media?</p>
                                     <a class="btn primary-btn" href="javascript:void(0)">Register</a>
                                 </div>
                                 <div class="hero-media">
-                                    <img src="assets/image/image-01.png" alt="hero-image">
+                                    <div class="hero-img-wrapper">
+                                        <img class="img-cover" src="assets/image/image-01.png" alt="hero-image">
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -85,7 +86,9 @@
                                     <a class="btn primary-btn" href="javascript:void(0)">Register</a>
                                 </div>
                                 <div class="hero-media">
-                                    <img src="assets/image/image-01.png" alt="hero-image">
+                                    <div class="hero-img-wrapper">
+                                        <img class="img-cover" src="assets/image/image-01.png" alt="hero-image">
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -97,7 +100,9 @@
                                     <a class="btn primary-btn" href="javascript:void(0)">Register</a>
                                 </div>
                                 <div class="hero-media">
-                                    <img src="assets/image/image-01.png" alt="hero-image">
+                                    <div class="hero-img-wrapper">
+                                        <img class="img-cover" src="assets/image/image-01.png" alt="hero-image">
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -114,27 +119,80 @@
                 <h2 class="section-title">Our Clients</h2>
                 <p class="section-dec">We have been working with some Fortune 500+ clients</p>
             </div>
-            <div class="our-clients-media-wrapper">
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-01.svg" alt="social-media-image">
-                </div>
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-02.svg" alt="social-media-image">
-                </div>
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-03.svg" alt="social-media-image">
-                </div>
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-04.svg" alt="social-media-image">
-                </div>
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-05.svg" alt="social-media-image">
-                </div>
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-06.svg" alt="social-media-image">
-                </div>
-                <div class="our-clients-media">
-                    <img src="assets/image/social-media-03.svg" alt="social-media-image">
+            <div class="splide our-clients-slider" role="group">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-01.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-02.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-03.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-04.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-05.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-06.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-03.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-01.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-02.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-03.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-04.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-05.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-06.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="our-clients-media">
+                                <img class="our-clients-img" src="assets/image/social-media-03.svg" alt="social-media-image">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -201,9 +259,9 @@
     <section class="counter-section">
         <div class="container">
             <div class="counter-wrapper">
-                <div class="counter-content">
-                    <h2 class="counter-content-title">Helping a local <br><span>business reinvent itself</span></h2>
-                    <p class="counter-content-dec">We reached here with our hard work and dedication</p>
+                <div class="section-heading-wrapper ">
+                    <h2 class="section-title">Helping a local<span>business reinvent itself</span></h2>
+                    <p class="section-dec">We reached here with our hard work and dedication</p>
                 </div>
                 <div class="counter-number-wrapper">
                     <div class="counter-number-container">
@@ -416,23 +474,27 @@
                 </div>
                 <div class="footer-links-wrapper">
                     <div class="footer-links-container">
-                        <p class="links-container-tag">Company</p>
-                        <a class="footer-link" href="javascrip:void(0)">About us</a>
-                        <a class="footer-link" href="javascrip:void(0)">Blog</a>
-                        <a class="footer-link" href="javascrip:void(0)">Contact us</a>
-                        <a class="footer-link" href="javascrip:void(0)">Pricing</a>
-                        <a class="footer-link" href="javascrip:void(0)">Testimonials</a>
+                        <h3 class="links-container-tag">Company</h3>
+                        <div class="footer-link-wrapper">
+                            <a class="footer-link" href="javascrip:void(0)">About us</a>
+                            <a class="footer-link" href="javascrip:void(0)">Blog</a>
+                            <a class="footer-link" href="javascrip:void(0)">Contact us</a>
+                            <a class="footer-link" href="javascrip:void(0)">Pricing</a>
+                            <a class="footer-link" href="javascrip:void(0)">Testimonials</a>
+                        </div>
                     </div>
                     <div class="footer-links-container">
-                        <p class="links-container-tag">Support</p>
-                        <a class="footer-link" href="javascrip:void(0)">Help center</a>
-                        <a class="footer-link" href="javascrip:void(0)">Terms of service</a>
-                        <a class="footer-link" href="javascrip:void(0)">Legal</a>
-                        <a class="footer-link" href="javascrip:void(0)">Privacy policy</a>
-                        <a class="footer-link" href="javascrip:void(0)">Status</a>
+                        <h3 class="links-container-tag">Support</h3>
+                        <div class="footer-link-wrapper">
+                            <a class="footer-link" href="javascrip:void(0)">Help center</a>
+                            <a class="footer-link" href="javascrip:void(0)">Terms of service</a>
+                            <a class="footer-link" href="javascrip:void(0)">Legal</a>
+                            <a class="footer-link" href="javascrip:void(0)">Privacy policy</a>
+                            <a class="footer-link" href="javascrip:void(0)">Status</a>
+                        </div>
                     </div>
                     <div class="footer-input-container">
-                        <p class="links-container-tag">Stay up to date</p>
+                        <h3 class="links-container-tag">Stay up to date</h3>
                         <form class="footer-input-content">
                             <input class="footer-input" type="email" name="email" placeholder="Your email address" required>
                             <button class="footer-input-btn" type="submit">
@@ -442,7 +504,6 @@
                                 </svg>
                             </button>
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -451,6 +512,7 @@
 
     <!----- Splide js ----->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
     <!----- Custom js ----->
     <script src="assets/js/script.js"></script>

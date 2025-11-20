@@ -19,7 +19,8 @@
     position: absolute;
     top: 58px;
     right: -20px;
-    padding: 22px 40px;
+    padding: 30px 42px 110px;
+    overflow-y: auto;
     transition: all 0.3s ease-in-out;
   }
 
@@ -50,33 +51,22 @@
   }
 
   /* ----- Hero section ----- */
-  .hero-content {
-    width: 46%;
-  }
-
-  .hero-media {
-    width: 54%;
+  .hero-img-wrapper {
+    width: 80%;
   }
 
   /* ----- Counter section ----- */
-  .counter-wrapper {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .counter-content {
-    width: 100%;
-    text-align: center;
+  .counter-number-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* ----- Footer ----- */
-  .footer-content-wrapper {
-    flex-direction: column;
-    gap: 40px;
-  }
-
   .footer-media-container,
   .footer-links-wrapper {
+    width: 100%;
+  }
+
+  .footer-input-container {
     width: 100%;
   }
 }
@@ -85,17 +75,22 @@
   /* ----- Hero section ----- */
   .hero-section {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
-  .splide__pagination {
-    bottom: -2.3em !important;
+  .hero-content-container {
+    flex-direction: column;
+    gap: 40px;
   }
 
-  /* ----- Hero section ----- */
   .hero-content {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-title {
+    max-width: 480px;
+    margin: 0 auto 16px;
   }
 
   .hero-dec {
@@ -103,11 +98,24 @@
   }
 
   .hero-media {
-    display: none;
+    width: 100%;
+  }
+
+  .hero-img-wrapper {
+    width: 60%;
+  }
+
+  .splide__pagination {
+    bottom: -3.8em !important;
   }
 
   /* ----- Community section ----- */
   .community-media-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ----- Counter section ----- */
+  .counter-number-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -134,10 +142,6 @@
     width: 100%;
   }
 
-  .customer-img-wrapper {
-    max-width: 100%;
-  }
-
   /* ----- Marketing section ----- */
   .marketing-media-wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -161,14 +165,24 @@
     justify-content: center;
   }
 
+  /* ----- Hero section ----- */
+  .hero-img-wrapper {
+    width: 80%;
+  }
+
   /* ----- Our-Clients section ----- */
-  .our-clients-media {
+  .our-clients-img {
     min-width: 42px;
     min-height: 42px;
   }
 
   /* ----- Community section ----- */
   .community-media-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- Counter section ----- */
+  .counter-number-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -185,6 +199,16 @@
 
   .counter-number-container {
     justify-self: center;
+  }
+
+  /* ----- Footer ----- */
+  .footer-content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-input {
+    font-size: 16px;
   }
 }
 
