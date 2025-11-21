@@ -1,0 +1,41 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Main slider
+  var main = new Splide(".splide", {
+    type: "loop",
+    autoplay: true,
+    perPage: 1,
+    pagination: false,
+    arrows: false,
+    cover: true,
+    drag: false,
+  });
+
+  // Thumbnail slider
+  var thumbnails = new Splide("#thumbnails", {
+    type: "loop",
+    drag: false,
+    autoplay: true,
+    rewind: true,
+    fixedWidth: 104,
+    fixedHeight: 58,
+    isNavigation: true,
+    perPage: 2,
+    gap: 10,
+    pagination: false,
+    cover: true,
+    dragMinThreshold: {
+      mouse: 4,
+      touch: 10,
+    },
+    breakpoints: {
+      640: {
+        fixedWidth: 66,
+        fixedHeight: 38,
+      },
+    },
+  });
+
+  main.sync(thumbnails);
+  main.mount();
+  thumbnails.mount();
+});
