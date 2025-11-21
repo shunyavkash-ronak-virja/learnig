@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     perPage: 1,
     pagination: false,
-    arrows: false,
     cover: true,
     drag: false,
   });
@@ -16,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     drag: false,
     autoplay: true,
     rewind: true,
+    arrows: false,
     fixedWidth: 104,
     fixedHeight: 58,
     isNavigation: true,

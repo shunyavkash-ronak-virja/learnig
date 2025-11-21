@@ -123,9 +123,15 @@ h1,
 }
 
 .thumbnails-list {
+  min-height: 210px;
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .thumbnail {
@@ -145,22 +151,35 @@ h1,
 
 .splide__arrows {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: -50%;
 }
 
 .splide__arrow--prev {
-  left: -5em !important;
+  left: 185em !important;
 }
 
 .splide__arrow--next {
-  right: -5em !important;
+  right: -195em !important;
 }
 
 .splide__arrow {
   width: 44px !important;
   height: 44px !important;
   background-color: #0d0f0ecc !important;
+}
+
+.splide__arrow,
+.splide__arrow svg {
+  transition: all 0.4s ease-in-out;
+}
+
+.splide__arrow:hover {
+  background-color: #e7e7e7 !important;
+
+  & svg {
+    fill: #0d0f0ecc !important;
+  }
 }
 
 .splide__arrow svg {
