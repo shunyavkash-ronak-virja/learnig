@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
       touch: 10,
     },
     breakpoints: {
+      1023: {
+        perPage: 1,
+      },
       640: {
         fixedWidth: 66,
         fixedHeight: 38,
