@@ -129,11 +129,6 @@ h1,
   gap: 30px;
 }
 
-.splide__track--nav > .splide__list > .splide__slide.is-active {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
-
 .thumbnail {
   width: 180px !important;
   height: 200px !important;
@@ -190,4 +185,16 @@ h1,
 
 .splide__track--nav > .splide__list > .splide__slide {
   border: none !important;
+}
+
+.thumbnails-slider
+  .splide__track--nav
+  > .splide__list
+  > .splide__slide.is-active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  transform: translateZ(100vh);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
