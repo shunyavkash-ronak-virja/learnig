@@ -120,7 +120,7 @@ h1,
 }
 
 .item-container.is-active .content-dec {
-  animation-delay: 0.5s;
+  animation-delay: 0.9s;
 }
 
 @keyframes textBlur {

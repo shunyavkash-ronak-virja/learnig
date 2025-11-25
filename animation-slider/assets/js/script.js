@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Main slider
   var main = new Splide(".splide", {
     type: "loop",
-    // autoplay: true,
+    autoplay: true,
     perPage: 1,
     pagination: false,
     cover: true,
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var thumbnails = new Splide("#thumbnails", {
     type: "loop",
     drag: false,
-    // autoplay: true,
+    autoplay: true,
     rewind: true,
     arrows: false,
     fixedWidth: 104,
