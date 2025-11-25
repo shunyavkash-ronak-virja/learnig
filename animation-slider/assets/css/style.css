@@ -131,13 +131,6 @@ h1,
   }
 }
 
-@keyframes bgBlur {
-  to {
-    backdrop-filter: blur(16px);
-    background-color: rgb(0, 0, 0, 0.2);
-  }
-}
-
 .splide-media {
   max-width: 450px;
   transform: scale(1.2);
@@ -175,7 +168,7 @@ h1,
 
 /* ----- Thumbnail ----- */
 .thumbnails-slider {
-  max-width: 420px;
+  max-width: 424px;
   position: absolute !important;
   bottom: 65px !important;
   right: 0 !important;
@@ -298,10 +291,6 @@ h1,
     max-width: 410px;
     position: relative;
   }
-
-  .item-container.is-active .content-container {
-    animation: bgBlur 1s 0.3s linear 1 forwards;
-  }
 }
 
 @media (max-width: 575px) {
@@ -336,10 +325,6 @@ h1,
 
   .splide-media {
     width: 70%;
-  }
-
-  .item-container.is-active .content-container {
-    animation: none;
   }
 
   .thumbnails-slider {
