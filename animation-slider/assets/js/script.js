@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Main slider
   var main = new Splide(".splide", {
-    type: "loop",
+    type: "fade",
     autoplay: true,
     perPage: 1,
     pagination: false,
     cover: true,
     drag: false,
+    interval: 4000,
   });
 
   // Thumbnail slider
