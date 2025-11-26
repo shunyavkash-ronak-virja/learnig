@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     cover: true,
     drag: false,
-    interval: 4000,
+    interval: 4500,
     arrows: false,
   });
 
