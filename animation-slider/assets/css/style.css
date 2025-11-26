@@ -14,7 +14,7 @@
 
 body {
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -39,8 +39,8 @@ ul {
 h1,
 .h1 {
   font-size: 80px;
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1;
 }
 @media (max-width: 767px) {
   h1,
@@ -83,18 +83,17 @@ h1,
 }
 
 .splide-content-wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
+  gap: 110px;
+  justify-content: center;
   align-items: center;
 }
 
 .content-container {
   width: 50%;
-}
-
-.content-container {
-  max-width: 420px;
+  max-width: 450px;
 }
 
 .content-title {
@@ -102,8 +101,9 @@ h1,
 }
 
 .content-dec {
-  margin-top: 20px;
+  margin-top: 16px;
   color: #000000b3;
+  line-height: 1.4;
 }
 
 .content-title,
@@ -132,7 +132,7 @@ h1,
 }
 
 .splide-media {
-  max-width: 450px;
+  max-width: 40%;
   transform: scale(1.2);
 }
 
@@ -168,29 +168,29 @@ h1,
 
 /* ----- Thumbnail ----- */
 .thumbnails-slider {
-  max-width: 424px;
+  max-width: 306px;
   position: absolute !important;
-  bottom: 65px !important;
+  bottom: 88px !important;
   right: 0 !important;
 }
 
 .thumbnails-list {
-  min-height: 210px;
+  min-height: 256px;
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 
 .thumbnail {
   width: 180px !important;
-  height: 200px !important;
+  height: 220px !important;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
   overflow: hidden;
-  margin-right: 0 !important;
+  margin: 0 14px !important;
   transform: scale(1);
+  box-shadow: 4px 8px 10px #0003;
 }
 
 .thumbnail-media {
@@ -199,22 +199,23 @@ h1,
 
 .splide__arrows {
   position: absolute;
-  bottom: 10%;
-  left: 50%;
+  bottom: 6%;
+  left: -128%;
 }
 
 .splide__arrow--prev {
-  left: -60px !important;
+  left: -55px !important;
 }
 
 .splide__arrow--next {
-  right: -60px !important;
+  right: -55px !important;
 }
 
 .splide__arrow {
-  width: 44px !important;
-  height: 44px !important;
+  width: 50px !important;
+  height: 50px !important;
   background-color: #0d0f0ecc !important;
+  opacity: 1 !important;
 }
 
 .splide__arrow,
@@ -223,29 +224,28 @@ h1,
 }
 
 .splide__arrow:hover {
-  background-color: #e7e7e7 !important;
+  background-color: #ffffff !important;
 
   & svg {
-    fill: #0d0f0ecc !important;
+    fill: #000000 !important;
   }
 }
 
 .splide__arrow svg {
   fill: #e7e7e7 !important;
-  width: 1em !important;
-  height: 1em !important;
+  width: 9px !important;
+  height: 9px !important;
 }
 
 .splide__track--nav > .splide__list > .splide__slide {
   border: none !important;
 }
 
-.splide__track--nav > .splide__list > .splide__slide.is-active {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
-
 @media (max-width: 1023px) {
+  .item-container {
+    padding: 0 20px;
+  }
+
   .content-container {
     width: 100%;
   }
@@ -254,15 +254,23 @@ h1,
     max-width: 330px;
   }
 
+  .splide__arrows {
+    bottom: 28%;
+  }
+
   .thumbnails-slider {
     max-width: 220px;
     bottom: 20px !important;
   }
 
   .thumbnail {
-    width: 170px !important;
+    width: 145px !important;
     height: 155px !important;
     border-radius: 12px;
+  }
+
+  .thumbnail-media {
+    max-width: 116px;
   }
 }
 
@@ -284,23 +292,47 @@ h1,
     z-index: 10;
     border-radius: 12px;
     overflow: hidden;
-    padding: 20px;
+  }
+
+  .content-dec {
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
   }
 
   .splide-media {
     max-width: 410px;
     position: relative;
   }
+
+  .thumbnails-slider {
+    max-width: 168px;
+  }
+
+  .thumbnails-slider {
+    bottom: 40px !important;
+  }
+
+  .splide__arrows {
+    bottom: 39%;
+    left: -200%;
+  }
+
+  .thumbnails-slider {
+    max-width: 150px;
+    bottom: 12px !important;
+  }
+
+  .thumbnails-list {
+    min-height: 170px;
+  }
 }
 
 @media (max-width: 575px) {
-  .splide__arrows {
-    bottom: 16%;
-    left: 24%;
-  }
-
   .splide-content-wrapper {
-    gap: 12px;
+    gap: 32px;
+    justify-content: flex-end;
   }
 
   .splide__arrow {
@@ -327,13 +359,8 @@ h1,
     width: 70%;
   }
 
-  .thumbnails-slider {
-    max-width: 196px;
-    bottom: 80px !important;
-  }
-
-  .thumbnails-list {
-    min-height: 146px;
+  .thumbnails-slider{
+    
   }
 
   .thumbnail {

@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Main slider
   var main = new Splide(".splide", {
     type: "fade",
-    autoplay: true,
+    // autoplay: true,
     perPage: 1,
     pagination: false,
     cover: true,
     drag: false,
     interval: 4000,
+    arrows: false,
   });
 
   // Thumbnail slider
   var thumbnails = new Splide("#thumbnails", {
     type: "loop",
     drag: false,
-    autoplay: true,
+    // autoplay: true,
     rewind: true,
-    arrows: false,
     fixedWidth: 104,
     fixedHeight: 58,
     isNavigation: true,
