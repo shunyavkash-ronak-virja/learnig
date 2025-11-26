@@ -190,6 +190,7 @@ h1,
   overflow: hidden;
   margin: 0 14px !important;
   transform: scale(1);
+  padding: 14px;
   box-shadow: 4px 8px 10px #0003;
 }
 
