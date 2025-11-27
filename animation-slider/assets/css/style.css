@@ -363,6 +363,7 @@ h1,
   .content-container {
     border-radius: 0;
     overflow: visible;
+    top: 56%;
   }
 
   .splide__arrows {
