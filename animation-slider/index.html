@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- Custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +13,9 @@
 
     <!-- Splide css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -84,35 +84,37 @@
             </div>
 
             <!-- Thumbnail -->
-            <div id="thumbnails" class="splide thumbnails-slider">
-                <div class="splide__track">
-                    <ul class="splide__list thumbnails-list">
-                        <li class="splide__slide thumbnail bg-yellow">
-                            <div class="thumbnail-media">
-                                <img class="thumbnail-img" src="assets/image/bananas.png" alt="fruit-img">
-                            </div>
-                        </li>
-                        <li class="splide__slide thumbnail bg-pink">
-                            <div class="thumbnail-media">
-                                <img class="thumbnail-img" src="assets/image/strawbarries.png" alt="fruit-img">
-                            </div>
-                        </li>
-                        <li class="splide__slide thumbnail bg-purple">
-                            <div class="thumbnail-media">
-                                <img class="thumbnail-img" src="assets/image/blackberry.png" alt="fruit-img">
-                            </div>
-                        </li>
-                        <li class="splide__slide thumbnail bg-goldenrod">
-                            <div class="thumbnail-media">
-                                <img class="thumbnail-img" src="assets/image/kiwis.png" alt="fruit-img">
-                            </div>
-                        </li>
-                        <li class="splide__slide thumbnail bg-brown">
-                            <div class="thumbnail-media">
-                                <img class="thumbnail-img" src="assets/image/coconut.png" alt="fruit-img">
-                            </div>
-                        </li>
-                    </ul>
+            <div class="thumbnail-container">
+                <div class="splide thumbnails-slider">
+                    <div class="splide__track thumbnails-list-container">
+                        <ul class="splide__list thumbnails-list">
+                            <li class="splide__slide thumbnail">
+                                <div class="thumbnail-media bg-yellow">
+                                    <img class="thumbnail-img" src="assets/image/bananas.png" alt="fruit-img">
+                                </div>
+                            </li>
+                            <li class="splide__slide thumbnail">
+                                <div class="thumbnail-media bg-pink">
+                                    <img class="thumbnail-img" src="assets/image/strawbarries.png" alt="fruit-img">
+                                </div>
+                            </li>
+                            <li class="splide__slide thumbnail">
+                                <div class="thumbnail-media bg-purple">
+                                    <img class="thumbnail-img" src="assets/image/blackberry.png" alt="fruit-img">
+                                </div>
+                            </li>
+                            <li class="splide__slide thumbnail">
+                                <div class="thumbnail-media bg-goldenrod">
+                                    <img class="thumbnail-img" src="assets/image/kiwis.png" alt="fruit-img">
+                                </div>
+                            </li>
+                            <li class="splide__slide thumbnail">
+                                <div class="thumbnail-media bg-brown">
+                                    <img class="thumbnail-img" src="assets/image/coconut.png" alt="fruit-img">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
