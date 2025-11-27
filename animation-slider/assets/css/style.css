@@ -55,14 +55,6 @@ h1,
 }
 
 /* ----- Hero-slider ----- */
-/* .hero-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-} */
 
 .hero-slider .fruit-slider {
   width: 100%;
@@ -75,17 +67,6 @@ h1,
 .hero-slider .splide__track {
   height: 100%;
 }
-
-/* .item-wrapper {
-  align-items: center;
-} */
-
-/* .item-container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .splide-content-wrapper {
   width: 100%;
@@ -201,7 +182,6 @@ h1,
 }
 
 .thumbnails-slider .thumbnail-media {
-  /* max-width: 180px; */
   min-height: 220px;
   display: flex;
   align-items: center;
