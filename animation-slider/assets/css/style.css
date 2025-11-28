@@ -17,13 +17,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 100%;
-  max-width: 1280px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 /* ----- Common css ----- */
 img {
   width: 100%;
@@ -55,13 +48,12 @@ h1,
 }
 
 /* ----- Hero-slider ----- */
-
 .hero-slider .fruit-slider {
   width: 100%;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
 }
 
 .hero-slider .splide__track {
@@ -72,14 +64,15 @@ h1,
   width: 100%;
   height: 100%;
   display: flex;
-  /* gap: 110px; */
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 16px;
+  padding: 0 10vw;
 }
 
 .content-container {
-  max-width: 450px;
-  z-index: 10;
+  max-width: 456px;
+  margin-bottom: 20px;
 }
 
 .content-title {
@@ -118,11 +111,8 @@ h1,
 }
 
 .splide-media {
-  max-width: 40%;
+  max-width: 50%;
   transform: scale(1.05);
-  position: absolute;
-  top: 20%;
-  right: 10%;
 }
 
 .item-container.is-active .splide-media {
@@ -164,17 +154,17 @@ h1,
 }
 
 .thumbnails-slider .thumbnails-list-container {
-  max-width: 370px;
+  max-width: 20%;
   height: auto;
   position: absolute;
-  bottom: 0;
+  bottom: -12px;
   right: 0;
   overflow: hidden;
 }
 
 .thumbnails-slider .thumbnails-list {
   align-items: center;
-  min-height: 244px;
+  min-height: 256px;
 }
 
 .thumbnails-slider .thumbnail {
@@ -182,6 +172,7 @@ h1,
 }
 
 .thumbnails-slider .thumbnail-media {
+  min-width: 180px;
   min-height: 220px;
   display: flex;
   align-items: center;
@@ -245,12 +236,12 @@ h1,
 }
 
 @media (max-width: 1023px) {
-  .item-container {
-    padding: 0 20px;
+  .content-container {
+    max-width: 366px;
   }
 
-  .thumbnails-slider .thumbnails-list-container {
-    max-width: 192px;
+  .splide-media {
+    max-width: 100%;
   }
 }
 
@@ -259,19 +250,19 @@ h1,
     max-width: 302px;
   }
 
-  .splide-media {
-    max-width: 52%;
-    right: 5%;
-  }
-
   .hero-slider .thumbnail-container {
     bottom: 81px;
   }
 }
 
 @media (max-width: 767px) {
+  .splide-content-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
   .content-container {
-    max-width: 241px;
+      max-width: 290px;
   }
 
   .content-dec {
@@ -279,9 +270,7 @@ h1,
   }
 
   .splide-media {
-    max-width: 95%;
-    top: 5%;
-    right: auto;
+    max-width: 60%;
   }
 
   .hero-slider .thumbnail-container {
@@ -289,7 +278,6 @@ h1,
   }
 
   .thumbnails-slider .thumbnails-list-container {
-    max-width: 152px;
     bottom: -44px;
   }
 
@@ -307,11 +295,22 @@ h1,
 }
 
 @media (max-width: 575px) {
-  .thumbnails-slider .thumbnails-list-container {
-    max-width: 120px;
+  .splide-content-wrapper {
+    justify-content: flex-end;
+    padding-top: 15%;
+  }
+
+  .splide-media {
+    max-width: 88%;
   }
 
   .thumbnails-slider .thumbnail-media {
     min-height: 150px;
+  }
+}
+
+@media (max-width: 424px) {
+  .splide-media {
+    max-width: 100%;
   }
 }

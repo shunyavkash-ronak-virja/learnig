@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Main slider
   var main = new Splide(".fruit-slider.splide", {
     type: "fade",
-    // autoplay: true,
+    autoplay: true,
     perPage: 1,
     pagination: false,
     drag: false,
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var thumbnails = new Splide(".thumbnails-slider", {
     type: "loop",
     drag: false,
-    // autoplay: true,
+    autoplay: true,
     isNavigation: true,
     perPage: 2,
     gap: 20,
