@@ -63,9 +63,8 @@
   }
 
   .link-dropdown-container {
-    top: 0;
-    left: 148px;
-    z-index: 0;
+    min-width: 100%;
+    position: static;
   }
 
   .link-dropdown-wrapper {
@@ -75,11 +74,6 @@
 }
 
 @media (max-width: 767px) {
-  .link-dropdown-container {
-    min-width: 100%;
-    position: static;
-  }
-
   .link-dropdown-wrapper {
     padding: 12px 20px;
   }
