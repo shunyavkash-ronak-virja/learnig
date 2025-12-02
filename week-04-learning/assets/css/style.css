@@ -82,7 +82,7 @@ img {
   z-index: 4;
 }
 
-.header-content-container,
+.content-container,
 .header-buttons {
   gap: 8px;
 }
@@ -93,7 +93,7 @@ img {
   margin-top: 12px;
   border-radius: 16px;
   border: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 .header-content:hover {
@@ -130,6 +130,11 @@ img {
   padding: 6px 8px;
   border: 2px solid var(--black);
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #daaff4;
 }
 
 .link-dropdown-container {
@@ -141,10 +146,15 @@ img {
   grid-template-rows: 0;
   overflow: hidden;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0.14s;
 }
 
-.header-content:hover .link-dropdown-container {
+/* .header-content:hover .link-dropdown-container */
+.header-content:hover
+  .header-content-link
+  svg
+  .submenu-wrapper.visible
+  .link-dropdown-container {
   grid-template-rows: 1fr;
 }
 
