@@ -6,11 +6,11 @@ navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-const menuStore = document.querySelectorAll(".submenu-wrapper");
-// const subMenu = document.querySelectorAll(".link-dropdown-container");
-
-menuStore.forEach((val) => {
-  val.addEventListener("click", (e) => {
-    val.classList.toggle("visible");
+if (window.innerWidth <= "991") {
+  const menuStore = document.querySelectorAll(".submenu-wrapper");
+  menuStore.forEach((val) => {
+    val.addEventListener("click", (e) => {
+      val.classList.toggle("visible");
+    });
   });
-});
+}

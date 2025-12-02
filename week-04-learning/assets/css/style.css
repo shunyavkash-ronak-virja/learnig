@@ -77,7 +77,7 @@ img {
   gap: 14px;
   border: 2px solid var(--antiquewhite);
   border-radius: 12px;
-  padding: 0 8px 0 16px;
+  padding: 8px 8px 0 16px;
   position: relative;
   z-index: 4;
 }
@@ -87,10 +87,13 @@ img {
   gap: 8px;
 }
 
+.header-logo {
+  padding-bottom: 8px;
+}
+
 .header-content {
   position: relative;
   overflow: hidden;
-  margin-top: 12px;
   border-radius: 16px;
   border: 2px solid transparent;
   transition: all 0.3s ease-in-out 0.1s;
@@ -121,8 +124,8 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.header-content:hover .header-content-link svg {
-  transform: rotate(180deg);
+.header-buttons {
+  padding-bottom: 8px;
 }
 
 .download-btn {
@@ -143,28 +146,33 @@ img {
   top: 51px;
   left: -2px;
   display: grid;
-  grid-template-rows: 0;
+  grid-template-rows: 0fr;
   overflow: hidden;
   z-index: -1;
   transition: all 0.3s ease-in-out 0.14s;
 }
 
-/* .header-content:hover .link-dropdown-container */
-.header-content:hover
-  .header-content-link
-  svg
-  .submenu-wrapper.visible
-  .link-dropdown-container {
+@media (min-width: 991px) {
+  .header-content:hover .header-content-link svg {
+    transform: rotate(180deg);
+  }
+
+  .header-content:hover .link-dropdown-container {
+    grid-template-rows: 1fr;
+  }
+
+  .header-content:hover .link-dropdown-wrapper::before {
+    height: 2px;
+  }
+}
+
+.submenu-wrapper.visible .link-dropdown-container {
   grid-template-rows: 1fr;
 }
 
-/* .link-dropdown-container::before {
-  content: "";
-  border: 2px solid var(--white);
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
+.header-content.visible .header-content-link svg {
+  transform: rotate(180deg);
+}
 
 .link-dropdown-wrapper {
   padding: 32px 22px;
@@ -172,6 +180,16 @@ img {
   border-radius: 0 16px 16px;
   background-color: var(--white);
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.link-dropdown-wrapper::before {
+  content: "";
+  width: 396px;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header-content:hover .link-dropdown-wrapper {
