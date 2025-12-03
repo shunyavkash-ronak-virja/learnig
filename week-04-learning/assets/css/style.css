@@ -144,11 +144,19 @@ img {
   padding: 6px 8px;
   border: 2px solid var(--black);
   border-radius: 8px;
-  transition: all 0.3s ease-in-out;
+}
+
+.download-btn,
+.download-btn svg {
+  transition: 0.3s ease-in-out;
 }
 
 .download-btn:hover {
   background-color: #daaff4;
+
+  & svg {
+    transform: scale(1.1);
+  }
 }
 
 .link-dropdown-container {
