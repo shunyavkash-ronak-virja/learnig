@@ -1,0 +1,147 @@
+:root {
+  --yellow: #ffff00;
+  --black: #000000;
+  --bg-black: #00000090;
+  --white: #ffffff;
+  --gray: rgb(255 255 255 / 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+/* ----- Sidebar section ----- */
+.sidebar-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-btn {
+  border: 1px solid var(--yellow);
+  background-color: var(--yellow);
+  font-size: 18px;
+  font-family: inherit;
+  padding: 12px 22px;
+  border-radius: 36px;
+  cursor: pointer;
+}
+
+.sidebar-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sidebar-container {
+  max-width: 582px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0fr;
+  background-color: var(--bg-black);
+}
+
+.sidebar-btn.active .sidebar-wrapper {
+}
+
+.close-btn-wrapper {
+  display: flex;
+  justify-content: end;
+  padding: 18px;
+}
+
+.sidebar-close-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 36px;
+  background-color: var(--yellow);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-content-wrapper {
+  padding: 40px 56px;
+}
+
+.content-title {
+  font-size: 26px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 2px;
+}
+
+.content-title span {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+.sidebar-content {
+  margin-top: 16px;
+}
+
+.content-tag {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.content-dec {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.content-lists {
+  padding-left: 18px;
+}
+
+.content-list-item::marker {
+  color: var(--white);
+}
+
+.get-in-btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 26px;
+  text-transform: uppercase;
+  background-color: var(--yellow);
+  color: var(--black);
+  margin-top: 28px;
+}
