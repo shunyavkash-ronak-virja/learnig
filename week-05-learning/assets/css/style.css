@@ -67,12 +67,13 @@ a {
 .sidebar-container {
   max-width: 582px;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 0fr;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
   background-color: var(--bg-black);
 }
 
-.sidebar-btn.active .sidebar-wrapper {
+.sidebar-container.active {
+  transform: translateX(0);
 }
 
 .close-btn-wrapper {
