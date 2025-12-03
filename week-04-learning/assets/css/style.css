@@ -63,7 +63,6 @@ img {
 }
 
 .header-container,
-.header-content-container,
 .content-container,
 .header-buttons {
   display: flex;
