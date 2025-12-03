@@ -5,7 +5,9 @@ const closeBtn = document.querySelector(".sidebar-close-btn");
 toggleBtn.addEventListener("click", () => {
   sideBar.classList.add("active");
 });
+console.log(toggleBtn);
 
 closeBtn.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });
+console.log(closeBtn);

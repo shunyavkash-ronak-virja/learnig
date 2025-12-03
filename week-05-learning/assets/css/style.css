@@ -60,6 +60,7 @@ a {
 .sidebar-wrapper {
   overflow: hidden;
   position: absolute;
+  visibility: hidden;
   top: 0;
   right: 0;
 }
@@ -67,6 +68,8 @@ a {
 .sidebar-container {
   max-width: 582px;
   height: 100vh;
+  visibility: hidden;
+  overflow: auto;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
   background-color: var(--bg-black);
@@ -74,12 +77,16 @@ a {
 
 .sidebar-container.active {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .close-btn-wrapper {
   display: flex;
   justify-content: end;
   padding: 18px;
+  /* position: absolute; */
+  /* top: 20px; */
+  /* right: 20px; */
 }
 
 .sidebar-close-btn {
@@ -94,6 +101,7 @@ a {
 }
 
 .sidebar-content-wrapper {
+  /* padding: 80px 56px 40px; */
   padding: 40px 56px;
 }
 

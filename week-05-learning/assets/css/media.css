@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+  .sidebar-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .sidebar-content-wrapper {
+    padding: 40px 30px;
+  }
+}
