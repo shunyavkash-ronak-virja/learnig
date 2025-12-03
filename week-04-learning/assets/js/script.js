@@ -5,6 +5,7 @@ const hidden = document.querySelector("body");
 window.addEventListener("resize", () => {
   navLinks.classList.remove("active");
   navToggle.classList.remove("active");
+  hidden.classList.remove("hidden");
 });
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
