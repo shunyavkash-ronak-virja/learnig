@@ -314,5 +314,5 @@ img {
 }
 
 .hidden {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
