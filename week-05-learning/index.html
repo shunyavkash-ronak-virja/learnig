@@ -17,21 +17,22 @@
 </head>
 
 <body>
+    <!----- sidebar ----->
     <section class="sidebar-section">
         <div class="container">
             <div class="sidebar-button-wrapper">
-                <button class="sidebar-btn">click me</button>
+                <button class="btn">click me</button>
             </div>
-
+            <div class="bg-overlay"></div>
             <div class="sidebar-wrapper">
                 <div class="sidebar-container">
                     <div class="close-btn-wrapper">
-                        <a class="sidebar-close-btn" href="javascript:void(0)">
+                        <button class="sidebar-close-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
                                 <path d="M18 6 6 18" />
                                 <path d="m6 6 12 12" />
                             </svg>
-                        </a>
+                        </button>
                     </div>
                     <div class="sidebar-content-wrapper">
                         <h2 class="content-title">
@@ -56,7 +57,140 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <!----- modal ----->
+    <section class="modal-section">
+        <div class="container">
+            <div class="modal-btn-container">
+                <button class="modal-btn">open modal</button>
+            </div>
+            <div class="modal-wrapper">
+                <div class="modal-overlay"></div>
+                <div class="modal-container">
+                    <div class="modal-close-container">
+                        <button class="modal-close-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <form class="modal-form-wrapper">
+                        <div class="modal-form-content">
+                            <h2 class="modal-form-title">i'd like to know more</h2>
+                            <div class="option-wrapper">
+                                <div class="option-content contact-form">
+                                    <input type="radio" name="option" id="contactform" checked>
+                                    <label for="contactform">Fill Out Contact Form</label>
+                                </div>
+                                <div class="option-content bike-value">
+                                    <input type="radio" name="option" id="bikevalue">
+                                    <label for="bikevalue">Value my bike</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-form form">
+                            <div class="first-form-wrapper">
+                                <div class="input-container">
+                                    <input class="input-box first-form-box" type="text" name="name" placeholder="Your Name..." required>
+                                    <input class="input-box first-form-box" type="email" name="email" placeholder="Your Email..." required>
+                                    <input class="input-box first-form-box" type="tel" name="tel" placeholder="Your Number..." required>
+                                    <div class="input-wrapper">
+                                        <select class="input-box select-list" name="date">
+                                            <option value="option1">Desired Date...</option>
+                                            <option value="option2">10 / 12 / 2020</option>
+                                            <option value="option3">22 / 04 / 2022</option>
+                                            <option value="option4">16 / 09 / 2025</option>
+                                        </select>
+
+                                        <select class="input-box select-list" name="time">
+                                            <option value="option1">Desired Time...</option>
+                                            <option value="option2">10:50 AM</option>
+                                            <option value="option3">06:30 AM</option>
+                                            <option value="option4">04:40 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class=" form-dec">*The time & date is not completely guaranteed.</p>
+                                <div class="form-btn-wrapper">
+                                    <button class="form-btn" type="submit">SUBMIT FORM</button>
+                                </div>
+                                <div class="option-content newsletters-input">
+                                    <input class="newsletters-checkbox" type="checkbox" name="checkbox" id="newsletters">
+                                    <label for="newsletters">Please select, to subscribe to our newsletters</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="second-form form">
+                            <div class="second-form-wrapper">
+                                <div class="input-wrapper">
+                                    <input class="input-box second-form-content" type="text" name="text" placeholder="Modal Name...">
+                                    <select class="input-box  second-form-content" name="time">
+                                        <option value="option1">Year...</option>
+                                        <option value="option2">2020</option>
+                                        <option value="option3">2021</option>
+                                        <option value="option4">2022</option>
+                                    </select>
+                                    <input class="input-box second-form-content" type="number" name="number" placeholder="Mileage...">
+                                </div>
+                                <div class="input-wrapper second-form-media-wrapper">
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Image of the front</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Image of the rear</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Image of the right-side</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Image of the left-side</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Image of the engine</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Image of the hour meter</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                </div>
+                                <div class="input-wrapper second-form-media-wrapper">
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Service History & Logbook</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <div class="input-box second-form-media">
+                                        <label for="uplodeimg">Outstanding Finance...</label>
+                                        <input class="form-media-input" id="uplodeimg" type="file" name="Image">
+                                    </div>
+                                    <select class="input-box second-form-media" name="time">
+                                        <option value="option1">Desired price</option>
+                                        <option value="option2">₹44550</option>
+                                        <option value="option3">₹50820</option>
+                                        <option value="option4">₹48469</option>
+                                    </select>
+                                </div>
+                                <div class="form-btn-wrapper">
+                                    <button class="form-btn" type="submit">VALUE MY BIKE</button>
+                                </div>
+                                <div class="option-content newsletters-input">
+                                    <input class="newsletters-checkbox" type="checkbox" name="checkbox" id="newsletters">
+                                    <label for="newsletters">Please select, to subscribe to our newsletters</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <script src="assets/js/script.js"></script>

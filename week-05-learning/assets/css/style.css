@@ -1,9 +1,9 @@
 :root {
   --yellow: #ffff00;
   --black: #000000;
-  --bg-black: #00000090;
   --white: #ffffff;
   --gray: rgb(255 255 255 / 44%);
+  --lightgray: #cccccc;
 }
 
 * {
@@ -31,23 +31,7 @@ a {
   display: inline-flex;
 }
 
-/* ----- Sidebar section ----- */
-.sidebar-section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.sidebar-button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sidebar-btn {
+.btn {
   border: 1px solid var(--yellow);
   background-color: var(--yellow);
   font-size: 18px;
@@ -57,12 +41,46 @@ a {
   cursor: pointer;
 }
 
+.body-hidden {
+  overflow: hidden;
+}
+
+/* ----- Sidebar section ----- */
+.sidebar-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.sidebar-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
 .sidebar-wrapper {
   overflow: hidden;
   position: absolute;
   visibility: hidden;
   top: 0;
   right: 0;
+  z-index: 4;
 }
 
 .sidebar-container {
@@ -72,7 +90,8 @@ a {
   overflow: auto;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
-  background-color: var(--bg-black);
+  background-color: var(--black);
+  opacity: 80%;
 }
 
 .sidebar-container.active {
@@ -84,9 +103,10 @@ a {
   display: flex;
   justify-content: end;
   padding: 18px;
-  /* position: absolute; */
-  /* top: 20px; */
-  /* right: 20px; */
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: var(--black);
 }
 
 .sidebar-close-btn {
@@ -95,13 +115,14 @@ a {
   border-radius: 36px;
   background-color: var(--yellow);
   color: var(--black);
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .sidebar-content-wrapper {
-  /* padding: 80px 56px 40px; */
   padding: 40px 56px;
 }
 
@@ -153,4 +174,237 @@ a {
   background-color: var(--yellow);
   color: var(--black);
   margin-top: 28px;
+}
+
+/* ----- Modal section ----- */
+.modal-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.modal-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-btn {
+  border: 1px solid var(--yellow);
+  background-color: var(--yellow);
+  font-size: 18px;
+  font-family: inherit;
+  padding: 12px 22px;
+  border-radius: 36px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 40%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.modal-container {
+  max-width: 786px;
+  display: none;
+  background-color: var(--white);
+  padding: 20px 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+}
+
+.modal-wrapper {
+  padding: 50px 0 50px 0;
+  position: fixed;
+  /* inset: 0; */
+  overflow: auto;
+}
+
+.modal-close-container {
+  display: flex;
+  justify-content: end;
+  padding: 8px;
+}
+
+.modal-close-btn {
+  border: none;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.modal-form-content {
+  text-align: center;
+}
+
+.modal-form-title {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.option-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.option-content *,
+label {
+  cursor: pointer;
+}
+
+.option-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.option-content input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0.15rem solid var(--lightgray);
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.option-content input[type="radio"]:checked {
+  background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" width="18" height="18" rx="9" fill="%23FFFF00"/><path d="M19.5 3L7.125 15L1.5 9.54545" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+  border-color: var(--yellow);
+}
+
+.contact-form {
+}
+
+.first-form-wrapper,
+.second-form-wrapper {
+  margin-top: 10px;
+}
+
+.input-box {
+  border: none;
+  border-bottom: 1px solid var(--lightgray);
+  padding: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+.first-form-box {
+  width: 100%;
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+.input-box::placeholder {
+  color: var(--black);
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-list {
+  width: 50%;
+}
+
+.form-dec {
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.form-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.form-btn {
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 20px 160px;
+  cursor: pointer;
+}
+
+.newsletters-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.newsletters-input input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.newsletters-input input[type="checkbox"]:checked {
+  background-color: var(--yellow);
+}
+
+.second-form {
+  display: none;
+}
+
+.second-form-media-wrapper {
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.second-form-content {
+  width: 33%;
+}
+
+.second-form-media {
+  width: 49%;
+}
+
+.second-form-media label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-form-media label::after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23cccccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-upload-icon lucide-upload"><path d="M12 3v12"/><path d="m17 8-5-5-5 5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></svg>');
+}
+
+.form-media-input {
+  display: none;
 }

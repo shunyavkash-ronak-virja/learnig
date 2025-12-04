@@ -1,11 +1,17 @@
 @media (max-width: 767px) {
+  /* ----- Sidebar section ----- */
   .sidebar-container {
     max-width: 100%;
   }
+
+  /* ----- Modal section ----- */
 }
 
 @media (max-width: 575px) {
+  /* ----- Sidebar section ----- */
   .sidebar-content-wrapper {
     padding: 40px 30px;
   }
+
+  /* ----- Modal section ----- */
 }
