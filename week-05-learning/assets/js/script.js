@@ -37,22 +37,16 @@ const bodyHide = document.querySelector("body");
 
 modalBtn.addEventListener("click", () => {
   modalBox.style.display = "flex";
-  // modalWrapper.style.display = "block";
-  // modalOverlay.style.display = "block";
   bodyHide.classList.add("body-hidden");
 });
 
 modalClose.addEventListener("click", () => {
   modalBox.style.display = "none";
-  // modalWrapper.style.display = "none";
-  // modalOverlay.style.display = "none";
   bodyHide.classList.remove("body-hidden");
 });
 
 modalOverlay.addEventListener("click", () => {
   modalBox.style.display = "none";
-  // modalWrapper.style.display = "none";
-  // modalOverlay.style.display = "none";
   bodyHide.classList.remove("body-hidden");
 });
 
