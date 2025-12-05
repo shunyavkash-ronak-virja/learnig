@@ -184,7 +184,6 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  /* position: relative; */
 }
 
 .modal-btn-container {
@@ -229,13 +228,6 @@ a {
   inset: 0;
   z-index: 999;
   overflow: auto;
-}
-
-.modal-close-container {
-  /* display: flex; */
-  /* justify-content: end; */
-  /* padding: 8px; */
-  /* margin-bottom: 18px; */
 }
 
 .modal-close-btn {
