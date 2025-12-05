@@ -30,8 +30,8 @@ const modalOverlay = document.querySelector(".modal-overlay");
 const contactForm = document.querySelector(".contact-form");
 const modalBox = document.querySelector(".modal-wrapper");
 const bikeValue = document.querySelector(".bike-value");
-const firstForm = document.querySelector(".first-form");
-const secondForm = document.querySelector(".second-form");
+const firstForm = document.querySelector(".first-form-wrapper");
+const secondForm = document.querySelector(".second-form-wrapper");
 const bodyHide = document.querySelector("body");
 
 modalBtn.addEventListener("click", () => {

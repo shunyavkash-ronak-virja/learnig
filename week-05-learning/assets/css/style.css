@@ -303,9 +303,6 @@ label {
   border-color: var(--yellow);
 }
 
-.contact-form {
-}
-
 .first-form-wrapper,
 .second-form-wrapper {
   margin-top: 10px;
@@ -382,7 +379,7 @@ label {
   background-color: var(--yellow);
 }
 
-.second-form {
+.second-form-wrapper {
   display: none;
 }
 
