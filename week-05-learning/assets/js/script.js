@@ -25,7 +25,6 @@ bgOverlay.addEventListener("click", () => {
 
 // Modal js -------
 const modalBtn = document.querySelector(".modal-btn");
-// const modalWrapper = document.querySelector(".modal-container");
 const modalClose = document.querySelector(".modal-close-btn");
 const modalOverlay = document.querySelector(".modal-overlay");
 const contactForm = document.querySelector(".contact-form");
