@@ -25,30 +25,34 @@ bgOverlay.addEventListener("click", () => {
 
 // Modal js -------
 const modalBtn = document.querySelector(".modal-btn");
-const modalWrapper = document.querySelector(".modal-container");
+// const modalWrapper = document.querySelector(".modal-container");
 const modalClose = document.querySelector(".modal-close-btn");
 const modalOverlay = document.querySelector(".modal-overlay");
 const contactForm = document.querySelector(".contact-form");
+const modalBox = document.querySelector(".modal-wrapper");
 const bikeValue = document.querySelector(".bike-value");
 const firstForm = document.querySelector(".first-form");
 const secondForm = document.querySelector(".second-form");
 const bodyHide = document.querySelector("body");
 
 modalBtn.addEventListener("click", () => {
-  modalWrapper.style.display = "block";
-  modalOverlay.style.display = "block";
+  modalBox.style.display = "flex";
+  // modalWrapper.style.display = "block";
+  // modalOverlay.style.display = "block";
   bodyHide.classList.add("body-hidden");
 });
 
 modalClose.addEventListener("click", () => {
-  modalWrapper.style.display = "none";
-  modalOverlay.style.display = "none";
+  modalBox.style.display = "none";
+  // modalWrapper.style.display = "none";
+  // modalOverlay.style.display = "none";
   bodyHide.classList.remove("body-hidden");
 });
 
 modalOverlay.addEventListener("click", () => {
-  modalWrapper.style.display = "none";
-  modalOverlay.style.display = "none";
+  modalBox.style.display = "none";
+  // modalWrapper.style.display = "none";
+  // modalOverlay.style.display = "none";
   bodyHide.classList.remove("body-hidden");
 });
 

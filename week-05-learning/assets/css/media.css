@@ -5,6 +5,19 @@
   }
 
   /* ----- Modal section ----- */
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .select-list,
+  .second-form-content,
+  .second-form-media {
+    width: 100%;
+  }
+
+  .form-btn {
+    padding: 20px 100px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -14,4 +27,29 @@
   }
 
   /* ----- Modal section ----- */
+  .modal-wrapper {
+    padding: 16px;
+  }
+
+  .modal-container {
+    padding: 26px;
+  }
+
+  .modal-form-content {
+    margin-top: 64px;
+    margin-bottom: 20px;
+  }
+
+  .modal-form-title {
+    font-size: 28px;
+  }
+
+  .option-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-btn {
+    padding: 14px 42px;
+  }
 }
