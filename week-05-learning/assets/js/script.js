@@ -7,19 +7,19 @@ const bodyHidden = document.querySelector("body");
 
 toggleBtn.addEventListener("click", () => {
   sideBar.classList.add("active");
-  bgOverlay.style.display = "block";
+  bgOverlay.classList.add("active");
   bodyHidden.classList.add("body-hidden");
 });
 
 closeBtn.addEventListener("click", () => {
   sideBar.classList.remove("active");
-  bgOverlay.style.display = "none";
+  bgOverlay.classList.remove("active");
   bodyHidden.classList.remove("body-hidden");
 });
 
 bgOverlay.addEventListener("click", () => {
   sideBar.classList.remove("active");
-  bgOverlay.style.display = "none";
+  bgOverlay.classList.remove("active");
   bodyHidden.classList.remove("body-hidden");
 });
 
