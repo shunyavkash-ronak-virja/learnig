@@ -11,6 +11,10 @@
     margin-top: 12px;
   }
 
+  .input-container .input-wrapper {
+    margin-top: 0;
+  }
+
   .select-list,
   .second-form-content,
   .second-form-media {

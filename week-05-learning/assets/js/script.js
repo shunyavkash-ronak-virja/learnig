@@ -35,17 +35,17 @@ const secondForm = document.querySelector(".second-form-wrapper");
 const bodyHide = document.querySelector("body");
 
 modalBtn.addEventListener("click", () => {
-  modalBox.style.display = "flex";
+  modalBox.classList.add("show");
   bodyHide.classList.add("body-hidden");
 });
 
 modalClose.addEventListener("click", () => {
-  modalBox.style.display = "none";
+  modalBox.classList.remove("show");
   bodyHide.classList.remove("body-hidden");
 });
 
 modalOverlay.addEventListener("click", () => {
-  modalBox.style.display = "none";
+  modalBox.classList.remove("show");
   bodyHide.classList.remove("body-hidden");
 });
 
