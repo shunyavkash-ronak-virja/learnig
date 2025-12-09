@@ -81,7 +81,6 @@ img {
 
 .header-content {
   position: relative;
-  overflow: hidden;
   border-radius: 16px;
   border: 2px solid transparent;
   margin-top: 16px;
@@ -89,7 +88,6 @@ img {
 }
 
 .header-content:hover {
-  overflow: visible;
   border-color: var(--black);
   background-color: var(--white);
 }
@@ -111,7 +109,7 @@ img {
   bottom: -8px;
   background-color: transparent;
   z-index: 1;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-content:hover.submenu-wrapper::after {
