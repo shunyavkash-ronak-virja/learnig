@@ -30,3 +30,12 @@ document.documentElement.style.setProperty(
   "--header-height",
   `${headerHeight}px`
 );
+
+// Submenu link width
+document.addEventListener("DOMContentLoaded", function () {
+  const headerLinks = document.querySelectorAll(".submenu-wrapper");
+  headerLinks.forEach((link) => {
+    const linkWidth = link.offsetWidth - 3.4;
+    link.style.setProperty("--link-width", `${linkWidth}px`);
+  });
+});
