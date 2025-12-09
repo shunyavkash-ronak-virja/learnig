@@ -6,6 +6,7 @@
   --dimgray: #7b7975;
   --sandybrown: #ffa845;
   --thistle: #f0d7ff;
+  /* --header-height: --header-height; */
 }
 
 * {
@@ -125,7 +126,6 @@ img {
   align-items: center;
   gap: 6px;
   padding: 10px;
-  transition: all 0.3s ease-in-out;
 }
 
 .header-link-icon {

@@ -299,6 +299,10 @@ a {
   color: var(--red);
 }
 
+.modal-form-wrapper {
+  text-align: center;
+}
+
 .modal-form-content {
   text-align: center;
   margin-top: 30px;
@@ -391,14 +395,9 @@ label {
 }
 
 .form-dec {
+  text-align: left;
   font-size: 14px;
   margin-top: 14px;
-}
-
-.form-btn-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
 }
 
 .form-btn {
@@ -408,6 +407,7 @@ label {
   border: none;
   background-color: var(--yellow);
   color: var(--black);
+  margin-top: 22px;
   padding: 20px 160px;
   cursor: pointer;
 }
