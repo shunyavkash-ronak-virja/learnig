@@ -34,8 +34,11 @@ document.documentElement.style.setProperty(
 // Submenu link width
 document.addEventListener("DOMContentLoaded", function () {
   const headerLinks = document.querySelectorAll(".submenu-wrapper");
+  // const contentLink = document.querySelectorAll(".header-link-wrapper");
   headerLinks.forEach((link) => {
-    const linkWidth = link.offsetWidth - 3.9;
+    const linkWidth = link.offsetWidth;
     link.style.setProperty("--link-width", `${linkWidth}px`);
+    // console.log(`link.style.setProperty("--link-width", ${linkWidth}px)`);
+    // console.log(linkWidth);
   });
 });
