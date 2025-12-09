@@ -79,26 +79,29 @@
     flex-grow: 1;
   }
 
+  .header-content.visible .header-link-icon svg {
+    transform: rotate(180deg);
+  }
+
   .link-dropdown-container {
     min-width: 100%;
     display: grid;
     grid-template-rows: 0fr;
-    overflow: hidden;
     border: none;
     border-radius: 0;
     position: static;
     padding: 0 16px;
     opacity: 1;
     visibility: visible;
+  }
+
+  .links-content-wrapper {
     overflow: hidden;
   }
 
   .submenu-wrapper.visible .link-dropdown-container {
-    /* height: 100%; */
-    /* opacity: 1; */
-    /* visibility: visible; */
     padding: 32px 16px;
-    /* grid-template-rows: 1fr; */
+    grid-template-rows: 1fr;
   }
 }
 

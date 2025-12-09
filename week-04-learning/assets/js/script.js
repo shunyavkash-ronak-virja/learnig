@@ -14,11 +14,9 @@ navToggle.addEventListener("click", () => {
 });
 
 // submenu click js
-if (window.innerWidth <= "991") {
-  const menuStore = document.querySelectorAll(".submenu-wrapper");
-  menuStore.forEach((val) => {
-    val.addEventListener("click", (e) => {
-      val.classList.toggle("visible");
-    });
+const menuStore = document.querySelectorAll(".submenu-wrapper");
+menuStore.forEach((val) => {
+  val.addEventListener("click", (e) => {
+    val.classList.toggle("visible");
   });
-}
+});
