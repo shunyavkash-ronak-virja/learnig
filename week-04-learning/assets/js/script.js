@@ -35,7 +35,7 @@ document.documentElement.style.setProperty(
 document.addEventListener("DOMContentLoaded", function () {
   const headerLinks = document.querySelectorAll(".submenu-wrapper");
   headerLinks.forEach((link) => {
-    const linkWidth = link.offsetWidth - 3.4;
+    const linkWidth = link.offsetWidth - 3.9;
     link.style.setProperty("--link-width", `${linkWidth}px`);
   });
 });
