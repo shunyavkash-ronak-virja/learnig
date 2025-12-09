@@ -109,6 +109,7 @@ img {
   top: -2px;
   background-color: var(--white);
   z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-content:not(.submenu-wrapper) {

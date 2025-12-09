@@ -1,0 +1,76 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dimgray: #6e6e6e;
+  --darksalmon: #c77a63;
+  --bg-darksalmon: rgba(199, 122, 99, 0.2);
+  --gainsboro: #e5e5e5;
+  --darkslategray: #2b2d42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.outline {
+  border: 1px solid transparent;
+}
+
+.primary-button {
+  background-color: var(--bg-darksalmon);
+  color: var(--darksalmon);
+}
+
+.secondary-button {
+  color: var(--darkslategray);
+  background-color: var(--white);
+  position: relative;
+}
+
+.secondary-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  scale: 0;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-button:hover {
+  color: var(--white);
+
+  &::before {
+    scale: 1;
+    background-color: var(--darksalmon);
+  }
+}
