@@ -32,13 +32,10 @@ document.documentElement.style.setProperty(
 );
 
 // Submenu link width
-document.addEventListener("DOMContentLoaded", function () {
-  const headerLinks = document.querySelectorAll(".submenu-wrapper");
-  // const contentLink = document.querySelectorAll(".header-link-wrapper");
-  headerLinks.forEach((link) => {
-    const linkWidth = link.offsetWidth;
-    link.style.setProperty("--link-width", `${linkWidth}px`);
-    // console.log(`link.style.setProperty("--link-width", ${linkWidth}px)`);
-    // console.log(linkWidth);
-  });
+const link = document.querySelectorAll(".submenu-wrapper .header-link-wrapper");
+link.forEach((link) => {
+  const linkWidth = link.getBoundingClientRect().width;
+  link
+    .closest(".submenu-wrapper")
+    .style.setProperty("--linkWidth", linkWidth + "px");
 });
