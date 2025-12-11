@@ -1,16 +1,14 @@
 @media (max-width: 991px) {
-  .flexible-card-content {
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 991px) {
   /* ----- Grid card ----- */
   .grid-card-container {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
   /* ----- Flexible card ----- */
+  .flexible-card-content {
+    max-width: 50%;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -46,5 +44,15 @@
   /* ----- Flexible card ----- */
   .flexible-card-content {
     max-width: 100%;
+    padding: 0;
+  }
+
+  .flexible-card-wrapper {
+    gap: 20px;
+    margin: 0;
+  }
+
+  .flexible-card-conatiner {
+    padding: 20px;
   }
 }

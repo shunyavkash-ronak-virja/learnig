@@ -44,23 +44,125 @@ a {
   cursor: pointer;
 }
 
-.outline {
-  border: 1px solid transparent;
+.btn,
+.btn-icon::before,
+.btn-icon svg,
+.btn-icon-line,
+.btn-icon-arrow {
+  transition: all 0.4s ease-in-out;
 }
 
-.primary-button {
-  color: var(--blueviolet);
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  border-radius: 36px;
+  overflow: hidden;
+  color: var(--black);
+  position: relative;
 }
 
-.primary-button:hover {
-  color: var(--hotpink);
-}
-
-.secondary-button {
-  color: var(--darkslategray);
-  background-color: var(--white);
-}
-
-.secondary-button:hover {
+.btn-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  background-color: var(--black);
   color: var(--white);
 }
+
+.btn-icon::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 36px;
+  background-color: var(--black);
+  z-index: -1;
+}
+
+.btn-tag {
+  padding: 6px;
+  padding-right: 20px;
+}
+
+.btn-icon-line {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-icon-arrow {
+  transform: translateX(-2px);
+}
+
+.btn:hover {
+  color: var(--white);
+
+  .btn-icon::before {
+    width: 100%;
+  }
+
+  .btn-icon svg {
+    transform: translateX(8px);
+  }
+
+  .btn-icon-arrow {
+    transform: translateX(0);
+  }
+
+  .btn-icon-line {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.outline {
+  border: 1px solid var(--black);
+}
+
+/* ----- Primary button ----- */
+.primary-button {
+  color: var(--hotpink);
+
+  .btn-icon {
+    background-color: var(--hotpink);
+    transition: all 0.4s ease-in;
+  }
+}
+.primary-button:hover .btn-icon {
+  background-color: var(--black);
+}
+/* ----- End primary button ----- */
+
+/* ----- Secondary button ----- */
+.secondary-button {
+  color: var(--darksalmon);
+
+  .btn-icon {
+    background-color: var(--darksalmon);
+    transition: all 0.4s ease-in;
+  }
+}
+.secondary-button:hover .btn-icon {
+  background-color: var(--black);
+}
+/* ----- End secondary button ----- */
+
+/* ----- Big button ----- */
+.button-big .btn-icon {
+  width: 55px;
+  height: 55px;
+}
+/* ----- End big button ----- */
+
+/* ----- Small button ----- */
+.button-small .btn-icon {
+  width: 40px;
+  height: 40px;
+}
+/* ----- End small button ----- */
