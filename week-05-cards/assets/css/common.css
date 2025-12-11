@@ -154,9 +154,19 @@ a {
 /* ----- End secondary button ----- */
 
 /* ----- Big button ----- */
-.button-big .btn-icon {
-  width: 55px;
-  height: 55px;
+.button-big {
+  width: 16%;
+  .btn-icon {
+    width: 90px;
+    height: 55px;
+  }
+
+  .btn-tag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
 }
 /* ----- End big button ----- */
 
