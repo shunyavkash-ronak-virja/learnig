@@ -1,18 +1,19 @@
-const monthlyPricing = document.querySelector(".monthly");
-const yearlyPricing = document.querySelector(".yearly");
-const monthlyCard = document.querySelector(".monthly-card-wrapper");
-const yearlyCard = document.querySelector(".yearly-card-wrapper");
+const monthlyCard = document.querySelector(".monthly");
+const yearlyCard = document.querySelector(".yearly");
+const pricingList = document.querySelectorAll(".pricing-wrapper");
 
-yearlyPricing.addEventListener("click", () => {
-  monthlyPricing.classList.remove("active");
-  yearlyPricing.classList.add("active");
-  monthlyCard.style.display = "none";
-  yearlyCard.style.display = "grid";
+yearlyCard.addEventListener("click", () => {
+  monthlyCard.classList.remove("active");
+  yearlyCard.classList.add("active");
+  pricingList.forEach((element) => {
+    element.classList.add("change");
+  });
 });
 
-monthlyPricing.addEventListener("click", () => {
-  monthlyPricing.classList.add("active");
-  yearlyPricing.classList.remove("active");
-  yearlyCard.style.display = "none";
-  monthlyCard.style.display = "grid";
+monthlyCard.addEventListener("click", () => {
+  pricingList.forEach((element) => {
+    element.classList.remove("change");
+  });
+  yearlyCard.classList.remove("active");
+  monthlyCard.classList.add("active");
 });

@@ -79,7 +79,7 @@ ul {
   gap: 8px;
   background-color: var(--neutral--50);
   border-radius: 8px;
-  padding: 4px;
+  padding: 12px;
   margin-bottom: 30px;
 }
 
@@ -88,6 +88,35 @@ ul {
   color: var(--neutral--900);
   border-radius: 8px;
   text-transform: capitalize;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-tab::before {
+  content: "";
+  width: 20%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-160%, -25%) rotate(25deg);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 6px rgb(255, 255, 255),
+    -12px 0px 12px 6px rgb(255, 255, 255);
+  opacity: 80%;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing-tab:hover {
+  border-color: var(--white);
+
+  &::before {
+    left: 200%;
+  }
 }
 
 .pricing-tab.active {
@@ -131,8 +160,38 @@ ul {
 }
 
 .pricing-wrapper {
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.monthly-price,
+.yearly-price {
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.yearly-price,
+.change .monthly-price {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .monthly-price,
+.change .yearly-price {
+  transform: translateY(-80px);
+}
+
+.change .monthly-price {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .yearly-price {
+  opacity: 1;
+  visibility: visible;
 }
 
 .pricing-card-price {
@@ -158,11 +217,34 @@ ul {
   border-radius: 10px;
   padding: 12px;
   margin-top: 14px;
+  overflow: hidden;
+  position: relative;
   transition: all 0.3s ease-in-out;
 }
 
-.pricing-card-btn:hover {
+.pricing-card-btn span {
+  z-index: 4;
+}
+
+.pricing-card-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(-105%);
   background-color: var(--black);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-card-btn:hover::before {
+  transform: translateX(0);
+}
+
+.pricing-card-btn:hover span {
   color: var(--white);
 }
 
@@ -203,10 +285,6 @@ ul {
   box-shadow: 0 2px 2px 0.5px #95a0b233;
 }
 
-.yearly-card-wrapper {
-  display: none;
-}
-
 @media (max-width: 991px) {
   .pricing-card-wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -219,7 +297,11 @@ ul {
 
 @media (max-width: 767px) {
   .pricing-headings-title {
-    margin: 8px;
+    margin: 6px 0;
+  }
+
+  .pricing-plan-tab {
+    padding: 8px;
   }
 
   .pricing-content-wrapper {
@@ -229,12 +311,46 @@ ul {
   .pricing-card-content {
     width: 100%;
   }
+
+  .pricing-card-price {
+    font-size: 46px;
+  }
+
+  .pricing-wrapper {
+    height: 69px;
+  }
+
+  .change .monthly-price,
+  .change .yearly-price {
+    transform: translateY(-68px);
+  }
 }
 
 @media (max-width: 575px) {
   .pricing-headings-title,
   .pricing-card-price {
     font-size: 36px;
+  }
+
+  .pricing-card-container {
+    margin-top: 24px;
+  }
+
+  .pricing-plan-tab {
+    margin-bottom: 20px;
+  }
+
+  .pricing-wrapper {
+    height: 54px;
+  }
+
+  .pricing-content-wrapper {
+    gap: 30px;
+  }
+
+  .change .monthly-price,
+  .change .yearly-price {
+    transform: translateY(-52px);
   }
 
   .pricing-headings-dec {

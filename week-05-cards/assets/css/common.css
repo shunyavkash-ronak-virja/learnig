@@ -155,7 +155,7 @@ a {
 
 /* ----- Big button ----- */
 .button-big {
-  width: 16%;
+  min-width: 16%;
   .btn-icon {
     width: 90px;
     height: 55px;

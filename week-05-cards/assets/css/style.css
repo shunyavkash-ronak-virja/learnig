@@ -5,15 +5,17 @@
 
 .grid-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
   gap: 60px 20px;
 }
 
-.grid-card-wrapper {
-  justify-self: center;
+.grid-card-container > .grid-card-wrapper {
+  width: 100%;
 }
 
 .grid-card-media {
+  max-width: 50rem;
   max-height: 300px;
 }
 
@@ -113,6 +115,7 @@
 .flexible-card-wrapper {
   display: flex;
   justify-content: center;
+  gap: 20px 0;
   flex-wrap: wrap;
   margin: 0 -20px;
 }
@@ -120,7 +123,7 @@
 .flexible-card-content {
   width: 100%;
   max-width: 33.33%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .flexible-card-conatiner {

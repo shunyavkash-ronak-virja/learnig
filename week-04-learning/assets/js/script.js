@@ -32,10 +32,16 @@ document.documentElement.style.setProperty(
 );
 
 // Submenu link width
-const link = document.querySelectorAll(".submenu-wrapper .header-link-wrapper");
-link.forEach((link) => {
-  const linkWidth = link.getBoundingClientRect().width;
-  link
-    .closest(".submenu-wrapper")
-    .style.setProperty("--linkWidth", linkWidth + "px");
+window.addEventListener("load", () => {
+  document.fonts.ready.then(() => {
+    const links = document.querySelectorAll(
+      ".submenu-wrapper .header-link-wrapper"
+    );
+    links.forEach((link) => {
+      const linkWidth = link.getBoundingClientRect().width;
+      link
+        .closest(".submenu-wrapper")
+        .style.setProperty("--linkWidth", linkWidth + "px");
+    });
+  });
 });
