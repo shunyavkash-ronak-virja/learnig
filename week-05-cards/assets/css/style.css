@@ -9,11 +9,11 @@
   gap: 60px 20px;
 }
 
-.grid-card-container:not(
-    :has(+ .grid-card-container, + .grid-card-container)
+.grid-card-wrapper:not(
+    :has(+ .grid-card-wrapper, + .grid-card-wrapper)
   ):nth-child(3n + 1) {
   grid-column: span 6;
-  /* width: calc(100% / 3 - (20px * 2) / 3); */
+  width: calc(100% / 3 - (20px * 2) / 3);
 }
 
 .grid-card-wrapper {
