@@ -7,7 +7,7 @@
 @media (max-width: 991px) {
   /* ----- Grid card ----- */
   .grid-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /* ----- Flexible card ----- */
@@ -23,7 +23,7 @@
   }
 
   .grid-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .grid-card-content {
