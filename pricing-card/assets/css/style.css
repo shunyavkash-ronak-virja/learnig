@@ -134,6 +134,7 @@ ul {
 .pricing-content-wrapper {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 40px;
   border: 1px solid var(--neutral--300);
   border-radius: 12px;
@@ -228,24 +229,23 @@ ul {
 
 .pricing-card-btn::before {
   content: "";
-  width: 100%;
+  width: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  transform: translateX(-105%);
   background-color: var(--black);
   color: var(--white);
   transition: all 0.3s ease-in-out;
 }
 
-.pricing-card-btn:hover::before {
-  transform: translateX(0);
+.pricing-card-btn:hover {
+  color: var(--white);
 }
 
-.pricing-card-btn:hover span {
-  color: var(--white);
+.pricing-card-btn:hover::before {
+  width: 100%;
 }
 
 .pricing-lists-content:not(:last-child) {

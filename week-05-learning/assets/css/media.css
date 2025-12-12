@@ -38,6 +38,7 @@
   }
 
   .modal-container {
+    max-width: 100%;
     padding: 26px;
   }
 
@@ -57,5 +58,9 @@
 
   .form-btn {
     padding: 14px 42px;
+  }
+
+  .newsletters-input {
+    gap: 6px;
   }
 }

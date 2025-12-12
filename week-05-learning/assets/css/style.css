@@ -154,7 +154,6 @@ a {
 
 .sidebar-close-btn:hover {
   background-color: var(--white);
-  color: var(--black);
 }
 
 .sidebar-content-wrapper {
@@ -430,6 +429,7 @@ label {
   border: 1px solid var(--black);
   color: var(--white);
   border-radius: 2px;
+  flex-shrink: 0;
   position: relative;
 }
 
