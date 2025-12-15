@@ -163,11 +163,25 @@
 .footer {
   padding: 20px 0;
 }
+.footer-wrapper,
+.footer-content-container,
+.footer-content-wrapper,
+.social-midea-platforms {
+  display: flex;
+}
+
+.footer-content-container,
+.footer-content-wrapper,
+.social-midea-platforms {
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .footer-wrapper {
-  display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footer-media {
@@ -184,9 +198,11 @@
   font-size: 12px;
 }
 
+.footer-content-container {
+  gap: 82px;
+}
+
 .footer-content-wrapper {
-  display: flex;
-  align-items: center;
   gap: 73px;
 }
 
@@ -254,7 +270,7 @@
   margin-top: 22px;
 }
 
-.social-platform {
+.social-midea-platform {
   background-color: var(--gray-cool-900);
   border-radius: 38px;
   padding: 10px 20px;
@@ -263,40 +279,64 @@
   gap: 8px;
 }
 
-.social-platform-wrapper {
-  display: flex;
-  align-items: center;
+.social-midea-platforms {
   gap: 7px;
   margin-top: 16px;
 }
 
-.social-platform-icon {
+.social-midea-icon {
   display: flex;
 }
 
-.social-platform-icon img {
+.social-midea-icon img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
 
-.social-platform-content {
+.social-midea-content {
   text-transform: uppercase;
   color: var(--white);
   line-height: 1.2;
 }
 
-.social-platform-title {
+.social-midea-title {
   font-size: 14px;
   font-weight: 600;
 }
 
-.social-platform-dec {
+.social-midea-dec {
   font-size: 14px;
   font-weight: 100;
+}
+
+.ios-social-midea .social-midea-content {
+  text-transform: inherit;
 }
 
 .ios-icon-dec {
   font-size: 10px;
   font-weight: 500;
+}
+
+.ios-icon-title {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.copy-rights-tag {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 50px;
+}
+
+.copy-rights-link {
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.copy-rights-link:hover {
+  color: var(--yellow-400);
+  border-color: var(--yellow-400);
 }
