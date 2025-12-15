@@ -1,0 +1,101 @@
+:root {
+  --white: #ffffff;
+  --primary-color: #14183e;
+  --secondary-color: #5e6282;
+  --orange-400: #df6951;
+  --grey-modern-800: #212832;
+  --gray-blue-800: #181e4b;
+  --yellow-400: #f1a501;
+  --orange-400: #f0bb1f;
+  --gray-neutral-400: #686d77;
+  --gray-blue-700: #1e1d4c;
+  --orange-50: #fff1da;
+  --gray-cool-900: #080809;
+  --font-poppins: "Poppins", sans-serif;
+  --font-volkhov: "Volkhov", serif;
+  --font-google-sans: "Google Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font-poppins);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.outline {
+  border: 1px solid transparent;
+}
+
+.btn {
+  padding: 18px 26px;
+  border-radius: 10px;
+}
+
+.primary-btn {
+  background-color: var(--yellow-400);
+  color: var(--white);
+}
+
+.h1,
+h1 {
+  font-size: 84px;
+  font-weight: 700;
+}
+
+.h2,
+h2 {
+  font-size: 84px;
+  font-weight: 700;
+}
+
+.h3,
+h3 {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.h4,
+h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.h5,
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.h6,
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
