@@ -14,6 +14,8 @@
   --font-poppins: "Poppins", sans-serif;
   --font-volkhov: "Volkhov", serif;
   --font-google-sans: "Google Sans", sans-serif;
+  --line-height-1_8: 1.8;
+  --line-height-1: 1;
   --icon-bg: conic-gradient(
     from 180deg at 50% 50%,
     #b8d2f1 0deg,
@@ -61,6 +63,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 ul {
@@ -72,25 +75,72 @@ ul {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
   padding: 18px 26px;
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
-.primary-btn {
-  background-color: var(--yellow-400);
-  color: var(--white);
+.btn-hover {
+  position: relative;
+}
+
+.btn-hover::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #08080929;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover::before {
+  width: 100%;
 }
 
 .h1,
 h1 {
   font-size: 84px;
   font-weight: 700;
+  line-height: var(--line-height-1);
+}
+@media (max-width: 1023px) {
+  .h1,
+  h1 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 767px) {
+  .h1,
+  h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 575px) {
+  .h1,
+  h1 {
+    font-size: 34px;
+  }
 }
 
 .h2,
 h2 {
-  font-size: 84px;
+  font-size: 50px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .h2,
+  h2 {
+    font-size: 35px;
+    font-weight: 600;
+  }
 }
 
 .h3,

@@ -7,6 +7,11 @@
   .header-contents {
     gap: 8px;
   }
+
+  /* ----- Hero section ----- */
+  .hero-content-title span::before {
+    bottom: 6px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -66,6 +71,37 @@
   .footer-container,
   .footer-media {
     max-width: 100%;
+  }
+
+  /* ----- Hero section ----- */
+  .hero-section {
+    padding: 0 0 50px 0;
+  }
+  .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-content-title {
+    max-width: 550px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+
+  .hero-media-wrapper {
+    width: 58%;
+  }
+
+  .hero-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    position: static;
   }
 }
 
