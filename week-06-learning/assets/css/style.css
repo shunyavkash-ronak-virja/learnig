@@ -183,6 +183,8 @@
 .footer {
   margin-top: auto;
   padding: 50px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-wrapper {
@@ -385,6 +387,13 @@
 
 .copy-rights-link:hover {
   color: var(--yellow-200);
+}
+
+.footer-gradient {
+  position: absolute;
+  bottom: -380px;
+  right: -180px;
+  z-index: -1;
 }
 
 /* ----- Hero section ----- */

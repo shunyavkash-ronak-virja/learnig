@@ -188,12 +188,12 @@ h6 {
 }
 @media (max-width: 1023px) {
   .gradient-box {
-    max-width: 378px;
+    max-width: 370px;
   }
 }
 @media (max-width: 991px) {
   .gradient-box {
-    max-width: 286px;
+    max-width: 280px;
   }
 }
 @media (max-width: 991px) {

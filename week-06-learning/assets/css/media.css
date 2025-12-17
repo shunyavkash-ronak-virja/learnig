@@ -83,10 +83,10 @@
   }
 
   /* ----- Hero section ----- */
-  /*  .hero-gradient {
-    top: -170px;
-        left: -244px;
-  } */
+  .hero-gradient {
+    top: -100px;
+    left: -100px;
+  }
 
   .hero-section {
     padding: 0 0 50px 0;
@@ -138,11 +138,6 @@
   }
 
   /* ----- Hero section ----- */
-  .hero-gradient {
-    top: -100px;
-    left: -222px;
-  }
-
   .hero-content-title span::before {
     width: 170%;
     left: -22px;
@@ -215,7 +210,6 @@
   /* ----- Hero section ----- */
   .hero-gradient {
     top: -69px;
-    left: -188px;
   }
 
   .hero-content-title {
