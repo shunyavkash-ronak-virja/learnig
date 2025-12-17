@@ -14,7 +14,7 @@ headerToggle.addEventListener("click", () => {
 // Header scroll event
 const headerHeight = document.querySelector(".header");
 addEventListener("scroll", () => {
-  if (window.pageYOffset > 50) {
+  if (window.pageYOffset > 30) {
     headerHeight.classList.add("header-scroll");
   } else {
     headerHeight.classList.remove("header-scroll");

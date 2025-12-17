@@ -320,7 +320,7 @@
 .social-midea-platform {
   background-color: var(--gray-300);
   border-radius: 38px;
-  padding: 10px 20px;
+  padding: 10px 18px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -391,9 +391,10 @@
 
 .footer-gradient {
   position: absolute;
-  bottom: -380px;
-  right: -180px;
+  bottom: -530px;
+  right: -340px;
   z-index: -1;
+  opacity: 80%;
 }
 
 /* ----- Hero section ----- */
@@ -524,3 +525,109 @@
 }
 
 /* ----- Services section ----- */
+.services-section {
+  padding: 50px 0;
+}
+
+.services-heading {
+  text-align: center;
+  position: relative;
+}
+
+.services-heading-tag {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.services-heading-title {
+  font-family: var(--font-volkhov);
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.services-decore-media {
+  width: 100%;
+  max-width: 153px;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.services-cards-wrapper {
+  margin-top: 66px;
+  display: grid;
+  gap: 38px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.services-card {
+  max-width: 264px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 42px;
+  margin: 0 auto;
+  background-color: var(--white);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-card::after {
+  content: "";
+  width: 100px;
+  aspect-ratio: 1;
+  background-color: var(--orange-100);
+  border-radius: 30px 0 10px 0;
+  position: absolute;
+  bottom: -33px;
+  left: -33px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-12px, 12px);
+  transition: all 0.3s ease-in-out;
+}
+
+.services-card:hover {
+  box-shadow: 0px 1.85px 3.15px 0px #00000001, 0px 8.15px 6.52px 0px #00000002,
+    0px 20px 13px 0px #00000003, 0px 38.52px 25.48px 0px #00000003,
+    0px 64.81px 46.85px 0px #00000004, 0px 100px 80px 0px #00000005;
+
+  &::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+  }
+}
+
+.services-card-media {
+  width: 100%;
+  max-width: 92px;
+}
+
+.services-card-media img {
+  max-width: 78px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.services-card-titel {
+  margin: 20px 0 15px;
+  color: var(--gray-200);
+  font-family: var(--font-open-sans);
+  flex-grow: 1;
+}
+
+.services-card-dec {
+  max-width: 181px;
+  color: var(--secondary-color);
+  line-height: var(--line-height-1_6);
+}
+
+.flights-card img {
+  max-width: 100px;
+}

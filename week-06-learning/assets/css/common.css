@@ -15,8 +15,10 @@
   --font-poppins: "Poppins", sans-serif;
   --font-volkhov: "Volkhov", serif;
   --font-google-sans: "Google Sans", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
   --line-height-1_8: 1.8;
   --line-height-1: 1.05;
+  --line-height-1_6: 1.6;
   --icon-bg: conic-gradient(
     from 180deg at 50% 50%,
     #b8d2f1 0deg,
@@ -140,10 +142,16 @@ h2 {
   font-size: 50px;
   font-weight: 700;
 }
+@media (max-width: 991px) {
+  .h2,
+  h2 {
+    font-size: 42px;
+  }
+}
 @media (max-width: 767px) {
   .h2,
   h2 {
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 600;
   }
 }
@@ -175,7 +183,7 @@ h5 {
 .h6,
 h6 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .gradient-box {

@@ -1,3 +1,19 @@
+/* ----- Start @media (max-width: 1142px) ----- */
+@media (max-width: 1142px) {
+  /* ----- Services section ----- */
+  .services-cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services-card:hover {
+    box-shadow: 0px 1.85px 3.15px 0px #00000001, 0px 4.15px 6.52px 0px #00000002,
+      0px 6px 16px 0px #00000003, 0px 18.52px 12.48px 0px #00000003,
+      0px 30.81px 20.85px 0px #00000004, 0px 16px 32px 0px #00000005;
+  }
+}
+/* ----- End @media (max-width: 1142px) ----- */
+
+/* ----- Start @media (max-width: 1023px) ----- */
 @media (max-width: 1023px) {
   /* ----- Header ----- */
   .header-contents-wrapper {
@@ -6,6 +22,12 @@
 
   .header-contents {
     gap: 8px;
+  }
+
+  /* ----- Footer ----- */
+  .footer-gradient {
+    bottom: -410px;
+    right: -270px;
   }
 
   /* ----- Hero section ----- */
@@ -21,8 +43,14 @@
   .hero-media-bg-layer {
     max-width: 618px;
   }
+  /* ----- Services section ----- */
+  .services-decore-media {
+    max-width: 112px;
+  }
 }
+/* ----- End @media (max-width: 1023px) ----- */
 
+/* ----- Start @media (max-width: 991px) ----- */
 @media (max-width: 991px) {
   /* ----- Header ----- */
   .header-toggle-wrapper {
@@ -82,6 +110,11 @@
     max-width: 100%;
   }
 
+  .footer-gradient {
+    bottom: -160px;
+    right: -60px;
+  }
+
   /* ----- Hero section ----- */
   .hero-gradient {
     top: -100px;
@@ -118,8 +151,19 @@
     max-width: 629px;
     margin-left: -82px;
   }
-}
 
+  /* ----- Services section ----- */
+  .services-cards-wrapper {
+    margin-top: 46px;
+  }
+
+  .services-card {
+    padding: 35px;
+  }
+}
+/* ----- End @media (max-width: 991px) ----- */
+
+/* ----- Start @media (max-width: 767px) ----- */
 @media (max-width: 767px) {
   /* ----- Header ----- */
   .header {
@@ -153,8 +197,24 @@
     max-width: 493px;
     margin-left: -70px;
   }
-}
 
+  /* ----- Services section ----- */
+  .services-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 38px;
+  }
+
+  .services-card {
+    padding: 46px 35px;
+  }
+
+  .services-decore-media {
+    display: none;
+  }
+}
+/* ----- End @media (max-width: 767px) ----- */
+
+/* ----- Start @media (max-width: 575px) ----- */
 @media (max-width: 575px) {
   /* ----- Header ----- */
   .header {
@@ -209,7 +269,8 @@
 
   /* ----- Hero section ----- */
   .hero-gradient {
-    top: -69px;
+    top: -42px;
+    left: 40px;
   }
 
   .hero-content-title {
@@ -219,8 +280,26 @@
   .hero-content-dec {
     margin-bottom: 28px;
   }
-}
 
+  /* ----- Services section ----- */
+  .services-cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 38px;
+  }
+
+  .services-card {
+    padding: 36px 28px;
+  }
+
+  .services-card::after {
+    width: 86px;
+    bottom: -30px;
+    left: -30px;
+  }
+}
+/* ----- End @media (max-width: 575px) ----- */
+
+/* ----- Start @media (max-width: 424px) ----- */
 @media (max-width: 424px) {
   /* ----- Footer ----- */
   .footer-wrapper {
@@ -244,3 +323,4 @@
     gap: 12px;
   }
 }
+/* ----- End @media (max-width: 424px) ----- */
