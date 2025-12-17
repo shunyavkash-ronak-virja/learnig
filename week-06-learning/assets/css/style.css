@@ -1,7 +1,6 @@
 /* ----- Header ----- */
 .header {
   padding: 28px 0;
-  /* background-color: var(--white); */
   position: sticky;
   top: 0;
   left: 0;
@@ -10,8 +9,17 @@
   transition: all 0.3s ease-in-out;
 }
 
-.header.active {
+.header.header-bg,
+.header-scroll {
+  background-color: var(--white);
+}
+
+.header.header-bg {
   border-color: var(--grey-600);
+}
+
+.header-scroll {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .hiddden-overflow {
@@ -385,10 +393,17 @@
   position: relative;
 }
 
+.hero-gradient {
+  position: absolute;
+  top: -140px;
+  left: -470px;
+}
+
 .hero-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -411,7 +426,7 @@
   font-family: var(--font-volkhov);
   margin-top: 24px;
   margin-bottom: 30px;
-  letter-spacing: -4px;
+  letter-spacing: -0.01em;
 }
 
 .hero-content-title span {
@@ -480,21 +495,15 @@
 }
 
 .hero-media {
-  width: 100%;
-  height: auto;
-  /* max-width: 760px; */
-  max-width: 50%;
-  position: absolute;
-  top: 0;
-  right: 11%;
-  z-index: -1;
+  max-width: 765px;
+  aspect-ratio: 1;
+  margin-left: -145px;
 }
 
-.hero-media-sticker {
+.hero-media-bg-layer {
   width: 100%;
-  height: auto;
-  /* max-width: 766px; */
-  max-width: 50%;
+  max-width: 766px;
+  aspect-ratio: 1;
   position: absolute;
   top: -100px;
   right: 0;
@@ -504,3 +513,5 @@
 .btn span {
   z-index: 4;
 }
+
+/* ----- Services section ----- */

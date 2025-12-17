@@ -11,11 +11,12 @@
   --yellow-200: #f1a501;
   --orange-50: #fff1da;
   --orange-100: #df6951;
+  --plum-100: #d5aee4;
   --font-poppins: "Poppins", sans-serif;
   --font-volkhov: "Volkhov", serif;
   --font-google-sans: "Google Sans", sans-serif;
   --line-height-1_8: 1.8;
-  --line-height-1: 1;
+  --line-height-1: 1.05;
   --icon-bg: conic-gradient(
     from 180deg at 50% 50%,
     #b8d2f1 0deg,
@@ -82,6 +83,11 @@ ul {
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 767px) {
+  .btn {
+    padding: 14px 22px;
+  }
+}
 
 .btn-hover {
   position: relative;
@@ -114,7 +120,6 @@ h1 {
   h1 {
     font-size: 54px;
     font-weight: 600;
-    line-height: 1.5;
   }
 }
 @media (max-width: 767px) {
@@ -160,9 +165,39 @@ h5 {
   font-size: 20px;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .h5,
+  h5 {
+    font-size: 18px;
+  }
+}
 
 .h6,
 h6 {
   font-size: 18px;
   font-weight: 400;
+}
+
+.gradient-box {
+  width: 100%;
+  max-width: 478px;
+  aspect-ratio: 1;
+  background: var(--plum-100);
+  filter: blur(150px);
+  opacity: 30%;
+}
+@media (max-width: 1023px) {
+  .gradient-box {
+    max-width: 378px;
+  }
+}
+@media (max-width: 991px) {
+  .gradient-box {
+    max-width: 286px;
+  }
+}
+@media (max-width: 991px) {
+  .gradient-box {
+    max-width: 200px;
+  }
 }
