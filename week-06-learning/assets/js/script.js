@@ -22,14 +22,13 @@ addEventListener("scroll", () => {
 });
 
 // Travel agency slider -----
-
 if (document.querySelector(".splide.travel-agency-splide"))
   new Splide(".travel-agency-splide", {
     type: "loop",
     gap: "30px",
     perPage: 5,
-    pagination: !1,
-    arrows: !1,
+    pagination: false,
+    arrows: false,
     autoScroll: { speed: 0.7 },
     breakpoints: {
       991: {
@@ -42,3 +41,15 @@ if (document.querySelector(".splide.travel-agency-splide"))
       },
     },
   }).mount(window.splide.Extensions);
+
+// Testimonials slider -----
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide.testimonials-splide", {
+    direction: "ttb",
+    height: "356px",
+    type: "loop",
+    gap: "35px",
+    perPage: 1,
+  });
+  splide.mount();
+});

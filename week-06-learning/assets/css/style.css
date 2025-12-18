@@ -847,6 +847,92 @@
   z-index: -1;
 }
 
+/* ----- Testimonials section ----- */
+.testimonials-section {
+  padding: 50px 0;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.testimonials-heading {
+  width: 40%;
+}
+
+.testimonials-heading {
+  max-width: 409px;
+}
+
+.testimonials-tag {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.testimonials-title {
+  font-family: var(--font-volkhov);
+  color: var(--primary-color);
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+.testimonials-splide {
+  width: 60%;
+  max-width: 669px;
+}
+
+.testimonials-content-container {
+  max-width: 541px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-content-container.is-active .testimonials-container {
+  box-shadow: 0px 1.85px 3.15px 0px #00000001, 0px 8.15px 6.52px 0px #00000002,
+    0px 20px 13px 0px #00000003, 0px 38.52px 25.48px 0px #00000003,
+    0px 64.81px 46.85px 0px #00000004, 0px 100px 80px 0px #00000005;
+}
+
+.testimonials-container {
+  max-width: 504px;
+  background-color: var(--white);
+  position: relative;
+  border-radius: 10px;
+  padding: 28px 34px;
+}
+
+.testimonials-media {
+  width: 68px;
+  height: 68px;
+  border-radius: 35px;
+  overflow: hidden;
+  position: absolute;
+  top: -28px;
+  left: -28px;
+}
+
+.testimonials-content-dec {
+  color: var(--secondary-color);
+  margin-bottom: 34px;
+}
+
+.testimonials-user-name {
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.testimonials-user-loc {
+  color: var(--gray-50);
+  font-size: 14px;
+}
+
+.splide__pagination--ttb {
+  right: auto;
+}
+
 /* ----- Travel agency section ----- */
 .travel-agency-section {
   padding: 50px 0;
