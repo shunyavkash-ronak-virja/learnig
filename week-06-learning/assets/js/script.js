@@ -11,7 +11,7 @@ headerToggle.addEventListener("click", () => {
   bodyHidden.classList.toggle("hiddden-overflow");
 });
 
-// Header scroll event
+// Header scroll event -----
 const headerHeight = document.querySelector(".header");
 addEventListener("scroll", () => {
   if (window.pageYOffset > 30) {
@@ -19,4 +19,14 @@ addEventListener("scroll", () => {
   } else {
     headerHeight.classList.remove("header-scroll");
   }
+});
+
+// Travel agency slider -----
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide.travel-agency-splide", {
+    type: "loop",
+    perPage: 5,
+  });
+  splide.mount();
 });
