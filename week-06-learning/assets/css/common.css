@@ -15,13 +15,18 @@
   --plum-100: #d5aee4;
   --steelblue: #006380;
   --deepskyblue: #59b1e6;
+  --lavender: #dfd7f933;
+  --darkslategray: #39425d;
   --font-poppins: "Poppins", sans-serif;
   --font-volkhov: "Volkhov", serif;
   --font-google-sans: "Google Sans", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
   --line-height-1_8: 1.8;
   --line-height-1: 1.05;
   --line-height-1_6: 1.6;
+  --blue-gradient: linear-gradient(201.65deg, #747def 10.27%, #5e3be1 100%);
+  --orange-gradient: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   --icon-bg: conic-gradient(
     from 180deg at 50% 50%,
     #b8d2f1 0deg,
@@ -72,6 +77,13 @@ img {
   display: block;
 }
 
+.no-drag {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -85,7 +97,6 @@ ul {
   align-items: center;
   padding: 18px 26px;
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -163,6 +174,12 @@ h2 {
 h3 {
   font-size: 33px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .h3,
+  h3 {
+    font-size: 26px;
+  }
 }
 
 .h4,

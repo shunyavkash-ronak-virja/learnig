@@ -208,6 +208,29 @@
     display: flex;
     justify-content: center;
   }
+  /* ----- Travel agency section ----- */
+  .agency-media {
+    min-height: 60px;
+  }
+
+  .agency-media img {
+    max-width: 135px;
+  }
+
+  /* ----- Cta section ----- */
+  .email-input {
+    padding: 20px;
+    padding-left: 48px;
+  }
+
+  .input-icon svg {
+    top: 20px;
+    left: 18px;
+  }
+
+  .form-btn {
+    padding: 16px 36px;
+  }
 }
 /* ----- End @media (max-width: 991px) ----- */
 
@@ -277,6 +300,77 @@
   .two-column-media-bg {
     max-width: 250px;
     right: 100px;
+  }
+
+  /* ----- Travel agency section ----- */
+  .travel-agency-wrapper {
+    min-height: 130px;
+  }
+
+  .travel-agency-list {
+    max-width: 200px;
+  }
+
+  .agency-media {
+    max-width: 138px;
+  }
+
+  .agency-media,
+  .agency-media img {
+    max-width: 100%;
+  }
+
+  .agency-media:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  .agency-media {
+    padding: 10px;
+  }
+  /* ----- Cta section ----- */
+  .cta-title {
+    margin-bottom: 52px;
+  }
+
+  .cta-left-decore-media {
+    width: 290px;
+  }
+
+  .cta-right-decore-media {
+    width: 160px;
+  }
+
+  .cta-right-decore-tag {
+    width: 50px;
+    height: 50px;
+  }
+
+  .input-icon {
+    width: 58%;
+  }
+
+  .email-input {
+    padding: 14px;
+    padding-left: 48px;
+  }
+
+  .input-icon svg {
+    top: 14px;
+    left: 16px;
+  }
+
+  .cta-right-decore-tag svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .cta-bottom-decore-media {
+    display: none;
+  }
+
+  .form-btn {
+    padding: 12px 20px;
   }
 }
 /* ----- End @media (max-width: 767px) ----- */
@@ -363,6 +457,7 @@
     bottom: -30px;
     left: -30px;
   }
+
   /* ----- Two column section ----- */
   .two-column-wrapper {
     gap: 40px;
@@ -391,6 +486,47 @@
   .tc-contents-lists-icon img {
     width: 18px;
     height: 18px;
+  }
+
+  /* ----- Travel agency section ----- */
+  .travel-agency-wrapper {
+    min-height: 100px;
+  }
+
+  .agency-media {
+    min-height: 40px;
+  }
+
+  /* ----- Cta section ----- */
+  .cta-container {
+    border-radius: 90px 20px 20px;
+    padding: 46px 10px;
+  }
+
+  .cta-left-decore-media {
+    width: 220px;
+  }
+
+  .cta-right-decore-media {
+    width: 130px;
+  }
+
+  .cta-title {
+    margin-bottom: 38px;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .input-icon {
+    width: 100%;
+  }
+
+  .email-input,
+  .cta-bottom-decore-media {
+    max-width: 100%;
   }
 }
 /* ----- End @media (max-width: 575px) ----- */
@@ -428,6 +564,15 @@
     max-width: 150px;
     height: 90px;
     right: 50px;
+  }
+
+  .travel-agency-list {
+    min-width: 136px;
+  }
+
+  /* ----- Cta section ----- */
+  .form-wrapper {
+    gap: 18px;
   }
 }
 /* ----- End @media (max-width: 424px) ----- */

@@ -23,10 +23,22 @@ addEventListener("scroll", () => {
 
 // Travel agency slider -----
 
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide.travel-agency-splide", {
+if (document.querySelector(".splide.travel-agency-splide"))
+  new Splide(".travel-agency-splide", {
     type: "loop",
+    gap: "30px",
     perPage: 5,
-  });
-  splide.mount();
-});
+    pagination: !1,
+    arrows: !1,
+    autoScroll: { speed: 0.7 },
+    breakpoints: {
+      991: {
+        gap: "30px",
+        perPage: 4,
+      },
+      575: {
+        gap: "35px",
+        perPage: 3,
+      },
+    },
+  }).mount(window.splide.Extensions);
