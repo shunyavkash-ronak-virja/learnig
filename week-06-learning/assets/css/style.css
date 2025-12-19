@@ -883,9 +883,14 @@
   max-width: 669px;
 }
 
+.testimonials-content-wrapper {
+  position: relative;
+}
+
 .testimonials-content-container {
   max-width: 541px;
   margin: 32px auto;
+  position: relative;
 }
 
 .testimonials-content-container.is-active .testimonials-container {

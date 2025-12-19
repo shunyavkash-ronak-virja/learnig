@@ -1,0 +1,118 @@
+:root {
+  --height-106: 106px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.offer-label-section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offer-label-wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #1642f0;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.offer-label-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.offer-content-wrapper {
+  height: var(--height-106);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.offer-label-media {
+  height: 100%;
+  max-width: 100px;
+  aspect-ratio: 1;
+}
+
+.offer-label-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-label-shape {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.offer-label-shape svg {
+  color: #e9f0ff;
+  position: relative;
+  top: 0;
+  left: 1px;
+}
+
+.offer-label-dec {
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: #e9f0ff;
+  color: #1642f0;
+}
+
+.offer-label-dec::before {
+  content: url('data:image/svg+xml,<svg width="55" height="110" viewBox="0 0 55 110" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_12_2)"><path d="M55 110L53.2217 104.593C45.7803 81.9663 28.0337 64.2197 5.40723 56.7783L0 55L5.40723 53.2217C28.0337 45.7803 45.7803 28.0337 53.2217 5.40723L55 0V110Z" fill="%23E9F0FF"/></g><defs><clipPath id="clip0_12_2"><rect width="55" height="110" fill="white"/></clipPath></defs></svg>');
+  color: #e9f0ff;
+}
+
+@media (max-width: 991px) {
+  .offer-label-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --height-106: 66px;
+  }
+
+  .offer-content-wrapper {
+    gap: 0;
+  }
+
+  .offer-label-shape svg {
+    left: 11px;
+  }
+}
