@@ -45,11 +45,16 @@ if (document.querySelector(".splide.travel-agency-splide"))
 // Testimonials slider -----
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide.testimonials-splide", {
+    type: "loop",
+    // autoplay: true,
     direction: "ttb",
     height: "356px",
-    type: "loop",
-    gap: "35px",
     perPage: 1,
+    breakpoints: {
+      424: {
+        height: "468px",
+      },
+    },
   });
   splide.mount();
 });

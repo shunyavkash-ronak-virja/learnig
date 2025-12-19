@@ -843,13 +843,14 @@
   opacity: 80%;
   position: absolute;
   top: 56px;
-  right: -30px;
+  right: -10px;
   z-index: -1;
 }
 
 /* ----- Testimonials section ----- */
 .testimonials-section {
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .testimonials-wrapper {
@@ -860,10 +861,8 @@
 
 .testimonials-heading {
   width: 40%;
-}
-
-.testimonials-heading {
   max-width: 409px;
+  padding: 10px;
 }
 
 .testimonials-tag {
@@ -886,8 +885,7 @@
 
 .testimonials-content-container {
   max-width: 541px;
-  margin: 0 auto;
-  transition: all 0.3s ease-in-out;
+  margin: 32px auto;
 }
 
 .testimonials-content-container.is-active .testimonials-container {
@@ -902,6 +900,7 @@
   position: relative;
   border-radius: 10px;
   padding: 28px 34px;
+  transition: all 0.2s ease-in-out;
 }
 
 .testimonials-media {
@@ -929,8 +928,72 @@
   font-size: 14px;
 }
 
-.splide__pagination--ttb {
+.testimonials-splide .splide__pagination--ttb {
   right: auto;
+  left: -390px;
+  top: 80px;
+  transform: rotate(-90deg);
+  gap: 8px;
+}
+
+.testimonials-splide .splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background: var(--gainsboro);
+}
+
+.testimonials-splide .splide__pagination__page.is-active {
+  background: var(--darkslategray);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.testimonials-splide .splide__arrows {
+  position: absolute;
+  top: 125px;
+  right: 28px;
+}
+
+.testimonials-splide .splide__arrows--ttb .splide__arrow {
+  left: auto;
+  transform: translate(0);
+}
+
+.testimonials-splide .splide__arrows--ttb .splide__arrow--prev {
+  top: auto;
+  bottom: 12px;
+}
+
+.testimonials-splide .splide__arrows--ttb .splide__arrow--next {
+  bottom: auto;
+  top: 12px;
+  right: auto;
+  transform: rotate(180deg);
+}
+
+.testimonials-splide .splide__arrow {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-splide .splide__arrow svg {
+  display: none;
+}
+
+.testimonials-splide .splide__arrow::after {
+  content: url('data:image/svg+xml,<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8.41431L8 1.41431L15 8.41431" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>');
+  width: 14px;
+  height: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--silver);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-splide .splide__arrow:hover {
+  color: var(--darkslateblue);
 }
 
 /* ----- Travel agency section ----- */
@@ -940,6 +1003,32 @@
 
 .splide {
   visibility: visible;
+}
+
+.travel-agency-splide {
+  display: flex;
+  align-items: center;
+}
+
+.travel-agency-splide::before,
+.travel-agency-splide::after {
+  content: "";
+  width: 160px;
+  height: 100px;
+  background: var(--white-gradient);
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  z-index: 2;
+}
+
+.travel-agency-splide::before {
+  left: 0;
+}
+
+.travel-agency-splide::after {
+  right: 0;
+  transform: translatey(-50%) rotate(180deg);
 }
 
 .travel-agency-wrapper {

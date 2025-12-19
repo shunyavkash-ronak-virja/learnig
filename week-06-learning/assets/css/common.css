@@ -18,6 +18,9 @@
   --deepskyblue: #59b1e6;
   --lavender: #dfd7f933;
   --darkslategray: #39425d;
+  --darkslateblue: #3e2e4d;
+  --silver: #bcb7c2;
+  --gainsboro: #e5e5e5;
   --font-poppins: "Poppins", sans-serif;
   --font-volkhov: "Volkhov", serif;
   --font-google-sans: "Google Sans", sans-serif;
@@ -28,6 +31,25 @@
   --line-height-1_6: 1.6;
   --blue-gradient: linear-gradient(201.65deg, #747def 10.27%, #5e3be1 100%);
   --orange-gradient: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  --white-gradient: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.8) 55%,
+    rgba(255, 255, 255, 0.7) 60%,
+    rgba(255, 255, 255, 0.6) 65%,
+    rgba(255, 255, 255, 0.5) 70%,
+    rgba(255, 255, 255, 0.4) 75%,
+    rgba(255, 255, 255, 0.3) 80%,
+    rgba(255, 255, 255, 0.2) 85%,
+    rgba(255, 255, 255, 0.1) 90%,
+    rgba(255, 255, 255, 0) 95%,
+    rgba(255, 255, 255, 0) 100%
+  );
   --icon-bg: conic-gradient(
     from 180deg at 50% 50%,
     #b8d2f1 0deg,

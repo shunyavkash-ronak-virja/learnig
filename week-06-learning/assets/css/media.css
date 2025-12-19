@@ -1,3 +1,17 @@
+/* ----- Start @media (max-width: 1090px) ----- */
+@media (max-width: 1090px) {
+  /* ----- Testimonials section ----- */
+  .testimonials-splide {
+    width: 80%;
+  }
+
+  .testimonials-splide .splide__pagination--ttb {
+    left: -300px;
+    top: 155px;
+  }
+}
+/* ----- End @media (max-width: 1090px) ----- */
+
 /* ----- Start @media (max-width: 1142px) ----- */
 @media (max-width: 1142px) {
   /* ----- Services section ----- */
@@ -209,6 +223,12 @@
     justify-content: center;
   }
   /* ----- Travel agency section ----- */
+  .travel-agency-splide::before,
+  .travel-agency-splide::after {
+    width: 140px;
+    height: 80px;
+  }
+
   .agency-media {
     min-height: 60px;
   }
@@ -230,6 +250,29 @@
 
   .form-btn {
     padding: 16px 36px;
+  }
+  /* ----- Testimonials section ----- */
+  .testimonials-wrapper {
+    flex-direction: column;
+  }
+
+  .testimonials-heading,
+  .testimonials-splide {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimonials-heading {
+    padding-bottom: 50px;
+  }
+
+  .testimonials-splide .splide__pagination--ttb {
+    top: -470px;
+    left: 52px;
+  }
+
+  .testimonials-splide .splide__arrows {
+    right: 80px;
   }
 }
 /* ----- End @media (max-width: 991px) ----- */
@@ -303,6 +346,7 @@
   }
 
   /* ----- Travel agency section ----- */
+
   .travel-agency-wrapper {
     min-height: 130px;
   }
@@ -371,6 +415,37 @@
 
   .form-btn {
     padding: 12px 20px;
+  }
+
+  /* ----- Testimonials section ----- */
+  .testimonials-splide .splide__arrows {
+    right: 20px;
+  }
+
+  .testimonials-splide .splide__pagination--ttb {
+    left: 45px;
+  }
+
+  .testimonials-splide .splide__pagination__page {
+    width: 8px;
+    height: 8px;
+  }
+
+  .testimonials-heading {
+    padding-bottom: 40px;
+  }
+
+  .testimonials-content-container {
+    margin: 32px;
+  }
+
+  .testimonials-media {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonials-container {
+    padding: 24px 28px;
   }
 }
 /* ----- End @media (max-width: 767px) ----- */
@@ -489,6 +564,12 @@
   }
 
   /* ----- Travel agency section ----- */
+
+  .travel-agency-splide::before,
+  .travel-agency-splide::after {
+    width: 80px;
+  }
+
   .travel-agency-wrapper {
     min-height: 100px;
   }
@@ -527,6 +608,29 @@
   .email-input,
   .cta-bottom-decore-media {
     max-width: 100%;
+  }
+
+  /* ----- Testimonials section ----- */
+  .testimonials-splide .splide__arrows {
+    top: -38px;
+  }
+
+  .testimonials-splide .splide__arrows--ttb .splide__arrow--prev {
+    bottom: 10px;
+  }
+
+  .testimonials-splide .splide__arrows--ttb .splide__arrow--next {
+    top: 10px;
+  }
+
+  .testimonials-splide .splide__arrows {
+    right: 35px;
+  }
+
+  .testimonials-content-container.is-active .testimonials-container {
+    box-shadow: 0px 1.85px 2px 0px #00000001, 0px 4px 4px 0px #00000002,
+      0px 16px 10px 0px #00000003, 0px 34px 22px 0px #00000003,
+      0px 24px 38px 0px #00000004, 0px 20px 40px 0px #00000005;
   }
 }
 /* ----- End @media (max-width: 575px) ----- */
@@ -573,6 +677,15 @@
   /* ----- Cta section ----- */
   .form-wrapper {
     gap: 18px;
+  }
+  /* ----- Testimonials section ----- */
+  .testimonials-splide .splide__pagination--ttb {
+    top: -540px;
+  }
+
+  .testimonials-media {
+    width: 52px;
+    height: 52px;
   }
 }
 /* ----- End @media (max-width: 424px) ----- */
