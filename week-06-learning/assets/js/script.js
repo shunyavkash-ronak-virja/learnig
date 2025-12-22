@@ -21,6 +21,11 @@ addEventListener("scroll", () => {
   }
 });
 
+// Fancybox js -----
+document.addEventListener("DOMContentLoaded", function () {
+  Fancybox.bind("[data-fancybox]", {});
+});
+
 // Travel agency slider -----
 if (document.querySelector(".splide.travel-agency-splide"))
   new Splide(".travel-agency-splide", {
