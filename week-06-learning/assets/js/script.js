@@ -11,6 +11,11 @@ headerToggle.addEventListener("click", () => {
   bodyHidden.classList.toggle("hiddden-overflow");
 });
 
+// Nice select js -----
+$(document).ready(function () {
+  $("select").niceSelect();
+});
+
 // Header scroll event -----
 const headerHeight = document.querySelector(".header");
 addEventListener("scroll", () => {
