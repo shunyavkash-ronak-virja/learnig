@@ -518,6 +518,11 @@
     }
   }
 
+  .nice-select .list {
+    width: 110px;
+    margin-top: 8px;
+  }
+
   /* ----- Footer ----- */
   .footer-logo {
     max-width: 100px;
