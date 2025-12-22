@@ -1172,7 +1172,12 @@
   color: var(--white);
   border: none;
   font-size: 18px;
+  overflow: hidden;
   cursor: pointer;
+}
+
+.form-btn span {
+  z-index: 4;
 }
 
 .cta-bottom-decore-media {

@@ -97,13 +97,13 @@ a {
   color: #e9f0ff;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .offer-label-title {
     font-size: 24px;
   }
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   :root {
     --height-106: 66px;
   }
@@ -115,4 +115,4 @@ a {
   .offer-label-shape svg {
     left: 11px;
   }
-}
+} */
