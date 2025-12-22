@@ -1,3 +1,12 @@
+/* ----- Start @media (max-width: 1142px) ----- */
+@media (max-width: 1142px) {
+  /* ----- Services section ----- */
+  .destinations-card-container:hover .destinations-decore-media {
+    transform: translate(16px, -47px);
+  }
+}
+/* ----- End @media (max-width: 1142px) ----- */
+
 /* ----- Start @media (max-width: 1090px) ----- */
 @media (max-width: 1090px) {
   /* ----- Testimonials section ----- */
@@ -11,25 +20,6 @@
   }
 }
 /* ----- End @media (max-width: 1090px) ----- */
-
-/* ----- Start @media (max-width: 1142px) ----- */
-@media (max-width: 1142px) {
-  /* ----- Services section ----- */
-  .services-cards-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .services-card:hover {
-    box-shadow: 0px 1.85px 3.15px 0px #00000001, 0px 4.15px 6.52px 0px #00000002,
-      0px 6px 16px 0px #00000003, 0px 18.52px 12.48px 0px #00000003,
-      0px 30.81px 20.85px 0px #00000004, 0px 16px 32px 0px #00000005;
-  }
-
-  .destinations-card-container:hover .destinations-decore-media {
-    transform: translate(16px, -47px);
-  }
-}
-/* ----- End @media (max-width: 1142px) ----- */
 
 /* ----- Start @media (max-width: 1023px) ----- */
 @media (max-width: 1023px) {
@@ -123,6 +113,10 @@
   }
 
   /* ----- Footer ----- */
+  .footer {
+    padding: 56px 0;
+  }
+
   .footer-wrapper {
     flex-direction: column;
     gap: 30px;
@@ -149,38 +143,32 @@
     left: -100px;
   }
 
-  .hero-section {
-    padding: 0 0 50px 0;
-  }
-  .hero-wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .hero-content-container {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .hero-content-title {
-    max-width: 730px;
-  }
-
-  .hero-content-dec {
-    max-width: 600px;
-  }
-
   .hero-media-wrapper {
-    width: 100%;
     display: flex;
-    justify-content: center;
   }
 
   .hero-media {
-    max-width: 629px;
-    margin-left: -82px;
+    max-width: 434px;
+    flex-shrink: 0;
+    margin-left: -64px;
+  }
+
+  .hero-content-tag {
+    font-size: 18px;
+  }
+
+  .hero-content-title {
+    margin-top: 20px;
+    margin-bottom: 24px;
   }
 
   /* ----- Services section ----- */
+  .services-card {
+    box-shadow: 0px 1.85px 3.15px 0px #00000001, 0px 4.15px 6.52px 0px #00000002,
+      0px 6px 16px 0px #00000003, 0px 18.52px 12.48px 0px #00000003,
+      0px 30.81px 20.85px 0px #00000004, 0px 16px 32px 0px #00000005;
+  }
+
   .services-cards-wrapper {
     margin-top: 46px;
   }
@@ -248,9 +236,6 @@
     left: 18px;
   }
 
-  .form-btn {
-    padding: 16px 36px;
-  }
   /* ----- Testimonials section ----- */
   .testimonials-wrapper {
     flex-direction: column;
@@ -296,6 +281,34 @@
   }
 
   /* ----- Hero section ----- */
+  .hero-section {
+    padding-bottom: 56px;
+  }
+
+  .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content-container,
+  .hero-media-wrapper {
+    width: 100%;
+  }
+
+  .hero-media-wrapper {
+    justify-content: center;
+  }
+
+  .hero-media {
+    max-width: 528px;
+    margin-left: 0;
+    flex-shrink: 1;
+  }
+
+  .hero-content-container,
+  .hero-content-dec {
+    max-width: 100%;
+  }
+
   .hero-content-title span::before {
     width: 170%;
     left: -22px;
@@ -307,14 +320,12 @@
     margin-bottom: 26px;
   }
 
-  .hero-media {
-    max-width: 493px;
-    margin-left: -70px;
+  /* ----- Services section ----- */
+  .services-section {
+    padding: 56px 0;
   }
 
-  /* ----- Services section ----- */
   .services-cards-wrapper {
-    grid-template-columns: repeat(2, 1fr);
     gap: 50px 38px;
   }
 
@@ -323,15 +334,25 @@
   }
 
   .services-decore-media {
-    display: none;
+    max-width: 92px;
+    z-index: -1;
   }
+
   /* ----- Destinations section ----- */
+  .destinations-section {
+    padding: 56px 0;
+  }
+
   .destinations-cards-wrapper {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 38px;
   }
 
   /* ----- Two column section ----- */
+  .two-column-section {
+    padding: 56px 0;
+  }
+
   .tc-contents-lists-wrapper {
     margin-top: 24px;
   }
@@ -346,7 +367,6 @@
   }
 
   /* ----- Travel agency section ----- */
-
   .travel-agency-wrapper {
     min-height: 130px;
   }
@@ -372,7 +392,16 @@
   .agency-media {
     padding: 10px;
   }
+
   /* ----- Cta section ----- */
+  .cta-section {
+    padding: 56px 0;
+  }
+
+  .cta-container {
+    border-radius: 80px 20px 20px;
+  }
+
   .cta-title {
     margin-bottom: 52px;
   }
@@ -413,11 +442,11 @@
     display: none;
   }
 
-  .form-btn {
-    padding: 12px 20px;
+  /* ----- Testimonials section ----- */
+  .testimonials-section {
+    padding: 56px 0;
   }
 
-  /* ----- Testimonials section ----- */
   .testimonials-splide .splide__arrows {
     right: 20px;
   }
@@ -509,8 +538,12 @@
     left: 40px;
   }
 
+  .hero-content-tag {
+    font-size: 16px;
+  }
+
   .hero-content-title {
-    margin: 18px 0;
+    margin: 14px 0 18px;
   }
 
   .hero-content-dec {
@@ -519,12 +552,17 @@
 
   /* ----- Services section ----- */
   .services-cards-wrapper {
-    grid-template-columns: repeat(1, 1fr);
     margin-top: 38px;
   }
 
   .services-card {
+    max-width: 100%;
+    border-radius: 18px;
     padding: 36px 28px;
+  }
+
+  .services-card-dec {
+    max-width: 100%;
   }
 
   .services-card::after {
@@ -564,7 +602,6 @@
   }
 
   /* ----- Travel agency section ----- */
-
   .travel-agency-splide::before,
   .travel-agency-splide::after {
     width: 80px;
@@ -580,8 +617,7 @@
 
   /* ----- Cta section ----- */
   .cta-container {
-    border-radius: 90px 20px 20px;
-    padding: 46px 10px;
+    padding: 46px 30px;
   }
 
   .cta-left-decore-media {
@@ -599,6 +635,7 @@
   .form-wrapper {
     flex-direction: column;
     align-items: end;
+    gap: 16px;
   }
 
   .input-icon {
@@ -608,6 +645,11 @@
   .email-input,
   .cta-bottom-decore-media {
     max-width: 100%;
+  }
+
+  .form-btn {
+    width: 100%;
+    justify-content: center;
   }
 
   /* ----- Testimonials section ----- */
