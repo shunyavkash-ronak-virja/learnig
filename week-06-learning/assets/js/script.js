@@ -17,7 +17,7 @@ $(document).ready(function () {
 });
 
 // Header scroll event -----
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const headerHeight = document.querySelector(".header");
   addEventListener("scroll", () => {
     if (window.pageYOffset > 30) {
