@@ -747,7 +747,7 @@
 
 .two-column-wrapper {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   gap: 30px;
 }
@@ -828,8 +828,21 @@
   position: relative;
 }
 
-.two-column-media img {
-  max-width: 480px;
+.two-column-media {
+  position: relative;
+}
+
+.two-column-media {
+  width: 420px;
+  aspect-ratio: 1;
+}
+
+.tc-media-secondary {
+  max-width: 293px;
+  max-height: 160px;
+  position: absolute;
+  bottom: 10%;
+  right: -25%;
 }
 
 .two-column-media-bg {

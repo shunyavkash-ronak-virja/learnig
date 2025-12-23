@@ -65,6 +65,11 @@
   .destinations-card-container:hover .destinations-decore-media {
     transform: translate(40px, -47px);
   }
+
+  /* ----- Two column section ----- */
+  .tc-media-secondary {
+    right: -18%;
+  }
 }
 /* ----- End @media (max-width: 1023px) ----- */
 
@@ -179,9 +184,25 @@
 
   /* ----- Two column section ----- */
   .two-column-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: start;
     gap: 50px;
+  }
+
+  .two-column-media {
+    width: 100%;
+    aspect-ratio: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tc-media-primary {
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  .tc-media-secondary {
+    right: 16%;
   }
 
   .two-column-contents,
@@ -206,10 +227,6 @@
     right: 200px;
   }
 
-  .two-column-media {
-    display: flex;
-    justify-content: center;
-  }
   /* ----- Travel agency section ----- */
   .travel-agency-splide::before,
   .travel-agency-splide::after {
@@ -349,6 +366,10 @@
   }
 
   /* ----- Two column section ----- */
+  .tc-media-secondary {
+    right: 4%;
+  }
+
   .two-column-section {
     padding: 56px 0;
   }
@@ -581,8 +602,11 @@
     gap: 40px;
   }
 
-  .two-column-media img {
-    max-width: 100%;
+  .tc-media-secondary {
+    max-width: 265px;
+    max-height: 146px;
+    bottom: 14%;
+    right: -5%;
   }
 
   .two-column-media-bg {
@@ -711,9 +735,14 @@
   }
 
   /* ----- Two column section ----- */
+  .tc-media-secondary {
+    max-width: 224px;
+    max-height: 120px;
+  }
+
   .two-column-media-bg {
-    max-width: 150px;
-    height: 90px;
+    max-width: 160px;
+    height: 120px;
     right: 50px;
   }
 
