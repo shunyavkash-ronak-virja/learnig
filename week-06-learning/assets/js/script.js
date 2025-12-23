@@ -17,13 +17,15 @@ $(document).ready(function () {
 });
 
 // Header scroll event -----
-const headerHeight = document.querySelector(".header");
-addEventListener("scroll", () => {
-  if (window.pageYOffset > 30) {
-    headerHeight.classList.add("header-scroll");
-  } else {
-    headerHeight.classList.remove("header-scroll");
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const headerHeight = document.querySelector(".header");
+  addEventListener("scroll", () => {
+    if (window.pageYOffset > 30) {
+      headerHeight.classList.add("header-scroll");
+    } else {
+      headerHeight.classList.remove("header-scroll");
+    }
+  });
 });
 
 // Fancybox js -----
