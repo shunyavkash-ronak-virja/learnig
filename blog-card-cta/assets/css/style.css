@@ -52,7 +52,7 @@ a {
   height: var(--height-106);
   display: flex;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .offer-label-media {
@@ -71,6 +71,7 @@ a {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: end;
   position: relative;
 }
 
@@ -78,7 +79,7 @@ a {
   color: #e9f0ff;
   position: relative;
   top: 0;
-  left: 1px;
+  left: 0.3%;
 }
 
 .offer-label-dec {
@@ -92,18 +93,18 @@ a {
   color: #1642f0;
 }
 
-.offer-label-dec::before {
+/* .offer-label-dec::before {
   content: url('data:image/svg+xml,<svg width="55" height="110" viewBox="0 0 55 110" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_12_2)"><path d="M55 110L53.2217 104.593C45.7803 81.9663 28.0337 64.2197 5.40723 56.7783L0 55L5.40723 53.2217C28.0337 45.7803 45.7803 28.0337 53.2217 5.40723L55 0V110Z" fill="%23E9F0FF"/></g><defs><clipPath id="clip0_12_2"><rect width="55" height="110" fill="white"/></clipPath></defs></svg>');
   color: #e9f0ff;
-}
+} */
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
   .offer-label-title {
     font-size: 24px;
   }
-} */
+}
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   :root {
     --height-106: 66px;
   }
@@ -113,6 +114,6 @@ a {
   }
 
   .offer-label-shape svg {
-    left: 11px;
+    left: 2.8%;
   }
-} */
+}

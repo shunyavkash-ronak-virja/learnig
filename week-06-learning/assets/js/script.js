@@ -62,11 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
     direction: "ttb",
     height: "356px",
     perPage: 1,
-    breakpoints: {
-      424: {
-        height: "468px",
-      },
-    },
   });
   splide.mount();
 });

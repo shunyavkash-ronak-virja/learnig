@@ -15,7 +15,7 @@
 }
 
 .header.header-bg {
-  border-color: var(--grey-600);
+  border-color: #2128323b;
 }
 
 .header-scroll {
@@ -829,20 +829,8 @@
 }
 
 .two-column-media {
-  position: relative;
-}
-
-.two-column-media {
-  width: 420px;
-  aspect-ratio: 1;
-}
-
-.tc-media-secondary {
-  max-width: 293px;
-  max-height: 160px;
-  position: absolute;
-  bottom: 10%;
-  right: -25%;
+  width: 100%;
+  max-width: 570px;
 }
 
 .two-column-media-bg {
@@ -860,7 +848,7 @@
 
 /* ----- Testimonials section ----- */
 .testimonials-section {
-  padding: 86px 0;
+  padding: 86px 0 50px;
   overflow: hidden;
 }
 
@@ -1014,7 +1002,7 @@
 
 /* ----- Travel agency section ----- */
 .travel-agency-section {
-  padding: 50px 0;
+  padding: 32px 0;
 }
 
 .splide {
@@ -1161,7 +1149,7 @@
 .email-input {
   width: 100%;
   max-width: 421px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: var(--font-montserrat);
   padding: 25px;
   padding-left: 60px;
