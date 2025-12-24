@@ -64,7 +64,6 @@
   color: var(--lightgray);
   padding-bottom: 50px;
   opacity: 0;
-  transform: translateY(-6px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -75,7 +74,7 @@
 .faq-contents-wrapper:hover,
 .faq-contents-wrapper.active {
   background: var(--bg-gradient);
-  border: transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .faq-contents-wrapper:hover .faq-answers-wrapper {
@@ -102,5 +101,4 @@
 .faq-contents-wrapper:hover .faq-answer,
 .faq-contents-wrapper.active .faq-answer {
   opacity: 1;
-  transform: translateY(0);
 }
