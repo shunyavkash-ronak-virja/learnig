@@ -20,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-title-wrapper svg {
@@ -29,11 +29,20 @@
   transition: all 0.3s ease-in-out;
 }
 
+.faq-answers-wrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.4s ease-in-out;
+}
+
 .faq-content {
-  height: 0;
   overflow: hidden;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .faq-media {
@@ -41,11 +50,11 @@
   aspect-ratio: 1;
   border-radius: 50px;
   overflow: hidden;
-  transform: rotate(-20deg);
   position: absolute;
   top: 0;
   right: 145px;
-  transition: all 0.3s ease;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-answer {
@@ -53,23 +62,45 @@
   font-size: 18px;
   line-height: 1.5;
   color: var(--lightgray);
+  padding-bottom: 50px;
+  opacity: 0;
+  transform: translateY(-6px);
   transition: all 0.3s ease-in-out;
 }
 
-.faq-contents-wrapper:hover .faq-content {
-  height: 131px;
-  overflow: visible;
-  visibility: visible;
+.faq-contents-wrapper:not(:first-child) {
+  margin-top: 50px;
 }
 
-.faq-contents-wrapper:hover .faq-answer {
-  padding-bottom: 50px;
-}
-
-.faq-contents-wrapper:hover {
+.faq-contents-wrapper:hover,
+.faq-contents-wrapper.active {
   background: var(--bg-gradient);
+  border: transparent;
 }
 
-.faq-contents-wrapper:hover .faq-title-wrapper svg {
+.faq-contents-wrapper:hover .faq-answers-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.faq-contents-wrapper:hover .faq-content,
+.faq-contents-wrapper.active .faq-content {
+  visibility: visible;
+  overflow: visible;
+}
+
+.faq-contents-wrapper:hover .faq-title-wrapper svg,
+.faq-contents-wrapper.active .faq-title-wrapper svg {
   transform: rotate(-45deg);
+}
+
+.faq-contents-wrapper:hover .faq-media,
+.faq-contents-wrapper.active .faq-media {
+  opacity: 1;
+  transform: rotate(-20deg);
+}
+
+.faq-contents-wrapper:hover .faq-answer,
+.faq-contents-wrapper.active .faq-answer {
+  opacity: 1;
+  transform: translateY(0);
 }

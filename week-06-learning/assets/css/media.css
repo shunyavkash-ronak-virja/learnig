@@ -57,13 +57,26 @@
   }
 
   /* ----- Destinations section ----- */
-  .destinations-cards-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 34px 20px;
+  .destinations-card-container {
+    max-width: 276px;
+  }
+
+  .destinations-card {
+    max-width: 286px;
+    min-height: 426px;
+  }
+
+  .destinations-card-media {
+    height: 390px;
+  }
+
+  .destinations-decore-media {
+    max-width: 84px;
+    bottom: 20px;
   }
 
   .destinations-card-container:hover .destinations-decore-media {
-    transform: translate(40px, -47px);
+    transform: translate(30px, -47px);
   }
 }
 /* ----- End @media (max-width: 1023px) ----- */
@@ -177,6 +190,25 @@
     padding: 35px;
   }
 
+  /* ----- Destinations section ----- */
+  .destinations-cards-wrapper {
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+
+  .destinations-card-container {
+    max-width: 336px;
+  }
+
+  .destinations-card {
+    max-width: 336px;
+    min-height: 457px;
+  }
+
+  .destinations-card-media {
+    height: 417px;
+  }
+
   /* ----- Two column section ----- */
   .two-column-contents {
     width: 40%;
@@ -239,13 +271,12 @@
 
   .testimonials-heading {
     text-align: center;
-    padding-bottom: 50px;
   }
 
   .testimonials-splide .splide__pagination--ttb {
     top: auto;
     left: 50%;
-    bottom: -50px;
+    bottom: -76px;
     transform: translateX(-50%) rotate(-90deg);
   }
 
@@ -311,6 +342,7 @@
   .hero-content-title {
     margin-top: 20px;
     margin-bottom: 26px;
+    line-height: 1.3;
   }
 
   /* ----- Services section ----- */
@@ -337,8 +369,19 @@
   }
 
   .destinations-cards-wrapper {
-    grid-template-columns: repeat(1, 1fr);
     margin-top: 38px;
+  }
+
+  .destinations-card-container {
+    max-width: 306px;
+  }
+
+  .destinations-card {
+    min-height: 426px;
+  }
+
+  .destinations-card-media {
+    height: 376px;
   }
 
   /* ----- Two column section ----- */
@@ -411,6 +454,7 @@
   }
 
   .cta-title {
+    max-width: 100%;
     margin-bottom: 52px;
   }
 
@@ -452,15 +496,11 @@
 
   /* ----- Testimonials section ----- */
   .testimonials-section {
-    padding: 56px 0;
+    padding: 56px 0 86px;
   }
 
   .testimonials-splide .splide__arrows {
     right: 20px;
-  }
-
-  .testimonials-heading {
-    padding-bottom: 40px;
   }
 
   .testimonials-content-container {
@@ -477,6 +517,23 @@
   }
 }
 /* ----- End @media (max-width: 767px) ----- */
+
+/* ----- Start @media (max-width: 712px) ----- */
+@media (max-width: 712px) {
+  /* ----- Destinations section ----- */
+  .destinations-card-container {
+    max-width: 326px;
+  }
+
+  .destinations-card {
+    min-height: 456px;
+  }
+
+  .destinations-card-container:hover .destinations-decore-media {
+    transform: translate(46px, -47px);
+  }
+}
+/* ----- End @media (max-width: 712px) ----- */
 
 /* ----- Start @media (max-width: 575px) ----- */
 @media (max-width: 575px) {
@@ -652,19 +709,7 @@
 
   /* ----- Testimonials section ----- */
   .testimonials-splide .splide__arrows {
-    top: -38px;
-  }
-
-  .testimonials-splide .splide__arrows--ttb .splide__arrow--prev {
-    bottom: 10px;
-  }
-
-  .testimonials-splide .splide__arrows--ttb .splide__arrow--next {
-    top: 10px;
-  }
-
-  .testimonials-splide .splide__arrows {
-    right: 35px;
+    display: none;
   }
 
   .testimonials-content-container.is-active .testimonials-container {
@@ -699,6 +744,14 @@
     gap: 12px;
   }
   /* ----- Destinations section ----- */
+  .destinations-card-container {
+    max-width: 290px;
+  }
+
+  .destinations-card {
+    min-height: 416px;
+  }
+
   .destinations-decore-media {
     display: none;
   }
@@ -718,10 +771,15 @@
   .form-wrapper {
     gap: 18px;
   }
+
   /* ----- Testimonials section ----- */
   .testimonials-media {
     width: 52px;
     height: 52px;
+  }
+
+  .testimonials-container {
+    padding: 16px;
   }
 }
 /* ----- End @media (max-width: 424px) ----- */

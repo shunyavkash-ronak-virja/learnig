@@ -58,7 +58,7 @@ if (document.querySelector(".splide.travel-agency-splide"))
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide.testimonials-splide", {
     type: "loop",
-    // autoplay: true,
+    autoplay: true,
     direction: "ttb",
     height: "356px",
     perPage: 1,

@@ -651,15 +651,15 @@
 }
 
 .destinations-cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
   margin-top: 60px;
 }
 
 .destinations-card-container {
   width: 100%;
-  max-width: 324px;
+  max-width: 314px;
   position: relative;
   margin: 0 auto;
 }
@@ -680,7 +680,7 @@
 .destinations-card-container:hover .destinations-decore-media {
   opacity: 1;
   visibility: visible;
-  transform: translate(40px, -47px);
+  transform: translate(36px, -47px);
 }
 
 .destinations-card {
@@ -742,7 +742,7 @@
 
 /* ----- Two column section ----- */
 .two-column-section {
-  padding: 68px 0;
+  padding: 86px 0;
 }
 
 .two-column-wrapper {
@@ -848,7 +848,7 @@
 
 /* ----- Testimonials section ----- */
 .testimonials-section {
-  padding: 86px 0 50px;
+  padding: 86px 0 68px;
   overflow: hidden;
 }
 
@@ -861,7 +861,6 @@
 .testimonials-heading {
   width: 40%;
   max-width: 409px;
-  padding: 10px;
 }
 
 .testimonials-tag {
@@ -1001,10 +1000,6 @@
 }
 
 /* ----- Travel agency section ----- */
-.travel-agency-section {
-  padding: 32px 0;
-}
-
 .splide {
   visibility: visible;
 }
