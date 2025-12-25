@@ -1,0 +1,105 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --primary-color: #2f327d;
+  --secondary-color: #f48c06;
+  --skyblue-400: #65daff;
+  --darkslateblue: #5c5f9d;
+  --royalblue: #5b72ee;
+  --mediumslateblue: #3a40d0;
+  --navy-blue-200: #252641;
+  --darkslategray: #113d49;
+  --dimgray: #6c6c6c;
+  --darkslategray: #303439;
+  --lightsteelblue: #b2b3cf;
+  --text-color: #696984;
+  --silver: #c0c0c0;
+  --oldlace: #fff3e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.h1,
+h1 {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.h2,
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.h3,
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.h4,
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.h5,
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 36px;
+}
+
+.btn-small {
+  padding: 10px 28px;
+}
+
+.primary-btn {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.secondary-btn {
+  background-color: var(--white);
+}
