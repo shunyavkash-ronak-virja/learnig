@@ -1,6 +1,5 @@
 @media (max-width: 991px) {
   .header.active {
-    background-color: var(--white);
     border-color: #6c6c6c29;
     box-shadow: none;
   }

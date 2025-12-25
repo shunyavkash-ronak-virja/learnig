@@ -1,6 +1,7 @@
 /* ----- Header ----- */
 .header {
   padding: 12px 0;
+  background-color: var(--white);
   position: sticky;
   top: 0;
   left: 0;
@@ -180,4 +181,5 @@
 .footer {
   margin-top: auto;
   padding: 50px;
+  background-color: var(--navy-blue-200);
 }
