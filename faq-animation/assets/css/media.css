@@ -38,8 +38,8 @@
     font-size: 16px;
   }
 
-  .faq-contents-wrapper:not(:first-child) {
-    margin-top: 20px;
+  .faq-wrapper {
+    gap: 20px;
   }
 }
 
