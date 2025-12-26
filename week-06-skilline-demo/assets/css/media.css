@@ -45,6 +45,29 @@
   .footer-media-wrapper {
     margin: 0 auto 50px;
   }
+
+  /* ----- Hero section ----- */
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .hero-content-wrapper,
+  .hero-media {
+    width: 100%;
+  }
+
+  .hero-content-title {
+    margin-bottom: 22px;
+  }
+
+  .hero-media {
+    justify-content: center;
+  }
+
+  .hero-content-dec {
+    max-width: 536px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -115,9 +138,22 @@
   .footer-copy-right {
     margin-top: 22px;
   }
+  /* ----- Hero section ----- */
+  .hero-wrapper {
+    gap: 30px;
+  }
+
+  .hero-content-title {
+    margin-bottom: 20px;
+  }
+
+  .hero-btn-wrapper {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 424px) {
+  /* ----- Footer ----- */
   .footer-media-wrapper {
     max-width: 100%;
   }

@@ -9,3 +9,8 @@ navToggle.addEventListener("click", () => {
   header.classList.toggle("active");
   //   bodyScroll.classList.toggle("body-scroll");
 });
+
+// Fancybox js -----
+document.addEventListener("DOMContentLoaded", function () {
+  Fancybox.bind("[data-fancybox]", {});
+});
