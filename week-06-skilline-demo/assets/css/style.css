@@ -231,6 +231,8 @@
   font-size: 16px;
   background-color: transparent;
   padding: 14px 26px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-form-input::placeholder {
@@ -238,7 +240,6 @@
 }
 
 .footer-form-input:focus {
-  outline: none;
   border-color: var(--silver);
 }
 
@@ -308,18 +309,14 @@
 }
 
 .hero-content-title {
-  color: var(--primary-color);
   margin-bottom: 40px;
-  span {
-    color: var(--secondary-color);
-  }
 }
 
 .hero-content-dec {
   max-width: 436px;
   font-size: 18px;
   line-height: 1.8;
-  color: var(--text-color);
+  color: var(--slategray);
   margin-bottom: 30px;
 }
 
@@ -374,4 +371,57 @@
   max-width: 605px;
   aspect-ratio: 1;
   flex-shrink: 0;
+}
+
+/* ----- Companies media section ----- */
+.companies-media-section {
+  padding: 50px 0;
+}
+
+.companies-media-title {
+  text-align: center;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+
+.companies-media-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px 50px;
+  flex-wrap: wrap;
+}
+
+.companies-media img {
+  width: 140px;
+  height: 40px;
+}
+
+/* ----- Services section ----- */
+.services-section {
+  padding: 50px 0;
+}
+
+.services-section-heading {
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-heading-title {
+  margin-bottom: 24px;
+}
+
+.services-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+}
+
+.services-card {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 }

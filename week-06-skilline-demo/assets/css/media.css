@@ -80,6 +80,12 @@
     max-width: 550px;
     margin: 0 auto;
   }
+
+  /* ----- Companies media section ----- */
+  .companies-media img {
+    width: 106px;
+    height: 36px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -138,6 +144,7 @@
   .footer-copy-right {
     margin-top: 22px;
   }
+
   /* ----- Hero section ----- */
   .hero-wrapper {
     gap: 30px;
@@ -149,6 +156,15 @@
 
   .hero-btn-wrapper {
     gap: 20px;
+  }
+
+  /* ----- Companies media section ----- */
+  .companies-media-title {
+    margin-bottom: 38px;
+  }
+
+  .companies-media-wrapper {
+    gap: 30px 40px;
   }
 }
 
