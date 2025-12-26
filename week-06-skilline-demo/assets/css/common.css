@@ -8,9 +8,11 @@
   --royalblue: #5b72ee;
   --mediumslateblue: #3a40d0;
   --navy-blue-200: #252641;
-  --darkslategray: #113d49;
-  --dimgray: #6c6c6c;
   --darkslategray: #303439;
+  --darkslategray-800: #113d49;
+  --slategray: #626381;
+  --dimgray: #6c6c6c;
+  --lightslategray: #83839a;
   --lightsteelblue: #b2b3cf;
   --text-color: #696984;
   --silver: #c0c0c0;
@@ -93,6 +95,10 @@ h5 {
 
 .btn-small {
   padding: 10px 28px;
+}
+
+.btn-big {
+  padding: 16px 32px;
 }
 
 .primary-btn {

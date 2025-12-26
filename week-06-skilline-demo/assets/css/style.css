@@ -180,6 +180,132 @@
 /* ----- Footer ----- */
 .footer {
   margin-top: auto;
-  padding: 50px;
+  padding: 50px 0;
   background-color: var(--navy-blue-200);
+}
+
+.footer-content-wrapper {
+  max-width: 522px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-media-wrapper {
+  max-width: 308px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 80px;
+}
+
+.footer-logo-container {
+  width: 250px;
+  display: flex;
+  position: relative;
+  border-right: 1px solid var(--slategray);
+}
+
+.footer-logo svg {
+  width: 66px;
+  aspect-ratio: 1;
+}
+
+.footer-logo-content {
+  color: var(--white);
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.footer-media-tag {
+  text-align: start;
+  color: var(--white);
+  font-size: 24px;
+  padding-left: 22px;
+}
+
+.footer-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-form-wrapper {
+  margin-bottom: 70px;
+}
+
+.footer-form-title {
+  font-weight: 400;
+  color: var(--lightsteelblue);
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  width: 100%;
+  color: var(--white);
+  border: 1px solid var(--lightslategray);
+  border-radius: 36px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 14px 26px;
+}
+
+.footer-form-input::placeholder {
+  color: var(--lightslategray);
+}
+
+.footer-form-input:focus {
+  outline: none;
+  border-color: var(--silver);
+}
+
+.footer-form-btn {
+  width: 40%;
+  font-size: 18px;
+  background: linear-gradient(
+    149deg,
+    rgb(84, 90, 231) 50%,
+    rgba(57, 63, 207, 1) 100%
+  );
+  color: var(--white);
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.footer-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 0;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--lightsteelblue);
+  font-size: 18px;
+  padding: 0 20px;
+}
+.footer-link-container .footer-link:first-child {
+  padding-left: 0;
+}
+
+.footer-link-container .footer-link:nth-child(2) {
+  border-left: 1px solid var(--lightslategray);
+  border-right: 1px solid var(--lightslategray);
+}
+
+.footer-link-container .footer-link:last-child {
+  padding-right: 0;
+}
+
+.footer-copy-right {
+  color: var(--lightsteelblue);
+  margin-top: 26px;
+  font-size: 18px;
 }
