@@ -626,13 +626,15 @@
   color: var(--secondary-color);
 }
 
-.video-columns-media-wrapper {
+.video-columns-media-conatainer {
   position: relative;
 }
 
-.video-columns-media {
+.video-columns-media,
+.video-columns-media-conatainer {
   width: 100%;
   max-width: 620px;
+  margin: 0 auto;
 }
 
 .video-columns-media::before,
