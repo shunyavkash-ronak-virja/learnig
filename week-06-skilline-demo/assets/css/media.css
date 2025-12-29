@@ -1,3 +1,18 @@
+@media (max-width: 1116px) {
+  .header-link-contents {
+    gap: 32px;
+  }
+
+  .header-link,
+  .header-btn {
+    font-size: 18px;
+  }
+
+  .header-btn-wraper .btn-small {
+    padding: 12px 38px;
+  }
+}
+
 @media (max-width: 1023px) {
   /* ----- Services section ----- */
   .services-cards-wrapper {
@@ -12,10 +27,36 @@
   .services-card-media {
     top: -46px;
   }
+
+  /* ----- Blog-card section ----- */
+  .blog-card-wrapper {
+    gap: 36px;
+  }
+
+  .blog-card-content-title {
+    margin-bottom: 16px;
+  }
+
+  /* ----- Video-columns section ----- */
+  .video-columns-media::before {
+    width: 116px;
+    top: -14px;
+    left: -14px;
+  }
+
+  .video-columns-media::after {
+    width: 152px;
+    bottom: -16px;
+    right: -16px;
+  }
 }
 
 @media (max-width: 991px) {
   /* ----- Header ----- */
+  .header {
+    padding: 20px 0;
+  }
+
   .header.active {
     border-color: #6c6c6c29;
     box-shadow: none;
@@ -28,8 +69,8 @@
     left: 50%;
     transform: translate(-50%, 16px);
     background-color: var(--white);
-    padding: 20px 0;
-    margin-top: 14px;
+    padding: 20px;
+    margin-top: 2px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     opacity: 0;
     visibility: hidden;
@@ -69,7 +110,7 @@
   }
 
   .hero-content-wrapper,
-  .hero-media {
+  .hero-media-container {
     width: 100%;
   }
 
@@ -77,7 +118,7 @@
     margin-bottom: 22px;
   }
 
-  .hero-media {
+  .hero-media-container {
     justify-content: center;
   }
 
@@ -98,16 +139,34 @@
   }
 
   /* ----- Companies media section ----- */
+  .companies-media-section {
+    padding: 50px 0;
+  }
+
   .companies-media img {
     width: 106px;
     height: 36px;
   }
 
   /* ----- Services section ----- */
+  .services-section {
+    padding: 50px 0;
+  }
+
   .services-card-title,
   .services-card-dec,
   .services-cards-wrapper .services-card:nth-child(3) .services-card-dec {
     max-width: 100%;
+  }
+
+  /* ----- Blog-card section ----- */
+  .blog-card-section {
+    padding: 50px 0;
+  }
+
+  .blog-card-wrapper {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -143,6 +202,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-top: 14px;
   }
 
   .header-link-container {
@@ -227,6 +287,12 @@
 
   .services-card-dec {
     font-size: 16px;
+  }
+
+  /* ----- Blog-card section ----- */
+  .blog-card-container {
+    max-width: 450px;
+    min-height: 300px;
   }
 }
 
