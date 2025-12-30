@@ -7,7 +7,8 @@
   --skyblue-400: #65daff;
   --darkslateblue: #5c5f9d;
   --royalblue: #5b72ee;
-  --mediumslateblue: #3a40d0;
+  --mediumslateblue-600: #3a40d0;
+  --mediumslateblue-400: #555bdc;
   --navy-blue-200: #252641;
   --darkslategray: #303439;
   --darkslategray-800: #113d49;
@@ -18,6 +19,8 @@
   --text-color: #696984;
   --silver: #c0c0c0;
   --oldlace: #fff3e4;
+  --mediumspringgreen: #33ef9f;
+  --salmon: #f56666;
 }
 
 * {
@@ -79,7 +82,7 @@ h2 {
 @media (max-width: 767px) {
   .h2,
   h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
