@@ -68,6 +68,11 @@
 }
 
 @media (max-width: 1023px) {
+  /* ----- Footer ----- */
+  .footer-form-input {
+    padding: 14px 30px;
+  }
+
   /* ----- Hero section ----- */
   .hero-content-title {
     margin-bottom: 24px;
@@ -410,6 +415,34 @@
     bottom: 14px;
     left: -28px;
   }
+
+  /* -- Learning section -- */
+  .learning-meida-container {
+    background-size: 90%;
+  }
+
+  .learning-users-container {
+    right: 8%;
+  }
+
+  .learning-logic-container {
+    left: 8%;
+  }
+
+  .blue-dot {
+    right: 80px;
+    bottom: 78px;
+  }
+
+  .orange-dot {
+    left: 34px;
+    bottom: 140px;
+  }
+
+  .green-dot {
+    right: 140px;
+    top: 22px;
+  }
 }
 
 @media (max-width: 656px) {
@@ -430,7 +463,6 @@
 
 @media (max-width: 575px) {
   /* ----- Header ----- */
-
   .header-logo svg {
     width: 100px;
   }
@@ -595,6 +627,16 @@
 
   .our-features-bottom-decore::before {
     bottom: 0;
+  }
+
+  /* -- Learning section -- */
+  .learning-meida-container {
+    background-size: 100%;
+  }
+
+  .learning-users-container {
+    top: 14%;
+    right: 2%;
   }
 }
 
