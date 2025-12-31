@@ -43,15 +43,23 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1557px;
+  max-width: 1589px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 16px;
+}
+
+.footer-container {
+  max-width: 632px;
+}
+
+.header-container,
+.hero-container {
+  max-width: 1686px;
 }
 
 a {
-  display: inline-flex;
+  display: block;
   text-decoration: none;
-  cursor: pointer;
 }
 
 img {
@@ -65,6 +73,10 @@ img {
   object-fit: cover;
 }
 
+.m-outo {
+  margin-inline: auto;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -75,16 +87,46 @@ h1 {
   font-size: 54px;
   font-weight: 600;
 }
+@media (max-width: 991px) {
+  .h1,
+  h1 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .h1,
+  h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 575px) {
+  .h1,
+  h1 {
+    font-size: 30px;
+  }
+}
 
 .h2,
 h2 {
   font-size: 48px;
   font-weight: 700;
 }
+@media (max-width: 991px) {
+  .h2,
+  h2 {
+    font-size: 42px;
+  }
+}
 @media (max-width: 767px) {
   .h2,
   h2 {
-    font-size: 32px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .h2,
+  h2 {
+    font-size: 30px;
   }
 }
 
@@ -93,11 +135,47 @@ h3 {
   font-size: 36px;
   font-weight: 600;
 }
+@media (max-width: 991px) {
+  .h3,
+  h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .h3,
+  h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .h3,
+  h3 {
+    font-size: 24px;
+  }
+}
 
 .h4,
 h4 {
   font-size: 28px;
   font-weight: 600;
+}
+@media (max-width: 991px) {
+  .h4,
+  h4 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .h4,
+  h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .h4,
+  h4 {
+    font-size: 22px;
+  }
 }
 
 .h5,
@@ -105,11 +183,35 @@ h5 {
   font-size: 24px;
   font-weight: 600;
 }
+@media (max-width: 991px) {
+  .h5,
+  h5 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .h5,
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .h5,
+  h5 {
+    font-size: 18px;
+  }
+}
 
 .h6,
 h6 {
   font-size: 20px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .h6,
+  h6 {
+    font-size: 18px;
+  }
 }
 
 .btn {

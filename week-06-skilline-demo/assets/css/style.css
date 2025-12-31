@@ -41,6 +41,10 @@
   align-items: center;
 }
 
+.header-btn-wraper .secondary-btn {
+  box-shadow: 0 10px 26px 0px rgb(0 0 0 / 0.1);
+}
+
 .header-link-wrapper {
   gap: 40px;
 }
@@ -275,6 +279,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .hero-content-wrapper,
@@ -368,8 +373,8 @@
 }
 
 .companies-media img {
-  width: 140px;
-  height: 40px;
+  max-width: 140px;
+  min-height: 40px;
 }
 
 /* ----- Services section ----- */
@@ -414,14 +419,13 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -58px;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .services-card-media img {
-  width: 36px;
-  aspect-ratio: 1;
+  width: 44%;
 }
 
 .bg-royalblue {
@@ -441,11 +445,13 @@
 }
 
 .services-card-title {
+  min-height: 72px;
   max-width: 278px;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
   font-weight: 500;
-  flex-grow: 1;
-  margin: 0 auto 22px;
+  margin-bottom: 22px;
 }
 
 .services-card-dec {
