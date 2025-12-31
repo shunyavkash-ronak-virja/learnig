@@ -80,12 +80,11 @@
     right: 80px;
     bottom: 82px;
   }
-}
 
-@media (max-width: 1023px) {
   /* ----- Services section ----- */
   .services-cards-wrapper {
     gap: 20px;
+    margin-top: 50px;
   }
 
   .services-card-title {
@@ -95,11 +94,9 @@
   .services-card {
     padding: 66px 22px 44px;
   }
+}
 
-  .services-card-media {
-    top: -46px;
-  }
-
+@media (max-width: 1023px) {
   /* ----- Blog-card section ----- */
   .blog-card-wrapper {
     gap: 36px;
@@ -252,7 +249,7 @@
 
   .services-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    gap: 82px 20px;
+    gap: 38px 20px;
   }
 
   /* ----- Video-columns section ----- */
@@ -367,7 +364,7 @@
 
   .companies-media img {
     max-width: 106px;
-    min-height: 36px;
+    max-height: 36px;
   }
 
   /* ----- Services section ----- */
@@ -450,11 +447,11 @@
   /* ----- Services section ----- */
   .services-cards-wrapper {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 94px;
+    margin-top: 50px;
   }
 
   .services-card {
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
 
   .services-card-media {
@@ -482,6 +479,10 @@
     flex-direction: column;
     align-items: start;
     margin-top: 14px;
+  }
+
+  .responsive-header-btn .login-btn {
+    border: 1px solid #6c6c6c29;
   }
 
   .header-link-container {
@@ -573,11 +574,6 @@
 
   .services-card-media {
     width: 68px;
-    top: -36px;
-  }
-
-  .services-card-media img {
-    width: 34px;
   }
 
   .services-card-title {
@@ -657,7 +653,7 @@
 
   /* ----- Services section ----- */
   .services-cards-wrapper {
-    gap: 74px 28px;
+    gap: 30px 28px;
   }
 
   .services-card {

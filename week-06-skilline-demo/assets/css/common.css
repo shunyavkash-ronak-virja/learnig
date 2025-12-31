@@ -73,6 +73,10 @@ img {
   object-fit: cover;
 }
 
+.heading-wrapper {
+  text-align: center;
+}
+
 .m-outo {
   margin-inline: auto;
 }
@@ -274,11 +278,6 @@ h6 {
 .primary-btn-v2:hover {
   box-shadow: inset 40px 38px rgb(204, 118, 6),
     inset -40px -38px rgb(204, 118, 6);
-}
-
-.heading-wrapper {
-  margin: 0 auto;
-  text-align: center;
 }
 
 .title-tag {
