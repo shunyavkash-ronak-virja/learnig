@@ -13,6 +13,60 @@
   }
 }
 
+@media (max-width: 1279px) {
+  /* -- Learning section -- */
+  .learning-media {
+    max-width: 356px;
+  }
+
+  .learning-media::after {
+    width: 200px;
+  }
+
+  .learning-logic-container,
+  .learning-users-container {
+    width: 72px;
+  }
+
+  .learning-logic-media,
+  .learning-users-media {
+    width: 52px;
+    border-radius: 14px;
+  }
+
+  .learning-logic-media img,
+  .learning-users-media img {
+    width: 30px;
+  }
+
+  .learning-logic-container {
+    top: 22%;
+    left: 8%;
+    transform: rotate(-14deg);
+  }
+
+  .learning-users-container {
+    top: 22%;
+    right: 8%;
+    transform: rotate(6deg);
+  }
+
+  .orange-dot {
+    left: 46px;
+    bottom: 136px;
+  }
+
+  .green-dot {
+    right: 160px;
+    top: 50px;
+  }
+
+  .blue-dot {
+    right: 80px;
+    bottom: 82px;
+  }
+}
+
 @media (max-width: 1023px) {
   /* ----- Hero section ----- */
   .hero-content-title {
@@ -159,6 +213,10 @@
   }
 
   /* ----- Hero section ----- */
+  .hero-section {
+    padding-top: 114px;
+  }
+
   .hero-wrapper {
     flex-direction: column;
     align-items: start;
@@ -238,6 +296,45 @@
 
   .our-features-lists-wrapper {
     max-width: 480px;
+  }
+
+  /* -- Learning section -- */
+  .learning-wrapper {
+    flex-direction: column;
+  }
+
+  .learning-content-wrapper,
+  .learning-meida-wrapper {
+    width: 100%;
+  }
+
+  .learning-content-wrapper {
+    max-width: 100%;
+  }
+
+  .learning-meida-container {
+    max-width: 708px;
+    background-size: 70%;
+    margin: 0 auto;
+  }
+
+  .learning-users-container {
+    top: 18%;
+    right: 12%;
+  }
+
+  .learning-logic-container {
+    left: 12%;
+  }
+
+  .blue-dot {
+    right: 110px;
+    bottom: 92px;
+  }
+
+  .orange-dot {
+    left: 66px;
+    bottom: 126px;
   }
 }
 

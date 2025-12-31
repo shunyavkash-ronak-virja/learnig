@@ -1,16 +1,17 @@
 .header {
+  width: 100%;
   padding: 50px 0 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   border-bottom: 2px solid transparent;
-  background-color: var(--oldlace);
   transition: all 0.3s ease-in-out;
 }
 
 .body-scroll {
   padding: 20px 0;
+  background-color: var(--oldlace);
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
@@ -265,7 +266,7 @@
 
 /* ----- Hero section ----- */
 .hero-section {
-  padding: 50px 0 0;
+  padding-top: 180px;
   background-color: var(--oldlace);
   clip-path: ellipse(120% 100% at 50% 0%);
 }
@@ -771,14 +772,12 @@
 .learning-wrapper {
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 46px;
 }
 
 .learning-content-wrapper {
   width: 40%;
-}
-
-.learning-content-wrapper .description {
   max-width: 400px;
 }
 
@@ -846,13 +845,38 @@
 }
 
 .learning-logic-container {
-  top: 106px;
-  left: 128px;
+  top: 18%;
+  left: 16%;
   transform: rotate(-14deg);
 }
 
 .learning-users-container {
-  top: 170px;
-  right: 86px;
+  top: 20%;
+  right: 12%;
   transform: rotate(10deg);
+}
+
+.learning-decor {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.orange-dot {
+  background-color: var(--orange-300);
+  left: 60px;
+  bottom: 160px;
+}
+
+.blue-dot {
+  background-color: var(--mediumslateblue-100);
+  right: 120px;
+  bottom: 70px;
+}
+
+.green-dot {
+  background-color: var(--mediumspringgreen);
+  right: 210px;
+  top: 10px;
 }
