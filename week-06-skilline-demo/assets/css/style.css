@@ -864,3 +864,181 @@
   right: 27%;
   top: 4%;
 }
+
+/* ----- Quizzes section ----- */
+.quizzes-section {
+  padding: 78px 0;
+}
+
+.quizzes-media {
+  width: 50%;
+  max-width: 668px;
+  position: relative;
+}
+
+.quizzes-media::after,
+.quizzes-media::before,
+.quizzes-first-decore::after {
+  content: "";
+}
+
+.quizzes-media::after,
+.quizzes-media::before {
+  width: 3%;
+}
+
+.quizzes-first-decore,
+.quizzes-media::after,
+.quizzes-media::before,
+.quizzes-first-decore::after {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.quizzes-first-decore {
+  width: 12%;
+  background-color: var(--royalblue);
+  top: 4%;
+  left: 1%;
+  z-index: -1;
+}
+
+.quizzes-first-decore::after {
+  width: 22%;
+  background-color: var(--orange-300);
+  top: -22%;
+  right: -40%;
+}
+
+.quizzes-media::before {
+  background-color: var(--mediumspringgreen);
+  left: 1%;
+  bottom: 10%;
+}
+
+.quizzes-media::after {
+  background-color: var(--palevioletred);
+  right: 14%;
+  bottom: 48%;
+}
+
+.quizzes-content-wrapper {
+  width: 50%;
+  max-width: 554px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.quizzes-content-wrapper .title,
+.quizzes-content-wrapper .description {
+  max-width: 392px;
+}
+
+/* -- Management section -- */
+.management-section {
+  padding: 78px 0;
+}
+
+.management-content {
+  width: 40%;
+}
+
+.management-content .title {
+  max-width: 360px;
+}
+
+.management-media-wrapper {
+  width: 60%;
+  max-width: 662px;
+  position: relative;
+}
+
+.management-media-wrapper::before {
+  content: "";
+  width: 44%;
+  height: 44%;
+  border-radius: 16px;
+  position: absolute;
+  bottom: 4%;
+  left: 2%;
+  background-color: var(--lightskyblue-100);
+  z-index: -1;
+}
+
+.management-first-decore,
+.management-second-decore,
+.management-first-decore::before,
+.management-second-decore::before,
+.management-third-decore,
+.management-third-decore::after {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.management-first-decore,
+.management-second-decore {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 34px 0 rgb(0 0 0 / 0.1);
+  z-index: 1;
+}
+
+.management-first-decore::before,
+.management-second-decore::before {
+  content: "";
+  z-index: -1;
+  background-color: rgb(255 255 255 / 42%);
+  box-shadow: 0 0 28px 0px rgb(0 0 0 /0.1);
+}
+
+.management-first-decore {
+  width: 12%;
+  top: 2%;
+  left: 4%;
+}
+
+.management-first-decore img {
+  width: 96%;
+}
+
+.management-first-decore::before {
+  width: 130%;
+}
+
+.management-second-decore {
+  width: 10%;
+  top: 15%;
+  right: 4%;
+}
+
+.management-second-decore img {
+  width: 62%;
+}
+
+.management-second-decore::before {
+  width: 134%;
+}
+
+.management-third-decore,
+.management-third-decore::after {
+  background-color: var(--lightskyblue);
+}
+
+.management-third-decore {
+  width: 5%;
+  top: -2%;
+  right: 7%;
+}
+
+.management-third-decore::after {
+  content: "";
+  width: 46%;
+  position: absolute;
+  top: 90%;
+  right: -95%;
+}

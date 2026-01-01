@@ -57,7 +57,7 @@
 
   /* ----- Services section ----- */
   .services-cards-wrapper {
-    gap: 20px;
+    gap: 30px;
     margin-top: 50px;
   }
 
@@ -242,6 +242,7 @@
   /* -- Learning section -- */
   .learning-section .two-columns-wrapper {
     flex-direction: column;
+    gap: 58px;
   }
 
   .learning-content-wrapper,
@@ -266,6 +267,44 @@
 
   .learning-logic-container {
     left: 12%;
+  }
+
+  /* ----- Quizzes section ----- */
+  .quizzes-section .two-columns-wrapper {
+    gap: 50px;
+  }
+
+  .quizzes-content-wrapper,
+  .quizzes-media {
+    width: 100%;
+  }
+
+  .quizzes-content-wrapper,
+  .quizzes-content-wrapper .title {
+    max-width: 100%;
+  }
+
+  .quizzes-content-wrapper .description {
+    max-width: 786px;
+  }
+
+  .quizzes-media {
+    max-width: 568px;
+  }
+
+  /* -- Management section -- */
+  .management-section .two-columns-wrapper {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .management-content,
+  .management-media-wrapper {
+    width: 100%;
+  }
+
+  .management-content .title {
+    max-width: 100%;
   }
 }
 
@@ -342,6 +381,23 @@
 
   .learning-logic-container {
     left: 8%;
+  }
+
+  /* ----- Quizzes section ----- */
+  .quizzes-section {
+    padding: 50px 0;
+  }
+
+  .quizzes-content-wrapper .description {
+    max-width: 100%;
+  }
+  /* -- Management section -- */
+  .management-section {
+    padding: 50px 0;
+  }
+
+  .management-section .two-columns-wrapper {
+    gap: 58px;
   }
 }
 
@@ -502,6 +558,10 @@
   }
 
   /* ----- Video-columns section ----- */
+  .video-columns-dec {
+    font-size: 16px;
+  }
+
   .video-columns-play-btn {
     width: 52px;
   }
@@ -535,6 +595,10 @@
     background-size: 100%;
   }
 
+  .learning-section .two-columns-wrapper {
+    gap: 34px;
+  }
+
   .learning-users-container {
     top: 14%;
     right: 0;
@@ -547,6 +611,14 @@
 
   .learning-logic-container {
     left: 0;
+  }
+
+  .learning-meida-wrapper {
+    max-width: 454px;
+  }
+
+  .learning-media {
+    max-width: 304px;
   }
 
   .learning-decor {
@@ -564,6 +636,20 @@
   .green-dot {
     right: 14%;
   }
+
+  /* ----- Quizzes section ----- */
+  .quizzes-section .two-columns-wrapper {
+    gap: 30px;
+  }
+
+  .quizzes-media {
+    max-width: 438px;
+  }
+
+  /* ----- Quizzes section ----- */
+  .management-section .two-columns-wrapper {
+    gap: 36px;
+  }
 }
 
 @media (max-width: 424px) {
@@ -579,5 +665,13 @@
   /* -- Learning section -- */
   .learning-media::after {
     width: 182px;
+  }
+
+  .learning-media {
+    max-width: 236px;
+  }
+
+  .learning-media::after {
+    width: 140px;
   }
 }
