@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skilline</title>
+    <link rel="icon" href="assets/images/svg/logo-icon-stroke.svg" type="image/x-icon">
 
     <!----- Fancybox css ----->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
@@ -21,7 +22,7 @@
 <body>
     <!----- Header ----->
     <header class="header">
-        <div class="container header-container">
+        <div class="container">
             <div class="header-container-wrapper">
                 <a href="index.html" class="header-logo">
                     <svg viewBox="0 0 150 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,10 +61,10 @@
 
     <!----- Hero section ----->
     <section class="hero-section">
-        <div class="container hero-container">
+        <div class="container">
             <div class="hero-wrapper">
                 <div class="hero-content-wrapper">
-                    <h1 class="h2 hero-content-title title-tag"><span>Studying</span> Online is now much easier</h1>
+                    <h1 class="h2 hero-content-title title"><span>Studying</span> Online is now much easier</h1>
                     <p class="hero-content-dec">Skilline is an interesting platform that will teach you in more an interactive way</p>
                     <div class="hero-btn-wrapper">
                         <a class="btn btn-big primary-btn hero-join-btn primary-btn-v2" href="javascript:viod(0)"><span>Join for free</span></a>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="hero-media-container">
                     <div class="m-outo hero-media">
-                        <img class="img-cover" src="assets/images/hero-img.png" alt="hero-img">
+                        <img src="assets/images/hero-img.png" alt="hero-img">
                     </div>
                 </div>
             </div>
@@ -117,11 +118,11 @@
     <!----- Services section ----->
     <section class="services-section">
         <div class="container">
-            <div class="m-outo services-section-heading heading-wrapper">
-                <h2 class="h5 services-heading-title title-tag">All-In-One <span>Cloud Software.</span></h2>
+            <div class="m-outo services-section-heading section-heading">
+                <h2 class="h5 services-heading-title title">All-In-One <span>Cloud Software.</span></h2>
                 <p class="description">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
             </div>
-            <div class="services-cards-wrapper">
+            <div class="m-outo services-cards-wrapper">
                 <div class="services-card">
                     <div class="services-card-media bg-royalblue">
                         <img src="assets/images/svg/file-invoice.svg" alt="services-img">
@@ -152,8 +153,8 @@
     <!----- Blog-card section ----->
     <section class="blog-card-section">
         <div class="container">
-            <div class="m-outo blog-card-heading heading-wrapper">
-                <h5 class="blog-card-heading-title title-tag">What is <span>Skilline?</span></h5>
+            <div class="m-outo blog-card-heading section-heading">
+                <h5 class="blog-card-heading-title title">What is <span>Skilline?</span></h5>
                 <p class="description">Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
             </div>
 
@@ -182,68 +183,66 @@
     <!----- Video-columns section ----->
     <section class="video-columns-section">
         <div class="container">
-            <div class="video-columns-wrapper">
+            <div class="two-columns-wrapper">
                 <div class="video-columns-contents">
-                    <h4 class="title-tag video-columns-title">Everything you can do in a physical classroom, <span>you can do with Skilline</span></h4>
+                    <h2 class="h4 title video-columns-title">Everything you can do in a physical classroom, <span>you can do with Skilline</span></h2>
                     <p class="description video-columns-dec">Skilline's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
                     <a class="video-columns-btn" href="javascript:void(0)">Learn more</a>
                 </div>
-                <div class="video-columns-media-wrapper">
-                    <div class="video-columns-media-conatainer">
-                        <div class="video-columns-media">
-                            <img class="img-cover" src="assets/images/skilline-img-03.png" alt="video-columns-img">
-                        </div>
-                        <a class="video-columns-play-btn" data-fancybox href="https://www.youtube.com/watch?v=D0UnqGm_miA">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-player-play">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"></path>
-                            </svg>
-                        </a>
+                <a class="video-columns-media-wrapper" data-fancybox href="https://www.youtube.com/watch?v=D0UnqGm_miA">
+                    <div class="video-columns-media">
+                        <img class="img-cover" src="assets/images/skilline-img-03.png" alt="video-columns-img">
                     </div>
-                </div>
+                    <div class="video-columns-play-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-player-play">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"></path>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!----- Our-features section ----->
-    <section class="our-features-section">
+    <!----- Features section ----->
+    <section class="features-section">
         <div class="container">
-            <div class="heading-wrapper our-features-heading">
-                <h5 class="title-tag">Our <span>Features</span></h5>
+            <div class="section-heading">
+                <h5 class="title">Our <span>Features</span></h5>
                 <p class="description">This very extraordinary feature, can make learning activities more efficient</p>
             </div>
-            <div class="our-features-wrapper">
-                <div class="our-features-media-wrapper">
-                    <div class="our-features-media-container">
-                        <div class="our-features-top-decore"></div>
-                        <div class="our-features-media">
-                            <img class="img-cover" src="assets/images/skilline-img-04.png" alt="our-features-img">
+            <div class="two-columns-wrapper">
+                <div class="features-media-wrapper">
+                    <div class="features-media-container">
+                        <div class="features-first-decore"></div>
+                        <div class="features-media">
+                            <img src="assets/images/skilline-img-04.png" alt="our-features-img">
                         </div>
-                        <div class="our-features-bottom-decore"></div>
+                        <div class="features-second-decore"></div>
                     </div>
                 </div>
-                <div class="our-features-content">
-                    <h3 class="title-tag">A <span>user interface</span> designed for the classroom</h3>
-                    <div class="our-features-lists-wrapper">
-                        <div class="our-features-lists">
-                            <div class="our-features-lists-media">
+                <div class="features-content">
+                    <h3 class="title">A <span>user interface</span> designed for the classroom</h3>
+                    <div class="features-items-wrapper">
+                        <div class="features-item">
+                            <div class="features-item-media">
                                 <img src="assets/images/svg/group-72.svg" alt="our-features-img">
                             </div>
-                            <p class="description our-features-dec">Teachers don't get lost in the grid view and have a dedicated Podium space.</p>
+                            <p class="description features-dec">Teachers don't get lost in the grid view and have a dedicated Podium space.</p>
                         </div>
 
-                        <div class="our-features-lists">
-                            <div class="our-features-lists-media">
+                        <div class="features-item">
+                            <div class="features-item-media">
                                 <img src="assets/images/svg/group-73.svg" alt="our-features-img">
                             </div>
-                            <p class="description our-features-dec">TA's and presenters can be moved to the front of the class.</p>
+                            <p class="description features-dec">TA's and presenters can be moved to the front of the class.</p>
                         </div>
 
-                        <div class="our-features-lists">
-                            <div class="our-features-lists-media">
+                        <div class="features-item">
+                            <div class="features-item-media">
                                 <img src="assets/images/svg/users-blue.svg" alt="our-features-img">
                             </div>
-                            <p class="description our-features-dec">Teachers can easily see all students and class data at one time.</p>
+                            <p class="description features-dec">Teachers can easily see all students and class data at one time.</p>
                         </div>
                     </div>
                 </div>
@@ -251,11 +250,12 @@
         </div>
     </section>
 
+    <!-- Learning section -->
     <section class="learning-section">
         <div class="container">
-            <div class="learning-wrapper">
+            <div class="two-columns-wrapper">
                 <div class="learning-content-wrapper">
-                    <h3 class="title-tag"><span>Tools</span> For Teachers And Learners</h3>
+                    <h3 class="title"><span>Tools</span> For Teachers And Learners</h3>
                     <p class="description">Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.</p>
                 </div>
                 <div class="learning-meida-wrapper">
@@ -282,12 +282,17 @@
         </div>
     </section>
 
+    <!-- Learning section -->
+    <section class="">
+        <div class="container">
+
+        </div>
+    </section>
 
     <!----- Footer ----->
     <footer class="footer">
         <div class="container">
             <div class="footer-content-wrapper">
-
                 <div class="footer-media-wrapper">
                     <div class="footer-logo-container">
                         <svg viewBox="0 0 150 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,9 +310,11 @@
                     </form>
                 </div>
                 <div class="footer-link-container">
-                    <a class="footer-link" href="javascript:void(0)">careers</a>
-                    <a class="footer-link" href="javascript:void(0)">privacy policy</a>
-                    <a class="footer-link" href="javascript:void(0)">terms & conditions</a>
+                    <a class="footer-link" href="javascript:void(0);">careers</a>
+                    <div class="footer-link-border"></div>
+                    <a class="footer-link" href="javascript:void(0);">privacy policy</a>
+                    <div class="footer-link-border"></div>
+                    <a class="footer-link" href="javascript:void(0);">terms & conditions</a>
                 </div>
                 <p class="footer-copy-right">© 2025 Class Technologies Inc.</p>
             </div>
