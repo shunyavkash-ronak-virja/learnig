@@ -255,10 +255,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   z-index: 2;
 }
 
-.btn span {
-  z-index: 4;
-}
-
 .btn-small {
   padding: 15px 20px;
   min-width: 160px;
@@ -293,21 +289,33 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .primary-hover {
   position: relative;
-  z-index: 1;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .primary-hover::before,
 .primary-hover::after {
   content: "";
   width: 0;
+  height: 100%;
   position: absolute;
   top: 0;
+  background-color: rgb(0 0 0 / 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
 }
 
+.primary-hover::before {
+  left: 0;
+}
+
+.primary-hover::after {
+  right: 0;
+}
+
+.primary-hover:hover::before,
 .primary-hover:hover::after {
   width: 50%;
-  right: 0;
 }
 
 /* .primary-hover-btn, */
@@ -339,6 +347,16 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   margin-bottom: 24px;
   span {
     color: var(--secondary);
+  }
+}
+@media (max-width: 991px) {
+  .title {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 14px;
   }
 }
 

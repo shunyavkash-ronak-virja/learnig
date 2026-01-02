@@ -500,15 +500,7 @@
 .blog-card-content-btn {
   border: 1px solid var(--white);
   color: var(--white);
-  transition: all 0.4s ease-in-out;
 }
-
-/* .blog-card-content-btn:hover {
-  opacity: 90%;
-  border-color: transparent;
-  box-shadow: inset 135px 25px rgb(101 218 255),
-    inset -135px -25px rgb(101 218 255);
-} */
 
 /* ----- Video-columns section ----- */
 .video-columns-contents,

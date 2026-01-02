@@ -49,7 +49,7 @@
 
   /* ----- Blog-card section ----- */
   .blog-card-wrapper {
-    -top: 66px;
+    margin-top: 66px;
   }
 
   .blog-card-content-title {
@@ -373,7 +373,13 @@
   }
 
   .services-card {
-    margin: 30px auto 0;
+    margin-top: 30px;
+    padding: 44px 22px;
+  }
+
+  .services-card-title {
+    min-height: 62px;
+    margin-bottom: 12px;
   }
 
   .services-card-media {
@@ -526,7 +532,11 @@
   }
 
   .services-card {
-    padding: 66px 28px 44px;
+    padding: 28px 28px 44px;
+  }
+
+  .services-card-title {
+    min-height: 56px;
   }
 
   .services-card-media {
