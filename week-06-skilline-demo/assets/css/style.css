@@ -218,6 +218,7 @@
 
 .footer-form-btn {
   width: 40%;
+  min-width: 40%;
   background: linear-gradient(
     149deg,
     rgb(84, 90, 231) 50%,
@@ -1102,4 +1103,20 @@
 .discussions-content .title,
 .discussions-content .description {
   max-width: 438px;
+}
+
+.features-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.features-btn {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.features-btn:hover {
+  border-color: rgb(0 0 0 / 0.2);
+  color: var(--white);
 }
