@@ -1,3 +1,4 @@
+/* ----- Header ----- */
 .header {
   width: 100%;
   padding: 50px 0 20px;
@@ -1120,3 +1121,5 @@
   border-color: rgb(0 0 0 / 0.2);
   color: var(--white);
 }
+
+/* ----- Integrations section ----- */
