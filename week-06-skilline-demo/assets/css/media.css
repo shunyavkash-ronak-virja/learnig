@@ -20,13 +20,58 @@
   }
 
   /* ----- Hero section ----- */
+  .hero-section {
+    padding-top: 166px;
+  }
+
   .hero-content-title {
     margin-bottom: 24px;
-    line-height: 1.2;
   }
 
   .hero-btn-wrapper {
     gap: 16px;
+  }
+
+  /* ----- Companies media section ----- */
+  .companies-media-section {
+    padding: 50px 0 68px;
+  }
+
+  /* ----- Services section ----- */
+  .services-cards-wrapper {
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .services-card {
+    padding: 66px 22px 44px;
+  }
+
+  /* ----- Blog-card section ----- */
+  .blog-card-wrapper {
+    -top: 66px;
+  }
+
+  .blog-card-content-title {
+    margin-bottom: 16px;
+  }
+
+  /* -----  Features section ----- */
+  .features-wrapper {
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .features-item {
+    gap: 16px;
+  }
+
+  .features-item-media {
+    width: 48px;
+  }
+
+  .features-dec {
+    font-size: 16px;
   }
 
   /* -- Learning section -- */
@@ -54,59 +99,17 @@
     right: 8%;
     transform: rotate(6deg);
   }
-
-  /* ----- Services section ----- */
-  .services-cards-wrapper {
-    gap: 30px;
-    margin-top: 50px;
-  }
-
-  .services-card-title {
-    font-size: 22px;
-  }
-
-  .services-card {
-    padding: 66px 22px 44px;
-  }
-
-  /* ----- Blog-card section ----- */
-  .blog-card-wrapper {
-    gap: 36px;
-  }
-
-  .blog-card-content-title {
-    margin-bottom: 16px;
-  }
-
-  /* -----  Features section ----- */
-  .features-wrapper {
-    gap: 20px;
-    margin-top: 80px;
-  }
-
-  .features-item {
-    gap: 16px;
-  }
-
-  .features-item-media {
-    width: 48px;
-  }
-
-  .features-dec {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 @media (max-width: 991px) {
   /* ----- Header ----- */
   .header {
-    padding: 20px 0;
+    padding-block: 20px;
   }
 
   .header.active {
-    border-color: #6c6c6c29;
     box-shadow: none;
+    background-color: var(--oldlace);
   }
 
   .header-link-container {
@@ -117,10 +120,10 @@
     transform: translate(-50%, 16px);
     background-color: var(--white);
     padding: 20px;
-    margin-top: 2px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     opacity: 0;
     visibility: hidden;
+    border-top: 2px solid transparent;
     transition: all 0.3s ease-in-out;
   }
 
@@ -128,6 +131,7 @@
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0);
+    border-color: #6c6c6c29;
   }
 
   .header-link-wrapper {
@@ -153,6 +157,7 @@
   /* ----- Hero section ----- */
   .hero-section {
     padding-top: 154px;
+    clip-path: ellipse(170% 100% at 50% 0%);
   }
 
   .hero-wrapper {
@@ -176,16 +181,27 @@
   }
 
   .hero-media {
-    margin: 0 auto;
+    margin-inline: auto;
   }
 
   .hero-content-dec {
     max-width: 536px;
   }
 
+  /* ----- Companies media section ----- */
+  .companies-media-section {
+    padding: 50px 0 58px;
+  }
+
+  /* ----- Services section ----- */
   .services-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 38px 20px;
+  }
+
+  /* ----- Blog-card section ----- */
+  .blog-card-wrapper {
+    margin-top: 56px;
   }
 
   /* ----- Video-columns section ----- */
@@ -210,7 +226,7 @@
   }
 
   .video-columns-dec::after {
-    width: 2%;
+    width: 14px;
     bottom: 0;
     right: 0;
   }
@@ -257,7 +273,7 @@
   .learning-meida-container {
     max-width: 708px;
     background-size: 70%;
-    margin: 0 auto;
+    margin-inline: auto;
   }
 
   .learning-users-container {
@@ -316,17 +332,26 @@
 
   .footer-form {
     max-width: 550px;
-    margin: 0 auto;
+    margin-inline: auto;
   }
 
   /* ----- Hero section ----- */
   .hero-section {
-    clip-path: ellipse(146% 100% at 50% 0%);
+    padding-top: 136px;
+    clip-path: ellipse(190% 100% at 50% 0%);
+  }
+
+  .hero-content-dec {
+    font-size: 16px;
   }
 
   /* ----- Companies media section ----- */
   .companies-media-section {
-    padding: 50px 0;
+    padding-block: 48px;
+  }
+
+  .companies-media-wrapper {
+    gap: 26px 40px;
   }
 
   .companies-media img {
@@ -335,41 +360,33 @@
   }
 
   /* ----- Services section ----- */
-  .services-section {
-    padding: 50px 0;
-  }
-
   .services-card-title,
   .services-card-dec,
   .services-cards-wrapper .services-card:nth-child(3) .services-card-dec {
     max-width: 100%;
   }
 
-  /* ----- Blog-card section ----- */
-  .blog-card-section {
-    padding: 50px 0;
+  .services-cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+    margin-top: 42px;
   }
 
+  .services-card {
+    margin: 30px auto 0;
+  }
+
+  .services-card-media {
+    width: 74px;
+  }
+
+  /* ----- Blog-card section ----- */
   .blog-card-wrapper {
-    margin-top: 50px;
+    margin-top: 46px;
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* ----- Video-columns section ----- */
-  .video-columns-section {
-    padding: 50px 0;
-  }
-
-  /* ----- Features section ----- */
-  .features-section {
-    padding: 50px 0;
-  }
-
   /* -- Learning section -- */
-  .learning-section {
-    padding: 50px 0;
-  }
-
   .learning-meida-container {
     max-width: 100%;
     background-size: 90%;
@@ -384,36 +401,12 @@
   }
 
   /* ----- Quizzes section ----- */
-  .quizzes-section {
-    padding: 50px 0;
-  }
-
   .quizzes-content-wrapper .description {
     max-width: 100%;
   }
   /* -- Management section -- */
-  .management-section {
-    padding: 50px 0;
-  }
-
   .management-section .two-columns-wrapper {
     gap: 58px;
-  }
-}
-
-@media (max-width: 656px) {
-  /* ----- Services section ----- */
-  .services-cards-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 50px;
-  }
-
-  .services-card {
-    margin: 30px auto 0;
-  }
-
-  .services-card-media {
-    width: 74px;
   }
 }
 
@@ -493,20 +486,17 @@
   }
 
   /* ----- Hero section ----- */
+  .hero-section {
+    padding-top: 114px;
+    clip-path: ellipse(218% 100% at 50% 0%);
+  }
+
   .hero-wrapper {
     gap: 30px;
   }
 
   .hero-content-title {
     margin-bottom: 20px;
-  }
-
-  .hero-content-dec {
-    font-size: 16px;
-  }
-
-  .hero-btn-wrapper {
-    gap: 20px;
   }
 
   .hero-join-btn {
@@ -527,10 +517,14 @@
   }
 
   .companies-media-wrapper {
-    gap: 30px 40px;
+    row-gap: 36px;
   }
 
   /* ----- Services section ----- */
+  .services-cards-wrapper {
+    margin-top: 36px;
+  }
+
   .services-card {
     padding: 66px 28px 44px;
   }
@@ -539,15 +533,15 @@
     width: 68px;
   }
 
-  .services-card-title {
-    font-size: 22px;
-  }
-
   .services-card-dec {
     font-size: 16px;
   }
 
   /* ----- Blog-card section ----- */
+  .blog-card-wrapper {
+    margin-top: 36px;
+  }
+
   .blog-card-container {
     max-width: 450px;
     min-height: 300px;
@@ -654,10 +648,6 @@
 
 @media (max-width: 424px) {
   /* ----- Services section ----- */
-  .services-cards-wrapper {
-    gap: 30px 28px;
-  }
-
   .services-card {
     padding: 66px 20px 44px;
   }
