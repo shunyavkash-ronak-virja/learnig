@@ -322,6 +322,23 @@
   .management-content .title {
     max-width: 100%;
   }
+
+  /* -- Discussions section -- */
+  .discussions-media-container,
+  .discussions-content {
+    width: 100%;
+  }
+
+  .discussions-content .title,
+  .discussions-content .description {
+    max-width: 100%;
+  }
+
+  .discussions-media-container {
+    max-width: 760px;
+    padding-bottom: 140px;
+    padding-right: 70px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -413,6 +430,24 @@
   /* -- Management section -- */
   .management-section .two-columns-wrapper {
     gap: 58px;
+  }
+
+  /* -- Discussions section -- */
+  .discussions-media-wrapper {
+    padding: 20px;
+  }
+
+  .discussions-media-container {
+    max-width: 100%;
+  }
+
+  .discussions-second-decore {
+    border: 14px solid var(--skyblue-200);
+  }
+
+  .discussions-second-decore::after {
+    width: 32%;
+    right: -100%;
   }
 }
 
@@ -650,9 +685,22 @@
     max-width: 438px;
   }
 
-  /* ----- Quizzes section ----- */
   .management-section .two-columns-wrapper {
     gap: 36px;
+  }
+
+  /* -- Discussions section -- */
+  .discussions-media-container {
+    padding-bottom: 100px;
+    padding-right: 50px;
+  }
+
+  .discussions-media-wrapper {
+    padding: 16px;
+  }
+
+  .discussions-second-decore {
+    border: 12px solid var(--skyblue-200);
   }
 }
 
@@ -673,5 +721,19 @@
 
   .learning-media::after {
     width: 140px;
+  }
+
+  /* -- Discussions section -- */
+  .discussions-media-wrapper {
+    padding: 14px;
+  }
+
+  .discussions-media-container {
+    padding-bottom: 74px;
+    padding-right: 34px;
+  }
+
+  .discussions-second-decore {
+    border: 8px solid var(--skyblue-200);
   }
 }
