@@ -591,10 +591,6 @@
 
 @media (max-width: 575px) {
   /* ----- Header ----- */
-  .header-logo svg {
-    width: 100px;
-  }
-
   .desktop-header-btn {
     display: none;
   }
