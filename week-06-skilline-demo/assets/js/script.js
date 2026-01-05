@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   Fancybox.bind("[data-fancybox]", {});
 });
+
+// Testimonial js -----
+document.addEventListener("DOMContentLoaded", function () {
+  var main = new Splide("#testimonial-main", {
+    type: "fade",
+    pagination: false,
+    arrows: false,
+  });
+
+  var thumbnails = new Splide("#testimonial-thumbnail", {
+    type: "fade",
+    pagination: false,
+  });
+
+  main.sync(thumbnails);
+  main.mount();
+  thumbnails.mount();
+});

@@ -12,6 +12,7 @@
   --primary-850: #626381;
   --text-color: #696984;
   --primary-900: #252641;
+  --primary-950: #2e327d;
   --secondary: #f48c06;
   --secondary-100: #f4b767;
   --secondary-300: #ff9a7a;
@@ -19,6 +20,7 @@
   --skyblue-100: #9fd7ff;
   --skyblue-400: #65daff;
   --skyblue-200: #23bdee;
+  --skyblue-300: #1ea4ce;
   --skyblue-800: #113d49;
   --darkslategray: #303439;
   --dimgray: #6c6c6c;
@@ -27,6 +29,8 @@
   --mediumspringgreen: #33ef9f;
   --salmon: #f56666;
   --palevioletred: #e86095;
+  --font-poppins: "Poppins", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
 }
 
 * {
@@ -36,7 +40,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -328,29 +332,47 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   width: 50%;
 }
 
-/* .primary-hover-btn, */
-/* .primary-btn-v1, */
-/* .primary-btn-v2 {
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s ease-in-out;
-} */
+.outline-btn {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
 
-/* .primary-hover-btn:hover {
-  box-shadow: inset 24px 44px rgb(0 0 0 / 10%),
-    inset -24px -44px rgb(0 0 0 / 10%);
-} */
+.outline-btn:hover {
+  border-color: rgb(0 0 0 / 0.2);
+  color: var(--white);
+}
 
-/* .primary-btn-v1:hover {
-  box-shadow: inset 18px 30px rgb(204, 118, 6),
-    inset -18px -30px rgb(204, 118, 6);
-} */
+.section-tag {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: var(--primary-800);
+}
+.section-tag span {
+  width: 78px;
+  max-width: 50%;
+  height: 1px;
+  background-color: var(--primary-800);
+}
+.section-tag-dec {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3.3px;
+}
+@media (max-width: 767px) {
+  .section-tag span {
+    width: 64px;
+  }
+}
+@media (max-width: 575px) {
+  .section-tag {
+    gap: 20px;
+  }
 
-/* .primary-btn-v2:hover {
-  box-shadow: inset 40px 38px rgb(204, 118, 6),
-    inset -40px -38px rgb(204, 118, 6);
-} */
+  .section-tag span {
+    width: 54px;
+  }
+}
 
 .title {
   color: var(--primary);
