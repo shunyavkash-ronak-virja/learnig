@@ -14,7 +14,11 @@
 
   /* ----- Footer ----- */
   .footer-form-input {
-    padding: 14px 30px;
+    padding-block: 14px;
+  }
+
+  .footer-media-wrapper {
+    margin-bottom: 75px;
   }
 
   /* ----- Hero section ----- */
@@ -123,6 +127,10 @@
     transform: rotate(6deg);
   }
 
+  .features-btn-wrapper {
+    margin-top: 112px;
+  }
+
   /* ----- Integrations section ----- */
   .integrations-content-wrapper .title {
     margin-block: 22px;
@@ -134,7 +142,11 @@
 
   /* ----- Testimonial section ----- */
   .testimonial-list-content {
-    padding: 30px;
+    padding: 22px;
+  }
+
+  .testimonial-dec {
+    padding-left: 18px;
   }
 }
 
@@ -197,7 +209,20 @@
 
   /* ----- Footer ----- */
   .footer-media-wrapper {
-    margin: 0 auto 50px;
+    margin-bottom: 54px;
+  }
+
+  .footer-form-title {
+    font-size: 22px;
+  }
+
+  .footer-link,
+  .footer-copy-right {
+    font-size: 20px;
+  }
+
+  .footer-link {
+    padding-block: 6px;
   }
 
   /* ----- Hero section ----- */
@@ -348,7 +373,7 @@
     left: 12%;
   }
 
-  /* ----- Quizzes section ----- */
+  /* -- Quizzes section -- */
   .quizzes-section .two-columns-wrapper {
     gap: 50px;
   }
@@ -359,12 +384,9 @@
   }
 
   .quizzes-content-wrapper,
-  .quizzes-content-wrapper .title {
-    max-width: 100%;
-  }
-
+  .quizzes-content-wrapper .title,
   .quizzes-content-wrapper .description {
-    max-width: 786px;
+    max-width: 100%;
   }
 
   .quizzes-media {
@@ -382,7 +404,8 @@
     width: 100%;
   }
 
-  .management-content .title {
+  .management-content .title,
+  .management-content .description {
     max-width: 100%;
   }
 
@@ -401,6 +424,10 @@
     max-width: 760px;
     padding-bottom: 140px;
     padding-right: 70px;
+  }
+
+  .features-btn-wrapper {
+    margin-top: 75px;
   }
 
   /* ----- Integrations section ----- */
@@ -455,7 +482,7 @@
   }
 
   .resources-blog-dec {
-    max-width: 826px;
+    max-width: 100%;
   }
 
   .resources-blog-title {
@@ -486,9 +513,30 @@
     max-width: 100%;
   }
 
+  .footer-media-wrapper {
+    margin-bottom: 36px;
+  }
+
+  .footer-logo-container {
+    padding-right: 18px;
+  }
+
+  .footer-media-tag {
+    padding-left: 18px;
+  }
+
+  .footer-form-title {
+    font-size: 20px;
+  }
+
   .footer-form {
     max-width: 550px;
     margin-inline: auto;
+  }
+
+  .footer-link,
+  .footer-copy-right {
+    font-size: 18px;
   }
 
   /* ----- Hero section ----- */
@@ -600,9 +648,17 @@
     max-width: 100%;
   }
 
+  .quizzes-media {
+    max-width: 100%;
+  }
+
   /* -- Management section -- */
   .management-section .two-columns-wrapper {
     gap: 58px;
+  }
+
+  .management-media-wrapper {
+    max-width: 100%;
   }
 
   /* -- Discussions section -- */
@@ -621,6 +677,10 @@
   .discussions-second-decore::after {
     width: 32%;
     right: -100%;
+  }
+
+  .features-btn-wrapper {
+    margin-top: 50px;
   }
 
   /* ----- Integrations section ----- */
@@ -709,7 +769,7 @@
   /* ----- Footer ----- */
   .footer-media-wrapper {
     max-width: 298px;
-    margin: 0 auto 46px;
+    margin-bottom: 46px;
   }
 
   .footer-logo-container svg {
@@ -730,16 +790,12 @@
     gap: 20px;
   }
 
-  .footer-form-title {
-    margin-bottom: 28px;
-  }
-
   .footer-form-btn {
     width: 100%;
   }
 
   .footer-copy-right {
-    margin-top: 22px;
+    margin-top: 18px;
   }
 
   /* ----- Hero section ----- */
@@ -920,6 +976,10 @@
 
   .discussions-second-decore {
     border: 12px solid var(--skyblue-200);
+  }
+
+  .features-btn-wrapper {
+    margin-top: 35px;
   }
 
   /* ----- Integrations section ----- */
