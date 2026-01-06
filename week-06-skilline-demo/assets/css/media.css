@@ -1,4 +1,17 @@
 @media (max-width: 1279px) {
+  /* ----- Header ----- */
+  .header-link-contents {
+    gap: 30px;
+  }
+
+  .header-link-wrapper {
+    gap: 32px;
+  }
+
+  .header-btn-wraper {
+    gap: 26px;
+  }
+
   /* ----- Footer ----- */
   .footer-form-input {
     padding: 14px 30px;
@@ -10,11 +23,23 @@
   }
 
   .hero-content-title {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   .hero-btn-wrapper {
     gap: 16px;
+  }
+
+  .hero-play-btn {
+    gap: 16px;
+  }
+
+  .hero-play-btn-media {
+    width: 60px;
+  }
+
+  .hero-play-btn span {
+    font-size: 20px;
   }
 
   /* ----- Companies media section ----- */
@@ -25,7 +50,7 @@
   /* ----- Services section ----- */
   .services-cards-wrapper {
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 64px;
   }
 
   .services-card {
@@ -41,7 +66,20 @@
     margin-bottom: 16px;
   }
 
+  /* ----- Video-columns section ----- */
+  .video-columns-play-btn {
+    width: 62px;
+  }
+
   /* -----  Features section ----- */
+  .two-columns-title {
+    font-size: 36px;
+  }
+
+  .features-section .two-columns-wrapper {
+    margin-top: 105px;
+  }
+
   .features-wrapper {
     gap: 20px;
     margin-top: 80px;
@@ -100,22 +138,6 @@
   }
 }
 
-@media (max-width: 1116px) {
-  /* ----- Header ----- */
-  .header-link-contents {
-    gap: 32px;
-  }
-
-  .header-link,
-  .header-btn {
-    font-size: 18px;
-  }
-
-  .header-btn-wraper .btn-small {
-    padding: 12px 38px;
-  }
-}
-
 @media (max-width: 991px) {
   /* ----- Header ----- */
   .header {
@@ -131,8 +153,8 @@
     width: 100%;
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translate(-50%, 16px);
+    left: 0;
+    transform: translateY(16px);
     background-color: var(--white);
     padding: 20px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -145,7 +167,7 @@
   .header-link-container.active {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, 0);
+    transform: translateY(0);
     border-color: #6c6c6c29;
   }
 
@@ -155,13 +177,22 @@
     gap: 14px;
   }
 
+  .header-link,
+  .header-btn {
+    font-size: 18px;
+  }
+
   .nav-toggle {
     display: flex;
   }
 
   .header-link-contents,
   .header-btn-wraper {
-    gap: 26px;
+    gap: 16px;
+  }
+
+  .header-btn-wraper .btn-small {
+    padding-block: 10px;
   }
 
   /* ----- Footer ----- */
@@ -195,23 +226,36 @@
     margin-bottom: 22px;
   }
 
-  .hero-media {
-    margin-inline: auto;
-  }
-
   .hero-content-dec {
     max-width: 536px;
   }
 
   /* ----- Companies media section ----- */
+  .companies-media-title {
+    margin-bottom: 40px;
+  }
+
   .companies-media-section {
     padding: 50px 0 58px;
   }
 
   /* ----- Services section ----- */
+  .services-section-heading {
+    max-width: 100%;
+  }
+
   .services-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 38px 20px;
+    margin-top: 44px;
+  }
+
+  .services-card {
+    margin-top: 36px;
+  }
+
+  .services-card-media {
+    width: 72px;
   }
 
   /* ----- Blog-card section ----- */
@@ -229,7 +273,6 @@
     width: 100%;
   }
 
-  .video-columns-contents,
   .video-columns-dec {
     max-width: 100%;
   }
@@ -242,14 +285,18 @@
 
   .video-columns-dec::after {
     width: 14px;
-    bottom: 0;
+    bottom: -14%;
     right: 0;
   }
 
   /* ----- Features section ----- */
+  .two-columns-title {
+    font-size: 32px;
+  }
+
   .features-section .two-columns-wrapper {
-    gap: 76px;
-    margin-top: 40px;
+    gap: 114px;
+    margin-top: 70px;
   }
 
   .features-media-wrapper,
@@ -258,16 +305,17 @@
   }
 
   .features-content,
-  .features-media-container {
+  .features-media-container,
+  .features-items-wrapper {
     max-width: 100%;
   }
 
-  .features-content .title-tag {
+  .features-content .title {
     margin-bottom: 30px;
   }
 
   .features-items-wrapper {
-    max-width: 480px;
+    gap: 16px;
   }
 
   /* -- Learning section -- */
@@ -281,12 +329,12 @@
     width: 100%;
   }
 
-  .learning-content-wrapper {
+  .learning-content-wrapper .title,
+  .learning-content-wrapper .description {
     max-width: 100%;
   }
 
   .learning-meida-container {
-    max-width: 708px;
     background-size: 70%;
     margin-inline: auto;
   }
@@ -453,7 +501,15 @@
     font-size: 16px;
   }
 
+  .hero-media {
+    max-width: 100%;
+  }
+
   /* ----- Companies media section ----- */
+  .companies-media-title {
+    margin-bottom: 34px;
+  }
+
   .companies-media-section {
     padding-block: 48px;
   }
@@ -468,30 +524,24 @@
   }
 
   /* ----- Services section ----- */
-  .services-card-title,
   .services-card-dec,
   .services-cards-wrapper .services-card:nth-child(3) .services-card-dec {
-    max-width: 100%;
+    max-width: 450px;
   }
 
   .services-cards-wrapper {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 24px;
-    margin-top: 42px;
-  }
-
-  .services-card {
-    margin-top: 30px;
-    padding: 44px 22px;
-  }
-
-  .services-card-title {
-    min-height: 62px;
-    margin-bottom: 12px;
   }
 
   .services-card-media {
-    width: 74px;
+    width: 68px;
+  }
+
+  .services-card-title {
+    max-width: 314px;
+    min-height: auto;
+    margin-bottom: 12px;
   }
 
   /* ----- Blog-card section ----- */
@@ -500,10 +550,41 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* -- Learning section -- */
-  .learning-meida-container {
+  /* ----- Video-columns section ----- */
+  .video-columns-media-wrapper {
     max-width: 100%;
+  }
+
+  /* ----- Features section ----- */
+  .two-columns-title {
+    font-size: 28px;
+  }
+
+  .features-section .two-columns-wrapper {
+    gap: 104px;
+    margin-top: 45px;
+  }
+
+  .features-content .title {
+    margin-bottom: 24px;
+  }
+
+  .features-media-container,
+  .features-media {
+    max-width: 100%;
+  }
+
+  /* -- Learning section -- */
+  .learning-section .two-columns-wrapper {
+    gap: 38px;
+  }
+
+  .learning-meida-container {
     background-size: 90%;
+  }
+
+  .learning-meida-wrapper {
+    max-width: 100%;
   }
 
   .learning-users-container {
@@ -518,6 +599,7 @@
   .quizzes-content-wrapper .description {
     max-width: 100%;
   }
+
   /* -- Management section -- */
   .management-section .two-columns-wrapper {
     gap: 58px;
@@ -674,6 +756,10 @@
     margin-bottom: 20px;
   }
 
+  .hero-content-dec {
+    max-width: 100%;
+  }
+
   .hero-join-btn {
     font-weight: 500;
   }
@@ -687,12 +773,8 @@
   }
 
   /* ----- Companies media section ----- */
-  .companies-media-title {
-    margin-bottom: 38px;
-  }
-
   .companies-media-wrapper {
-    row-gap: 36px;
+    row-gap: 30px;
   }
 
   /* ----- Services section ----- */
@@ -701,18 +783,20 @@
   }
 
   .services-card {
-    padding: 28px 28px 44px;
-  }
-
-  .services-card-title {
-    min-height: 56px;
+    margin-top: 34px;
   }
 
   .services-card-media {
     width: 68px;
   }
 
-  .services-card-dec {
+  .services-card-title {
+    max-width: 100%;
+  }
+
+  .services-card-dec,
+  .services-cards-wrapper .services-card:nth-child(3) .services-card-dec {
+    max-width: 100%;
     font-size: 16px;
   }
 
@@ -723,7 +807,6 @@
 
   .blog-card-container {
     max-width: 450px;
-    min-height: 300px;
   }
 
   .blog-card-content {
@@ -731,10 +814,6 @@
   }
 
   /* ----- Video-columns section ----- */
-  .video-columns-dec {
-    font-size: 16px;
-  }
-
   .video-columns-play-btn {
     width: 52px;
   }
@@ -763,6 +842,16 @@
     right: -12px;
   }
 
+  /* ----- Features section ----- */
+  .two-columns-title {
+    font-size: 24px;
+  }
+
+  .features-section .two-columns-wrapper {
+    gap: 80px;
+    margin-top: 32px;
+  }
+
   /* -- Learning section -- */
   .learning-meida-container {
     background-size: 100%;
@@ -784,10 +873,6 @@
 
   .learning-logic-container {
     left: 0;
-  }
-
-  .learning-meida-wrapper {
-    max-width: 454px;
   }
 
   .learning-media {
