@@ -14,6 +14,7 @@
   --primary-900: #252641;
   --primary-950: #2e327d;
   --secondary: #f48c06;
+  --secondary-opc: #f48d06c8;
   --secondary-50: #f4c467;
   --secondary-100: #f4b767;
   --secondary-300: #ff9a7a;
@@ -302,35 +303,50 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   background-color: var(--white);
 }
 
-.primary-hover {
+.btn-bg {
   position: relative;
-  transition: all 0.3s ease-in-out;
   overflow: hidden;
 }
 
-.primary-hover::before,
-.primary-hover::after {
+.btn-bg::before,
+.btn-bg::after {
   content: "";
   width: 0;
   height: 100%;
   position: absolute;
   top: 0;
-  background-color: rgb(0 0 0 / 0.2);
   transition: all 0.3s ease-in-out;
   z-index: -1;
 }
 
-.primary-hover::before {
+.btn-bg::before {
   left: 0;
 }
 
-.primary-hover::after {
+.btn-bg::after {
   right: 0;
 }
 
-.primary-hover:hover::before,
-.primary-hover:hover::after {
+.btn-bg:hover::before,
+.btn-bg:hover::after {
   width: 50%;
+}
+
+.btn-bg:hover span {
+  transition: all 0.3s ease-in-out;
+}
+
+.orange-bg::before,
+.orange-bg::after {
+  background-color: var(--secondary);
+}
+.orange-bg:hover span {
+  color: var(--white);
+}
+
+.overlay-bg::before,
+.overlay-bg::after {
+  background-color: rgb(0 0 0 / 0.1);
 }
 
 .outline-btn {
@@ -338,8 +354,20 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   color: var(--secondary);
 }
 
-.outline-btn:hover {
-  border-color: rgb(0 0 0 / 0.2);
+.outline-bg::before,
+.outline-bg::after {
+  background-color: var(--secondary-opc);
+}
+
+.outline-bg {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.outline-btn:hover,
+.outline-btn:hover span {
   color: var(--white);
 }
 
