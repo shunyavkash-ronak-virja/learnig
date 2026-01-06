@@ -769,7 +769,6 @@
   /* ----- Footer ----- */
   .footer-media-wrapper {
     max-width: 298px;
-    margin-bottom: 46px;
   }
 
   .footer-logo-container svg {
@@ -791,7 +790,7 @@
   }
 
   .footer-form-btn {
-    width: 100%;
+    min-width: 100%;
   }
 
   .footer-copy-right {
