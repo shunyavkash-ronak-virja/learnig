@@ -497,8 +497,12 @@
     margin-top: 12px;
   }
 
+  .resources-list {
+    align-items: center;
+  }
+
   .resources-list-media {
-    width: 244px;
+    max-width: 244px;
   }
 
   .resources-blog-tag {
@@ -728,14 +732,13 @@
   }
 
   .resources-list-media {
-    width: 220px;
+    max-width: 220px;
     border-radius: 12px;
   }
 
   .resources-media-tag {
     bottom: 6%;
     right: 4%;
-    font-size: 12px;
   }
 }
 
@@ -1029,11 +1032,12 @@
   /* ----- Resources section ----- */
   .resources-list {
     flex-direction: column;
+    align-items: start;
     gap: 14px;
   }
 
   .resources-list-media {
-    width: 200px;
+    max-width: 100%;
   }
 }
 
@@ -1092,5 +1096,10 @@
 
   .testimonial-review {
     justify-content: start;
+  }
+
+  /* ----- Resources section ----- */
+  .resources-media-tag {
+    font-size: 12px;
   }
 }
