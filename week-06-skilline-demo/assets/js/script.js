@@ -30,6 +30,34 @@ document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".testimonial-slider.splide", {
     type: "fade",
     pagination: false,
+    arrows: false,
   });
+
+  document.getElementById("prevBtn").addEventListener("click", function () {
+    splide.go("-1");
+  });
+  document.getElementById("nextBtn").addEventListener("click", function () {
+    splide.go("+1");
+  });
+
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  function updateArrows() {
+    const currentIndex = splide.index;
+    const lastIndex = splide.length - 1;
+    if (currentIndex === 0) {
+      prevBtn.style.display = "none";
+      nextBtn.style.display = "flex";
+    } else if (currentIndex === lastIndex) {
+      prevBtn.style.display = "flex";
+      nextBtn.style.display = "none";
+    } else {
+      prevBtn.style.display = "flex";
+      nextBtn.style.display = "flex";
+    }
+  }
+
+  splide.on("mounted move", updateArrows);
   splide.mount();
 });

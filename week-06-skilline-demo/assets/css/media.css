@@ -452,10 +452,13 @@
 
   .testimonial-content-wrapper {
     width: 100%;
+  }
+
+  .testimonial-dec-wrapper {
     max-width: 100%;
   }
 
-  .testimonial-content-wrapper .description + .description {
+  .testimonial-dec-wrapper .description + .description {
     margin-top: 10px;
   }
 
@@ -718,16 +721,12 @@
     padding-inline: 8%;
   }
 
-  .testimonial-slider .splide__arrow--next {
-    right: -14%;
-  }
-
-  .testimonial-slider .splide__arrow--prev {
-    left: 3%;
-  }
-
   .testimonial-review-name {
     font-size: 18px;
+  }
+
+  .testimonial-slider {
+    margin-top: -24%;
   }
 
   /* ----- Resources section ----- */
@@ -1011,7 +1010,7 @@
     padding-left: 22px;
   }
 
-  .testimonial-slider .splide__arrow {
+  .splide-arrows {
     width: 44px;
     height: 44px;
   }

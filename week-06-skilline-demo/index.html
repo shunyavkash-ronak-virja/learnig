@@ -389,9 +389,11 @@
                         <p class="section-tag-dec">TESTIMONIAL</p>
                     </div>
                     <h2 class="testimonial-title">What They Say?</h2>
-                    <p class="description">Skilline has got more than 100k positive ratings from our users around the world.</p>
-                    <p class="description">Some of the students and teachers were greatly helped by the Skilline.</p>
-                    <p class="description">Are you too? Please give your assessment</p>
+                    <div class="testimonial-dec-wrapper">
+                        <p class="description">Skilline has got more than 100k positive ratings from our users around the world.</p>
+                        <p class="description">Some of the students and teachers were greatly helped by the Skilline.</p>
+                        <p class="description">Are you too? Please give your assessment</p>
+                    </div>
                     <a class="btn btn-big outline-btn testimonial-btn" href="javascript:void(0);">
                         <span>Write your assessment</span>
                         <div class="testimonial-btn-icon">
@@ -405,10 +407,20 @@
                 <div class="mx-auto testimonial-slider-wrapper">
                     <div class="testimonial-media">
                         <img class="img-cover" src="assets/images/skilline-img-09.png" alt="testimonial-img">
+                        <div class="testimonial-arrows">
+                            <button id="prevBtn" class="splide-arrows testimonial-prev-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                            <button id="nextBtn" class="splide-arrows testimonial-next-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-
                     <div class="splide testimonial-slider" role="group" aria-label="Splide Basic HTML Example">
-
                         <div class="splide__track testimonial-track">
                             <ul class="splide__list testimonial-list-wrapper">
                                 <li class="splide__slide testimonial-list">
