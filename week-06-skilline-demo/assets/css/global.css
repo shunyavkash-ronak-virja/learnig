@@ -283,13 +283,14 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     min-width: 260px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .btn-big {
     min-width: 226px;
   }
 }
 @media (max-width: 575px) {
   .btn-big {
+    min-width: 200px;
     padding: 12px 20px;
     font-size: 16px;
   }
@@ -336,7 +337,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .btn-bg span {
   transition: all 0.3s ease-in-out;
   position: relative;
-  z-index: 4;
+  z-index: 1;
 }
 
 .orange-bg::before,
@@ -369,7 +370,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   }
 }
 
-.outline-btn:hover,
 .outline-btn:hover span {
   color: var(--white);
 }

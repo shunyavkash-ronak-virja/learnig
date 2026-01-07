@@ -304,7 +304,7 @@
   }
 
   .video-columns-title::before {
-    width: 40px;
+    width: 50px;
     top: -4%;
     left: -1%;
   }
@@ -612,6 +612,10 @@
     gap: 48px;
   }
 
+  .video-columns-title::before {
+    width: 46px;
+  }
+
   .video-columns-media-wrapper {
     max-width: 100%;
   }
@@ -835,7 +839,7 @@
   }
 
   .hero-play-btn-media {
-    width: 50px;
+    width: 46px;
   }
 
   /* ----- Companies media section ----- */
@@ -849,11 +853,11 @@
   }
 
   .services-card {
-    margin-top: 34px;
+    margin-top: 30px;
   }
 
   .services-card-media {
-    width: 68px;
+    width: 58px;
   }
 
   .services-card-title {
@@ -882,6 +886,11 @@
   /* ----- Video-columns section ----- */
   .video-columns-section .two-columns-wrapper {
     gap: 38px;
+  }
+
+  .video-columns-title::before {
+    width: 40px;
+    left: -2%;
   }
 
   .video-columns-play-btn {
@@ -994,7 +1003,7 @@
 
   /* ----- Integrations section ----- */
   .integrations-media {
-    width: 112px;
+    max-width: 112px;
   }
 
   /* ----- Testimonial section ----- */
@@ -1076,7 +1085,7 @@
 
   /* ----- Integrations section ----- */
   .integrations-media {
-    width: 96px;
+    max-width: 96px;
   }
 
   /* ----- Testimonial section ----- */
