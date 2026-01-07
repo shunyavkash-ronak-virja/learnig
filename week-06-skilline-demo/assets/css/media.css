@@ -216,13 +216,13 @@
     font-size: 22px;
   }
 
+  .footer-link-border {
+    height: 16px;
+  }
+
   .footer-link,
   .footer-copy-right {
     font-size: 20px;
-  }
-
-  .footer-link {
-    padding-block: 6px;
   }
 
   /* ----- Hero section ----- */
@@ -801,7 +801,7 @@
   }
 
   .footer-copy-right {
-    margin-top: 18px;
+    margin-top: 24px;
   }
 
   /* ----- Hero section ----- */
@@ -823,15 +823,16 @@
   }
 
   .hero-join-btn {
+    min-width: 180px;
     font-weight: 500;
+  }
+
+  .hero-play-btn span {
+    font-size: 18px;
   }
 
   .hero-play-btn-media {
     width: 50px;
-  }
-
-  .hero-play-btn-media svg {
-    width: 24px;
   }
 
   /* ----- Companies media section ----- */
@@ -882,10 +883,6 @@
 
   .video-columns-play-btn {
     width: 52px;
-  }
-
-  .video-columns-play-btn svg {
-    width: 28px;
   }
 
   .video-columns-media-wrapper {
