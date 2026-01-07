@@ -705,10 +705,6 @@
   }
 
   /* ----- Testimonial section ----- */
-  .testimonial-thumbnail-list {
-    padding-inline: 8%;
-  }
-
   .testimonial-title {
     margin-top: 8px;
     margin-bottom: 18px;
@@ -718,12 +714,16 @@
     width: 100%;
   }
 
-  .splide__arrow--next {
-    right: 2%;
+  .testimonial-media {
+    padding-inline: 8%;
   }
 
-  .splide__arrow--prev {
-    left: 2%;
+  .testimonial-slider .splide__arrow--next {
+    right: -14%;
+  }
+
+  .testimonial-slider .splide__arrow--prev {
+    left: 3%;
   }
 
   .testimonial-review-name {
@@ -1011,7 +1011,7 @@
     padding-left: 22px;
   }
 
-  #testimonial-thumbnail .splide__arrow {
+  .testimonial-slider .splide__arrow {
     width: 44px;
     height: 44px;
   }

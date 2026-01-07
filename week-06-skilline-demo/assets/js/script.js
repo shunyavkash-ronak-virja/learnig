@@ -27,18 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Testimonial js -----
 document.addEventListener("DOMContentLoaded", function () {
-  var main = new Splide("#testimonial-main", {
-    type: "fade",
-    pagination: false,
-    arrows: false,
-  });
-
-  var thumbnails = new Splide("#testimonial-thumbnail", {
+  var splide = new Splide(".testimonial-slider.splide", {
     type: "fade",
     pagination: false,
   });
-
-  main.sync(thumbnails);
-  main.mount();
-  thumbnails.mount();
+  splide.mount();
 });
