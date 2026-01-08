@@ -747,6 +747,10 @@
 
 @media (max-width: 575px) {
   /* ----- Header ----- */
+  .header {
+    padding-block: 16px;
+  }
+
   .desktop-header-btn {
     display: none;
   }

@@ -1169,6 +1169,10 @@
 }
 
 /* ----- Testimonial section ----- */
+.testimonial-section {
+  overflow: hidden;
+}
+
 .testimonial-section .two-columns-wrapper {
   align-items: start;
 }
