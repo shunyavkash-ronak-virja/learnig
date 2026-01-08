@@ -8,7 +8,7 @@ navToggle.addEventListener("click", () => {
   header.classList.toggle("active");
 });
 
-// Scroll js
+// Scroll js -----
 document.addEventListener("DOMContentLoaded", function () {
   const headerHeight = document.querySelector(".header");
   addEventListener("scroll", () => {

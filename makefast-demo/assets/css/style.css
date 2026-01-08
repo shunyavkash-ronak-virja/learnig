@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  padding-block: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.header-logo {
+}
+
+.header-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32;
+}
+
+.header-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-link {
+  padding: 6px;
+}
