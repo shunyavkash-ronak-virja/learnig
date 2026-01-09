@@ -9,6 +9,8 @@
   --black: #000000;
   --black-900: #0f0f0f;
   --primary: #707070;
+  --line-height-1_3: 1.333;
+  --line-height-1_5: 1.5;
   --font-red-hat: "Red Hat Display", sans-serif;
   --font-prata: "Prata", serif;
 }
@@ -17,6 +19,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--font-red-hat);
+  line-height: var(--line-height-1_5);
   color: var(--primary);
   display: flex;
   flex-direction: column;
@@ -54,6 +57,10 @@ ol {
 
 .mx-auto {
   margin-inline: auto;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .h1,

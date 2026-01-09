@@ -1,0 +1,8 @@
+@media (max-width: 1279px) {
+  /*----- Header -----*/
+  .header-logo img {
+    max-width: 96px;
+  }
+}
+@media (max-width: 991px) {
+}
