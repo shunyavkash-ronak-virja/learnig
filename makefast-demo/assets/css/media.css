@@ -1,7 +1,18 @@
 @media (max-width: 1279px) {
   /*----- Header -----*/
   .header-logo img {
-    max-width: 96px;
+    max-width: 82px;
+  }
+
+  .header-wrapper,
+  .header-link-wrapper,
+  .header-btn-wrapper,
+  .header-content-wrapper {
+    gap: 8px;
+  }
+
+  .header-btn {
+    padding-inline: 22px;
   }
 }
 @media (max-width: 991px) {
