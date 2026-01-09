@@ -11,10 +11,13 @@
   --black-800: #141414;
   --black-900: #0f0f0f;
   --primary: #707070;
-  --primary-100: #828282;
+  --primary-500: #828282;
+  --primary-400: #c6c6c6;
+  --darkslategray: #1d6c78;
   --line-height-1_2: 1.2;
   --line-height-1_3: 1.3;
   --line-height-1_5: 1.5;
+  --line-height-1_8: 1.8;
   --font-red-hat: "Red Hat Display", sans-serif;
   --font-prata: "Prata", serif;
 }
@@ -22,6 +25,7 @@
 body {
   font-size: 16px;
   font-weight: 400;
+  min-height: 100vh;
   font-family: var(--font-red-hat);
   line-height: var(--line-height-1_5);
   color: var(--primary);
@@ -95,9 +99,41 @@ ol {
 }
 
 .primary-btn {
+  font-size: 12px;
   padding-block: 16px;
   padding-inline: 32px;
   background-color: var(--white);
+  color: var(--black);
+  overflow: hidden;
+  position: relative;
+}
+
+.primary-btn span {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 4;
+}
+
+.primary-btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  z-index: 1;
+  background-color: var(--darkslategray);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  color: var(--white);
+  &::before {
+    width: 100%;
+    left: 0;
+  }
 }
 
 .secondray-btn {
@@ -201,7 +237,7 @@ h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
 h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
   font-size: 32px;
   font-weight: 500;
-  font-weight: var(--line-height-1_3);
+  line-height: var(--line-height-1_3);
 }
 @media (max-width: 767px) {
   .h4,
@@ -220,7 +256,7 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
   font-size: 30px;
   font-weight: 500;
-  font-weight: var(--line-height-1_3);
+  line-height: var(--line-height-1_3);
 }
 @media (max-width: 767px) {
   .h5,
@@ -239,7 +275,7 @@ h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
 h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 22px;
   font-weight: 500;
-  font-weight: var(--line-height-1_3);
+  line-height: var(--line-height-1_3);
 }
 @media (max-width: 767px) {
   .h6,

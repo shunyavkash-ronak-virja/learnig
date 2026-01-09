@@ -1,19 +1,92 @@
 @media (max-width: 1279px) {
   /*----- Header -----*/
+  .header {
+    padding-block: 38px;
+  }
+
   .header-logo img {
     max-width: 82px;
   }
 
   .header-wrapper,
+  .header-content-container,
   .header-link-wrapper,
-  .header-btn-wrapper,
   .header-content-wrapper {
     gap: 8px;
   }
 
-  .header-btn {
+  .header .primary-btn {
     padding-inline: 22px;
   }
 }
+
 @media (max-width: 991px) {
+  /*----- Header -----*/
+  .header {
+    padding-block: 28px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .header-content-wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-content-wrapper.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .header-link-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .header-wrapper {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*----- Header -----*/
+  .header-content-wrapper {
+    padding: 16px;
+  }
+
+  .bar {
+    width: 34px;
+  }
+
+  .nav-toggle .bar:nth-child(2) {
+    width: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .desktop-btn {
+    display: none;
+  }
+
+  .responsive-btn {
+    display: block;
+  }
+
+  .header-content-wrapper {
+    gap: 20px;
+  }
 }
