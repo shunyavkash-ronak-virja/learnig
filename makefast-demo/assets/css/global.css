@@ -6,22 +6,39 @@
 
 :root {
   --white: #ffffff;
+  --white-14: rgba(255, 255, 255, 0.14);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-52: rgba(255, 255, 255, 0.52);
+  --white-20: rgba(255, 255, 255, 0.2);
   --white-100: #e8e8e8;
+  --primary: #011b21;
   --black: #000000;
-  --black-500: #011b21;
-  --black-800: #141414;
-  --black-900: #0f0f0f;
-  --primary: #707070;
-  --primary-500: #828282;
-  --primary-400: #c6c6c6;
+  --black-28: rgba(0, 0, 0, 0.28);
+  --black-100: #0f0f0f;
+  --black-100-46: rgba(15, 15, 15, 0.46);
+  --black-100-50: rgba(15, 15, 15, 0.5);
+  --black-100-68: rgba(15, 15, 15, 0.68);
+  --black-100-76: rgba(15, 15, 15, 0.76);
+  --black-200: #141414;
+  --black-300: #161615;
+  --black-400: #3c3c3c;
+  --gray: #707070;
+  --gray-75: rgba(112, 112, 112, 0.75);
+  --gray-100: #d5d5d5;
+  --gray-200: #c6c6c6;
+  --gray-300: #828282;
+  --gray-400: #9a9a9a;
+  --gray-500: #e2e2e2;
   --darkslategray: #1d6c78;
+  --orange: #f58220;
   --line-height-1_2: 1.2;
   --line-height-1_3: 1.3;
   --line-height-1_5: 1.5;
   --line-height-1_8: 1.8;
   --line-height-2_1: 2.1;
-  --font-red-hat: "Red Hat Display", sans-serif;
-  --font-prata: "Prata", serif;
+  --font-red-hat: "Red Hat Display";
+  --font-prata: "Prata";
+  --font-muli: "Muli";
 }
 
 body {
@@ -30,11 +47,9 @@ body {
   min-height: 100vh;
   font-family: var(--font-red-hat);
   line-height: var(--line-height-1_5);
-  color: var(--primary);
+  color: var(--gray);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .container {
@@ -78,18 +93,18 @@ ol {
   margin-left: auto;
 }
 
-.pointer {
+.cursor-pointer {
   cursor: pointer;
 }
 
 .caption-small,
 .caption-big {
-  color: var(--primary);
+  color: var(--gray);
 }
 
 .caption-small {
   font-size: 12px;
-  line-height: var(--line-height-1_3);
+  line-height: 2.166;
   letter-spacing: 1.8px;
 }
 
@@ -102,22 +117,48 @@ ol {
 .truncate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   overflow: hidden;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+  -webkit-line-clamp: 4;
 }
 
 .btn {
-  border-radius: 5px;
-}
-
-.primary-btn {
+  min-width: 208px;
   font-size: 12px;
-  padding-block: 16px;
-  padding-inline: 32px;
-  background-color: var(--white);
-  color: var(--black);
+  font-weight: 500;
+  border-radius: 5px;
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
+  padding-inline: 32px;
+  padding-block: 16px;
+}
+.btn-extra-small {
+  min-width: 168px;
+}
+
+.btn-small {
+  min-width: 198px;
+}
+
+.btn-big {
+  min-width: 221px;
+}
+
+.primary-btn {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .primary-btn span {
@@ -147,9 +188,9 @@ ol {
   }
 }
 
-.secondray-btn {
+.text-icon-btn {
   font-size: 14px;
-  line-height: var(--line-height-1_2);
+  line-height: 1.285;
   letter-spacing: 1.26px;
   text-transform: uppercase;
   display: flex;
@@ -167,7 +208,7 @@ ol {
 }
 
 .icon-btn {
-  width: 39px;
+  width: 40px;
   aspect-ratio: 1;
   border-radius: 50%;
   display: flex;
@@ -175,28 +216,46 @@ ol {
   justify-content: center;
 }
 
+.icon-btn-white {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.icon-btn-black {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .h1,
 h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
-  font-size: 60px;
+  font-size: 66px;
   font-weight: 500;
-  line-height: 1.09;
+  line-height: 1.354;
 }
 @media (max-width: 1279px) {
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
-    font-size: 58px;
+    font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .h1,
+  h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
+    font-size: 54px;
   }
 }
 @media (max-width: 767px) {
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
-    font-size: 56px;
+    font-size: 48px;
   }
 }
 @media (max-width: 575px) {
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
-    font-size: 54px;
+    font-size: 44px;
+    line-height: 1.113;
+    letter-spacing: 0.44px;
   }
 }
 
@@ -204,7 +263,7 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 42px;
   font-weight: 500;
-  line-height: var(--line-height-1_3);
+  line-height: 1.357;
 }
 @media (max-width: 1279px) {
   .h2,
@@ -224,12 +283,19 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 32px;
   }
 }
+@media (max-width: 575px) {
+  .h2,
+  h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
+    font-size: 30px;
+    line-height: 1.366;
+  }
+}
 
 .h3,
 h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
   font-size: 34px;
   font-weight: 500;
-  line-height: var(--line-height-1_3);
+  line-height: 1.352;
 }
 @media (max-width: 1279px) {
   .h3,
@@ -241,6 +307,7 @@ h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
   .h3,
   h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
     font-size: 30px;
+    line-height: 1.366;
   }
 }
 
@@ -248,7 +315,7 @@ h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
 h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
   font-size: 32px;
   font-weight: 500;
-  line-height: var(--line-height-1_3);
+  line-height: 1.375;
 }
 @media (max-width: 767px) {
   .h4,
@@ -267,7 +334,7 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
   font-size: 30px;
   font-weight: 500;
-  line-height: var(--line-height-1_3);
+  line-height: 1.366;
 }
 @media (max-width: 767px) {
   .h5,
@@ -286,7 +353,7 @@ h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
 h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 22px;
   font-weight: 500;
-  line-height: var(--line-height-1_3);
+  line-height: 1.363;
 }
 @media (max-width: 767px) {
   .h6,
@@ -299,4 +366,20 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     font-size: 18px;
   }
+}
+
+.font-size-24 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.font-size-20 {
+  font-size: 20px;
+  line-height: 1.35; /* page 5 card title LH:1  */
+  letter-spacing: 0.4px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+  /* badhe alag alag line-height, letter-spacing che */
 }
