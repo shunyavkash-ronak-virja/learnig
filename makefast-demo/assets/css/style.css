@@ -215,10 +215,25 @@
 .footer-icon {
   width: 25px;
   height: 25px;
+  position: relative;
 }
 
-.footer-icon:hover {
-  filter: drop-shadow(0 10px 12px rgb(0 0 0 / 0.1));
+.footer-icon::before {
+  content: "";
+  width: 42px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--white);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-icon:hover::before {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .footer-icon svg {
