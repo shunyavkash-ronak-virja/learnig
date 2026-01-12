@@ -5,7 +5,7 @@
   }
 
   .header-logo img {
-    max-width: 82px;
+    max-width: 100px;
   }
 
   .header-wrapper,
@@ -17,6 +17,23 @@
 
   .header .primary-btn {
     padding-inline: 22px;
+  }
+
+  /*----- Footer -----*/
+  .footer-items-container {
+    flex-direction: column;
+  }
+
+  .footer-title {
+    margin-bottom: 30px;
+  }
+
+  .footer-media-wrapper {
+    margin-top: 50px;
+  }
+
+  .footer-link-wrapper {
+    margin-top: 58px;
   }
 }
 
@@ -60,6 +77,49 @@
   .header-wrapper {
     gap: 20px;
   }
+
+  /*----- Footer -----*/
+  .footer-wrapper {
+    padding-top: 58px;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  .footer-content-wrapper,
+  .footer-content-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-title {
+    margin-bottom: 24px;
+  }
+
+  .location-item {
+    align-items: center;
+  }
+
+  .footer-media-wrapper {
+    margin-top: 34px;
+  }
+
+  .footer-from-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .footer-link-wrapper,
+  .footer-creator-tag {
+    justify-content: start;
+  }
+
+  .footer-items-wrapper {
+    width: 100%;
+  }
+
+  .footer-link-wrapper {
+    margin-top: 38px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -88,5 +148,31 @@
 
   .header-content-wrapper {
     gap: 20px;
+  }
+
+  /*----- Footer -----*/
+  .footer-input-wrapper {
+    max-width: 100%;
+  }
+
+  .footer-email-input {
+    font-size: 16px;
+  }
+
+  .footer-email-btn {
+    top: 12%;
+    right: 2%;
+  }
+
+  .footer-link-wrapper {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 424px) {
+  /*----- Footer -----*/
+  .footer-media-wrapper {
+    flex-direction: column-reverse;
+    align-items: start;
   }
 }
