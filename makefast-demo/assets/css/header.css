@@ -6,7 +6,6 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #707070b8;
   transition: all 0.3s ease-in-out;
   /* backdrop-filter: blur(12px); */
   /* background: rgba(255, 255, 255, 0.4); */
@@ -258,6 +257,10 @@ header {
     gap: 16px;
   } */
 
+  .header-search-btn {
+    display: none;
+  }
+
   .nav-toggle-wrapper {
     width: 58px;
   }
@@ -275,10 +278,6 @@ header {
   .header-content-wrapper {
     gap: 20px;
     padding-bottom: 40%;
-  }
-
-  .header-search-btn {
-    display: none;
   }
 }
 

@@ -15,10 +15,17 @@ navToggleWrapper.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".hero-slider.splide", {
     type: "loop",
+    autoplay: true,
     perPage: 1,
     perMove: 1,
     arrows: false,
     gap: 40,
+
+    breakpoints: {
+      767: {
+        pagination: false,
+      },
+    },
   });
   splide.mount();
 });
