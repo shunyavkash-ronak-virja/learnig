@@ -1,16 +1,21 @@
 .hero-slider-wrapper {
-  position: relative;
 }
 
 .hero-slider-content {
+  max-width: 572px;
   position: absolute;
   top: 50%;
+  /* color: black; */
 }
 
 .home-hero-section .hero-slider-title {
   font-size: 66px;
   line-height: 1.09;
   letter-spacing: 0.66px;
+}
+
+.hero-slider-media {
+  width: 100%;
 }
 
 .hero-slider-dec {

@@ -13,8 +13,12 @@ navToggleWrapper.addEventListener("click", () => {
 
 // Home Hero slider js
 document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide", {
+  var splide = new Splide(".hero-slider.splide", {
+    type: "loop",
+    perPage: 1,
+    perMove: 1,
     arrows: false,
+    gap: 40,
   });
   splide.mount();
 });

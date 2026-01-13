@@ -1,7 +1,8 @@
 /*----- Header -----*/
 header {
+  width: 100%;
   padding-block: 26px;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
