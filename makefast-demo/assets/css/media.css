@@ -15,7 +15,18 @@
   .home-hero-section .hero-slider-title {
     font-size: 58px;
   }
+
+  /* ----- Split section ----- */
+  .split-wrapper {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .split-card {
+    max-width: 100%;
+  }
 }
+
 @media (max-width: 575px) {
   /* ----- Hero section ----- */
   .home-hero-section .hero-slider-title {

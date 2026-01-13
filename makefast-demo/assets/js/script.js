@@ -14,7 +14,7 @@ navToggleWrapper.addEventListener("click", () => {
 // Home Hero slider js
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".hero-slider.splide", {
-    type: "loop",
+    type: "fade",
     autoplay: true,
     perPage: 1,
     perMove: 1,

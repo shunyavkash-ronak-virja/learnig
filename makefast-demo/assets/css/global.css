@@ -185,7 +185,7 @@ ol {
   z-index: 4;
 }
 
-.primary-btn::before {
+/* .primary-btn::before {
   content: "";
   width: 0;
   height: 100%;
@@ -196,13 +196,27 @@ ol {
   z-index: 1;
   background-color: var(--darkslategray);
   transition: all 0.3s ease-in-out;
+} */
+
+.primary-btn::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 75% 75%/0 0 50% 50%;
+  background-color: var(--darkslategray);
+  width: 100%;
+  z-index: 1;
+  transition: 0.5s;
 }
 
 .primary-btn:hover {
   color: var(--white);
   &::before {
-    width: 100%;
-    left: 0;
+    /* width: 100%; */
+    /* left: 0; */
+    height: 150%;
   }
 }
 
@@ -229,9 +243,35 @@ ol {
   width: 40px;
   aspect-ratio: 1;
   border-radius: 100%;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.icon-btn-icon-1,
+.icon-btn-icon-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-btn-icon-1 {
+  transform: translate(-50%, -50%);
+}
+
+.icon-btn-icon-2 {
+  transform: translate(-42px, -50%);
+}
+
+.icon-btn:hover .icon-btn-icon-1 {
+  transform: translate(42px, -50%);
+}
+
+.icon-btn:hover .icon-btn-icon-2 {
+  transform: translate(-50%, -50%);
 }
 
 .icon-btn-white {
