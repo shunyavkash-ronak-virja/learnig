@@ -1,0 +1,18 @@
+.hero-slider-wrapper {
+  position: relative;
+}
+
+.hero-slider-content {
+  position: absolute;
+  top: 50%;
+}
+
+.home-hero-section .hero-slider-title {
+  font-size: 66px;
+  line-height: 1.09;
+  letter-spacing: 0.66px;
+}
+
+.hero-slider-dec {
+  color: var(--white);
+}

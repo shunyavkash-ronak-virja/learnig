@@ -245,10 +245,26 @@ ol {
 }
 
 .h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  font-family: var(--font-prata);
+}
+
+.h1,
 h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   font-size: 66px;
   font-weight: 500;
   line-height: 1.354;
+  color: var(--white);
 }
 @media (max-width: 1279px) {
   .h1,
@@ -395,6 +411,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 20px;
   line-height: 1.35; /* page 5 card title LH:1  */
   letter-spacing: 0.4px;
+}
+
+.font-18 {
+  font-size: 18;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
 }
 
 .font-14 {

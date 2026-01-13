@@ -10,3 +10,11 @@ navToggleWrapper.addEventListener("click", () => {
   bodyHidden.classList.toggle("body-hidden");
   header.classList.toggle("active");
 });
+
+// Home Hero slider js
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    arrows: false,
+  });
+  splide.mount();
+});
