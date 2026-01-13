@@ -58,7 +58,7 @@ body {
   margin-inline: auto;
   padding-inline: 20px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .container {
     padding-inline: 16px;
   }
@@ -174,6 +174,11 @@ ol {
   color: var(--black);
 }
 
+.secondary-btn {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .primary-btn span {
   position: relative;
   z-index: 4;
@@ -223,7 +228,7 @@ ol {
 .icon-btn {
   width: 40px;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,18 +386,18 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   }
 }
 
-.font-size-24 {
+.font-24 {
   font-size: 24px;
   line-height: 1.25;
 }
 
-.font-size-20 {
+.font-20 {
   font-size: 20px;
   line-height: 1.35; /* page 5 card title LH:1  */
   letter-spacing: 0.4px;
 }
 
-.font-size-14 {
+.font-14 {
   font-size: 14px;
   /* badhe alag alag line-height, letter-spacing che */
 }

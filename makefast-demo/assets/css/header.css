@@ -6,19 +6,27 @@ header {
   left: 0;
   z-index: 999;
   background-color: #707070b8;
+  transition: all 0.3s ease-in-out;
   /* backdrop-filter: blur(12px); */
   /* background: rgba(255, 255, 255, 0.4); */
 }
 
-.header-content-container {
+.header-content {
   display: flex;
   align-items: center;
   gap: 16px;
   justify-content: space-between;
 }
 
-.header-logo img {
+.header-logo-media {
   max-width: 132px;
+}
+
+.header-logo {
+  width: 100%;
+  display: block;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-content-wrapper {
@@ -29,7 +37,7 @@ header {
 }
 
 .header-wrapper,
-.header-link-wrapper {
+.header-links {
   display: flex;
   align-items: center;
   gap: 28px;
@@ -90,15 +98,26 @@ header {
   display: none;
 }
 
-.nav-toggle {
-  width: 46px;
-  height: 26px;
+.nav-toggle-wrapper {
+  width: 58px;
+  aspect-ratio: 1;
+  border-radius: 100%;
   display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle {
+  width: 62%;
+  height: 26px;
+  display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
   gap: 6px;
   border: none;
+  position: relative;
   background-color: transparent;
 }
 
@@ -109,31 +128,31 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-toggle .bar:nth-child(2) {
-  max-width: 28px;
+.nav-toggle-wrapper .bar:nth-child(2) {
+  max-width: 22px;
 }
 
-.nav-toggle.active .bar:nth-child(2) {
+.nav-toggle-wrapper.active .bar:nth-child(2) {
   transform: translateX(-6px);
   opacity: 0;
 }
 
-.nav-toggle.active .bar:nth-child(1) {
+.nav-toggle-wrapper.active .bar:nth-child(1) {
   transform: translate(0, 12px) rotate(45deg);
 }
 
-.nav-toggle.active .bar:nth-child(3) {
+.nav-toggle-wrapper.active .bar:nth-child(3) {
   transform: translate(0, -12px) rotate(-45deg);
 }
 
 @media (max-width: 1279px) {
-  .header-logo img {
-    max-width: 100px;
+  .header-logo-media {
+    max-width: 104px;
   }
 
   .header-wrapper,
-  .header-content-container,
-  .header-link-wrapper,
+  .header-content,
+  .header-links,
   .header-content-wrapper {
     gap: 8px;
   }
@@ -145,25 +164,51 @@ header {
 }
 
 @media (max-width: 991px) {
-  .nav-toggle.active .body-hidden {
+  .body-hidden {
     overflow: hidden;
   }
 
-  .nav-toggle {
+  header {
+    padding-block: 36px 30px;
+  }
+
+  header.active {
+    background-color: var(--white);
+  }
+
+  .header-logo-media {
+    max-width: 134px;
+  }
+
+  header.active .header-logo {
+    color: var(--black);
+  }
+
+  .nav-toggle-wrapper {
     display: flex;
+  }
+
+  .nav-toggle-wrapper.active {
+    background-color: var(--black);
   }
 
   .header-content-wrapper {
     width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-items: start;
+    justify-content: start;
+    gap: 20px;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: black;
-    padding: 20px;
+    background-color: var(--white);
+    padding-top: 20px;
+    padding-inline: 20px;
+    padding-bottom: 22%;
     opacity: 0;
     visibility: hidden;
+    overflow: auto;
     transform: translateY(10px);
     transition: all 0.3s ease-in-out;
   }
@@ -174,32 +219,23 @@ header {
     transform: translateY(0);
   }
 
-  .header-link-wrapper {
+  .header-links {
+    width: 100%;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 26px;
   }
 
   .header-wrapper {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header-content-wrapper {
-    padding: 16px;
+    gap: 26px;
   }
 
-  .nav-toggle {
-    width: 30px;
+  .header-link {
+    font-size: 24px;
+    line-height: 1.375;
+    color: var(--black-100);
   }
 
-  .nav-toggle .bar:nth-child(2) {
-    max-width: 20px;
-  }
-}
-
-@media (max-width: 575px) {
   .desktop-btn {
     display: none;
   }
@@ -207,8 +243,46 @@ header {
   .responsive-btn {
     display: block;
   }
+}
 
+@media (max-width: 767px) {
+  .header-content-wrapper {
+    padding-top: 16px;
+    padding-inline: 16px;
+    padding-bottom: 30%;
+  }
+
+  /* .header-content-wrapper,
+  .header-links {
+    gap: 16px;
+  } */
+
+  .nav-toggle-wrapper {
+    width: 58px;
+  }
+
+  .nav-toggle {
+    width: 50%;
+  }
+
+  .nav-toggle .bar:nth-child(2) {
+    max-width: 16px;
+  }
+}
+
+@media (max-width: 575px) {
   .header-content-wrapper {
     gap: 20px;
+    padding-bottom: 40%;
+  }
+
+  .header-search-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 424px) {
+  .header-content-wrapper {
+    padding-bottom: 52%;
   }
 }

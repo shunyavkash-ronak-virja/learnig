@@ -1,6 +1,5 @@
 /*----- Footer -----*/
 footer {
-  padding-bottom: 22px;
   margin-top: auto;
 }
 
@@ -11,6 +10,7 @@ footer {
   gap: 18px;
   border-top: 1px solid var(--gray);
   padding-top: 70px;
+  padding-bottom: 22px;
 }
 
 .footer-content-wrapper {
@@ -37,13 +37,13 @@ footer {
   letter-spacing: 1.8px;
   line-height: var(--line-height-1_8);
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 18px;
   color: var(--black-100);
 }
 
-.location-item {
-  align-items: start;
+.footer-item-content {
+  align-self: center;
 }
 
 .footer-items-wrapper {
@@ -156,7 +156,7 @@ footer {
   position: relative;
 }
 
-.form-checkbox input[type="checkbox"]:checked::after {
+.form-checkbox input[type="checkbox"]::after {
   content: "";
   width: 12px;
   aspect-ratio: 1;
@@ -166,6 +166,14 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-checkbox input[type="checkbox"]:checked::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .form-checkbox label {
@@ -237,7 +245,6 @@ footer {
   align-items: center;
   justify-content: end;
   gap: 30px;
-  row-gap: 8px;
   flex-wrap: wrap;
   margin-top: 78px;
 }
@@ -303,10 +310,6 @@ footer {
     margin-bottom: 24px;
   }
 
-  .location-item {
-    align-items: center;
-  }
-
   .footer-media-wrapper {
     margin-top: 34px;
   }
@@ -331,12 +334,37 @@ footer {
 }
 
 @media (max-width: 575px) {
+  .footer-wrapper {
+    gap: 46px;
+  }
+
   .footer-input-wrapper {
     max-width: 100%;
   }
 
+  .footer-title {
+    margin-bottom: 22px;
+  }
+
   .footer-email-input {
     font-size: 16px;
+  }
+
+  .footer-items-container {
+    gap: 22px;
+  }
+
+  .footer-media-wrapper {
+    margin-top: 30px;
+    gap: 32px;
+  }
+
+  .form-checkbox-wrapper {
+    margin-top: 38px;
+  }
+
+  .footer-input-wrapper {
+    margin-top: 16px;
   }
 
   .footer-email-btn {
@@ -345,7 +373,38 @@ footer {
   }
 
   .footer-link-wrapper {
-    margin-top: 28px;
+    margin-top: 34px;
+    gap: 36px;
+    row-gap: 26px;
+  }
+
+  .footer-link {
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  .odr-1 {
+    order: 1;
+  }
+
+  .odr-2 {
+    order: 2;
+  }
+
+  .odr-3 {
+    order: 3;
+  }
+
+  .odr-4 {
+    order: 4;
+  }
+
+  .odr-5 {
+    order: 5;
+  }
+
+  .footer-creator-tag {
+    margin-top: 36px;
   }
 }
 
