@@ -80,7 +80,7 @@ footer {
 }
 
 .footer-iso-tag {
-  width: 170px;
+  max-width: 170px;
 }
 
 .footer-icon {

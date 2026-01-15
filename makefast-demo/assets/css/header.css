@@ -7,8 +7,16 @@ header {
   left: 0;
   z-index: 999;
   transition: all 0.3s ease-in-out;
-  /* backdrop-filter: blur(12px); */
-  /* background: rgba(255, 255, 255, 0.4); */
+}
+
+.body-scroll {
+  padding-block: 14px;
+  backdrop-filter: blur(12px);
+  background: rgba(0 0 0 / 0.4);
+}
+
+.body-scroll .header-logo-media {
+  max-width: 92px;
 }
 
 .header-content {
@@ -20,6 +28,7 @@ header {
 
 .header-logo-media {
   max-width: 132px;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-logo {
@@ -255,7 +264,7 @@ header {
   /* .header-content-wrapper,
   .header-links {
     gap: 16px;
-  } */
+    } */
 
   .header-search-btn {
     display: none;

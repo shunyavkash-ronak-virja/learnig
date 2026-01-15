@@ -47,6 +47,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-red-hat);
   line-height: var(--line-height-1_5);
+  background-color: var(--white);
   color: var(--gray);
   display: flex;
   flex-direction: column;
@@ -99,12 +100,14 @@ ol {
 
 .caption-small,
 .caption-big {
+  text-transform: uppercase;
   color: var(--gray);
+  font-weight: 500;
 }
 
 .caption-small {
   font-size: 12px;
-  line-height: 2.166;
+  line-height: 1.333;
   letter-spacing: 1.8px;
 }
 
@@ -222,7 +225,9 @@ ol {
 
 .text-icon-btn {
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.285;
+  font-family: var(--font-muli);
   letter-spacing: 1.26px;
   text-transform: uppercase;
   display: flex;
@@ -250,6 +255,14 @@ ol {
   overflow: hidden;
   cursor: pointer;
 }
+
+.icon-btn-container {
+  width: 28px;
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+}
+
 .icon-btn-icon-1,
 .icon-btn-icon-2 {
   position: absolute;
@@ -266,11 +279,13 @@ ol {
   transform: translate(-42px, -50%);
 }
 
-.icon-btn:hover .icon-btn-icon-1 {
+.icon-btn:hover .icon-btn-icon-1,
+.text-icon-btn:hover .icon-btn-icon-1 {
   transform: translate(42px, -50%);
 }
 
-.icon-btn:hover .icon-btn-icon-2 {
+.icon-btn:hover .icon-btn-icon-2,
+.text-icon-btn:hover .icon-btn-icon-2 {
   transform: translate(-50%, -50%);
 }
 
@@ -302,7 +317,7 @@ h6 {
 .h1,
 h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   font-size: 66px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.354;
   color: var(--white);
 }
@@ -336,7 +351,7 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 .h2,
 h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 42px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.357;
 }
 @media (max-width: 1279px) {
@@ -368,7 +383,7 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
 .h3,
 h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
   font-size: 34px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.352;
 }
 @media (max-width: 1279px) {
@@ -429,7 +444,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-weight: 500;
   line-height: 1.363;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .h6,
   h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     font-size: 20px;
@@ -440,7 +455,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     font-size: 18px;
   }
-}
+}  */
 
 .font-24 {
   font-size: 24px;
