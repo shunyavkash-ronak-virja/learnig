@@ -56,7 +56,7 @@ footer {
 .footer-item-icon {
   width: 42px;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: var(--gray-100);
   display: flex;
   align-items: center;

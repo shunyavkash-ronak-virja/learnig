@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 1,
     perMove: 1,
     arrows: false,
+    interval: 5000,
     gap: 40,
 
     breakpoints: {

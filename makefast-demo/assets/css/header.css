@@ -81,7 +81,7 @@ header {
 .header-search-btn {
   width: 36px;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: var(--gray);
   color: var(--white);
   border: none;
