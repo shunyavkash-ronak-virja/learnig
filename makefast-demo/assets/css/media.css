@@ -43,7 +43,7 @@
 
 @media (max-width: 767px) {
   /* ----- Hero section ----- */
-  .hero-slider-content {
+  .hero-content-wrapper {
     max-width: 100%;
     padding-left: 0;
   }
