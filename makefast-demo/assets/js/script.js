@@ -64,3 +64,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+// Our services js
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".our-services-splide.splide", {
+    type: "slide",
+    autoWidth: true,
+    perMove: 3,
+    pagination: false,
+    gap: 32,
+    arrows: false,
+  });
+  splide.mount();
+});
