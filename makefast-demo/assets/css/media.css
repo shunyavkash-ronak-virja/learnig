@@ -58,6 +58,11 @@
       rgba(1, 27, 33, 1) 100%
     );
   }
+
+  /* ----- Our services section ----- */
+  .our-services-section {
+    /* padding-block: ; */
+  }
 }
 
 @media (max-width: 767px) {
@@ -81,12 +86,8 @@
   .split-wrapper {
     width: auto;
     margin-inline: -20px;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
     gap: 4px;
-  }
-
-  .split-card {
-    max-width: 100%;
   }
 
   /* ----- Articles section ----- */

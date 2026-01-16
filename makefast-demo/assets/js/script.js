@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     pauseOnHover: false,
     pauseOnFocus: false,
     rewind: true,
-    gap: 40,
     interval: 5000,
     speed: 1200,
     easing: "ease-in-out",
