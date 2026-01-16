@@ -91,7 +91,14 @@
 /* ----- Split section ----- */
 .split-section {
   padding-bottom: 62px;
-  margin-top: -114px;
+  margin-top: -186px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .split-wrapper {
