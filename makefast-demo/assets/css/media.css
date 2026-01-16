@@ -63,6 +63,11 @@
   .our-services-section {
     padding-block: 62px;
   }
+
+  /* ----- Featured card section ----- */
+  .featured-card-section {
+    padding-block: 62px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -110,7 +115,7 @@
 
   /* ----- Our story section ----- */
   .our-story-section {
-    padding-block: 38px;
+    padding-block: 38px 60px;
     overflow: hidden;
   }
 
@@ -137,6 +142,25 @@
     line-height: 1.625;
     letter-spacing: 0.64px;
   }
+
+  /* ----- Our services section ----- */
+  .our-services-section {
+    padding-block: 60px 66px;
+  }
+
+  .our-services-title {
+    text-align: start;
+    margin-bottom: 62px;
+  }
+
+  .our-services-media {
+    max-width: 305px;
+  }
+
+  /* ----- Featured card section ----- */
+  .featured-card-section {
+    padding-block: 66px 88px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -153,5 +177,27 @@
     letter-spacing: 0.42px;
   }
 
-  /* ----- Articles section ----- */
+  /* ----- Featured card section ----- */
+  .featrued-section-content {
+    text-align: start;
+  }
+
+  .featured-card-btn {
+    margin-bottom: 24px;
+  }
+
+  .featured-card-media {
+    width: 214px;
+    height: 256px;
+  }
+
+  .featured-card-wrapper {
+    gap: 20px;
+  }
+
+  .featured-card-caption {
+    margin-top: 22px;
+    margin-bottom: 4px;
+    color: var(--secondary);
+  }
 }

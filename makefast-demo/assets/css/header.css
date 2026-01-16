@@ -34,7 +34,7 @@ header {
 .header-logo {
   width: 100%;
   display: block;
-  color: var(--white);
+  color: var(--secondary);
   transition: all 0.3s ease-in-out;
 }
 
@@ -59,7 +59,7 @@ header {
   padding: 8px;
   padding-right: 6px;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--secondary);
   display: flex;
   flex-direction: column-reverse;
   transition: all 0.3s ease-in-out;
@@ -92,15 +92,41 @@ header {
   aspect-ratio: 1;
   border-radius: 100%;
   background-color: var(--gray);
-  color: var(--white);
+  color: var(--secondary);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .header-search-btn svg {
   width: 56%;
+}
+
+.header-search-svg,
+.header-search-svg-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-search-svg {
+  transform: translate(-50%, -50%);
+}
+
+.header-search-svg-2 {
+  transform: translate(-42px, -50%);
+}
+
+.header-search-btn:hover .header-search-svg {
+  transform: translate(42px, -50%);
+}
+
+.header-search-btn:hover .header-search-svg-2 {
+  transform: translate(-50%, -50%);
 }
 
 .responsive-btn {
@@ -133,7 +159,7 @@ header {
 .bar {
   width: 100%;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--secondary);
   transition: all 0.3s ease-in-out;
 }
 
@@ -182,7 +208,7 @@ header {
   }
 
   header.active {
-    background-color: var(--white);
+    background-color: var(--secondary);
   }
 
   .header-logo-media {
@@ -211,7 +237,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--white);
+    background-color: var(--secondary);
     padding-top: 20px;
     padding-inline: 20px;
     padding-bottom: 22%;

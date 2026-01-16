@@ -45,7 +45,7 @@
 }
 
 .hero-slider-dec {
-  color: var(--white);
+  color: var(--secondary);
   margin-top: 8px;
   text-shadow: 0 3px 6px #00000029;
 }
@@ -143,7 +143,7 @@
 }
 
 .split-card-title {
-  color: var(--white);
+  color: var(--secondary);
   margin-bottom: 8px;
   text-shadow: 0 0 5px #00000081;
   text-transform: capitalize;
@@ -156,6 +156,7 @@
 }
 
 .articles-section-title {
+  text-transform: capitalize;
   margin-bottom: 34px;
   color: var(--black-100);
 }
@@ -239,13 +240,13 @@
 }
 
 .our-story-title {
-  color: var(--white);
+  color: var(--secondary);
   margin-bottom: 18px;
   text-transform: capitalize;
 }
 
 .our-story-dec {
-  color: var(--white);
+  color: var(--secondary);
   opacity: 78%;
   letter-spacing: 0.32px;
   line-height: 1.75;
@@ -254,7 +255,7 @@
 
 .our-story-btn {
   width: max-content;
-  color: var(--white);
+  color: var(--secondary);
 }
 
 /* ----- Our services section ----- */
@@ -266,7 +267,8 @@
 
 .our-services-title {
   text-align: center;
-  color: var(--white);
+  text-transform: capitalize;
+  color: var(--secondary);
   margin-bottom: 46px;
 }
 
@@ -303,7 +305,69 @@
 
 .our-services-card-title {
   max-width: 186px;
-  color: var(--white);
+  color: var(--secondary);
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+
+/* ----- Featured card section ----- */
+.featured-card-section {
+  padding-block: 88px;
+  background-color: var(--primary);
+  overflow: hidden;
+}
+
+.featrued-section-content {
+  text-align: center;
+}
+
+.featured-section-title {
+  text-transform: capitalize;
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+.featured-card-btn {
+  margin-bottom: 20px;
+}
+
+.featured-card-wrapper {
+  width: calc(100% - -20px);
+  max-width: 1104px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  overflow: auto;
+}
+
+.featured-card {
+  white-space: nowrap;
+}
+
+.featured-card-media {
+  width: 336px;
+  height: 363px;
+}
+
+.featured-card-caption {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.featured-card-title {
+  color: var(--secondary);
+}
+
+.featured-card-wrapper::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.featured-card-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-20);
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: 20px;
 }

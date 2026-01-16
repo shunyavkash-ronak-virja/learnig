@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: 25,
     breakpoints: {
       767: {
+        gap: 20,
         arrows: false,
       },
     },
@@ -73,6 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     gap: 32,
     arrows: false,
+    breakpoints: {
+      767: {
+        gap: 18,
+      },
+    },
   });
   splide.mount();
 });
