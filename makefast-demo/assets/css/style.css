@@ -1,3 +1,49 @@
+/* ----- Request content ----- */
+.request-content-wrapper {
+  width: 100%;
+  position: sticky;
+  bottom: -24px;
+  left: 0;
+  z-index: 10;
+}
+
+.request-btns-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.request-call-btn {
+  max-width: 218px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  background-color: var(--black-100);
+  color: var(--secondary);
+  border-radius: 10px;
+}
+
+.request-call-icon {
+  width: 18%;
+}
+
+.request-call-btn .caption-big {
+  letter-spacing: 0.28px;
+  color: var(--secondary);
+  text-transform: initial;
+}
+
+.request-sms-btn {
+  margin-bottom: 20px;
+}
+
+.request-sms-icon {
+  width: 62px;
+  aspect-ratio: 1;
+}
+
 /* ----- Hero section ----- */
 .home-hero-section {
   position: sticky;
