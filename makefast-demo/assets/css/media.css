@@ -73,7 +73,10 @@
     max-width: 100%;
   }
 
-  /* ----- Case studies section ----- */
+  /* ----- Testimonial section ----- */
+  .testimonial-content {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -216,6 +219,11 @@
     max-width: 266px;
     color: var(--secondary-77);
   }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-content {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -250,5 +258,12 @@
     margin-top: 22px;
     margin-bottom: 4px;
     color: var(--secondary);
+  }
+
+  /* ----- Testimonial section ----- */
+  .testimonial-content {
+    font-size: 24px;
+    letter-spacing: 0.23px;
+    line-height: 1.608;
   }
 }

@@ -86,7 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // Testimonial js
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".testimonial-splide.splide", {
-    // type: "loop",
+    type: "loop",
+    // autoplay: true,
     arrows: false,
     perPage: 1,
   });
