@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     // autoplay: true,
     arrows: false,
+    gap: 20,
     perPage: 1,
   });
   splide.mount();
