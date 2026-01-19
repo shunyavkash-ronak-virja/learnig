@@ -27,9 +27,9 @@
 
 .hero-slider-content {
   width: 100%;
-  position: absolute;
-  top: 36%;
-  left: 0;
+  padding-block: 300px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content-wrapper {
