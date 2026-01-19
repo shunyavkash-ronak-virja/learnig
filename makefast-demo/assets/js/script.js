@@ -82,3 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+// Testimonial js
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".testimonial-splide.splide", {
+    // type: "loop",
+    arrows: false,
+    perPage: 1,
+  });
+  splide.mount();
+});

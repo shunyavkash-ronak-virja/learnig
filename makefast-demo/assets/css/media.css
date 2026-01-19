@@ -66,8 +66,14 @@
 
   /* ----- Featured card section ----- */
   .featured-card-section {
-    padding-block: 62px;
+    padding-top: 66px;
   }
+
+  .featured-cards-content {
+    max-width: 100%;
+  }
+
+  /* ----- Case studies section ----- */
 }
 
 @media (max-width: 767px) {
@@ -158,8 +164,57 @@
   }
 
   /* ----- Featured card section ----- */
-  .featured-card-section {
-    padding-block: 66px 88px;
+  .featrued-section-content {
+    text-align: start;
+  }
+
+  .featured-card-wrapper {
+    padding-left: 16px;
+  }
+
+  /* ----- Case studies section ----- */
+  .case-studies-section {
+    background: var(--primary);
+  }
+
+  .case-studies-title {
+    text-align: start;
+    margin-bottom: 34px;
+  }
+
+  .case-studies-wrapper {
+    gap: 18px;
+    padding-left: 16px;
+  }
+
+  .case-studies-card {
+    width: 300px;
+  }
+
+  .case-studies-title {
+    line-height: 1.375;
+  }
+
+  .case-studies-card-media {
+    width: 300px;
+    height: 300px;
+  }
+
+  .case-studies-card-content {
+    margin-top: 20px;
+  }
+
+  .case-studies-card-content .caption-big {
+    color: var(--secondary);
+  }
+
+  .case-studies-card-title {
+    color: var(--secondary);
+  }
+
+  .case-studies-card-dec {
+    max-width: 266px;
+    color: var(--secondary-77);
   }
 }
 
@@ -178,10 +233,6 @@
   }
 
   /* ----- Featured card section ----- */
-  .featrued-section-content {
-    text-align: start;
-  }
-
   .featured-card-btn {
     margin-bottom: 24px;
   }
