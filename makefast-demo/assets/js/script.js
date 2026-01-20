@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: "ease-in-out",
 
     breakpoints: {
-      767: {
+      991: {
         pagination: false,
       },
     },

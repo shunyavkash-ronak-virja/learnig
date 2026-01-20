@@ -3,6 +3,13 @@
   .split-section {
     margin-top: -180px;
   }
+
+  /* --------------- MARINE HTML --------------- */
+
+  /* ----- Featured Categories section ----- */
+  .split-wrapper-v2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 991px) {
@@ -37,6 +44,10 @@
   }
 
   /* ----- Testimonial section ----- */
+  .testimonial-section {
+    padding-bottom: 132px;
+  }
+
   .testimonial-list-wrapper::before {
     top: -16%;
     left: -0.2%;
@@ -189,8 +200,16 @@
   }
 
   /* ----- Testimonial section ----- */
+  .testimonial-section {
+    padding-bottom: 100px;
+  }
+
   .testimonial-content {
     font-size: 28px;
+  }
+
+  .testimonial-list-wrapper::after {
+    bottom: 16%;
   }
 }
 
@@ -233,5 +252,25 @@
     font-size: 24px;
     letter-spacing: 0.23px;
     line-height: 1.608;
+  }
+
+  /* --------------- MARINE HTML --------------- */
+  /* ----- Hero section ----- */
+  .marine-slider-content {
+    padding-block: 180px 52px;
+    background-color: var(--primary);
+  }
+
+  .marine-hero-title {
+    margin-block: 8px 12px;
+  }
+
+  .marine-hero-wrapper,
+  .hero-slider-wrapper::after {
+    background: none;
+  }
+
+  .marine-hero-media {
+    display: block;
   }
 }

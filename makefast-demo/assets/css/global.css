@@ -382,7 +382,7 @@ h6 {
 
 .h1,
 h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
-  font-size: 66px;
+  font-size: 62px;
   font-weight: 400;
   line-height: 1.354;
   color: var(--secondary);
@@ -569,7 +569,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   color: var(--secondary);
   border-radius: 10px;
   left: 4.3%;
-  bottom: -0.9%;
+  bottom: -0.8%;
 }
 
 .quick-call-icon {
@@ -590,4 +590,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .quick-sms-icon {
   display: block;
+}
+@media (max-width: 575px) {
+  .quick-call-btn,
+  .quick-sms-btn {
+    display: none;
+  }
 }
