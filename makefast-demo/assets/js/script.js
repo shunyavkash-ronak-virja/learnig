@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     autoWidth: true,
     perMove: 3,
     pagination: false,
+    drag: true,
     gap: 25,
     breakpoints: {
       767: {

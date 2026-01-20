@@ -44,6 +44,14 @@
   --font-muli: "Muli";
 }
 
+.color-white {
+  color: var(--secondary);
+}
+
+.color-black {
+  color: var(--black-100);
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -103,6 +111,20 @@ ol {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .section-title {
+    text-align: start;
+  }
+}
+
+.align-start {
+  text-align: start;
 }
 
 .cursor-pointer {
@@ -274,14 +296,6 @@ ol {
 
 .text-btn:hover::after {
   width: 0;
-}
-
-.text-btn-white {
-  color: var(--secondary);
-}
-
-.text-btn-black {
-  color: var(--black-100);
 }
 
 .icon-btn {
@@ -536,4 +550,44 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .font-14 {
   font-size: 14px;
   /* badhe alag alag line-height, letter-spacing che */
+}
+
+/* ----- Quick contact sections ----- */
+.quick-call-btn,
+.quick-sms-btn {
+  position: fixed;
+  z-index: 999;
+}
+
+.quick-call-btn {
+  max-width: 218px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  background-color: var(--black-100);
+  color: var(--secondary);
+  border-radius: 10px;
+  left: 4.3%;
+  bottom: -0.9%;
+}
+
+.quick-call-icon {
+  width: 18%;
+}
+
+.quick-call-btn .caption-big {
+  letter-spacing: 0.28px;
+  color: var(--secondary);
+  text-transform: initial;
+}
+
+.quick-sms-btn {
+  width: 62px;
+  bottom: 2.8%;
+  right: 4.2%;
+}
+
+.quick-sms-icon {
+  display: block;
 }

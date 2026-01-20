@@ -73,13 +73,11 @@ header {
   position: absolute;
   bottom: 4px;
   right: 0;
-  background-color: var(--darkslategray);
+  background-color: var(--secondary);
   transition: all 0.3s ease-in-out;
 }
 
 .header-link:hover {
-  color: var(--darkslategray);
-
   &::before {
     width: 100%;
     left: 0;
@@ -269,6 +267,10 @@ header {
     font-size: 24px;
     line-height: 1.375;
     color: var(--black-100);
+  }
+
+  .header-link::before {
+    background-color: var(--black-100);
   }
 
   .desktop-btn {
