@@ -60,6 +60,12 @@
   .testimonial-content {
     font-size: 32px;
   }
+
+  /* --------------- MARINE HTML --------------- */
+  /* ----- Featured Categories section ----- */
+  .split-section-v2 {
+    padding-block: 74px 76px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -211,6 +217,12 @@
   .testimonial-list-wrapper::after {
     bottom: 16%;
   }
+
+  /* --------------- MARINE HTML --------------- */
+  /* ----- Featured Categories section ----- */
+  .split-section-v2 {
+    padding-block: 54px 56px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -272,5 +284,16 @@
 
   .marine-hero-media {
     display: block;
+  }
+
+  /* ----- Featured Categories section ----- */
+  .split-section-v2 {
+    padding-bottom: 42px;
+  }
+
+  .split-wrapper-v2 .split-card-title {
+    font-size: 26px;
+    line-height: 1.346;
+    margin-bottom: 8px;
   }
 }
