@@ -1,14 +1,18 @@
 @media (max-width: 1279px) {
   /* ----- Split section ----- */
-  .split-section {
+  .split-v1 {
     margin-top: -180px;
   }
 
   /* --------------- MARINE HTML --------------- */
-
-  /* ----- Featured Categories section ----- */
-  .split-wrapper-v2 {
+  /* ----- Split section ----- */
+  .split-v2-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ----- Case studies slider section ----- */
+  .case-studies-content-wrapper-v2 {
+    padding-inline: 60px 42px;
   }
 }
 
@@ -19,13 +23,13 @@
   }
 
   /* ----- Split section ----- */
-  .split-section {
+  .split-v1 {
     padding-bottom: 50px;
     margin-top: -150px;
   }
 
   /* ----- Articles section ----- */
-  .articles-section {
+  .home-articles {
     padding-block: 50px 62px;
   }
 
@@ -35,7 +39,7 @@
   }
 
   /* ----- Featured card section ----- */
-  .featured-card-section {
+  .home-featured-card {
     padding-top: 66px;
   }
 
@@ -62,9 +66,34 @@
   }
 
   /* --------------- MARINE HTML --------------- */
-  /* ----- Featured Categories section ----- */
-  .split-section-v2 {
+  /* ----- Split  section ----- */
+  .split-v2 {
     padding-block: 74px 76px;
+  }
+
+  /* ----- Featured card section ----- */
+  .marine-featured-card {
+    padding-block: 76px;
+  }
+
+  /* ----- Case studies slider section ----- */
+  .case-studies-section-v2 {
+    padding-block: 76px 54px;
+  }
+
+  .case-studies-content-wrapper-v2 {
+    padding-inline: 50px 30px;
+    padding-block: 84px 74px;
+  }
+
+  /* ----- Blog img section ----- */
+  .blog-img-section {
+    padding-top: 54px;
+  }
+
+  /* ----- Articles section ----- */
+  .marine-articles {
+    padding-bottom: 62px;
   }
 }
 
@@ -80,21 +109,20 @@
   }
 
   /* ----- Split section ----- */
-  .split-section {
+  .split-v1 {
     padding-bottom: 38px;
     margin-top: -28px;
     overflow: hidden;
   }
 
-  .split-wrapper {
+  .split-v1-wrapper {
     width: auto;
     margin-inline: -20px;
     grid-template-columns: repeat(1, 1fr);
-    gap: 4px;
   }
 
   /* ----- Articles section ----- */
-  .articles-section {
+  .home-articles {
     padding-block: 38px;
   }
 
@@ -219,9 +247,45 @@
   }
 
   /* --------------- MARINE HTML --------------- */
-  /* ----- Featured Categories section ----- */
-  .split-section-v2 {
+  /* ----- Split  section ----- */
+  .split-v2 {
     padding-block: 54px 56px;
+  }
+
+  .split-v2 .section-title {
+    padding-inline: 16px;
+  }
+
+  .split-v2-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- Featured card section ----- */
+  .marine-featured-card {
+    padding-block: 54px 56px;
+  }
+
+  /* ----- Case studies slider section ----- */
+  .case-studies-section-v2 {
+    padding-top: 56px;
+  }
+
+  .case-studies-wrapper-v2 {
+    flex-direction: column;
+    width: auto;
+    margin-inline: -16px;
+  }
+
+  .case-studies-media-v2,
+  .case-studies-v2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-studies-content-wrapper-v2 {
+    max-width: 100%;
+    padding-block: 60px 54px;
+    padding-inline: 36px 24px;
   }
 }
 
@@ -286,14 +350,40 @@
     display: block;
   }
 
-  /* ----- Featured Categories section ----- */
-  .split-section-v2 {
+  /* ----- Split  section ----- */
+  .split-v2 {
     padding-bottom: 42px;
   }
 
-  .split-wrapper-v2 .split-card-title {
+  .split-v2-wrapper .split-card-title {
     font-size: 26px;
     line-height: 1.346;
     margin-bottom: 8px;
+  }
+
+  /* ----- Case studies slider section ----- */
+  .case-studies-content-wrapper-v2 {
+    padding-block: 30px 42px;
+  }
+
+  .case-studies-media-v2 {
+    height: 310px;
+  }
+
+  .case-studies-content-tile-v2 {
+    margin-top: 10px;
+  }
+
+  .case-studies-content-dec-v2 {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 1.611;
+    -webkit-line-clamp: 2;
+    margin-bottom: 10px;
+  }
+
+  /* ----- Blog img section ----- */
+  .blog-section-img {
+    min-height: 330px;
   }
 }

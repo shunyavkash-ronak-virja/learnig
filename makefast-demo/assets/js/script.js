@@ -69,7 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // Our services js
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".our-services-splide.splide", {
-    type: "slide",
+    type: "loop",
+    autoplay: true,
     autoWidth: true,
     perMove: 3,
     pagination: false,
@@ -88,10 +89,27 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".testimonial-splide.splide", {
     type: "loop",
-    // autoplay: true,
+    autoplay: true,
     arrows: false,
     gap: 20,
     perPage: 1,
+  });
+  splide.mount();
+});
+
+// Case studies slider
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".case-studies-v2.splide", {
+    type: "slide",
+    autoplay: true,
+    pagination: false,
+    gap: 16,
+    perPage: 1,
+    breakpoints: {
+      767: {
+        arrows: false,
+      },
+    },
   });
   splide.mount();
 });
