@@ -327,15 +327,10 @@
 }
 
 .featured-card-wrapper {
-  width: calc(100% - -40px);
-  margin-left: -20px;
-  padding-left: 20px;
   display: flex;
   align-items: center;
   gap: 26px;
   justify-content: space-between;
-  padding-bottom: 12px;
-  overflow: auto;
 }
 
 .featured-card {
@@ -375,16 +370,11 @@
 }
 
 .case-studies-wrapper {
-  width: calc(100% - -40px);
-  margin-left: -20px;
-  padding-left: 20px;
   margin-top: 40px;
-  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  overflow: auto;
 }
 
 .case-studies-card {
@@ -672,7 +662,7 @@
   padding-block: 58px 68px;
 }
 
-/* ----- Brochure downloads section ----- */
+/* ----- Brochure section ----- */
 .brochure-section {
   padding-block: 68px 58px;
   overflow: hidden;
@@ -686,15 +676,10 @@
 }
 
 .brochure-wrapper {
-  width: auto;
-  margin-inline: -20px;
-  padding-left: 20px;
   display: flex;
   align-items: center;
   gap: 98px;
   margin-top: 58px;
-  overflow: auto;
-  padding-bottom: 12px;
 }
 
 .brochure-card {

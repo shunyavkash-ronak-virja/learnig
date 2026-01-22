@@ -26,6 +26,7 @@
   --black-300: #161615;
   --black-400: #3c3c3c;
   --gray: #707070;
+  --gray-19: rgba(112, 112, 112, 0.19);
   --gray-75: rgba(112, 112, 112, 0.75);
   --gray-77: rgba(112, 112, 112, 0.77);
   --gray-100: #d5d5d5;
@@ -537,6 +538,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 24px;
   line-height: 1.25;
 }
+@media (max-width: 575px) {
+  .font-24 {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+}
 
 .font-20 {
   font-size: 20px;
@@ -634,11 +641,13 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .container-overflow {
   width: auto;
-  margin-inline: -20%;
-  padding: 20px;
+  margin-inline: -20px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+  overflow: auto;
 }
 @media (max-width: 767px) {
   .container-overflow {
-    padding: 16px;
+    padding-left: 16px;
   }
 }

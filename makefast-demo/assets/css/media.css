@@ -14,6 +14,11 @@
   .case-studies-content-wrapper-v2 {
     padding-inline: 60px 42px;
   }
+
+  /* ----- Brochure section ----- */
+  .brochure-wrapper {
+    gap: 78px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -94,6 +99,11 @@
   /* ----- Articles section ----- */
   .marine-articles {
     padding-bottom: 62px;
+  }
+
+  /* ----- Brochure section ----- */
+  .brochure-wrapper {
+    gap: 58px;
   }
 }
 
@@ -188,10 +198,6 @@
     text-align: start;
   }
 
-  .featured-card-wrapper {
-    padding-left: 16px;
-  }
-
   /* ----- Case studies section ----- */
   .case-studies-section {
     background: var(--primary);
@@ -204,7 +210,6 @@
   .case-studies-wrapper {
     margin-top: 34px;
     gap: 18px;
-    padding-left: 16px;
   }
 
   .case-studies-card {
@@ -286,6 +291,31 @@
     max-width: 100%;
     padding-block: 60px 54px;
     padding-inline: 36px 24px;
+  }
+
+  /* ----- Brochure section ----- */
+  .brochure-wrapper {
+    flex-direction: column;
+    gap: 48px;
+    margin-inline: 20px;
+    padding: 0;
+  }
+
+  .brochure-card {
+    white-space: normal;
+    flex-direction: column;
+  }
+
+  .brochure-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brochure-wrapper-border {
+    width: 100%;
+    border: 1px solid var(--gray-19);
   }
 }
 
@@ -386,5 +416,36 @@
   /* ----- Blog img section ----- */
   .blog-section-img {
     min-height: 330px;
+  }
+
+  /* ----- Brochure section ----- */
+  .brochure-heading {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .brochure-wrapper {
+    margin-top: 60px;
+    gap: 30px;
+  }
+
+  .brochure-card {
+    gap: 14px;
+  }
+
+  .brochure-card:not(:first-child) {
+    padding-top: 22px;
+  }
+
+  .brochure-card-media {
+    width: 78px;
+    height: 70px;
+  }
+
+  .brochure-card-dec {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+    margin-block: 6px 14px;
   }
 }
