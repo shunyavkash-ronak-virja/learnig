@@ -102,8 +102,17 @@
   }
 
   /* ----- Brochure section ----- */
+  .brochure-section {
+    padding-block: 62px 42px;
+  }
+
   .brochure-wrapper {
     gap: 58px;
+  }
+
+  /* ----- Cta section ----- */
+  .cta-section {
+    padding-block: 42px 54px;
   }
 }
 
@@ -317,6 +326,21 @@
     width: 100%;
     border: 1px solid var(--gray-19);
   }
+
+  /* ----- Cta section ----- */
+  .cta-wrapper {
+    width: auto;
+    margin-inline: -20px;
+  }
+
+  .cta-img {
+    height: 400px;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -447,5 +471,10 @@
     line-height: 1.5;
     letter-spacing: 0.48px;
     margin-block: 6px 14px;
+  }
+
+  /* ----- Cta section ----- */
+  .color-secondary {
+    max-width: 238px;
   }
 }

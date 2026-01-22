@@ -16,6 +16,7 @@
   --black: #000000;
   --black-15: rgba(0, 0, 0, 0.15);
   --black-28: rgba(0, 0, 0, 0.28);
+  --black-45: rgba(0, 0, 0, 0.45);
   --black-100: #0f0f0f;
   --black-100-46: rgba(15, 15, 15, 0.46);
   --black-100-50: rgba(15, 15, 15, 0.5);
@@ -188,6 +189,8 @@ ol {
 .btn {
   min-width: 208px;
   font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 1.8px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
@@ -320,12 +323,10 @@ ol {
   width: 40px;
   aspect-ratio: 1;
   border-radius: 100%;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .icon-btn svg {
