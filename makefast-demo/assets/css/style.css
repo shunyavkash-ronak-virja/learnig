@@ -192,11 +192,21 @@
   top: -14%;
   transform: translateY(0);
   color: var(--black-100);
+  transition: all 0.3s ease-in-out;
 }
 
 .slider-arrows .slider-arrow svg {
   width: 100%;
   height: 100%;
+}
+
+.slider-arrows .slider-arrow:hover {
+  color: var(--black);
+  opacity: 1;
+}
+
+.slider-arrows .slider-arrow:hover[disabled] {
+  opacity: 1;
 }
 
 .slider-arrows .splide__arrow--prev {
@@ -208,7 +218,7 @@
   right: 0;
 }
 
-.slider-arrows .splide__arrow[disabled] {
+.slider-arrows .slider-arrow[disabled] {
   opacity: 12%;
 }
 
