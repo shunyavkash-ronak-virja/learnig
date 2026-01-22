@@ -686,16 +686,35 @@
 }
 
 .brochure-wrapper {
+  width: auto;
+  margin-inline: -20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 98px;
   margin-top: 58px;
+  overflow: auto;
+  padding-bottom: 12px;
 }
 
 .brochure-card {
   display: flex;
   align-items: center;
   gap: 40px;
+  white-space: nowrap;
 }
 
 .brochure-card-media {
-  max-width: 166px;
-  max-height: 132px;
+  width: 166px;
+  height: 132px;
+}
+
+.brochure-card-title {
+  color: var(--black);
+}
+
+.brochure-card-dec {
+  margin-block: 4px 15px;
+  letter-spacing: 0.64px;
+  line-height: 1.625;
 }
