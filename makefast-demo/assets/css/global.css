@@ -589,9 +589,9 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   padding: 10px 22px;
   background-color: var(--black-100);
   color: var(--secondary);
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   left: 4.3%;
-  bottom: -0.8%;
+  bottom: 0;
 }
 
 .quick-call-icon {
@@ -606,20 +606,19 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .quick-sms-btn {
   width: 62px;
-  bottom: 2.8%;
+  bottom: 2.2%;
   right: 4.2%;
 }
 
 .quick-sms-btn::after {
   content: "";
-  width: 126%;
+  width: 100%;
   aspect-ratio: 1;
   border-radius: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: -1;
-  transform: translate(-50%, -50%);
   animation: scale 2.2s infinite;
 }
 
@@ -628,13 +627,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     transform: translate(-50%, -50%) scale(1);
     background-color: var(--black-100-76);
   }
-  50% {
-    transform: translate(-50%, -50%) scale(1.1);
-    background-color: var(--black-100-76);
-  }
+
   100% {
-    transform: translate(-50%, -50%) scale(1);
-    background-color: var(--black-100-76);
+    transform: translate(-50%, -50%) scale(1.3);
+    background-color: transparent;
   }
 }
 

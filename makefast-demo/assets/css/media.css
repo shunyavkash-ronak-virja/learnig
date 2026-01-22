@@ -1,7 +1,7 @@
 @media (max-width: 1279px) {
   /* ----- Split section ----- */
   .split-v1 {
-    margin-top: -180px;
+    margin-top: -156px;
   }
 
   /* --------------- MARINE HTML --------------- */
@@ -25,7 +25,7 @@
   /* ----- Split section ----- */
   .split-v1 {
     padding-bottom: 50px;
-    margin-top: -150px;
+    margin-top: -120px;
   }
 
   /* ----- Articles section ----- */
@@ -111,7 +111,7 @@
   /* ----- Split section ----- */
   .split-v1 {
     padding-bottom: 38px;
-    margin-top: -28px;
+    margin-top: -26px;
     overflow: hidden;
   }
 
@@ -333,6 +333,7 @@
   /* --------------- MARINE HTML --------------- */
   /* ----- Hero section ----- */
   .marine-slider-content {
+    height: auto;
     padding-block: 180px 52px;
     background-color: var(--primary);
   }
@@ -342,7 +343,7 @@
   }
 
   .marine-hero-wrapper,
-  .hero-slider-wrapper::after {
+  .marine-hero-wrapper::after {
     background: none;
   }
 

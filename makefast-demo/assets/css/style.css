@@ -1,5 +1,5 @@
 /* ----- Hero section ----- */
-.home-hero-section {
+.hero-section {
   position: sticky;
   top: 0;
   left: 0;
@@ -27,7 +27,9 @@
 }
 
 .hero-slider-content {
-  padding-block: 260px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   position: relative;
   z-index: 2;
 }
@@ -51,7 +53,7 @@
 }
 
 .hero-slider .splide__pagination {
-  top: 40.8%;
+  top: 51.3%;
   bottom: auto;
   left: auto;
   right: -4%;
@@ -92,7 +94,7 @@
 /* ----- Split section ----- */
 .split-v1 {
   padding-bottom: 62px;
-  margin-top: -212px;
+  margin-top: -198px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -516,10 +518,6 @@
 }
 /* --------------- MARINE HTML --------------- */
 /* ----- Hero section ----- */
-.marine-slider-content {
-  padding-block: 302px;
-}
-
 .marine-hero-content {
   max-width: 904px;
 }
