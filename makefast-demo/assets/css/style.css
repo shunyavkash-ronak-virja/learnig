@@ -10,7 +10,24 @@
 .hero-slider-wrapper {
   width: 100%;
   min-height: 100vh;
+}
+
+.hero-slider-list .hero-slider-container:nth-child(1) .home-slider-wrapper {
   background: url("../images/section/makefast-img-01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-slider-list .hero-slider-container:nth-child(2) .home-slider-wrapper {
+  background: url("../images/section/makefast-img-20.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-slider-list .hero-slider-container:nth-child(3) .home-slider-wrapper {
+  background: url("../images/section/marine-hero-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -53,11 +70,13 @@
 }
 
 .hero-slider .splide__pagination {
-  top: 51.3%;
+  top: 50%;
+  right: 30px;
   bottom: auto;
   left: auto;
-  right: -4%;
-  transform: translateX(-50%) rotate(90deg);
+  transform: translateY(-50%);
+  padding: 0;
+  flex-direction: column;
   gap: 6px;
 }
 
@@ -67,41 +86,56 @@
 }
 
 .hero-slider .splide__pagination__page {
+  width: 2px;
+  height: 24px;
+  padding-inline: 8px;
+}
+
+.splide__pagination__page {
   margin: 0;
-  width: 24px;
-  height: 2px;
   border-radius: 0;
   opacity: 1;
-  background: #ffffff;
+  background: transparent;
   transition: all 0.3s ease-in-out;
 }
 
-.hero-slider .splide__pagination__page.is-active {
-  background: #cccccc6e;
+.splide__pagination__page:hover,
+.splide__pagination__page.is-active {
+  background: transparent;
+}
+
+.splide__pagination__page.is-active {
   transform: scale(1);
-  opacity: 1;
-  z-index: 1;
 }
 
-.hero-slider .splide__pagination__page:hover {
-  background: #cccccc6e;
+.hero-slider .splide__pagination__page::after {
+  content: "";
+  width: 2px;
+  height: 24px;
+  background: var(--secondary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
 
-.hero-slider .splide__pagination__page:focus-visible {
+.splide__pagination__page.is-active::after,
+.splide__pagination__page:hover::after {
+  opacity: 0.4;
+}
+
+.splide__pagination__page:focus-visible {
   outline: none;
 }
 
 /* ----- Split section ----- */
 .split-v1 {
+  --marginTop: -198px;
   padding-bottom: 62px;
-  margin-top: -198px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 1) 40%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  margin-top: var(--marginTop);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
+  pointer-events: none;
 }
 
 .split-wrapper {
@@ -117,6 +151,7 @@
   max-height: 434px;
   position: relative;
   overflow: hidden;
+  pointer-events: auto;
 }
 
 .split-card-img {
@@ -151,10 +186,6 @@
 }
 
 /* ----- Articles section ----- */
-.articles-section {
-  overflow: hidden;
-}
-
 .home-articles {
   padding-block: 62px 92px;
 }
@@ -175,6 +206,15 @@
   width: 100%;
   max-width: 410px;
   height: 268px;
+  overflow: hidden;
+}
+
+.articles-img {
+  transition: all 0.3s ease-in-out;
+}
+
+.articles-item-wrapper:hover .articles-img {
+  transform: scale(1.1);
 }
 
 .articles-content-title {
@@ -189,7 +229,7 @@
   border-radius: 0;
   background: transparent;
   opacity: 1;
-  top: -14%;
+  top: -62px;
   transform: translateY(0);
   color: var(--black-100);
   transition: all 0.3s ease-in-out;
@@ -230,13 +270,7 @@
 /* ----- Our story section ----- */
 .our-story-section {
   padding-block: 92px 72px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 24%,
-    rgba(1, 27, 33, 1) 24%,
-    rgba(1, 27, 33, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(1, 27, 33, 1) 24%);
 }
 
 .our-story-wrapper {
@@ -263,7 +297,7 @@
 }
 
 .our-story-dec {
-  color: #a6afb2;
+  color: var(--gray-600);
   letter-spacing: 0.32px;
   line-height: 1.75;
   margin-bottom: 24px;
@@ -289,6 +323,15 @@
   max-width: 372px;
   height: 286px;
   position: relative;
+  overflow: hidden;
+}
+
+.our-services-img {
+  transition: all 0.3s ease-in-out;
+}
+
+.our-services-wrapper:hover .our-services-img {
+  transform: scale(1.1);
 }
 
 .our-services-media-overlay {
@@ -319,10 +362,6 @@
 }
 
 /* ----- Featured card section ----- */
-.featured-card-section {
-  overflow: hidden;
-}
-
 .home-featured-card {
   padding-block: 88px;
 }
@@ -369,13 +408,7 @@
 /* ----- Case studies section ----- */
 .case-studies-section {
   padding-block: 88px;
-  background: linear-gradient(
-    180deg,
-    rgba(1, 27, 33, 1) 0%,
-    rgba(1, 27, 33, 1) 50%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(1, 27, 33, 1) 50%, rgba(255, 255, 255, 1) 50%);
   overflow: hidden;
 }
 
@@ -388,7 +421,6 @@
 }
 
 .case-studies-card {
-  width: 654px;
   white-space: nowrap;
 }
 
@@ -436,7 +468,7 @@
 }
 
 .testimonial-splide {
-  max-width: 912px;
+  max-width: 992px;
 }
 
 .testimonial-track {
@@ -449,6 +481,7 @@
 
 .testimonial-list-wrapper {
   text-align: center;
+  max-width: 912px;
 }
 
 .testimonial-list-wrapper::before,
@@ -464,13 +497,13 @@
 }
 
 .testimonial-list-wrapper::before {
-  top: -14.2%;
-  left: 1.8%;
+  top: -38px;
+  left: 56px;
 }
 
 .testimonial-list-wrapper::after {
-  bottom: 2.8%;
-  right: 1.8%;
+  bottom: 8px;
+  right: 56px;
   transform: rotate(180deg);
 }
 
@@ -522,32 +555,48 @@
   max-width: 904px;
 }
 
-.marine-hero-content .caption-small {
+.hero-slider-content-v2 .caption-small {
   color: var(--secondary-50);
 }
 
-.marine-hero-wrapper {
+.hero-slider-list .hero-slider-container:nth-child(1) .marine-hero-wrapper {
   background: url(../images/section/marine-hero-img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.marine-hero-title {
+.hero-slider-list .hero-slider-container:nth-child(2) .marine-hero-wrapper {
+  background: url(../images/section/makefast-img-19.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-slider-list .hero-slider-container:nth-child(3) .marine-hero-wrapper {
+  background: url(../images/section/makefast-img-22.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-content-title-v2 {
   margin-block: 10px 8px;
 }
 
-.marine-hero-dec {
+.hero-dec-v2 {
   max-width: 566px;
-  font-weight: 400;
-  margin-bottom: 10px;
+}
+
+.hero-slider-btn-v2 {
+  margin-top: 10px;
 }
 
 .marine-slider .splide__pagination {
   top: 46%;
 }
 
-.marine-hero-media {
+.hero-slider-media-v2 {
   display: none;
   height: 386px;
 }
@@ -567,11 +616,14 @@
 }
 
 /* ----- Split section ----- */
+.marine-split {
+  padding-block: 94px 96px;
+}
+
 .split-v2 {
   width: 100%;
   margin-top: 0;
   background: var(--secondary);
-  padding-block: 94px 96px;
 }
 
 .split-v2-wrapper {
@@ -752,4 +804,50 @@
   text-align: center;
   gap: 32px;
   padding: 20px;
+}
+
+/* --------------- SAFETY HTML --------------- */
+/* ----- Hero section ----- */
+.hero-slider-list .hero-slider-container:nth-child(1) .safety-hero-wrapper {
+  background: url(../images/section/makefast-img-23.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-slider-list .hero-slider-container:nth-child(2) .safety-hero-wrapper {
+  background: url(../images/section/makefast-img-25.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-slider-list .hero-slider-container:nth-child(3) .safety-hero-wrapper {
+  background: url(../images/section/makefast-img-24.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.safety-hero-content {
+  max-width: 662px;
+}
+
+/* ----- Featured card section ----- */
+.safety-featured-card {
+  padding-block: 78px;
+}
+
+/* ----- Split section ----- */
+.safety-split {
+  padding-block: 74px;
+}
+
+/* ----- Blog img section ----- */
+.blog-img-section-v2 {
+  padding-top: 66px;
+}
+
+.blog-img-v2 {
+  min-height: 608px;
 }

@@ -12,28 +12,31 @@ navToggleWrapper.addEventListener("click", () => {
 });
 
 // Home Hero slider js
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".hero-slider.splide", {
-    type: "fade",
-    autoplay: true,
-    perPage: 1,
-    perMove: 1,
-    arrows: false,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    rewind: true,
-    interval: 5000,
-    speed: 1200,
-    easing: "ease-in-out",
+let heroSlider = document.querySelectorAll(".hero-slider");
+if (heroSlider.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".hero-slider.splide", {
+      type: "fade",
+      autoplay: true,
+      perPage: 1,
+      perMove: 1,
+      arrows: false,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      rewind: true,
+      interval: 5000,
+      speed: 1200,
+      easing: "ease-in-out",
 
-    breakpoints: {
-      991: {
-        pagination: false,
+      breakpoints: {
+        991: {
+          pagination: false,
+        },
       },
-    },
+    });
+    splide.mount();
   });
-  splide.mount();
-});
+}
 
 // Scroll header js
 document.addEventListener("DOMContentLoaded", function () {
@@ -48,68 +51,80 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Articles splide js
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".articles-splide.splide", {
-    type: "slide",
-    autoWidth: true,
-    perMove: 3,
-    pagination: false,
-    drag: true,
-    gap: 25,
-    breakpoints: {
-      767: {
-        gap: 20,
-        arrows: false,
+let articlesSplide = document.querySelectorAll(".articles-splide");
+if (articlesSplide.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".articles-splide.splide", {
+      type: "slide",
+      autoWidth: true,
+      perMove: 3,
+      pagination: false,
+      drag: true,
+      gap: 25,
+      breakpoints: {
+        767: {
+          gap: 20,
+          arrows: false,
+        },
       },
-    },
+    });
+    splide.mount();
   });
-  splide.mount();
-});
+}
 
 // Our services js
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".our-services-splide.splide", {
-    type: "loop",
-    autoplay: true,
-    autoWidth: true,
-    perMove: 3,
-    pagination: false,
-    gap: 32,
-    arrows: false,
-    breakpoints: {
-      767: {
-        gap: 18,
+let ourServices = document.querySelectorAll(".our-services-splide");
+if (ourServices.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".our-services-splide.splide", {
+      type: "loop",
+      autoplay: true,
+      autoWidth: true,
+      perMove: 3,
+      pagination: false,
+      gap: 32,
+      arrows: false,
+      breakpoints: {
+        767: {
+          gap: 18,
+        },
       },
-    },
+    });
+    splide.mount();
   });
-  splide.mount();
-});
+}
 
 // Testimonial js
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".testimonial-splide.splide", {
-    type: "loop",
-    autoplay: true,
-    arrows: false,
-    gap: 20,
-    perPage: 1,
+let testimonialSplide = document.querySelectorAll(".testimonial-splide");
+if (testimonialSplide.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".testimonial-splide.splide", {
+      type: "loop",
+      // autoplay: true,
+      arrows: false,
+      gap: 20,
+      perPage: 1,
+    });
+    splide.mount();
   });
-  splide.mount();
-});
+}
 
 // Case studies slider
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".case-studies-v2.splide", {
-    type: "slide",
-    autoplay: true,
-    pagination: false,
-    gap: 16,
-    perPage: 1,
-    breakpoints: {
-      767: {
-        arrows: false,
+let caseStudiesV2 = document.querySelectorAll(".case-studies-v2");
+if (caseStudiesV2.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".case-studies-v2.splide", {
+      type: "slide",
+      autoplay: true,
+      pagination: false,
+      gap: 16,
+      perPage: 1,
+      breakpoints: {
+        767: {
+          arrows: false,
+        },
       },
-    },
+    });
+    splide.mount();
   });
-  splide.mount();
-});
+}

@@ -1,7 +1,7 @@
 @media (max-width: 1279px) {
   /* ----- Split section ----- */
   .split-v1 {
-    margin-top: -156px;
+    --marginTop: -156px;
   }
 
   /* --------------- MARINE HTML --------------- */
@@ -29,8 +29,8 @@
 
   /* ----- Split section ----- */
   .split-v1 {
+    --marginTop: -120px;
     padding-bottom: 50px;
-    margin-top: -120px;
   }
 
   /* ----- Articles section ----- */
@@ -58,8 +58,7 @@
   }
 
   .testimonial-list-wrapper::before {
-    top: -16%;
-    left: -0.2%;
+    left: 0;
   }
 
   .testimonial-list-wrapper::after {
@@ -72,7 +71,7 @@
 
   /* --------------- MARINE HTML --------------- */
   /* ----- Split  section ----- */
-  .split-v2 {
+  .marine-split {
     padding-block: 74px 76px;
   }
 
@@ -114,6 +113,22 @@
   .cta-section {
     padding-block: 42px 54px;
   }
+
+  /* --------------- SAFETY HTML --------------- */
+  /* ----- Featured card section ----- */
+  .safety-featured-card {
+    padding-block: 68px;
+  }
+
+  /* ----- Split section ----- */
+  .safety-split {
+    padding-block: 60px;
+  }
+
+  /* ----- Blog img section ----- */
+  .blog-img-section-v2 {
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -129,8 +144,8 @@
 
   /* ----- Split section ----- */
   .split-v1 {
+    --marginTop: -26px;
     padding-bottom: 38px;
-    margin-top: -26px;
     overflow: hidden;
   }
 
@@ -256,13 +271,22 @@
     font-size: 28px;
   }
 
+  .testimonial-list-wrapper::before {
+    top: -30px;
+  }
+
   .testimonial-list-wrapper::after {
-    bottom: 16%;
+    bottom: 22px;
   }
 
   /* --------------- MARINE HTML --------------- */
+  /* ----- Hero section ----- */
+  .hero-dec-v2 {
+    max-width: 100%;
+  }
+
   /* ----- Split  section ----- */
-  .split-v2 {
+  .marine-split {
     padding-block: 54px 56px;
   }
 
@@ -341,6 +365,21 @@
     flex-direction: column;
     gap: 8px;
   }
+  /* --------------- SAFETY HTML --------------- */
+  /* ----- Featured card section ----- */
+  .safety-featured-card {
+    padding-block: 58px;
+  }
+
+  /* ----- Split section ----- */
+  .safety-split {
+    padding-bottom: 10px;
+  }
+
+  /* ----- Blog img section ----- */
+  .blog-img-section-v2 {
+    padding-top: 34px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -382,17 +421,22 @@
     font-size: 24px;
     letter-spacing: 0.23px;
     line-height: 1.608;
+    margin-bottom: 8px;
+  }
+
+  .testimonial-list-wrapper::after {
+    bottom: 12px;
   }
 
   /* --------------- MARINE HTML --------------- */
   /* ----- Hero section ----- */
-  .marine-slider-content {
+  .hero-slider-content-v2 {
     height: auto;
     padding-block: 180px 52px;
     background-color: var(--primary);
   }
 
-  .marine-hero-title {
+  .hero-content-title-v2 {
     margin-block: 8px 12px;
   }
 
@@ -401,12 +445,12 @@
     background: none;
   }
 
-  .marine-hero-media {
+  .hero-slider-media-v2 {
     display: block;
   }
 
   /* ----- Split  section ----- */
-  .split-v2 {
+  .marine-split {
     padding-bottom: 42px;
   }
 
@@ -476,5 +520,20 @@
   /* ----- Cta section ----- */
   .color-secondary {
     max-width: 238px;
+  }
+
+  /* --------------- SAFETY HTML --------------- */
+  /* ----- Featured card section ----- */
+  .safety-featured-card {
+    padding-block: 46px;
+  }
+
+  /* ----- Blog img section ----- */
+  .blog-img-section-v2 {
+    padding-top: 0;
+  }
+
+  .blog-img-v2 {
+    min-height: 284px;
   }
 }
