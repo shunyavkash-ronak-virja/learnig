@@ -187,7 +187,7 @@
 
 /* ----- Articles section ----- */
 .home-articles {
-  padding-block: 62px 92px;
+  padding-block: 92px;
 }
 
 .articles-splide {
@@ -269,7 +269,7 @@
 
 /* ----- Our story section ----- */
 .our-story-section {
-  padding-block: 92px 72px;
+  padding-block: 82px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(1, 27, 33, 1) 24%);
 }
 
@@ -305,7 +305,7 @@
 
 /* ----- Our services section ----- */
 .our-services-section {
-  padding-block: 72px 88px;
+  padding-block: 80px;
   background-color: var(--primary);
   overflow: hidden;
 }
@@ -363,7 +363,7 @@
 
 /* ----- Featured card section ----- */
 .home-featured-card {
-  padding-block: 88px;
+  padding-block: 90px;
 }
 
 .featrued-section-content {
@@ -464,7 +464,7 @@
 
 /* ----- Testimonial section ----- */
 .testimonial-section {
-  padding-block: 88px 166px;
+  padding-block: 85px;
 }
 
 .testimonial-splide {
