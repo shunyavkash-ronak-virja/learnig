@@ -17,31 +17,60 @@ const headerHeight = headerElement.offsetHeight;
 document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
 
 // Home Hero slider js
-let heroSlider = document.querySelectorAll(".hero-slider");
-if (heroSlider.length) {
-  document.addEventListener("DOMContentLoaded", function () {
-    var splide = new Splide(".hero-slider.splide", {
-      type: "fade",
-      autoplay: true,
-      perPage: 1,
-      perMove: 1,
-      arrows: false,
-      pauseOnHover: false,
-      pauseOnFocus: false,
-      rewind: true,
-      interval: 5000,
-      speed: 1200,
-      easing: "ease-in-out",
+// let heroSlider = document.querySelectorAll(".hero-slider");
+// if (heroSlider.length) {
+//   document.addEventListener("DOMContentLoaded", function () {
+//     var splide = new Splide(".hero-slider.splide", {
+//       type: "fade",
+//       autoplay: true,
+//       perPage: 1,
+//       perMove: 1,
+//       arrows: false,
+//       pauseOnHover: false,
+//       pauseOnFocus: false,
+//       rewind: true,
+//       interval: 5000,
+//       speed: 1200,
+//       easing: "ease-in-out",
+//       breakpoints: {
+//         991: {
+//           pagination: false,
+//         },
+//       },
+//     });
+//     splide.mount();
+//   });
+// }
 
-      breakpoints: {
-        991: {
-          pagination: false,
-        },
+document.addEventListener("DOMContentLoaded", function () {
+  var heroImg = new Splide(".hero-bg-img-splide.splide", {
+    type: "fade",
+    rewind: true,
+    arrows: false,
+    perPage: 1,
+    perMove: 1,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    interval: 5000,
+    speed: 1200,
+    easing: "ease-in-out",
+    breakpoints: {
+      991: {
+        pagination: false,
       },
-    });
-    splide.mount();
+    },
   });
-}
+
+  var heroText = new Splide(".hero-text-splide.splide", {
+    rewind: true,
+    pagination: false,
+    arrows: false,
+  });
+
+  heroImg.sync(heroText);
+  heroImg.mount();
+  heroText.mount();
+});
 
 // Scroll header js
 document.addEventListener("DOMContentLoaded", function () {

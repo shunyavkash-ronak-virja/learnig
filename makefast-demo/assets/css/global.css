@@ -87,6 +87,10 @@ section,
 footer {
   background-color: var(--secondary);
   position: relative;
+}
+
+section,
+footer {
   z-index: 2;
 }
 

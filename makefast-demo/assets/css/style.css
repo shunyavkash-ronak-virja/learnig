@@ -1,5 +1,5 @@
 /* ----- Hero section ----- */
-.hero-section {
+/* .hero-section {
   position: sticky;
   top: 0;
   left: 0;
@@ -49,24 +49,6 @@
   align-items: center;
   position: relative;
   z-index: 2;
-}
-
-.hero-content-wrapper {
-  max-width: 680px;
-  padding-left: 8%;
-}
-
-.home-hero-section .hero-slider-title {
-  font-size: 66px;
-  line-height: 1.09;
-  letter-spacing: 0.66px;
-  text-shadow: 0 20px 20px #00000029;
-}
-
-.hero-slider-dec {
-  color: var(--secondary);
-  margin-top: 8px;
-  text-shadow: 0 3px 6px #00000029;
 }
 
 .hero-slider .splide__pagination {
@@ -127,6 +109,65 @@
 
 .splide__pagination__page:focus-visible {
   outline: none;
+} */
+.hero-section {
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-img-splide {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-bg-img-splide,
+.hero-bg-img-track {
+  height: 100%;
+}
+
+.hero-bg-img-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-bg-img-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(19deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.hero-text-splide,
+.hero-text-track {
+  min-height: 100%;
+}
+
+.hero-text-wrapper {
+  max-width: 680px;
+  padding-left: 8%;
+}
+
+.home-hero-section .hero-text-title {
+  font-size: 66px;
+  line-height: 1.09;
+  letter-spacing: 0.66px;
+  text-shadow: 0 20px 20px #00000029;
+}
+
+.hero-text-dec {
+  color: var(--secondary);
+  margin-top: 8px;
+  text-shadow: 0 3px 6px #00000029;
 }
 
 /* ----- Split section ----- */

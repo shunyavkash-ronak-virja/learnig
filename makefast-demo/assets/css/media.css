@@ -23,7 +23,7 @@
 
 @media (max-width: 991px) {
   /* ----- Hero section ----- */
-  .home-hero-section .hero-slider-title {
+  .home-hero-section .hero-text-title {
     font-size: 62px;
   }
 
@@ -129,12 +129,12 @@
 
 @media (max-width: 767px) {
   /* ----- Hero section ----- */
-  .hero-content-wrapper {
+  .hero-text-wrapper {
     max-width: 100%;
     padding-left: 0;
   }
 
-  .home-hero-section .hero-slider-title {
+  .home-hero-section .hero-text-title {
     font-size: 58px;
   }
 
@@ -371,13 +371,13 @@
 
 @media (max-width: 575px) {
   /* ----- Hero section ----- */
-  .home-hero-section .hero-slider-title {
+  .home-hero-section .hero-text-title {
     font-size: 54px;
     line-height: 1.203;
     letter-spacing: 0.54px;
   }
 
-  .hero-slider-dec {
+  .hero-text-dec {
     font-size: 14px;
     line-height: 1.785;
     letter-spacing: 0.42px;
