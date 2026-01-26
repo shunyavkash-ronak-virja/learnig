@@ -442,6 +442,14 @@
     margin-block: 8px 12px;
   }
 
+  .marine-slider {
+    position: static;
+  }
+
+  .hero-section-v2 {
+    flex-direction: column-reverse;
+  }
+
   .marine-hero-wrapper,
   .marine-hero-wrapper::after {
     background: none;
