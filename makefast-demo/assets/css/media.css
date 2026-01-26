@@ -1,7 +1,7 @@
 @media (max-width: 1279px) {
   /* ----- Split section ----- */
   .split-v1 {
-    --marginTop: -156px;
+    --marginTop: 156px;
   }
 
   /* --------------- MARINE HTML --------------- */
@@ -29,23 +29,18 @@
 
   /* ----- Split section ----- */
   .split-v1 {
-    --marginTop: -120px;
+    --marginTop: 120px;
     padding-bottom: 50px;
   }
 
   /* ----- Articles section ----- */
   .home-articles {
-    padding-block: 72px;
-  }
-
-  /* ----- Our story section ----- */
-  .our-story-section {
-    padding-block: 66px;
+    padding-block: 72px 138px;
   }
 
   /* ----- Our services section ----- */
   .our-services-section {
-    padding-block: 62px;
+    padding-block: 128px 62px;
   }
 
   /* ----- Featured card section ----- */
@@ -78,7 +73,7 @@
   /* --------------- MARINE HTML --------------- */
   /* ----- Split  section ----- */
   .marine-split {
-    padding-block: 74px 76px;
+    padding-block: 68px;
   }
 
   /* ----- Featured card section ----- */
@@ -88,7 +83,7 @@
 
   /* ----- Case studies slider section ----- */
   .case-studies-section-v2 {
-    padding-block: 76px 54px;
+    padding-block: 60px;
   }
 
   .case-studies-content-wrapper-v2 {
@@ -98,26 +93,21 @@
 
   /* ----- Blog img section ----- */
   .blog-img-section {
-    padding-top: 54px;
+    padding-block: 56px;
   }
 
   /* ----- Articles section ----- */
   .marine-articles {
-    padding-bottom: 62px;
+    padding-block: 60px;
   }
 
   /* ----- Brochure section ----- */
   .brochure-section {
-    padding-block: 62px 42px;
+    padding-block: 56px;
   }
 
   .brochure-wrapper {
     gap: 58px;
-  }
-
-  /* ----- Cta section ----- */
-  .cta-section {
-    padding-block: 42px 54px;
   }
 
   /* --------------- SAFETY HTML --------------- */
@@ -150,7 +140,7 @@
 
   /* ----- Split section ----- */
   .split-v1 {
-    --marginTop: -26px;
+    --marginTop: 26px;
     padding-bottom: 38px;
     overflow: hidden;
   }
@@ -163,7 +153,7 @@
 
   /* ----- Articles section ----- */
   .home-articles {
-    padding-block: 52px;
+    padding-block: 52px 102px;
   }
 
   .articles-splide {
@@ -181,7 +171,6 @@
 
   /* ----- Our story section ----- */
   .our-story-section {
-    padding-block: 50px;
     overflow: hidden;
   }
 
@@ -211,6 +200,10 @@
   }
 
   /* ----- Our services section ----- */
+  .our-services-section {
+    padding-top: 120px;
+  }
+
   .our-services-splide {
     margin-top: 62px;
   }
@@ -284,10 +277,6 @@
   }
 
   /* ----- Split  section ----- */
-  .marine-split {
-    padding-block: 54px 56px;
-  }
-
   .split-v2 .section-title {
     padding-inline: 16px;
   }
@@ -298,12 +287,12 @@
 
   /* ----- Featured card section ----- */
   .marine-featured-card {
-    padding-block: 54px 56px;
+    padding-block: 50px;
   }
 
   /* ----- Case studies slider section ----- */
   .case-studies-section-v2 {
-    padding-top: 56px;
+    padding-block: 48px;
   }
 
   .case-studies-wrapper-v2 {
@@ -376,7 +365,7 @@
 
   /* ----- Blog img section ----- */
   .blog-img-section-v2 {
-    padding-top: 34px;
+    padding-top: 0;
   }
 }
 
@@ -396,12 +385,7 @@
 
   /* ----- Articles section ----- */
   .home-articles {
-    padding-block: 36px;
-  }
-
-  /* ----- Our story section ----- */
-  .our-story-section {
-    padding-block: 36px;
+    padding-block: 36px 76px;
   }
 
   /* ----- Featured card section ----- */
@@ -458,10 +442,6 @@
   }
 
   /* ----- Split  section ----- */
-  .marine-split {
-    padding-bottom: 42px;
-  }
-
   .split-v2-wrapper .split-card-title {
     font-size: 26px;
     line-height: 1.346;
@@ -537,10 +517,6 @@
   }
 
   /* ----- Blog img section ----- */
-  .blog-img-section-v2 {
-    padding-top: 0;
-  }
-
   .blog-img-v2 {
     min-height: 284px;
   }

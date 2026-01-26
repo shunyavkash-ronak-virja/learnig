@@ -82,6 +82,7 @@ body {
   position: relative;
 }
 
+main,
 section,
 footer {
   background-color: var(--secondary);

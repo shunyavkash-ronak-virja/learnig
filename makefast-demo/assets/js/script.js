@@ -11,6 +11,11 @@ navToggleWrapper.addEventListener("click", () => {
   header.classList.toggle("active");
 });
 
+// Header haight
+const headerElement = document.querySelector("header");
+const headerHeight = headerElement.offsetHeight;
+document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
+
 // Home Hero slider js
 let heroSlider = document.querySelectorAll(".hero-slider");
 if (heroSlider.length) {

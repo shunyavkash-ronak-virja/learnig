@@ -25,23 +25,17 @@ menuStore.forEach((val) => {
 
 // Header hight ----------
 const headerElement = document.querySelector(".header");
+// 16 is a header margine top value
 const headerHeight = headerElement.offsetHeight + 16;
-document.documentElement.style.setProperty(
-  "--header-height",
-  `${headerHeight}px`
-);
+document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
 
 // Submenu link width
 window.addEventListener("load", () => {
   document.fonts.ready.then(() => {
-    const links = document.querySelectorAll(
-      ".submenu-wrapper .header-link-wrapper"
-    );
+    const links = document.querySelectorAll(".submenu-wrapper .header-link-wrapper");
     links.forEach((link) => {
       const linkWidth = link.getBoundingClientRect().width;
-      link
-        .closest(".submenu-wrapper")
-        .style.setProperty("--linkWidth", linkWidth + "px");
+      link.closest(".submenu-wrapper").style.setProperty("--linkWidth", linkWidth + "px");
     });
   });
 });

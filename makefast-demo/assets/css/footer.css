@@ -272,7 +272,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 30px;
+  column-gap: 18px;
   row-gap: 12px;
   flex-wrap: wrap;
   margin-top: 78px;
@@ -285,7 +285,7 @@ footer {
   letter-spacing: 1.8px;
   text-transform: uppercase;
   color: var(--gray);
-  padding: 2px;
+  padding-inline: 6px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -414,7 +414,7 @@ footer {
 
   .footer-link-wrapper {
     margin-top: 34px;
-    gap: 38px;
+    column-gap: 38px;
     row-gap: 32px;
   }
 

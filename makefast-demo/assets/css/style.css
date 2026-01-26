@@ -131,10 +131,14 @@
 
 /* ----- Split section ----- */
 .split-v1 {
-  --marginTop: -198px;
+  --marginTop: 198px;
   padding-bottom: 62px;
-  margin-top: var(--marginTop);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
+  margin-top: calc(-1 * var(--marginTop));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) var(--marginTop),
+    rgba(255, 255, 255, 1) var(--marginTop)
+  );
   pointer-events: none;
 }
 
@@ -187,7 +191,7 @@
 
 /* ----- Articles section ----- */
 .home-articles {
-  padding-block: 92px;
+  padding-block: 92px 186px;
 }
 
 .articles-splide {
@@ -245,8 +249,9 @@
   opacity: 1;
 }
 
-.slider-arrows .slider-arrow:hover[disabled] {
+.slider-arrows .slider-arrow[disabled] {
   opacity: 1;
+  pointer-events: none;
 }
 
 .slider-arrows .splide__arrow--prev {
@@ -269,8 +274,7 @@
 
 /* ----- Our story section ----- */
 .our-story-section {
-  padding-block: 82px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(1, 27, 33, 1) 24%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 14%, rgba(1, 27, 33, 1) 14%);
 }
 
 .our-story-wrapper {
@@ -305,7 +309,7 @@
 
 /* ----- Our services section ----- */
 .our-services-section {
-  padding-block: 80px;
+  padding-block: 145px 80px;
   background-color: var(--primary);
   overflow: hidden;
 }
@@ -617,7 +621,7 @@
 
 /* ----- Split section ----- */
 .marine-split {
-  padding-block: 94px 96px;
+  padding-block: 95px;
 }
 
 .split-v2 {
@@ -650,7 +654,7 @@
 
 /* ----- Featured card section ----- */
 .marine-featured-card {
-  padding-block: 96px 85px;
+  padding-block: 90px;
 }
 
 .featured-card-white:hover .caption-small {
@@ -659,7 +663,7 @@
 
 /* ----- Case studies slider section ----- */
 .case-studies-section-v2 {
-  padding-block: 85px 64px;
+  padding-block: 75px;
 }
 
 .case-studies-heading-content-v2 {
@@ -712,7 +716,7 @@
 
 /* ----- Blog img section ----- */
 .blog-img-section {
-  padding-block: 64px 58px;
+  padding-block: 60px;
 }
 
 .blog-section-img {
@@ -721,12 +725,12 @@
 
 /* ----- Articles section ----- */
 .marine-articles {
-  padding-block: 58px 68px;
+  padding-block: 64px;
 }
 
 /* ----- Brochure section ----- */
 .brochure-section {
-  padding-block: 68px 58px;
+  padding-block: 64px;
   overflow: hidden;
 }
 
@@ -768,7 +772,7 @@
 
 /* ----- Cta section ----- */
 .cta-section {
-  padding-block: 58px 60px;
+  padding-block: 44px;
 }
 
 .cta-wrapper {
