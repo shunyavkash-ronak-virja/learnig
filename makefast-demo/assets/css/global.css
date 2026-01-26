@@ -289,8 +289,8 @@ ol {
 }
 
 .text-btn {
-  display: inline-block;
   width: max-content;
+  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -315,23 +315,22 @@ ol {
 }
 
 .text-btn::before {
-  width: 0;
+  width: 100%;
   bottom: 8px;
   left: 0;
 }
 
 .text-btn::after {
-  width: 100%;
-  bottom: 4px;
-  right: 0;
-}
-
-.text-btn:hover::before {
-  width: 100%;
+  width: 60%;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, 4px);
 }
 
 .text-btn:hover::after {
-  width: 0;
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .icon-btn {
