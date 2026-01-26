@@ -272,7 +272,7 @@
 
   /* --------------- MARINE HTML --------------- */
   /* ----- Hero section ----- */
-  .hero-dec-v2 {
+  .hero-text-dec-v2 {
     max-width: 100%;
   }
 
@@ -422,23 +422,29 @@
 
   /* --------------- MARINE HTML --------------- */
   /* ----- Hero section ----- */
-  .hero-slider-content-v2 {
+  .hero-section-v2 {
+    align-items: start;
+  }
+
+  .hero-text-splide-v2 {
+    width: auto;
+    margin-inline: -16px;
+  }
+
+  .hero-text-wrapper-v2 {
     height: auto;
     padding-block: 180px 52px;
+    padding-inline: 16px;
     background-color: var(--primary);
   }
 
-  .hero-content-title-v2 {
+  .hero-text-title-v2 {
     margin-block: 8px 12px;
   }
 
   .marine-hero-wrapper,
   .marine-hero-wrapper::after {
     background: none;
-  }
-
-  .hero-slider-media-v2 {
-    display: block;
   }
 
   /* ----- Split  section ----- */

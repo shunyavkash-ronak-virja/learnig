@@ -45,6 +45,7 @@ document.documentElement.style.setProperty("--header-height", `${headerHeight}px
 document.addEventListener("DOMContentLoaded", function () {
   var heroImg = new Splide(".hero-bg-img-splide.splide", {
     type: "fade",
+    // autoplay: true,
     rewind: true,
     arrows: false,
     perPage: 1,
@@ -62,9 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   var heroText = new Splide(".hero-text-splide.splide", {
+    type: "fade",
+    // autoplay: true,
     rewind: true,
-    pagination: false,
+    perPage: 1,
     arrows: false,
+    pagination: false,
+    interval: 5000,
+    speed: 1200,
+    easing: "ease-in-out",
   });
 
   heroImg.sync(heroText);

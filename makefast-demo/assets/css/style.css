@@ -1,117 +1,8 @@
 /* ----- Hero section ----- */
-/* .hero-section {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.hero-slider-wrapper {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(1) .home-slider-wrapper {
-  background: url("../images/section/makefast-img-01.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(2) .home-slider-wrapper {
-  background: url("../images/section/makefast-img-20.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(3) .home-slider-wrapper {
-  background: url("../images/section/marine-hero-img.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-slider-wrapper::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(19deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
-}
-
-.hero-slider-content {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.hero-slider .splide__pagination {
-  top: 50%;
-  right: 30px;
-  bottom: auto;
-  left: auto;
-  transform: translateY(-50%);
-  padding: 0;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.hero-slider .splide__pagination li {
-  line-height: 0;
-  display: flex;
-}
-
-.hero-slider .splide__pagination__page {
-  width: 2px;
-  height: 24px;
-  padding-inline: 8px;
-}
-
-.splide__pagination__page {
-  margin: 0;
-  border-radius: 0;
-  opacity: 1;
-  background: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-.splide__pagination__page:hover,
-.splide__pagination__page.is-active {
-  background: transparent;
-}
-
-.splide__pagination__page.is-active {
-  transform: scale(1);
-}
-
-.hero-slider .splide__pagination__page::after {
-  content: "";
-  width: 2px;
-  height: 24px;
-  background: var(--secondary);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out;
-}
-
-.splide__pagination__page.is-active::after,
-.splide__pagination__page:hover::after {
-  opacity: 0.4;
-}
-
-.splide__pagination__page:focus-visible {
-  outline: none;
-} */
 .hero-section {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
   position: sticky;
   top: 0;
   left: 0;
@@ -147,11 +38,6 @@
   background: linear-gradient(19deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
 }
 
-.hero-text-splide,
-.hero-text-track {
-  min-height: 100%;
-}
-
 .hero-text-wrapper {
   max-width: 680px;
   padding-left: 8%;
@@ -168,6 +54,66 @@
   color: var(--secondary);
   margin-top: 8px;
   text-shadow: 0 3px 6px #00000029;
+}
+
+.hero-bg-img-splide .splide__pagination {
+  top: 50%;
+  right: 30px;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+  padding: 0;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero-bg-img-splide .splide__pagination li {
+  line-height: 0;
+  display: flex;
+}
+
+.hero-bg-img-splide .splide__pagination__page {
+  width: 2px;
+  height: 24px;
+  padding-inline: 8px;
+}
+
+.splide__pagination__page {
+  margin: 0;
+  border-radius: 0;
+  opacity: 1;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.splide__pagination__page:hover,
+.splide__pagination__page.is-active {
+  background: transparent;
+}
+
+.splide__pagination__page.is-active {
+  transform: scale(1);
+}
+
+.hero-bg-img-splide .splide__pagination__page::after {
+  content: "";
+  width: 2px;
+  height: 24px;
+  background: var(--secondary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.splide__pagination__page.is-active::after,
+.splide__pagination__page:hover::after {
+  opacity: 0.4;
+}
+
+.splide__pagination__page:focus-visible {
+  outline: none;
 }
 
 /* ----- Split section ----- */
@@ -596,40 +542,19 @@
 }
 /* --------------- MARINE HTML --------------- */
 /* ----- Hero section ----- */
-.marine-hero-content {
+.hero-text-wrapper-v2 {
   max-width: 904px;
 }
 
-.hero-slider-content-v2 .caption-small {
+.hero-text-wrapper-v2 .caption-small {
   color: var(--secondary-50);
 }
 
-.hero-slider-list .hero-slider-container:nth-child(1) .marine-hero-wrapper {
-  background: url(../images/section/marine-hero-img.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(2) .marine-hero-wrapper {
-  background: url(../images/section/makefast-img-19.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(3) .marine-hero-wrapper {
-  background: url(../images/section/makefast-img-22.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-content-title-v2 {
+.hero-text-title-v2 {
   margin-block: 10px 8px;
 }
 
-.hero-dec-v2 {
+.hero-text-dec-v2 {
   max-width: 566px;
 }
 
@@ -639,11 +564,6 @@
 
 .marine-slider .splide__pagination {
   top: 46%;
-}
-
-.hero-slider-media-v2 {
-  display: none;
-  height: 386px;
 }
 
 .scroll-down-arrow {
