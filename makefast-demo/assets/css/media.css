@@ -432,7 +432,7 @@
   }
 
   .hero-text-wrapper-v2 {
-    height: auto;
+    height: 100%;
     padding-block: 180px 52px;
     padding-inline: 16px;
     background-color: var(--primary);
@@ -450,12 +450,11 @@
     flex-direction: column-reverse;
   }
 
-  .marine-hero-wrapper,
-  .marine-hero-wrapper::after {
+  .hero-section-v2 .hero-bg-img-wrapper::after {
     background: none;
   }
 
-  /* ----- Split  section ----- */
+  /* ----- Split section ----- */
   .split-v2-wrapper .split-card-title {
     font-size: 26px;
     line-height: 1.346;

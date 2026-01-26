@@ -17,68 +17,45 @@ const headerHeight = headerElement.offsetHeight;
 document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
 
 // Home Hero slider js
-// let heroSlider = document.querySelectorAll(".hero-slider");
-// if (heroSlider.length) {
-//   document.addEventListener("DOMContentLoaded", function () {
-//     var splide = new Splide(".hero-slider.splide", {
-//       type: "fade",
-//       autoplay: true,
-//       perPage: 1,
-//       perMove: 1,
-//       arrows: false,
-//       pauseOnHover: false,
-//       pauseOnFocus: false,
-//       rewind: true,
-//       interval: 5000,
-//       speed: 1200,
-//       easing: "ease-in-out",
-//       breakpoints: {
-//         991: {
-//           pagination: false,
-//         },
-//       },
-//     });
-//     splide.mount();
-//   });
-// }
-
-document.addEventListener("DOMContentLoaded", function () {
-  var heroImg = new Splide(".hero-bg-img-splide.splide", {
-    type: "fade",
-    // autoplay: true,
-    rewind: true,
-    arrows: false,
-    perPage: 1,
-    perMove: 1,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    interval: 5000,
-    speed: 1200,
-    easing: "ease-in-out",
-    breakpoints: {
-      991: {
-        pagination: false,
+let heroSlider = document.querySelectorAll(".hero-bg-img-splide , .hero-text-splide");
+if (heroSlider.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var heroImg = new Splide(".hero-bg-img-splide.splide", {
+      type: "fade",
+      autoplay: true,
+      rewind: true,
+      arrows: false,
+      perPage: 1,
+      perMove: 1,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      interval: 5000,
+      speed: 1200,
+      easing: "ease-in-out",
+      breakpoints: {
+        991: {
+          pagination: false,
+        },
       },
-    },
+    });
+
+    var heroText = new Splide(".hero-text-splide.splide", {
+      type: "fade",
+      autoplay: true,
+      rewind: true,
+      perPage: 1,
+      arrows: false,
+      pagination: false,
+      interval: 5000,
+      speed: 1200,
+      easing: "ease-in-out",
+    });
+
+    heroImg.sync(heroText);
+    heroImg.mount();
+    heroText.mount();
   });
-
-  var heroText = new Splide(".hero-text-splide.splide", {
-    type: "fade",
-    // autoplay: true,
-    rewind: true,
-    perPage: 1,
-    arrows: false,
-    pagination: false,
-    interval: 5000,
-    speed: 1200,
-    easing: "ease-in-out",
-  });
-
-  heroImg.sync(heroText);
-  heroImg.mount();
-  heroText.mount();
-});
-
+}
 // Scroll header js
 document.addEventListener("DOMContentLoaded", function () {
   const headerWrapper = document.querySelector("header");

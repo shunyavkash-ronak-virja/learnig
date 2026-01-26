@@ -185,7 +185,7 @@ header {
   .header-content,
   .header-links,
   .header-content-wrapper {
-    gap: 8px;
+    gap: 6px;
   }
 
   .header-link {

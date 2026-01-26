@@ -1,6 +1,6 @@
 /* ----- Hero section ----- */
 .hero-section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   position: sticky;
@@ -773,27 +773,6 @@
 
 /* --------------- SAFETY HTML --------------- */
 /* ----- Hero section ----- */
-.hero-slider-list .hero-slider-container:nth-child(1) .safety-hero-wrapper {
-  background: url(../images/section/makefast-img-23.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(2) .safety-hero-wrapper {
-  background: url(../images/section/makefast-img-25.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero-slider-list .hero-slider-container:nth-child(3) .safety-hero-wrapper {
-  background: url(../images/section/makefast-img-24.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .safety-hero-content {
   max-width: 662px;
 }
