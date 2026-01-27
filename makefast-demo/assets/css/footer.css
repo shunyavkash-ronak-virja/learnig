@@ -90,7 +90,7 @@ footer {
 
 .footer-icon {
   width: 45px;
-  height: 45px;
+  aspect-ratio: 1;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -104,7 +104,6 @@ footer {
 
 .footer-icon svg {
   width: 56%;
-  aspect-ratio: 1;
   display: block;
 }
 
@@ -185,35 +184,6 @@ footer {
   gap: 10px;
 }
 
-.form-checkbox input[type="checkbox"] {
-  width: 18px;
-  aspect-ratio: 1;
-  appearance: none;
-  border: 1px solid var(--black);
-  border-radius: 5px;
-  position: relative;
-}
-
-.form-checkbox input[type="checkbox"]::after {
-  content: "";
-  width: 76%;
-  aspect-ratio: 1;
-  background-color: var(--black-100);
-  border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.form-checkbox input[type="checkbox"]:checked::after {
-  opacity: 1;
-  visibility: visible;
-}
-
 .form-checkbox label {
   font-size: 14px;
   font-weight: 500;
@@ -263,9 +233,10 @@ footer {
 }
 
 .footer-email-btn {
+  border: none;
   position: absolute;
-  top: 10%;
-  right: 1%;
+  top: 5px;
+  right: 5px;
 }
 
 .footer-link-wrapper {
@@ -294,8 +265,9 @@ footer {
 }
 
 .footer-creator-tag {
-  display: flex;
-  justify-content: end;
+  width: 100px;
+  height: 10px;
+  justify-self: end;
   margin-top: 20px;
 }
 
@@ -408,8 +380,8 @@ footer {
   }
 
   .footer-email-btn {
-    top: 12%;
-    right: 2%;
+    top: 8px;
+    right: 5px;
   }
 
   .footer-link-wrapper {

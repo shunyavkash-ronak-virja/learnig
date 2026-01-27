@@ -545,7 +545,9 @@
 .splide__pagination__page:focus-visible {
   outline: none;
 }
-/* --------------- MARINE HTML --------------- */
+/* ====================================== 
+             MARINE HTML 
+====================================== */
 /* ----- Hero section ----- */
 .hero-text-wrapper-v2 {
   max-width: 904px;
@@ -775,7 +777,9 @@
   padding: 20px;
 }
 
-/* --------------- SAFETY HTML --------------- */
+/* ======================================
+            SAFETY HTML
+====================================== */
 /* ----- Hero section ----- */
 .safety-hero-content {
   max-width: 662px;
@@ -818,4 +822,117 @@
 /* ----- Cta section ----- */
 .safety-cta {
   padding-block: 64px;
+}
+
+/* ======================================
+            PRODUCTS HTML
+====================================== */
+/* ----- Products section ----- */
+.products-section {
+  padding-top: 230px;
+}
+
+.products-title {
+  margin-bottom: 56px;
+}
+
+.products-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.products-filters-wrapper {
+  width: 40%;
+  max-width: 264px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.filters-clear-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray);
+  margin-bottom: 28px;
+}
+
+.filters-clear-btn,
+.filters-clear-btn-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.filters-clear-btn-icon {
+  width: 6%;
+  color: var(--gray-700);
+}
+
+.filters-clear-btn span {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2.6;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.filters-clear-btn:hover,
+.filters-clear-btn:hover .filters-clear-btn-icon {
+  color: var(--black-100);
+}
+
+.filters-content-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
+}
+
+.filters-content-title {
+  font-family: var(--font-prata);
+  line-height: 1.357;
+  letter-spacing: 0.28px;
+}
+
+.filters-content-title-icon {
+  width: 10%;
+}
+
+.filters-content-items {
+  padding-top: 16px;
+  overflow: hidden;
+}
+
+.filters-content-items:not(:last-child) {
+  border-bottom: 1px solid var(--gray-100-46);
+}
+
+.filters-lists-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+.filters-lists {
+  overflow: hidden;
+}
+
+.filters-lists-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.filters-lists.active {
+  padding-block: 20px;
+}
+
+.filters-lists-item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters-lists-item-content label {
+  color: var(--black-100);
+  letter-spacing: 0.56px;
+  line-height: 1.857;
 }

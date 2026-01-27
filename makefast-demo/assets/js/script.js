@@ -153,3 +153,11 @@ if (caseStudiesV2.length) {
     splide.mount();
   });
 }
+
+// Products link js
+const listsWrapper = document.querySelector(".filters-lists-wrapper");
+const titleWrapper = document.querySelector(".filters-content-title-wrapper");
+
+titleWrapper.addEventListener("click", () => {
+  listsWrapper.classList.toggle("active");
+});

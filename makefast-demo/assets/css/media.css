@@ -4,7 +4,9 @@
     --marginTop: 156px;
   }
 
-  /* --------------- MARINE HTML --------------- */
+  /* ====================================== 
+             MARINE HTML 
+====================================== */
   /* ----- Split section ----- */
   .split-v2-wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -70,7 +72,9 @@
     font-size: 32px;
   }
 
-  /* --------------- MARINE HTML --------------- */
+  /* ====================================== 
+             MARINE HTML 
+====================================== */
   /* ----- Split  section ----- */
   .marine-split {
     padding-block: 68px;
@@ -110,7 +114,9 @@
     gap: 58px;
   }
 
-  /* --------------- SAFETY HTML --------------- */
+  /* ======================================
+            SAFETY HTML
+====================================== */
   /* ----- Featured card section ----- */
   .safety-featured-card {
     padding-block: 68px;
@@ -290,7 +296,9 @@
     bottom: 22px;
   }
 
-  /* --------------- MARINE HTML --------------- */
+  /* ====================================== 
+             MARINE HTML 
+====================================== */
   /* ----- Hero section ----- */
   .hero-text-dec-v2 {
     max-width: 100%;
@@ -372,7 +380,9 @@
     flex-direction: column;
     gap: 8px;
   }
-  /* --------------- SAFETY HTML --------------- */
+  /* ======================================
+            SAFETY HTML 
+====================================== */
   /* ----- Featured card section ----- */
   .safety-featured-card {
     padding-block: 58px;
@@ -455,7 +465,9 @@
     bottom: 12px;
   }
 
-  /* --------------- MARINE HTML --------------- */
+  /* ====================================== 
+             MARINE HTML 
+====================================== */
   /* ----- Hero section ----- */
   .hero-section-v2 {
     align-items: start;
@@ -558,7 +570,9 @@
     max-width: 238px;
   }
 
-  /* --------------- SAFETY HTML --------------- */
+  /* ======================================
+            SAFETY HTML
+====================================== */
   /* ----- Featured card section ----- */
   .safety-featured-card {
     padding-block: 46px;

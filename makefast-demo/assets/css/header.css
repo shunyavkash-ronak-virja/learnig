@@ -54,6 +54,7 @@ header {
 
 .header-link {
   font-size: 12px;
+  font-weight: 500;
   line-height: var(--line-height-1_3);
   letter-spacing: 1.8px;
   padding: 8px;
@@ -185,7 +186,7 @@ header {
   .header-content,
   .header-links,
   .header-content-wrapper {
-    gap: 6px;
+    gap: 4px;
   }
 
   .header-link {
@@ -310,4 +311,27 @@ header {
   .header-content-wrapper {
     gap: 20px;
   }
+}
+
+/* ======================================
+            Header v2
+======================================*/
+.header-v2 .header-logo {
+  color: var(--black-200);
+}
+
+.header-v2 .header-link {
+  color: var(--black-200);
+}
+
+.header-v2 .header-link::before {
+  background-color: var(--black-200);
+}
+
+.header-v2 .bar {
+  background-color: var(--black-100);
+}
+
+.header-v2 .nav-toggle-wrapper.active .bar {
+  background-color: var(--secondary);
 }
