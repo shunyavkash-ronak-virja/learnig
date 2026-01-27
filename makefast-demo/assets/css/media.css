@@ -53,7 +53,7 @@
   }
 
   /* ----- Case studies section ----- */
-  .case-studies-section {
+  .home-case-studies-section {
     padding-block: 90px;
   }
 
@@ -102,7 +102,7 @@
   }
 
   /* ----- Brochure section ----- */
-  .brochure-section {
+  .marine-brochure {
     padding-block: 56px;
   }
 
@@ -124,6 +124,26 @@
   /* ----- Blog img section ----- */
   .blog-img-section-v2 {
     padding-top: 50px;
+  }
+
+  /* ----- Articles section ----- */
+  .safety-articles {
+    padding-block: 76px;
+  }
+
+  /* ----- Case studies section ----- */
+  .safety-case-studies {
+    padding-block: 64px;
+  }
+
+  /* ----- Brochure section ----- */
+  .safety-brochure {
+    padding-block: 62px;
+  }
+
+  /* ----- Cta section ----- */
+  .safety-cta {
+    padding-block: 50px;
   }
 }
 
@@ -366,6 +386,21 @@
   /* ----- Blog img section ----- */
   .blog-img-section-v2 {
     padding-top: 0;
+  }
+
+  /* ----- Case studies section ----- */
+  .safety-case-studies {
+    padding-block: 45px;
+  }
+
+  /* ----- Brochure section ----- */
+  .safety-brochure {
+    padding-block: 42px;
+  }
+
+  /* ----- Cta section ----- */
+  .safety-cta {
+    padding-block: 36px;
   }
 }
 

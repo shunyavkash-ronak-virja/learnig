@@ -242,6 +242,10 @@ header {
     transition: all 0.3s ease-in-out;
   }
 
+  .body-scroll .header-content-wrapper {
+    height: calc(100vh - 96.13px);
+  }
+
   .header-content-wrapper.active {
     opacity: 1;
     visibility: visible;

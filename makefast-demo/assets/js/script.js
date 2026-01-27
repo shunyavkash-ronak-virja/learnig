@@ -4,6 +4,13 @@ const navToggleWrapper = document.querySelector(".nav-toggle-wrapper");
 const navContent = document.querySelector(".header-content-wrapper");
 const bodyHidden = document.querySelector("body");
 
+window.addEventListener("resize", () => {
+  navToggleWrapper.classList.remove("active");
+  navContent.classList.remove("active");
+  bodyHidden.classList.remove("body-hidden");
+  header.classList.remove("active");
+});
+
 navToggleWrapper.addEventListener("click", () => {
   navToggleWrapper.classList.toggle("active");
   navContent.classList.toggle("active");
@@ -11,7 +18,7 @@ navToggleWrapper.addEventListener("click", () => {
   header.classList.toggle("active");
 });
 
-// Header haight
+// Header height (dynamic)
 const headerElement = document.querySelector("header");
 const headerHeight = headerElement.offsetHeight;
 document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
