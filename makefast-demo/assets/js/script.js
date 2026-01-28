@@ -1,21 +1,23 @@
 // Toggle js
-const header = document.querySelector("header");
-const navToggleWrapper = document.querySelector(".nav-toggle-wrapper");
-const navContent = document.querySelector(".header-content-wrapper");
-const bodyHidden = document.querySelector("body");
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  const navToggleWrapper = document.querySelector(".nav-toggle-wrapper");
+  const navContent = document.querySelector(".header-content-wrapper");
+  const bodyHidden = document.querySelector("body");
 
-window.addEventListener("resize", () => {
-  navToggleWrapper.classList.remove("active");
-  navContent.classList.remove("active");
-  bodyHidden.classList.remove("body-hidden");
-  header.classList.remove("active");
-});
+  window.addEventListener("resize", () => {
+    navToggleWrapper.classList.remove("active");
+    navContent.classList.remove("active");
+    bodyHidden.classList.remove("body-hidden");
+    header.classList.remove("active");
+  });
 
-navToggleWrapper.addEventListener("click", () => {
-  navToggleWrapper.classList.toggle("active");
-  navContent.classList.toggle("active");
-  bodyHidden.classList.toggle("body-hidden");
-  header.classList.toggle("active");
+  navToggleWrapper.addEventListener("click", () => {
+    navToggleWrapper.classList.toggle("active");
+    navContent.classList.toggle("active");
+    bodyHidden.classList.toggle("body-hidden");
+    header.classList.toggle("active");
+  });
 });
 
 // Header height (dynamic)
@@ -155,9 +157,34 @@ if (caseStudiesV2.length) {
 }
 
 // Products link js
-const listsWrapper = document.querySelector(".filters-lists-wrapper");
-const titleWrapper = document.querySelector(".filters-content-title-wrapper");
+document.addEventListener("DOMContentLoaded", () => {
+  const titleWrappers = document.querySelectorAll(".filters-content-title-wrapper");
+  titleWrappers.forEach((title) => {
+    title.addEventListener("click", () => {
+      const parent = title.closest(".filters-content-items");
+      const listWrapper = parent.querySelector(".filters-lists-wrapper");
+      title.classList.toggle("active");
+      listWrapper.classList.toggle("active");
+    });
+  });
+});
 
-titleWrapper.addEventListener("click", () => {
-  listsWrapper.classList.toggle("active");
+/* Products item toggle js */
+document.addEventListener("DOMContentLoaded", () => {
+  const filtersToggle = document.querySelector(".products-filters-btn");
+  const filtersContent = document.querySelector(".products-filters-content");
+  const filtersClose = document.querySelector(".filters-content-close-btn");
+  const bodyScroll = document.querySelector("body");
+
+  filtersToggle.addEventListener("click", () => {
+    filtersToggle.classList.toggle("active");
+    filtersContent.classList.toggle("active");
+    bodyScroll.classList.toggle("body-hidden");
+  });
+
+  filtersClose.addEventListener("click", () => {
+    filtersToggle.classList.remove("active");
+    filtersContent.classList.remove("active");
+    bodyScroll.classList.remove("body-hidden");
+  });
 });

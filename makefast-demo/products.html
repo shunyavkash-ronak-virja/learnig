@@ -66,68 +66,417 @@
     <!----- Products section ----->
     <section class="products-section">
         <div class="container">
-            <h3 class="color-black products-title">Product Results [76]</h3>
             <div class="products-wrapper">
                 <div class="products-filters-wrapper">
-                    <a class="filters-clear-btn" href="javascript:void (0);">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-clear-btn-icon lucide lucide-x-icon lucide-x">
-                            <path d="M18 6 6 18" />
-                            <path d="m6 6 12 12" />
+                    <h1 class="h3 color-black products-title">Product Results [76]</h1>
+                    <button class="products-filters-btn font-14 color-black cursor-pointer">FILTER PRODUCTS
+                        <svg class="products-filters-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.557 11.91">
+                            <path id="Union_9" data-name="Union 9" d="M-4199.483-371.733h-10.9a.614.614,0,0,1-.613-.616.615.615,0,0,1,.613-.616h10.9a2.251,2.251,0,0,1,2.16-1.642,2.25,2.25,0,0,1,2.161,1.642h1.105a.615.615,0,0,1,.613.616.614.614,0,0,1-.613.616h-1.105a2.252,2.252,0,0,1-2.161,1.643A2.249,2.249,0,0,1-4199.483-371.733Zm-9.8-7.392h-1.105a.615.615,0,0,1-.613-.616.615.615,0,0,1,.613-.616h1.105a2.251,2.251,0,0,1,2.161-1.642,2.25,2.25,0,0,1,2.16,1.642h10.9a.615.615,0,0,1,.613.616.615.615,0,0,1-.613.616h-10.9a2.251,2.251,0,0,1-2.16,1.643A2.25,2.25,0,0,1-4209.282-379.125Z" transform="translate(4211 382)" />
                         </svg>
-                        <span>CLEAR ALL FILTERS</span>
-                    </a>
-                    <div class="filters-content-wrapper">
-
-                        <div class="filters-content-items">
-                            <div class="filters-content-title-wrapper cursor-pointer">
-                                <p class="filters-content-title font-14 ">Category</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-down-icon lucide-chevron-down">
-                                    <path d="m6 9 6 6 6-6" />
-                                </svg>
+                    </button>
+                    <div class="products-filters-content">
+                        <button class="filters-content-close-btn cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                        <a class="filters-clear-btn" href="javascript:void (0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-clear-btn-icon lucide lucide-x-icon lucide-x">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                            <span>CLEAR ALL FILTERS</span>
+                        </a>
+                        <div class="filters-content-wrapper">
+                            <div class="filters-content-items">
+                                <div class="filters-content-title-wrapper cursor-pointer">
+                                    <p class="filters-content-title filters-item-title font-14 ">Category</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-up-icon lucide-chevron-up">
+                                        <path d="m18 15-6-6-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="filters-lists-wrapper">
+                                    <ul class="filters-lists">
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category1" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category1">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category2" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category2">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category3" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category3">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category4" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category4">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category5" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category5">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category6" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category6">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="filters-lists-wrapper">
-                                <ul class="filters-lists">
-                                    <li class="filters-lists-item">
-                                        <div class="filters-lists-item-content">
-                                            <input class="cursor-pointer" id="category1" type="checkbox">
-                                            <label class="cursor-pointer font-14" for="category1">Single Fixed Bar Buckle</label>
-                                        </div>
-                                    </li>
-                                    <li class="filters-lists-item">
-                                        <div class="filters-lists-item-content">
-                                            <input class="cursor-pointer" id="category2" type="checkbox">
-                                            <label class="cursor-pointer font-14" for="category2">Easi Link Systems</label>
-                                        </div>
-                                    </li>
-                                    <li class="filters-lists-item">
-                                        <div class="filters-lists-item-content">
-                                            <input class="cursor-pointer" id="category3" type="checkbox">
-                                            <label class="cursor-pointer font-14" for="category3">Single Fixed Bar Buckle</label>
-                                        </div>
-                                    </li>
-                                    <li class="filters-lists-item">
-                                        <div class="filters-lists-item-content">
-                                            <input class="cursor-pointer" id="category4" type="checkbox">
-                                            <label class="cursor-pointer font-14" for="category4">Easi Link Systems</label>
-                                        </div>
-                                    </li>
-                                    <li class="filters-lists-item">
-                                        <div class="filters-lists-item-content">
-                                            <input class="cursor-pointer" id="category5" type="checkbox">
-                                            <label class="cursor-pointer font-14" for="category5">Single Fixed Bar Buckle</label>
-                                        </div>
-                                    </li>
-                                    <li class="filters-lists-item">
-                                        <div class="filters-lists-item-content">
-                                            <input class="cursor-pointer" id="category6" type="checkbox">
-                                            <label class="cursor-pointer font-14" for="category6">Easi Link Systems</label>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="filters-content-items">
+                                <div class="filters-content-title-wrapper cursor-pointer">
+                                    <p class="filters-content-title filters-item-title font-14 ">Adjuster Buckles & Slides</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-up-icon lucide-chevron-up">
+                                        <path d="m18 15-6-6-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="filters-lists-wrapper">
+                                    <ul class="filters-lists">
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category7" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category7">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category8" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category8">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category9" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category9">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category10" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category10">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category11" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category11">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category12" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category12">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filters-content-items">
+                                <div class="filters-content-title-wrapper cursor-pointer">
+                                    <p class="filters-content-title filters-item-title font-14 ">fast release buckles</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-up-icon lucide-chevron-up">
+                                        <path d="m18 15-6-6-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="filters-lists-wrapper">
+                                    <ul class="filters-lists">
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category13" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category13">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category14" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category14">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category15" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category15">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category16" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category16">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category17" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category17">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category18" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category18">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filters-content-items">
+                                <div class="filters-content-title-wrapper cursor-pointer">
+                                    <p class="filters-content-title filters-item-title font-14 ">Webbing Loops, Links, Hooks, Toggles & Bridges</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-up-icon lucide-chevron-up">
+                                        <path d="m18 15-6-6-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="filters-lists-wrapper">
+                                    <ul class="filters-lists">
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category19" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category19">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category20" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category20">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category21" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category21">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category22" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category22">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category23" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category23">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category24" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category24">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filters-content-items">
+                                <div class="filters-content-title-wrapper cursor-pointer">
+                                    <p class="filters-content-title filters-item-title font-14 ">Rapid Links & Spring Snaps</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-up-icon lucide-chevron-up">
+                                        <path d="m18 15-6-6-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="filters-lists-wrapper">
+                                    <ul class="filters-lists">
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category25" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category25">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category26" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category26">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category27" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category27">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category28" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category28">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category29" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category29">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category30" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category30">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filters-content-items">
+                                <div class="filters-content-title-wrapper cursor-pointer">
+                                    <p class="filters-content-title filters-item-title font-14 ">Safety Hooks & Connectors</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filters-content-title-icon lucide lucide-chevron-up-icon lucide-chevron-up">
+                                        <path d="m18 15-6-6-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="filters-lists-wrapper">
+                                    <ul class="filters-lists">
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category31" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category31">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category32" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category32">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category33" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category33">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category34" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category34">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category35" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category35">Single Fixed Bar Buckle</label>
+                                            </div>
+                                        </li>
+                                        <li class="filters-lists-item">
+                                            <div class="filters-lists-item-content">
+                                                <input class="cursor-pointer" id="category36" type="checkbox">
+                                                <label class="cursor-pointer filters-item-title font-14" for="category36">Easi Link Systems</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-
+                        <button class="btn secondary-btn btn-hover mx-auto cursor-pointer products-filters-update-btn"><span>UPDATE FILTERS</span></button>
                     </div>
+                </div>
+                <div class="products-listing-wrapper">
+                    <div class="products-card-wrapper">
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-13.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-14.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-15.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-13.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-14.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-15.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                    </div>
+                    <div class="products-banner bg-primary">
+                        <div class="products-banner-content">
+                            <span class="caption-big products-banner-caption">CASE STUDY - MARINE</span>
+                            <h2 class="h5 color-secondary products-banner-title">Port Marine Safety Code</h2>
+                            <a class="text-icon-btn color-secondary" href="javascript:void(0);">VIEW PRODUCT
+                                <div class="icon-btn icon-btn-white">
+                                    <div class="icon-btn-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-btn-svg lucide lucide-chevron-right-icon lucide-chevron-right">
+                                            <path d="m9 18 6-6-6-6"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-btn-svg-2 lucide lucide-chevron-right-icon lucide-chevron-right">
+                                            <path d="m9 18 6-6-6-6"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="products-banner-media">
+                            <img class="img-cover" src="assets/images/section/makefast-img-26.png" alt="banner-image">
+                        </div>
+                    </div>
+                    <div class="products-card-wrapper">
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-13.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-14.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                        <a href="javascript:void(0);" class="products-card">
+                            <div class="products-card-media">
+                                <img class="products-card-img img-cover" src="assets/images/section/makefast-img-15.png" alt="products-img">
+                            </div>
+                            <span class="caption-small products-card-caption">FITTINGS</span>
+                            <h3 class="font-20  products-card-title">Bimini Top Fitting</h3>
+                        </a>
+                    </div>
+                    <a class="btn btn-small secondary-btn btn-hover mx-auto products-listing-btn" href="javascrtipt:void(0);">
+                        <span>LOAD MORE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="products-listing-btn-icon lucide lucide-plus-icon lucide-plus">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

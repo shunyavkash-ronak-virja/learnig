@@ -21,6 +21,21 @@
   .brochure-wrapper {
     gap: 78px;
   }
+
+  /* ======================================
+            PRODUCTS HTML
+====================================== */
+  .products-filters-wrapper {
+    top: 160px;
+  }
+
+  .products-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-card {
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 991px) {
@@ -155,6 +170,71 @@
   /* ----- Cta section ----- */
   .safety-cta {
     padding-block: 50px;
+  }
+
+  /* ======================================
+            PRODUCTS HTML
+====================================== */
+  .products-wrapper {
+    flex-direction: column;
+  }
+
+  .products-filters-wrapper,
+  .products-listing-wrapper {
+    width: 100%;
+  }
+
+  .products-filters-wrapper {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .products-title {
+    margin-bottom: 32px;
+  }
+
+  .products-filters-content {
+    width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    position: fixed;
+    top: 165px;
+    left: 0;
+    z-index: 18;
+    padding-inline: 20px;
+    background-color: var(--secondary);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .body-scroll .products-filters-content {
+    height: calc(100vh - 96.13px);
+    top: 96.13px;
+  }
+
+  .products-filters-content.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .products-filters-btn,
+  .filters-content-close-btn {
+    display: flex;
+  }
+
+  .products-section {
+    overflow: hidden;
+  }
+
+  .products-banner {
+    width: auto;
+    margin-inline: -20px;
+  }
+
+  .products-listing-wrapper {
+    margin-top: 70px;
   }
 }
 
@@ -417,6 +497,36 @@
   .safety-cta {
     padding-block: 36px;
   }
+
+  /* ======================================
+            PRODUCTS HTML
+====================================== */
+  .products-banner {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .products-banner-content {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+  }
+
+  .products-banner-title {
+    margin-bottom: 18px;
+  }
+
+  .products-banner-media {
+    width: 100%;
+    height: 198px;
+  }
+
+  .products-listing-wrapper {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -571,7 +681,7 @@
   }
 
   /* ----- Cta section ----- */
-  .color-secondary {
+  .cta-title {
     max-width: 238px;
   }
 
@@ -586,5 +696,29 @@
   /* ----- Blog img section ----- */
   .blog-img-v2 {
     min-height: 284px;
+  }
+
+  /* ======================================
+            PRODUCTS HTML
+====================================== */
+  .products-banner-content {
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .products-card-media {
+    max-width: 146px;
+    height: 172px;
+  }
+
+  .products-card-caption {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .products-card-title {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    line-height: 1.333;
   }
 }

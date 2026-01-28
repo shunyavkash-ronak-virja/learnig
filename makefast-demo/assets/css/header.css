@@ -33,6 +33,7 @@ header {
 
 .header-logo {
   width: 100%;
+  height: 100%;
   display: block;
   color: var(--secondary);
   transition: all 0.3s ease-in-out;
@@ -65,7 +66,7 @@ header {
   position: relative;
 }
 
-.header-link::before {
+.header-link::after {
   content: "";
   width: 0;
   height: 2px;
@@ -77,7 +78,7 @@ header {
 }
 
 .header-link:hover {
-  &::before {
+  &::after {
     width: 100%;
     left: 0;
     right: auto;
@@ -196,10 +197,6 @@ header {
 }
 
 @media (max-width: 991px) {
-  .body-hidden {
-    overflow: hidden;
-  }
-
   header {
     padding-block: 36px 30px;
   }
@@ -269,7 +266,7 @@ header {
     color: var(--black-100);
   }
 
-  .header-link::before {
+  .header-link::after {
     background-color: var(--black-100);
   }
 
@@ -316,22 +313,30 @@ header {
 /* ======================================
             Header v2
 ======================================*/
-.header-v2 .header-logo {
-  color: var(--black-200);
-}
-
+.header-v2 .header-logo,
 .header-v2 .header-link {
   color: var(--black-200);
 }
 
-.header-v2 .header-link::before {
+.header-v2 .header-link:hover::after {
   background-color: var(--black-200);
+}
+
+.body-scroll .header-logo,
+.body-scroll .header-link {
+  color: var(--secondary);
 }
 
 .header-v2 .bar {
   background-color: var(--black-100);
 }
 
-.header-v2 .nav-toggle-wrapper.active .bar {
+.body-scroll .header-link:hover::after,
+.header-v2 .nav-toggle-wrapper.active .bar,
+.body-scroll .bar {
   background-color: var(--secondary);
+}
+
+.header-content-wrapper.active .header-link {
+  color: var(--black-200);
 }

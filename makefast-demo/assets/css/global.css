@@ -66,6 +66,10 @@
   color: var(--black-100);
 }
 
+.body-hidden {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
@@ -209,7 +213,8 @@ ol {
   line-height: 1.333;
   letter-spacing: 1.8px;
   font-weight: 500;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
   border-radius: 5px;
   overflow: hidden;
@@ -235,7 +240,7 @@ ol {
 }
 
 .btn-small {
-  min-width: 198px;
+  max-width: 198px;
 }
 
 .btn-big {
@@ -302,37 +307,23 @@ ol {
   line-height: var(--line-height-1_2);
 }
 
-.text-btn::before,
 .text-btn::after {
   content: "";
-  height: 1px;
+  width: 0;
+  height: 2px;
   position: absolute;
+  left: 0;
+  bottom: 6px;
   background-color: var(--secondary);
   transition: all 0.3s ease-in-out;
 }
 
-.text-btn:not(:where(.color-secondary))::before,
 .text-btn:not(:where(.color-secondary))::after {
   background-color: var(--black-100);
 }
 
-.text-btn::before {
-  width: 100%;
-  bottom: 8px;
-  left: 0;
-}
-
-.text-btn::after {
-  width: 60%;
-  bottom: 0;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, 4px);
-}
-
 .text-btn:hover::after {
-  opacity: 1;
-  transform: translate(-50%, 0);
+  width: 100%;
 }
 
 .icon-btn {
