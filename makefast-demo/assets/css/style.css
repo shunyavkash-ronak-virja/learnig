@@ -262,6 +262,10 @@
 }
 
 /* ----- Our story section ----- */
+.home-our-story {
+  padding-bottom: 82px;
+}
+
 .our-story-section {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 14%, rgba(1, 27, 33, 1) 14%);
 }
@@ -298,9 +302,7 @@
 
 /* ----- Our services section ----- */
 .our-services-section {
-  padding-block: 145px 80px;
-  background-color: var(--primary);
-  overflow: hidden;
+  padding-block: 80px;
 }
 
 .our-services-splide {
@@ -405,7 +407,6 @@
 
 .case-studies-section {
   background: linear-gradient(180deg, rgba(1, 27, 33, 1) 50%, rgba(255, 255, 255, 1) 50%);
-  overflow: hidden;
 }
 
 .case-studies-wrapper {

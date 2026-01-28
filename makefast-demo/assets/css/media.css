@@ -40,9 +40,14 @@
     padding-block: 72px 138px;
   }
 
+  /* ----- Our story section ----- */
+  .home-our-story {
+    padding-bottom: 66px;
+  }
+
   /* ----- Our services section ----- */
   .our-services-section {
-    padding-block: 128px 62px;
+    padding-block: 62px;
   }
 
   /* ----- Featured card section ----- */
@@ -196,6 +201,10 @@
   }
 
   /* ----- Our story section ----- */
+  .home-our-story {
+    padding-bottom: 50px;
+  }
+
   .our-story-section {
     overflow: hidden;
   }
@@ -226,10 +235,6 @@
   }
 
   /* ----- Our services section ----- */
-  .our-services-section {
-    padding-top: 120px;
-  }
-
   .our-services-splide {
     margin-top: 62px;
   }
