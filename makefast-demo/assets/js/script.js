@@ -125,7 +125,7 @@ if (testimonialSplide.length) {
   document.addEventListener("DOMContentLoaded", function () {
     var splide = new Splide(".testimonial-splide.splide", {
       type: "loop",
-      // autoplay: true,
+      autoplay: true,
       arrows: false,
       gap: 20,
       perPage: 1,
