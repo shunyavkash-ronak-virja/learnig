@@ -95,11 +95,6 @@ footer {
   position: relative;
 }
 
-section,
-footer {
-  z-index: 2;
-}
-
 .container {
   width: 100%;
   max-width: 1365px;
