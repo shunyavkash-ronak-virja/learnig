@@ -206,6 +206,8 @@ if (productOverview.length) {
       autoplay: true,
       pagination: false,
       perPage: 1,
+      interval: 4000,
+      speed: 1200,
     });
     splide.mount();
   });
@@ -213,7 +215,7 @@ if (productOverview.length) {
 
 // Nice Select js
 let selectBox = document.getElementById("selectBox");
-if (selectBox.length) {
+if (selectBox) {
   $(document).ready(function () {
     $("select").niceSelect();
   });
