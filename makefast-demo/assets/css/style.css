@@ -1170,7 +1170,7 @@
   margin-bottom: 10px;
 }
 
-.product-overview-btn {
+.overview-view-specs-btn {
   font-size: 12px;
   letter-spacing: 1.8px;
   line-height: 1.333;
@@ -1193,18 +1193,26 @@
   border: 1px solid var(--black-500);
 }
 
-.nice-select::after {
+.product-overview-select::after {
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path id="Polygon_14" data-name="Polygon 14" d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)" fill="%23141414"/></svg>');
   border: none;
   width: 10px;
   height: 6px;
   right: 18px;
   margin-top: 0;
-  transform: translateY(-50%) rotate(0deg);
+  transform: rotate(0deg);
   transform-origin: none;
   transition: all 0.3s ease-in-out;
 }
 
 .product-overview-select:hover::after {
-  transform: translateY(-50%) rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.product-overview-select .list {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.overview-get-in-touch-btn {
 }
