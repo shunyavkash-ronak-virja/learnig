@@ -262,6 +262,18 @@
   .products-listing-btn {
     margin-block: 74px;
   }
+  /* ======================================
+            PRODUCT DETAILS HTML 
+====================================== */
+  /* ----- Product overview section ----- */
+  .product-overview {
+    padding-block: 186px 35px;
+  }
+
+  /* ----- Additional information section ----- */
+  .additional-information-section {
+    padding-block: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -558,21 +570,16 @@
   /* ======================================
             PRODUCT DETAILS HTML 
 ====================================== */
+  /* ----- Product overview section ----- */
   .product-overview-wrapper {
+    gap: 44px;
     flex-direction: column;
-  }
-
-  .product-overview-wrapper {
-    margin-block: 22px 70px;
-  }
-
-  .product-overview-media,
-  .product-overview-content {
-    max-width: 100%;
+    margin-top: 22px;
   }
 
   .product-overview-content {
     width: 100%;
+    max-width: 100%;
   }
 
   .product-overview-media {
@@ -580,8 +587,41 @@
     margin-inline: -20px;
   }
 
+  .product-overview-title {
+    font-size: 32px;
+    line-height: 1.406;
+  }
+
+  .product-overview-caption {
+    margin-block: 16px 20px;
+  }
+
+  .product-overview-dec {
+    margin-bottom: 22px;
+  }
+
   .product-overview-select {
-    max-width: 350px;
+    margin-block: 30px 16px;
+  }
+
+  /* ----- Additional information section ----- */
+  .additional-information-wrapper {
+    max-width: 100%;
+  }
+
+  .additional-information-columns {
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 15px;
+  }
+
+  .additional-information-column {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .additional-information-dec:not(:first-child) {
+    margin-top: 10px;
   }
 }
 
@@ -785,5 +825,23 @@
     font-size: 15px;
     letter-spacing: 0.3px;
     line-height: 1.333;
+  }
+
+  /* ======================================
+            PRODUCT DETAILS HTML 
+====================================== */
+  /* ----- Product overview section ----- */
+  .product-overview-splide .splide__arrow--next {
+    right: 6px;
+  }
+
+  .product-overview-splide .splide__arrow--prev {
+    left: 8px;
+  }
+
+  .product-overview-dec {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 1.785;
   }
 }

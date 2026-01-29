@@ -1076,8 +1076,9 @@
 /* ======================================
             PRODUCT DETAILS HTML 
 ====================================== */
+/* ----- Product overview section ----- */
 .product-overview {
-  padding-top: 210px;
+  padding-block: 210px 42px;
 }
 
 .overview-links-wrapper {
@@ -1108,7 +1109,7 @@
 }
 
 .overview-links-bar {
-  width: 1px;
+  min-width: 1px;
   height: 12px;
   background-color: var(--gray-500);
 }
@@ -1118,7 +1119,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 26px;
-  margin-block: 25px 82px;
+  margin-top: 25px;
 }
 
 .product-overview-media {
@@ -1164,7 +1165,7 @@
 
 .product-overview-caption {
   letter-spacing: 1.26px;
-  font-size: var(--font-muli);
+  font-family: var(--font-muli);
   font-weight: 700;
   color: var(--gray-44);
   margin-block: 2px 20px;
@@ -1196,6 +1197,7 @@
   padding-left: 26px;
   display: flex;
   align-items: center;
+  float: none;
   border: 1px solid var(--black-500);
 }
 
@@ -1218,4 +1220,78 @@
 .product-overview-select .list {
   width: 100%;
   transition: all 0.2s ease-in-out;
+}
+
+/* ----- Additional information section ----- */
+.additional-information-section {
+  padding-block: 42px;
+}
+
+.additional-information-wrapper {
+  max-width: 1120px;
+}
+
+.additional-information-columns {
+  display: flex;
+  align-items: start;
+  gap: 36px;
+  margin-top: 12px;
+}
+
+.additional-information-column {
+  width: 50%;
+  max-width: 542px;
+}
+
+.additional-information-dec {
+  letter-spacing: 0.64px;
+  line-height: 1.625;
+  color: var(--black-100-77);
+}
+
+.additional-information-dec:not(:first-child) {
+  margin-top: 14px;
+}
+
+/* ----- Key features section ----- */
+.key-features-main-wrapper {
+  padding-block: 32px;
+  border-top: 1px solid var(--gray-74);
+  border-bottom: 1px solid var(--gray-74);
+}
+
+.key-features-splide {
+  margin-top: 36px;
+}
+
+.key-features-track {
+  overflow: visible;
+}
+
+.key-features-slide {
+  max-width: 350px;
+}
+
+.key-features-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.key-features-media {
+  width: 115px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.key-features-title {
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+.key-features-dec {
+  line-height: 1.428;
+  letter-spacing: 0.56px;
 }

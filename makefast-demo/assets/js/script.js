@@ -213,8 +213,19 @@ if (productOverview.length) {
 
 // Nice Select js
 let selectBox = document.getElementById("selectBox");
-if (selectBox) {
+if (selectBox.length) {
   $(document).ready(function () {
     $("select").niceSelect();
   });
 }
+
+// Key features js
+if (document.querySelector(".key-features-splide.splide"))
+  new Splide(".key-features-splide", {
+    type: "loop",
+    gap: "40px",
+    perPage: 3,
+    pagination: !1,
+    arrows: !1,
+    autoScroll: { speed: 0.7 },
+  }).mount(window.splide.Extensions);
