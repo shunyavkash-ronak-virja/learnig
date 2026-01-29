@@ -197,12 +197,13 @@
   .products-filters-content {
     width: 100%;
     max-width: 100%;
-    height: 100vh;
+    height: calc(100vh - 95px);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     padding: 20px;
+    margin-bottom: 0;
     background-color: var(--secondary);
     opacity: 0;
     visibility: hidden;
@@ -215,9 +216,34 @@
     visibility: visible;
   }
 
+  .filters-content-title {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    line-height: 1.75;
+  }
+
+  .filters-item-title {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 1.866;
+  }
+
   .products-filters-btn,
   .filters-content-close-btn {
     display: flex;
+  }
+
+  .filters-update-btn-wrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    filter: drop-shadow(0 3px 26px #00000029);
+  }
+
+  .products-filters-update-btn {
+    margin-bottom: 22px;
   }
 
   .products-section {
@@ -231,6 +257,10 @@
 
   .products-listing-wrapper {
     margin-top: 70px;
+  }
+
+  .products-listing-btn {
+    margin-block: 74px;
   }
 }
 
@@ -500,6 +530,7 @@
   .products-banner {
     flex-direction: column;
     gap: 34px;
+    margin-block: 122px 74px;
   }
 
   .products-banner-content {
@@ -697,9 +728,18 @@
   /* ======================================
             PRODUCTS HTML
 ====================================== */
+  .products-title {
+    font-size: 28px;
+    line-height: 1.321;
+  }
+
   .products-banner-content {
     text-align: center;
     max-width: 200px;
+  }
+
+  .products-card-wrapper {
+    gap: 46px 10px;
   }
 
   .products-card-media {

@@ -863,6 +863,7 @@
   font-weight: 500;
   line-height: 2.071;
   letter-spacing: 2.1px;
+  font-family: inherit;
   display: none;
   align-items: center;
   gap: 18px;

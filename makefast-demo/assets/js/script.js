@@ -157,34 +157,41 @@ if (caseStudiesV2.length) {
 }
 
 // Products link js
-document.addEventListener("DOMContentLoaded", () => {
-  const titleWrappers = document.querySelectorAll(".filters-content-title-wrapper");
-  titleWrappers.forEach((title) => {
-    title.addEventListener("click", () => {
-      const parent = title.closest(".filters-content-items");
-      const listWrapper = parent.querySelector(".filters-lists-wrapper");
-      title.classList.toggle("active");
-      listWrapper.classList.toggle("active");
+let filtersContentWrapper = document.querySelectorAll(".filters-content-title-wrapper");
+if (filtersContentWrapper.length) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const titleWrappers = document.querySelectorAll(".filters-content-title-wrapper");
+    titleWrappers.forEach((title) => {
+      title.addEventListener("click", () => {
+        const parent = title.closest(".filters-content-items");
+        const listWrapper = parent.querySelector(".filters-lists-wrapper");
+        title.classList.toggle("active");
+        listWrapper.classList.toggle("active");
+      });
     });
   });
-});
+}
 
 /* Products item toggle js */
-document.addEventListener("DOMContentLoaded", () => {
-  const filtersToggle = document.querySelector(".products-filters-btn");
-  const filtersContent = document.querySelector(".products-filters-content");
-  const filtersClose = document.querySelector(".filters-content-close-btn");
-  const bodyScroll = document.querySelector("body");
+let productsFiltersWrapper = document.querySelectorAll(".products-filters-wrapper");
 
-  filtersToggle.addEventListener("click", () => {
-    filtersToggle.classList.toggle("active");
-    filtersContent.classList.toggle("active");
-    bodyScroll.classList.toggle("body-hidden");
-  });
+if (productsFiltersWrapper.length) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const filtersToggle = document.querySelector(".products-filters-btn");
+    const filtersContent = document.querySelector(".products-filters-content");
+    const filtersClose = document.querySelector(".filters-content-close-btn");
+    const bodyScroll = document.querySelector("body");
 
-  filtersClose.addEventListener("click", () => {
-    filtersToggle.classList.remove("active");
-    filtersContent.classList.remove("active");
-    bodyScroll.classList.remove("body-hidden");
+    filtersToggle.addEventListener("click", () => {
+      filtersToggle.classList.toggle("active");
+      filtersContent.classList.toggle("active");
+      bodyScroll.classList.toggle("body-hidden");
+    });
+
+    filtersClose.addEventListener("click", () => {
+      filtersToggle.classList.remove("active");
+      filtersContent.classList.remove("active");
+      bodyScroll.classList.remove("body-hidden");
+    });
   });
-});
+}
