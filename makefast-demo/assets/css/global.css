@@ -26,8 +26,10 @@
   --black-200-20: rgba(20, 20, 20, 0.2);
   --black-300: #161615;
   --black-400: #3c3c3c;
+  --black-500: #080808;
   --gray: #707070;
   --gray-19: rgba(112, 112, 112, 0.19);
+  --gray-44: rgba(112, 112, 112, 0.44);
   --gray-75: rgba(112, 112, 112, 0.75);
   --gray-77: rgba(112, 112, 112, 0.77);
   --gray-100: #d5d5d5;
@@ -292,7 +294,7 @@ ol {
 
 .text-btn {
   width: max-content;
-  display: inline-block;
+  display: block;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;

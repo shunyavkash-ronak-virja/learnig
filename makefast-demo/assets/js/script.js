@@ -195,3 +195,23 @@ if (productsFiltersWrapper.length) {
     });
   });
 }
+
+// Product overview slider
+let productOverview = document.querySelectorAll(".product-overview-wrapper");
+if (productOverview.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".product-overview-splide.splide", {
+      type: "fade",
+      rewind: true,
+      // autoplay: true,
+      pagination: false,
+      perPage: 1,
+    });
+    splide.mount();
+  });
+}
+
+// Nice Select js
+$(document).ready(function () {
+  $("select").niceSelect();
+});
