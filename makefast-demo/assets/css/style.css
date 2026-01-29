@@ -1084,6 +1084,12 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.product-overview .scroll-bar::-webkit-scrollbar {
+  height: 10px;
 }
 
 .overview-link {
@@ -1186,7 +1192,7 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
   color: var(--black-200);
-  margin-top: 38px;
+  margin-block: 38px 12px;
   padding-left: 26px;
   display: flex;
   align-items: center;
@@ -1197,22 +1203,19 @@
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path id="Polygon_14" data-name="Polygon 14" d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)" fill="%23141414"/></svg>');
   border: none;
   width: 10px;
-  height: 6px;
+  height: auto;
   right: 18px;
-  margin-top: 0;
-  transform: rotate(0deg);
-  transform-origin: none;
+  margin: 0;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: inherit;
   transition: all 0.3s ease-in-out;
 }
 
-.product-overview-select:hover::after {
-  transform: rotate(-180deg);
+.product-overview-select.open::after {
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .product-overview-select .list {
   width: 100%;
   transition: all 0.2s ease-in-out;
-}
-
-.overview-get-in-touch-btn {
 }

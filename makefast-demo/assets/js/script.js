@@ -203,7 +203,7 @@ if (productOverview.length) {
     var splide = new Splide(".product-overview-splide.splide", {
       type: "fade",
       rewind: true,
-      // autoplay: true,
+      autoplay: true,
       pagination: false,
       perPage: 1,
     });
@@ -212,6 +212,9 @@ if (productOverview.length) {
 }
 
 // Nice Select js
-$(document).ready(function () {
-  $("select").niceSelect();
-});
+let selectBox = document.getElementById("selectBox");
+if (selectBox) {
+  $(document).ready(function () {
+    $("select").niceSelect();
+  });
+}
