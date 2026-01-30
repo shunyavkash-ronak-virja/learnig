@@ -566,7 +566,7 @@
 }
 
 .hero-text-title-v2 {
-  margin-block: 10px 8px;
+  margin-top: 10px;
 }
 
 .hero-text-dec-v2 {
@@ -602,7 +602,6 @@
 
 .split-v2 {
   width: 100%;
-  margin-top: 0;
   background: var(--secondary);
 }
 

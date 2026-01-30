@@ -697,7 +697,11 @@
   }
 
   .hero-text-title-v2 {
-    margin-block: 8px 12px;
+    margin-top: 8px;
+  }
+
+  .hero-text-dec-v2 {
+    margin-top: 12px;
   }
 
   .marine-slider {
