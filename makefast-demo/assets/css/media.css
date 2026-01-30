@@ -909,6 +909,7 @@
   .key-features-splide .splide__pagination__page {
     width: 10px;
     height: 10px;
+    border-radius: 100%;
     background: var(--black-100);
     opacity: 33%;
   }
