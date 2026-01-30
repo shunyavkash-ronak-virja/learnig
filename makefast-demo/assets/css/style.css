@@ -87,13 +87,13 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hero-bg-img-splide .splide__pagination__page {
+.splide__pagination__page {
   border-radius: 0;
   background: transparent;
 }
 
-.hero-bg-img-splide .splide__pagination__page:hover,
-.hero-bg-img-splide .splide__pagination__page.is-active {
+.splide__pagination__page:hover,
+.splide__pagination__page.is-active {
   background: transparent;
 }
 
@@ -101,7 +101,7 @@
   transform: scale(1);
 }
 
-.hero-bg-img-splide .splide__pagination__page::after {
+.splide__pagination__page::after {
   content: "";
   position: absolute;
   top: 50%;
