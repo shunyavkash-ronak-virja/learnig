@@ -244,7 +244,7 @@ if (document.querySelector(".key-features-splide.splide"))
   }).mount(window.splide.Extensions);
 
 let productModal = document.querySelectorAll(".view-specs-modal");
-if (productModal) {
+if (productModal.length) {
   const viewSpecsOpen = document.querySelector(".overview-view-specs-btn");
   const viewSpecsModal = document.querySelector(".view-specs-modal");
   const viewSpecsOverlay = document.querySelector(".view-specs-modal-overlay");
@@ -267,5 +267,13 @@ if (productModal) {
     viewSpecsModal.classList.remove("active");
     viewSpecsOverlay.classList.remove("active");
     bodyHide.classList.remove("body-hidden");
+  });
+}
+
+// Fancybox js -----
+let dimensionsPreview = document.querySelectorAll(".dimensions-media-preview");
+if (dimensionsPreview.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    Fancybox.bind("[data-fancybox]", {});
   });
 }
