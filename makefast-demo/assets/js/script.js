@@ -1,24 +1,27 @@
 // Toggle js
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector("header");
-  const navToggleWrapper = document.querySelector(".nav-toggle-wrapper");
-  const navContent = document.querySelector(".header-content-wrapper");
-  const bodyHidden = document.querySelector("body");
+let navToggle = document.querySelectorAll(".nav-toggle-wrapper");
+if (navToggle.length) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header");
+    const navToggleWrapper = document.querySelector(".nav-toggle-wrapper");
+    const navContent = document.querySelector(".header-content-wrapper");
+    const bodyHidden = document.querySelector("body");
 
-  window.addEventListener("resize", () => {
-    navToggleWrapper.classList.remove("active");
-    navContent.classList.remove("active");
-    bodyHidden.classList.remove("body-hidden");
-    header.classList.remove("active");
-  });
+    window.addEventListener("resize", () => {
+      navToggleWrapper.classList.remove("active");
+      navContent.classList.remove("active");
+      bodyHidden.classList.remove("body-hidden");
+      header.classList.remove("active");
+    });
 
-  navToggleWrapper.addEventListener("click", () => {
-    navToggleWrapper.classList.toggle("active");
-    navContent.classList.toggle("active");
-    bodyHidden.classList.toggle("body-hidden");
-    header.classList.toggle("active");
+    navToggleWrapper.addEventListener("click", () => {
+      navToggleWrapper.classList.toggle("active");
+      navContent.classList.toggle("active");
+      bodyHidden.classList.toggle("body-hidden");
+      header.classList.toggle("active");
+    });
   });
-});
+}
 
 // Header height (dynamic)
 const headerElement = document.querySelector("header");
@@ -174,24 +177,23 @@ if (filtersContentWrapper.length) {
 
 /* Products item toggle js */
 let productsFiltersWrapper = document.querySelectorAll(".products-filters-wrapper");
-
 if (productsFiltersWrapper.length) {
   document.addEventListener("DOMContentLoaded", () => {
     const filtersToggle = document.querySelector(".products-filters-btn");
     const filtersContent = document.querySelector(".products-filters-content");
     const filtersClose = document.querySelector(".filters-content-close-btn");
-    const bodyScroll = document.querySelector("body");
+    const bodyHidden = document.querySelector("body");
 
     filtersToggle.addEventListener("click", () => {
       filtersToggle.classList.toggle("active");
       filtersContent.classList.toggle("active");
-      bodyScroll.classList.toggle("body-hidden");
+      bodyHidden.classList.toggle("body-hidden");
     });
 
     filtersClose.addEventListener("click", () => {
       filtersToggle.classList.remove("active");
       filtersContent.classList.remove("active");
-      bodyScroll.classList.remove("body-hidden");
+      bodyHidden.classList.remove("body-hidden");
     });
   });
 }
@@ -227,7 +229,43 @@ if (document.querySelector(".key-features-splide.splide"))
     type: "loop",
     gap: "40px",
     perPage: 3,
-    pagination: !1,
+    pagination: false,
     arrows: !1,
     autoScroll: { speed: 0.7 },
+    breakpoints: {
+      991: {
+        perPage: 2,
+      },
+      575: {
+        perPage: 1,
+        pagination: true,
+      },
+    },
   }).mount(window.splide.Extensions);
+
+let productModal = document.querySelectorAll(".view-specs-modal");
+if (productModal) {
+  const viewSpecsOpen = document.querySelector(".overview-view-specs-btn");
+  const viewSpecsModal = document.querySelector(".view-specs-modal");
+  const viewSpecsOverlay = document.querySelector(".view-specs-modal-overlay");
+  const viewSpecsCloseBtn = document.querySelector(".view-specs-modal-close-btn");
+  const bodyHide = document.querySelector("body");
+
+  viewSpecsOpen.addEventListener("click", () => {
+    viewSpecsModal.classList.toggle("active");
+    viewSpecsOverlay.classList.toggle("active");
+    bodyHide.classList.toggle("body-hidden");
+  });
+
+  viewSpecsCloseBtn.addEventListener("click", () => {
+    viewSpecsModal.classList.remove("active");
+    viewSpecsOverlay.classList.remove("active");
+    bodyHide.classList.remove("body-hidden");
+  });
+
+  viewSpecsOverlay.addEventListener("click", () => {
+    viewSpecsModal.classList.remove("active");
+    viewSpecsOverlay.classList.remove("active");
+    bodyHide.classList.remove("body-hidden");
+  });
+}

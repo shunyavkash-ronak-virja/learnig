@@ -270,9 +270,19 @@
     padding-block: 186px 35px;
   }
 
+  .view-specs-content {
+    padding-top: 62px;
+    padding-inline: 58px;
+  }
+
   /* ----- Additional information section ----- */
   .additional-information-section {
     padding-block: 30px;
+  }
+
+  /* ----- Key features section ----- */
+  .key-features-slide {
+    max-width: 100%;
   }
 }
 
@@ -467,8 +477,8 @@
   /* ----- Brochure section ----- */
   .brochure-wrapper {
     flex-direction: column;
-    gap: 48px;
-    margin-inline: 20px;
+    gap: 0;
+    margin-inline: 0;
     padding: 0;
   }
 
@@ -484,9 +494,13 @@
     text-align: center;
   }
 
-  .brochure-wrapper-border {
-    width: 100%;
-    border: 1px solid var(--gray-19);
+  .brochure-card:not(:first-child) {
+    border-top: 1px solid var(--gray-19);
+    padding-top: 52px;
+  }
+
+  .brochure-card:not(:last-child) {
+    padding-bottom: 30px;
   }
 
   /* ----- Cta section ----- */
@@ -571,6 +585,10 @@
             PRODUCT DETAILS HTML 
 ====================================== */
   /* ----- Product overview section ----- */
+  .product-overview {
+    overflow: hidden;
+  }
+
   .product-overview-wrapper {
     gap: 44px;
     flex-direction: column;
@@ -604,6 +622,19 @@
     margin-block: 30px 16px;
   }
 
+  .view-specs-modal-overlay {
+    display: none;
+  }
+
+  .view-specs-wrappper {
+    max-width: 100%;
+  }
+
+  .view-specs-content {
+    padding-top: 48px;
+    padding-inline: 36px;
+  }
+
   /* ----- Additional information section ----- */
   .additional-information-wrapper {
     max-width: 100%;
@@ -622,6 +653,11 @@
 
   .additional-information-dec:not(:first-child) {
     margin-top: 10px;
+  }
+
+  /* ----- Key features section ----- */
+  .key-features-main-wrapper {
+    padding-block: 38px;
   }
 }
 
@@ -693,7 +729,6 @@
     height: 100%;
     padding-block: 180px 52px;
     padding-inline: 16px;
-    background-color: var(--primary);
   }
 
   .hero-text-title-v2 {
@@ -701,7 +736,7 @@
   }
 
   .hero-text-dec-v2 {
-    margin-top: 12px;
+    margin-block: 12px;
   }
 
   .marine-slider {
@@ -710,6 +745,7 @@
 
   .hero-section-v2 {
     flex-direction: column-reverse;
+    background-color: var(--primary);
   }
 
   .hero-section-v2 .hero-bg-img-wrapper::after {
@@ -847,5 +883,37 @@
     font-size: 14px;
     letter-spacing: 0.42px;
     line-height: 1.785;
+  }
+
+  /* ----- Key features section ----- */
+  .key-features-splide {
+    margin-bottom: 36px;
+  }
+
+  .key-features-track {
+    overflow: hidden;
+  }
+
+  .key-features-slide {
+    max-width: 316px;
+  }
+
+  .key-features-splide .splide__pagination {
+    gap: 12px;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
+
+  .key-features-splide .splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    background: var(--black-100);
+    opacity: 33%;
+  }
+
+  .key-features-splide .splide__pagination__page.is-active {
+    opacity: 1;
   }
 }
