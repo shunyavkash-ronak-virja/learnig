@@ -271,7 +271,7 @@
   }
 
   .view-specs-content {
-    padding-top: 62px;
+    padding-block: 62px;
     padding-inline: 58px;
   }
 
@@ -631,7 +631,7 @@
   }
 
   .view-specs-content {
-    padding-top: 48px;
+    padding-block: 48px;
     padding-inline: 36px;
   }
 

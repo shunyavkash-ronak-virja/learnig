@@ -1214,7 +1214,7 @@
 }
 
 .view-specs-content {
-  padding-top: 76px;
+  padding-block: 76px 60px;
   padding-inline: 80px 82px;
 }
 
