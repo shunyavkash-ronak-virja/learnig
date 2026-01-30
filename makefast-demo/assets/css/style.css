@@ -1,4 +1,3 @@
-/* ----- Hero section ----- */
 .hero-section {
   height: 100vh;
   display: flex;
@@ -1429,20 +1428,28 @@
   min-height: 560px;
   margin-top: 90px;
   background-color: var(--secondary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-block: 84px 62px;
+  padding-inline: 16px;
   filter: drop-shadow(0 0 26px #0000001a);
 }
 
 .dimensions-media {
+  width: 100%;
   height: 412px;
 }
 
 .dimensions-preview-btn {
   width: 36px;
   aspect-ratio: 1;
-  background-color: var(--black-200);
-  opacity: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  border-radius: 100%;
+  background-color: var(--black-200-47);
+  color: var(--secondary);
+}
+
+.dimensions-preview-btn-icon {
+  width: 56%;
 }
