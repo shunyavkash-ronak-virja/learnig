@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 .container {
@@ -21,6 +22,11 @@ body {
   margin-inline: auto;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -32,7 +38,41 @@ img {
   object-fit: cover;
 }
 
-/* -- Blog preview section -- */
+.btn {
+  min-width: 164px;
+  font-size: 18px;
+  padding-block: 12px;
+  padding-inline: 28px;
+  border-radius: 8px;
+  background-color: #63aecd;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 0 0 75% 75% / 0 0 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0176aa;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:hover::after {
+  height: 150%;
+}
+
+/* ----- Blog preview section ----- */
 .blog-preview-section {
   padding-block: 60px;
 }
@@ -40,10 +80,78 @@ img {
 .blog-preview-wrapper {
   width: 100%;
   max-width: 960px;
-  min-height: 540px;
+  height: 540px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-preview-play-btn {
+  width: 54px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #ffffff;
+  color: #63aecd;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 150, 4, 0.246);
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-preview-play-btn:hover {
+  color: #0176aa;
+}
+
+.blog-preview-play-icon {
+  width: 52%;
+}
+
+.blog-preview-content {
+  max-width: 1130px;
+  text-align: center;
+}
+
+.blog-preview-title {
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.blog-preview-dec {
+  margin-block: 8px 22px;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .blog-preview-wrapper {
+    max-width: 100%;
+    height: 410px;
+  }
+
+  .blog-preview-title {
+    margin-top: 12px;
+    font-size: 40px;
+  }
+
+  .blog-preview-dec {
+    margin-block: 6px 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-preview-wrapper {
+    height: 350px;
+  }
+
+  .blog-preview-play-btn {
+    width: 48px;
+  }
+
+  .blog-preview-title {
+    font-size: 34px;
+  }
 }
