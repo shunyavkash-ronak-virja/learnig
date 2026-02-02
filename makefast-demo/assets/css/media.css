@@ -1,6 +1,6 @@
 @media (max-width: 1279px) {
   /* ----- Split section ----- */
-  .split-v1 {
+  .category-split-two-col {
     --marginTop: 156px;
   }
 
@@ -8,7 +8,7 @@
              MARINE HTML 
 ====================================== */
   /* ----- Split section ----- */
-  .split-v2-wrapper {
+  .split-three-col-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -45,7 +45,7 @@
   }
 
   /* ----- Split section ----- */
-  .split-v1 {
+  .category-split-two-col {
     --marginTop: 120px;
     padding-bottom: 50px;
   }
@@ -320,13 +320,13 @@
   }
 
   /* ----- Split section ----- */
-  .split-v1 {
+  .category-split-two-col {
     --marginTop: 26px;
     padding-bottom: 38px;
     overflow: hidden;
   }
 
-  .split-v1-wrapper {
+  .split-two-col-wrapper {
     width: auto;
     margin-inline: -20px;
     grid-template-columns: repeat(1, 1fr);
@@ -460,11 +460,11 @@
   }
 
   /* ----- Split  section ----- */
-  .split-v2 .section-title {
+  .category-split-three-col .section-title {
     padding-inline: 16px;
   }
 
-  .split-v2-wrapper {
+  .split-three-col-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -813,7 +813,7 @@
   }
 
   /* ----- Split section ----- */
-  .split-v2-wrapper .split-card-title {
+  .split-three-col-wrapper .split-card-title {
     font-size: 26px;
     line-height: 1.346;
     margin-bottom: 8px;
@@ -976,5 +976,16 @@
 
   .key-features-splide .splide__pagination__page.is-active {
     opacity: 1;
+  }
+
+  /* ----- Dimensions section ----- */
+  .dimensions-items-wrapper {
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  .dimensions-title-wrapper {
+    flex-direction: column;
+    gap: 8px;
   }
 }

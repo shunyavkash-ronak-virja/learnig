@@ -125,7 +125,7 @@
 }
 
 /* ----- Split section ----- */
-.split-v1 {
+.category-split-two-col {
   --marginTop: 198px;
   padding-bottom: 62px;
   margin-top: calc(-1 * var(--marginTop));
@@ -141,7 +141,7 @@
   display: grid;
 }
 
-.split-v1-wrapper {
+.split-two-col-wrapper {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 4px;
 }
@@ -151,6 +151,11 @@
   position: relative;
   overflow: hidden;
   pointer-events: auto;
+}
+
+.split-img-content {
+  width: 100%;
+  height: 100%;
 }
 
 .split-card-img {
@@ -599,22 +604,22 @@
   padding-block: 95px;
 }
 
-.split-v2 {
+.category-split-three-col {
   width: 100%;
   background: var(--secondary);
 }
 
-.split-v2-wrapper {
+.split-three-col-wrapper {
   margin-top: 30px;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 8px;
 }
 
-.split-card-content-v2 {
+.split-three-col-content {
   background-color: rgb(0 0 0 / 0.1);
 }
 
-.split-v2-wrapper .split-card-title {
+.split-three-col-wrapper .split-card-title {
   max-width: 346px;
   margin-bottom: 12px;
 }
