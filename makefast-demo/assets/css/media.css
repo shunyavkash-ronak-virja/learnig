@@ -262,6 +262,7 @@
   .products-listing-btn {
     margin-block: 74px;
   }
+
   /* ======================================
             PRODUCT DETAILS HTML 
 ====================================== */
@@ -283,6 +284,27 @@
   /* ----- Key features section ----- */
   .key-features-slide {
     max-width: 100%;
+  }
+
+  /* ----- Dimensions section ----- */
+  .dimensions-section {
+    padding-block: 52px;
+  }
+
+  .dimensions-item {
+    width: 168px;
+  }
+
+  .dimensions-item-value {
+    font-size: 50px;
+  }
+
+  .dimensions-item-unit {
+    font-size: 24px;
+  }
+
+  .dimensions-media-preview {
+    margin-top: 60px;
   }
 }
 
@@ -658,6 +680,44 @@
   /* ----- Key features section ----- */
   .key-features-main-wrapper {
     padding-block: 38px;
+  }
+
+  /* ----- Dimensions section ----- */
+  .dimensions-item {
+    width: 136px;
+  }
+
+  .dimensions-item-value {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  .dimensions-item-unit {
+    font-size: 20px;
+    line-height: 1.684;
+  }
+
+  .dimensions-label {
+    font-size: 10px;
+    line-height: 1.222;
+    letter-spacing: 0.81px;
+  }
+
+  .dimensions-media-preview {
+    width: auto;
+    min-height: 302px;
+    margin-inline: -20px;
+    margin-top: 54px;
+    padding-inline: 0;
+    padding-block: 63px 78px;
+  }
+
+  .dimensions-media {
+    height: 160px;
+  }
+
+  .dimensions-preview-btn {
+    margin-right: 18px;
   }
 }
 
