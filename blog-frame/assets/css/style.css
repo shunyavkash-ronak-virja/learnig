@@ -46,6 +46,7 @@ img {
   border-radius: 8px;
   background-color: #63aecd;
   color: #ffffff;
+  text-transform: capitalize;
   position: relative;
   overflow: hidden;
 }
