@@ -140,10 +140,10 @@ if (testimonialSplide.length) {
 }
 
 // Case studies slider
-let caseStudiesV2 = document.querySelectorAll(".case-studies-v2");
+let caseStudiesV2 = document.querySelectorAll(".case-studies-slider");
 if (caseStudiesV2.length) {
   document.addEventListener("DOMContentLoaded", function () {
-    var splide = new Splide(".case-studies-v2.splide", {
+    var splide = new Splide(".case-studies-slider.splide", {
       type: "slide",
       autoplay: true,
       pagination: false,

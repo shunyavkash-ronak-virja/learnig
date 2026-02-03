@@ -21,13 +21,13 @@
   height: 100%;
 }
 
-.hero-bg-img-wrapper {
+.hero-bg-img-content {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.hero-bg-img-wrapper::after {
+.hero-bg-img-content::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -42,15 +42,14 @@
   padding-left: 8%;
 }
 
-.home-hero-section .hero-text-title {
+.content-with-slider .hero-text-title {
   font-size: 66px;
   line-height: 1.09;
   letter-spacing: 0.66px;
   text-shadow: 0 20px 20px #00000029;
 }
 
-.hero-text-dec {
-  color: var(--secondary);
+.hero-text-description {
   margin-top: 8px;
   text-shadow: 0 3px 6px #00000029;
 }
@@ -124,8 +123,8 @@
   outline: none;
 }
 
-/* ----- Split section ----- */
-.category-split-two-col {
+/* ----- Categories section -----*/
+.categories-section {
   --marginTop: 198px;
   padding-bottom: 62px;
   margin-top: calc(-1 * var(--marginTop));
@@ -137,36 +136,36 @@
   pointer-events: none;
 }
 
-.split-wrapper {
+.categories-card-wrapper {
   display: grid;
 }
 
-.split-two-col-wrapper {
+.categories-card-items {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 4px;
 }
 
-.split-card {
+.categories-card {
   max-height: 434px;
   position: relative;
   overflow: hidden;
   pointer-events: auto;
 }
 
-.split-img-content {
+.categories-img-content {
   width: 100%;
   height: 100%;
 }
 
-.split-card-img {
+.categories-card-img {
   transition: all 0.3s ease-in-out;
 }
 
-.split-card:hover .split-card-img {
+.categories-card:hover .categories-card-img {
   transform: scale(1.1);
 }
 
-.split-card-content {
+.categories-card-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -181,8 +180,7 @@
   padding: 20px;
 }
 
-.split-card-title {
-  color: var(--secondary);
+.categories-card-title {
   margin-bottom: 8px;
   text-shadow: 0 0 5px #00000081;
   filter: drop-shadow(0 0 20px var(--black));
@@ -206,7 +204,7 @@
   overflow: visible;
 }
 
-.articles-media {
+.articles-img-content {
   width: 100%;
   max-width: 410px;
   height: 268px;
@@ -247,7 +245,7 @@
   opacity: 0.7;
 }
 
-.slider-arrows .slider-arrow:hover:not(:where(.color-black)) {
+.slider-arrows .slider-arrow:hover:not(:where(.font-black)) {
   color: var(--secondary);
 }
 
@@ -290,7 +288,7 @@
   justify-content: space-between;
 }
 
-.our-story-media {
+.our-story-img-content {
   width: 60%;
   max-width: 764px;
 }
@@ -306,7 +304,7 @@
   text-transform: capitalize;
 }
 
-.our-story-dec {
+.our-story-description {
   color: var(--gray-600);
   letter-spacing: 0.32px;
   line-height: 1.75;
@@ -342,7 +340,7 @@
   transform: scale(1.1);
 }
 
-.our-services-media-overlay {
+.our-services-img-overlay {
   width: 100%;
   height: 140px;
   background: linear-gradient(180deg, rgba(1, 27, 33, 0) 0%, rgba(1, 27, 33, 1) 100%);
@@ -394,23 +392,22 @@
   white-space: nowrap;
 }
 
-.featured-card-media {
+.featured-card-img-content {
   width: 336px;
   height: 363px;
   overflow: hidden;
 }
 
-.featured-card-media img {
+.featured-card-img-content img {
   transition: all 0.3s ease-in-out;
 }
 
-.featured-card:hover .featured-card-media img {
+.featured-card:hover .featured-card-img-content img {
   transform: scale(1.04);
 }
 
 .featured-card-caption {
-  margin-top: 18px;
-  margin-bottom: 10px;
+  margin-block: 18px 10px;
 }
 
 /* ----- Case studies section ----- */
@@ -434,17 +431,17 @@
   white-space: nowrap;
 }
 
-.case-studies-card-media {
+.case-studies-img-content {
   width: 654px;
   height: 450px;
   overflow: hidden;
 }
 
-.case-studies-card-media img {
+.case-studies-img-content img {
   transition: all 0.3s ease-in-out;
 }
 
-.case-studies-card:hover .case-studies-card-media img {
+.case-studies-card:hover .case-studies-img-content img {
   transform: scale(1.1);
 }
 
@@ -459,7 +456,7 @@
   margin-block: 8px;
 }
 
-.case-studies-card-dec {
+.case-studies-card-description {
   max-width: 526px;
   letter-spacing: 0.32px;
   line-height: 1.75;
@@ -523,7 +520,6 @@
   line-height: 1.555;
   color: var(--black-200);
   margin-bottom: 20px;
-  font-family: var(--font-prata);
   position: relative;
 }
 
@@ -576,7 +572,7 @@
   margin-top: 10px;
 }
 
-.hero-text-dec-v2 {
+.hero-text-description-v2 {
   max-width: 566px;
   margin-bottom: 10px;
 }
@@ -599,17 +595,12 @@
   height: 100%;
 }
 
-/* ----- Split section ----- */
-.marine-split {
+/* ----- Categories section ----- */
+.marine-categories {
   padding-block: 95px;
 }
 
-.category-split-three-col {
-  width: 100%;
-  background: var(--secondary);
-}
-
-.split-three-col-wrapper {
+.categories-card-wrapper-v2 {
   margin-top: 30px;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 8px;
@@ -619,7 +610,7 @@
   background-color: rgb(0 0 0 / 0.1);
 }
 
-.split-three-col-wrapper .split-card-title {
+.categories-card-wrapper-v2 .categories-card-title {
   max-width: 346px;
   margin-bottom: 12px;
 }
@@ -634,17 +625,17 @@
 }
 
 /* ----- Case studies slider section ----- */
-.case-studies-section-v2 {
+.case-studies-slider-section {
   padding-block: 75px;
 }
 
-.case-studies-heading-content-v2 {
+.case-studies-slider-heading {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.case-studies-wrapper-v2 {
+.case-studies-slider-wrapper {
   width: 100%;
   min-height: 450px;
   display: flex;
@@ -652,34 +643,34 @@
   margin-top: 40px;
 }
 
-.case-studies-media-v2 {
+.case-studies-slider-img-content {
   width: 62%;
   max-width: 806px;
 }
 
-.case-studies-v2 {
+.case-studies-slider {
   width: 38%;
   max-width: 578px;
   box-shadow: 0 0 16px 0 var(--black-15);
 }
 
-.case-studies-heading-title-v2 {
+.case-studies-slider-heading-title {
   text-transform: capitalize;
   color: var(--black-200);
 }
 
-.case-studies-content-wrapper-v2 {
+.case-studies-slider-contents {
   max-width: 504px;
   padding-block: 118px 90px;
   padding-inline: 72px 48px;
 }
 
-.case-studies-content-tile-v2 {
+.case-studies-slider-tile {
   margin-top: 8px;
   margin-bottom: 6px;
 }
 
-.case-studies-content-dec-v2 {
+.case-studies-slider-description {
   letter-spacing: 0.32px;
   line-height: 1.75;
   color: var(--gray-77);
@@ -726,7 +717,7 @@
   white-space: nowrap;
 }
 
-.brochure-card-media {
+.brochure-card-img-content {
   width: 166px;
   height: 132px;
 }
@@ -784,8 +775,8 @@
   padding-block: 78px;
 }
 
-/* ----- Split section ----- */
-.safety-split {
+/* ----- Categories section ----- */
+.safety-categories {
   padding-block: 74px;
 }
 
@@ -831,6 +822,7 @@
   align-items: start;
   justify-content: space-between;
   gap: 8px;
+  margin-bottom: 40px;
 }
 
 .products-filters-wrapper {
@@ -863,7 +855,6 @@
 
 .products-filters-content {
   max-width: 264px;
-  margin-bottom: 40px;
   overflow: auto;
 }
 
@@ -1052,7 +1043,7 @@
 
 .products-listing-btn {
   align-items: center;
-  margin-block: 76px;
+  margin-top: 76px;
 }
 
 .products-listing-btn-icon {

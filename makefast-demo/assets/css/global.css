@@ -64,11 +64,11 @@
   background: var(--secondary);
 }
 
-.color-secondary {
+.font-secondary {
   color: var(--secondary);
 }
 
-.color-black {
+.font-black {
   color: var(--black-100);
 }
 
@@ -319,7 +319,7 @@ ol {
   transition: all 0.3s ease-in-out;
 }
 
-.text-btn:not(:where(.color-secondary))::after {
+.text-btn:not(:where(.font-secondary))::after {
   background-color: var(--black-100);
 }
 
@@ -334,14 +334,13 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .icon-btn svg {
   width: 86%;
 }
 
-.icon-btn-container {
+.icon-btn-content {
   width: 70%;
   aspect-ratio: 1;
   position: relative;
@@ -698,13 +697,9 @@ input[type="checkbox"]::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
 input[type="checkbox"]:checked::after {
-  opacity: 1;
-  visibility: visible;
   transform: translate(-50%, -50%) scale(1);
 }

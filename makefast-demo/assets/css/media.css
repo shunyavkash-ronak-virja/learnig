@@ -1,19 +1,19 @@
 @media (max-width: 1279px) {
-  /* ----- Split section ----- */
-  .category-split-two-col {
+  /* ----- Categories section ----- */
+  .categories-section {
     --marginTop: 156px;
   }
 
   /* ====================================== 
              MARINE HTML 
 ====================================== */
-  /* ----- Split section ----- */
-  .split-three-col-wrapper {
+  /* ----- Categories section ----- */
+  .categories-card-wrapper-v2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
   /* ----- Case studies slider section ----- */
-  .case-studies-content-wrapper-v2 {
+  .case-studies-slider-contents {
     padding-inline: 60px 42px;
   }
 
@@ -40,12 +40,12 @@
 
 @media (max-width: 991px) {
   /* ----- Hero section ----- */
-  .home-hero-section .hero-text-title {
+  .content-with-slider .hero-text-title {
     font-size: 62px;
   }
 
-  /* ----- Split section ----- */
-  .category-split-two-col {
+  /* ----- Categories section ----- */
+  .categories-section {
     --marginTop: 120px;
     padding-bottom: 50px;
   }
@@ -96,7 +96,7 @@
              MARINE HTML 
 ====================================== */
   /* ----- Split  section ----- */
-  .marine-split {
+  .marine-categories {
     padding-block: 68px;
   }
 
@@ -106,11 +106,11 @@
   }
 
   /* ----- Case studies slider section ----- */
-  .case-studies-section-v2 {
+  .case-studies-slider-section {
     padding-block: 60px;
   }
 
-  .case-studies-content-wrapper-v2 {
+  .case-studies-slider-contents {
     padding-inline: 50px 30px;
     padding-block: 84px 74px;
   }
@@ -142,8 +142,8 @@
     padding-block: 68px;
   }
 
-  /* ----- Split section ----- */
-  .safety-split {
+  /* ----- Categories section ----- */
+  .safety-categories {
     padding-block: 60px;
   }
 
@@ -315,18 +315,18 @@
     padding-left: 0;
   }
 
-  .home-hero-section .hero-text-title {
+  .content-with-slider .hero-text-title {
     font-size: 58px;
   }
 
-  /* ----- Split section ----- */
-  .category-split-two-col {
+  /* ----- Categories section ----- */
+  .categories-section {
     --marginTop: 26px;
     padding-bottom: 38px;
     overflow: hidden;
   }
 
-  .split-two-col-wrapper {
+  .categories-card-items {
     width: auto;
     margin-inline: -20px;
     grid-template-columns: repeat(1, 1fr);
@@ -341,7 +341,7 @@
     margin-top: 28px;
   }
 
-  .articles-media {
+  .articles-img-content {
     max-width: 300px;
     height: 300px;
   }
@@ -363,7 +363,7 @@
     flex-direction: column;
   }
 
-  .our-story-media {
+  .our-story-img-content {
     width: auto;
     margin-inline: -20px;
   }
@@ -378,7 +378,7 @@
     margin-bottom: 15px;
   }
 
-  .our-story-dec {
+  .our-story-description {
     margin-bottom: 15px;
     line-height: 1.625;
     letter-spacing: 0.64px;
@@ -416,7 +416,7 @@
     width: 300px;
   }
 
-  .case-studies-card-media {
+  .case-studies-img-content {
     width: 300px;
     height: 300px;
   }
@@ -433,7 +433,7 @@
     color: var(--secondary);
   }
 
-  .case-studies-card-dec {
+  .case-studies-card-description {
     max-width: 266px;
     color: var(--secondary-77);
   }
@@ -455,16 +455,16 @@
              MARINE HTML 
 ====================================== */
   /* ----- Hero section ----- */
-  .hero-text-dec-v2 {
+  .hero-text-description-v2 {
     max-width: 100%;
   }
 
   /* ----- Split  section ----- */
-  .category-split-three-col .section-title {
+  .categories-section-v2.section-title {
     padding-inline: 16px;
   }
 
-  .split-three-col-wrapper {
+  .categories-card-wrapper-v2 {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -474,23 +474,23 @@
   }
 
   /* ----- Case studies slider section ----- */
-  .case-studies-section-v2 {
+  .case-studies-slider-section {
     padding-block: 48px;
   }
 
-  .case-studies-wrapper-v2 {
+  .case-studies-slider-wrapper {
     flex-direction: column;
     width: auto;
     margin-inline: -16px;
   }
 
-  .case-studies-media-v2,
-  .case-studies-v2 {
+  .case-studies-slider-img-content,
+  .case-studies-slider {
     width: 100%;
     max-width: 100%;
   }
 
-  .case-studies-content-wrapper-v2 {
+  .case-studies-slider-contents {
     max-width: 100%;
     padding-block: 60px 54px;
     padding-inline: 36px 24px;
@@ -547,8 +547,8 @@
     padding-block: 58px;
   }
 
-  /* ----- Split section ----- */
-  .safety-split {
+  /* ----- Categories section ----- */
+  .safety-categories {
     padding-bottom: 10px;
   }
 
@@ -723,13 +723,13 @@
 
 @media (max-width: 575px) {
   /* ----- Hero section ----- */
-  .home-hero-section .hero-text-title {
+  .content-with-slider .hero-text-title {
     font-size: 54px;
     line-height: 1.203;
     letter-spacing: 0.54px;
   }
 
-  .hero-text-dec {
+  .hero-text-description {
     font-size: 14px;
     line-height: 1.785;
     letter-spacing: 0.42px;
@@ -745,7 +745,7 @@
     margin-top: 24px;
   }
 
-  .featured-card-media {
+  .featured-card-img-content {
     width: 214px;
     height: 256px;
   }
@@ -755,8 +755,7 @@
   }
 
   .featured-card-caption {
-    margin-top: 22px;
-    margin-bottom: 4px;
+    margin-block: 22px 4px;
     color: var(--secondary);
   }
 
@@ -795,7 +794,7 @@
     margin-top: 8px;
   }
 
-  .hero-text-dec-v2 {
+  .hero-text-description-v2 {
     margin-block: 12px;
   }
 
@@ -808,31 +807,31 @@
     background-color: var(--primary);
   }
 
-  .hero-section-v2 .hero-bg-img-wrapper::after {
+  .hero-section-v2 .hero-bg-img-content::after {
     background: none;
   }
 
-  /* ----- Split section ----- */
-  .split-three-col-wrapper .split-card-title {
+  /* ----- Categories section ----- */
+  .categories-card-wrapper-v2 .categories-card-title {
     font-size: 26px;
     line-height: 1.346;
     margin-bottom: 8px;
   }
 
   /* ----- Case studies slider section ----- */
-  .case-studies-content-wrapper-v2 {
+  .case-studies-slider-contents {
     padding-block: 30px 42px;
   }
 
-  .case-studies-media-v2 {
+  .case-studies-img-content {
     height: 310px;
   }
 
-  .case-studies-content-tile-v2 {
+  .case-studies-slider-tile {
     margin-top: 10px;
   }
 
-  .case-studies-content-dec-v2 {
+  .case-studies-slider-description {
     font-size: 18px;
     letter-spacing: 0.54px;
     line-height: 1.611;
@@ -864,7 +863,7 @@
     padding-top: 22px;
   }
 
-  .brochure-card-media {
+  .brochure-card-img-content {
     width: 78px;
     height: 70px;
   }
