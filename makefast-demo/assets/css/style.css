@@ -1454,3 +1454,38 @@
 .dimensions-preview-btn-icon {
   width: 50%;
 }
+
+/* ----- Information blog section ----- */
+.information-blog-section {
+  padding-block: 58px;
+}
+
+.information-blog-wrapper {
+  max-width: 1232px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.information-img-content {
+  width: 50%;
+  max-width: 635px;
+}
+
+.information-blog-content {
+  width: 50%;
+  max-width: 542px;
+}
+
+.information-blog-description {
+  margin-top: 12px;
+  line-height: 1.625;
+  letter-spacing: 0.64px;
+  color: var(--black-100-77);
+}
+
+/* ----- Product details section ----- */
+.product-details-articles {
+  padding-block: 62px;
+}

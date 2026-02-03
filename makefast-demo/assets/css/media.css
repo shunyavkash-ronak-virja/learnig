@@ -306,6 +306,16 @@
   .dimensions-media-preview {
     margin-top: 60px;
   }
+
+  /* ----- Information blog section ----- */
+  .information-blog-wrapper {
+    max-width: 100%;
+  }
+
+  /* ----- Product details section ----- */
+  .product-details-articles {
+    padding-block: 64px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -718,6 +728,22 @@
 
   .dimensions-preview-btn {
     margin-right: 18px;
+  }
+
+  /* ----- Information blog section ----- */
+  .information-blog-section {
+    padding-block: 48px;
+    overflow: hidden;
+  }
+
+  .information-blog-wrapper {
+    flex-direction: column;
+  }
+
+  .information-img-content,
+  .information-blog-content {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
