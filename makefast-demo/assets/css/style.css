@@ -470,7 +470,7 @@
 }
 
 /* ----- Testimonial section ----- */
-.testimonial-section {
+.home-testimonial-section {
   padding-block: 85px;
 }
 
@@ -1488,4 +1488,55 @@
 /* ----- Product details section ----- */
 .product-details-articles {
   padding-block: 62px;
+}
+
+/* ----- Alternative product section ----- */
+.alternative-product-section {
+  padding-block: 82px;
+}
+
+.alternative-product-wrapper {
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(0 0 26px #00000010);
+}
+
+.alternative-product-content,
+.alternative-product-img-content {
+  width: 50%;
+}
+
+.alternative-product-content {
+  max-width: 664px;
+  padding-block: 164px;
+  padding-inline: 8%;
+}
+
+.alternative-product-title {
+  margin-block: 15px 12px;
+}
+
+.alternative-product-description {
+  line-height: 1.625;
+  letter-spacing: 0.64px;
+  margin-bottom: 12px;
+}
+
+.alternative-product-img-content {
+  max-width: 692px;
+  height: 576px;
+}
+
+/* ----- Related products section ----- */
+.product-details-featured-card {
+  padding-block: 82px;
+}
+
+.product-details-featured-card .featured-cards-content {
+  margin-top: 54px;
+}
+
+/* ----- Testimonial section ----- */
+.product-details-testimonial-section {
+  padding-block: 85px;
 }

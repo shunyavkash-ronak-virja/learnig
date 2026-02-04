@@ -316,6 +316,29 @@
   .product-details-articles {
     padding-block: 64px;
   }
+
+  /* ----- Alternative product section ----- */
+  .alternative-product-section {
+    padding-block: 66px;
+  }
+
+  .alternative-product-content {
+    padding-block: 140px;
+  }
+
+  /* ----- Related products section ----- */
+  .product-details-featured-card {
+    padding-block: 68px;
+  }
+
+  .product-details-featured-card .featured-cards-content {
+    margin-top: 44px;
+  }
+
+  /* ----- Testimonial section ----- */
+  .product-details-testimonial-section {
+    padding-block: 72px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -745,6 +768,42 @@
     width: 100%;
     max-width: 100%;
   }
+
+  /* ----- Alternative product section ----- */
+  .alternative-product-section {
+    padding-block: 50px;
+    overflow: hidden;
+  }
+
+  .alternative-product-wrapper {
+    width: auto;
+    margin-inline: -20px;
+    flex-direction: column;
+  }
+
+  .alternative-product-content,
+  .alternative-product-img-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .alternative-product-content {
+    padding-block: 100px;
+  }
+
+  /* ----- Related products section ----- */
+  .product-details-featured-card {
+    padding-block: 54px;
+  }
+
+  .product-details-featured-card .featured-cards-content {
+    margin-top: 34px;
+  }
+
+  /* ----- Testimonial section ----- */
+  .product-details-testimonial-section {
+    padding-block: 62px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1012,5 +1071,10 @@
   .dimensions-title-wrapper {
     flex-direction: column;
     gap: 8px;
+  }
+
+  /* ----- Alternative product section ----- */
+  .alternative-product-content {
+    padding-block: 62px;
   }
 }
