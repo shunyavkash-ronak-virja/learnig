@@ -1041,9 +1041,10 @@
   height: 212px;
 }
 
-.products-listing-btn {
-  align-items: center;
+.products-listing-btn-wrapper {
   margin-top: 76px;
+  display: flex;
+  justify-content: center;
 }
 
 .products-listing-btn-icon {

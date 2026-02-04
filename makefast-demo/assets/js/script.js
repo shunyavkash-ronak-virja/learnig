@@ -277,3 +277,30 @@ if (dimensionsPreview.length) {
     Fancybox.bind("[data-fancybox]", {});
   });
 }
+
+let quickCallModal = document.querySelectorAll(".call-back-modal");
+if (quickCallModal.values) {
+  const quickCallBtn = document.querySelector(".quick-call-btn");
+  const callBackModal = document.querySelector(".call-back-modal");
+  const bodyHidden = document.querySelector("body");
+  const callBackCloseBtn = document.querySelector(".call-back-modal-close-btn");
+  const callBackOverlay = document.querySelector(".call-back-modal-overlay");
+
+  quickCallBtn.addEventListener("click", () => {
+    callBackModal.classList.toggle("active");
+    bodyHidden.classList.toggle("body-hidden");
+    callBackOverlay.classList.toggle("active");
+  });
+
+  callBackCloseBtn.addEventListener("click", () => {
+    callBackModal.classList.remove("active");
+    bodyHidden.classList.remove("body-hidden");
+    callBackOverlay.classList.remove("active");
+  });
+
+  callBackOverlay.addEventListener("click", () => {
+    callBackModal.classList.remove("active");
+    bodyHidden.classList.remove("body-hidden");
+    callBackOverlay.classList.remove("active");
+  });
+}
