@@ -1,0 +1,34 @@
+.info-bar {
+  padding-block: 12px;
+}
+
+.info-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.info-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-bar-tel-icon {
+  width: 12px;
+  display: block;
+}
+
+.info-bar-item-label {
+  font-weight: 500;
+}
+
+.our-info-icon-wrapper {
+  gap: 24px;
+}
