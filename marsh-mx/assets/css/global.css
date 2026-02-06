@@ -144,6 +144,14 @@ ol {
   overflow: hidden;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .truncate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -173,6 +181,11 @@ ol {
   align-items: center;
   justify-content: center;
   padding: 32px;
+  font-size: 14px;
+  line-height: 1.214;
+  text-transform: uppercase;
+  font-family: var(--font-transducer);
+  font-weight: 700;
 }
 @media (max-width: 767px) {
   .btn {
@@ -203,7 +216,7 @@ ol {
 
 .icon-btn {
   width: 40px;
-  align-self: 1;
+  aspect-ratio: 1;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -220,8 +233,9 @@ ol {
   color: var(--black);
 }
 
-.icon-btn-icon {
+.icon-btn-content {
   width: 18px; /* temporary */
+  display: block;
 }
 
 .h1,
@@ -246,7 +260,7 @@ h1 {
 .h2,
 h2 {
   font-size: 45px;
-  line-height: 2.25;
+  line-height: 1.4;
 }
 @media (max-width: 991px) {
   .h2,
@@ -306,7 +320,7 @@ h6 {
 
 .font-12 {
   font-size: 12px;
-  line-height: 2;
+  line-height: 1%;
 }
 
 .font-14 {
