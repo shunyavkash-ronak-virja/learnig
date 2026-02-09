@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
-  if (!header) return; // stop if no header exists
+  if (!header) return;
+
+  // ================================
+  // EXISTING SELECTORS
+  // ================================
 
   const toggleBtn = document.querySelector(".header-toggle");
   const responsiveItemsWrapper = document.querySelector(".responsive-items-wrapper");
@@ -12,7 +16,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentIndex = 0;
 
-  // 🔹 Update Menu State
+  // ================================
+  // RESET MENU FUNCTION
+  // ================================
+
+  function resetMenu() {
+    wrappers.forEach((wrapper, index) => {
+      wrapper.classList.remove("active", "is-previous");
+      if (index === 0) wrapper.classList.add("active");
+    });
+
+    if (backBtn) backBtn.classList.remove("active");
+
+    currentIndex = 0;
+  }
+
+  // ================================
+  // UPDATE MENU (SLIDING SYSTEM)
+  // ================================
+
   function updateMenu(index) {
     wrappers.forEach((wrapper, i) => {
       wrapper.classList.remove("active", "is-previous");
@@ -21,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (i === index) wrapper.classList.add("active");
     });
 
-    // Back button animation
     if (backBtn) {
       if (index === 0) {
         backBtn.classList.remove("active");
@@ -33,30 +54,39 @@ document.addEventListener("DOMContentLoaded", () => {
     currentIndex = index;
   }
 
-  // 🔹 Open Mobile Menu
+  // ================================
+  // MOBILE MENU TOGGLE
+  // ================================
+
   if (toggleBtn && responsiveItemsWrapper) {
     toggleBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.toggle("active");
     });
   }
 
-  // 🔹 Close Mobile Menu
   if (menuCloseBtn && responsiveItemsWrapper) {
     menuCloseBtn.addEventListener("click", () => {
       responsiveItemsWrapper.classList.remove("active");
-      updateMenu(0); // reset to first level when closed
+      resetMenu();
     });
   }
 
-  // 🔹 Open Next Level
+  // ================================
+  // OPEN SUBMENU (ID MATCH SYSTEM)
+  // ================================
+
   toggleLinks.forEach((link) => {
     link.addEventListener("click", function () {
       const targetId = this.dataset.targetMenu;
+      if (!targetId) return;
+
       const targetMenu = document.getElementById(targetId);
+      console.log(targetMenu);
+
       if (!targetMenu) return;
 
       const targetWrapper = targetMenu.closest(".stack-wrapper");
-      const targetIndex = [...wrappers].indexOf(targetWrapper);
+      const targetIndex = Array.from(wrappers).indexOf(targetWrapper);
 
       if (targetIndex !== -1) {
         updateMenu(targetIndex);
@@ -64,7 +94,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🔹 Go Back
+  // ================================
+  // GO BACK BUTTON
+  // ================================
+
   if (backBtn) {
     backBtn.addEventListener("click", () => {
       if (currentIndex > 0) {
@@ -73,8 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 🔹 Initial State
-  updateMenu(0);
+  // ================================
+  // INITIAL STATE
+  // ================================
+
+  resetMenu();
 });
 
 //     const toggleLinks = document.querySelectorAll("[data-target-menu]");
