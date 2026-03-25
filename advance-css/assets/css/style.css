@@ -502,8 +502,8 @@ footer {
   background-color: var(--white-20);
   backdrop-filter: blur(8px);
   position: absolute;
-  display: flex;
-  /* make display none */
+  display: none;
+  /* temporary display none */
   align-items: center;
   justify-content: center;
 }
