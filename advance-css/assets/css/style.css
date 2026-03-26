@@ -11,6 +11,7 @@
   --white-200: #eeeeee;
   --white-300: #fafafa;
   --black: #000000;
+  --black-6: #0000000f;
   --black-100: #0d1b39;
   --black-200: #1e2833;
   --black-300: #27272c;
@@ -620,7 +621,7 @@ footer {
   width: 25%;
   aspect-ratio: 1;
   border-radius: 100%;
-  background: #e58411;
+  background: var(--primary-color);
   border: 2px solid var(--white);
   display: flex;
   align-items: center;
@@ -712,6 +713,207 @@ footer {
   line-height: var(--line-height-1_85);
 }
 
+/* ----- Products slider section ----- */
+.products-slider-section {
+  padding-block: 50px;
+  background-color: var(--white-100);
+  overflow: hidden;
+}
+
+.products-tab-wrapper {
+  max-width: 352px;
+  background-color: var(--white-200);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 44px;
+  padding: 6px;
+  margin-top: 32px;
+  overflow-x: auto;
+}
+
+.products-tab {
+  padding: 8px 18px;
+  border-radius: 32px;
+}
+
+.products-tab:is(.active) {
+  background-color: var(--white);
+}
+
+.products-slider {
+  margin-top: 80px;
+}
+
+.products-slider .splide__track {
+  overflow: visible;
+}
+
+.products-card {
+  background-color: var(--white-300);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.products-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.8839;
+  object-fit: contain;
+}
+
+.products-content {
+  background-color: var(--white);
+  padding: 14px 20px 26px;
+}
+
+.products-caption {
+  color: var(--gray);
+}
+
+.products-title {
+  color: var(--black-100);
+  text-transform: capitalize;
+  margin-block: 6px;
+  font-weight: 600;
+}
+
+.product-rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-rating-star {
+  width: 18px;
+  height: 18px;
+  color: var(--sandybrown);
+}
+
+.product-price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.product-price {
+  font-weight: 600;
+  color: var(--black-100);
+  display: flex;
+  align-items: start;
+
+  span {
+    font-size: 16px;
+  }
+}
+
+.products-icon-btn {
+  width: 48px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--black-100);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-add-icon {
+  width: 62%;
+}
+
+.primary-arrow {
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  color: var(--secondary-color);
+  border-radius: 100%;
+  opacity: 1;
+  box-shadow: 0px 7.03px 19.53px 0px var(--black-6);
+}
+
+.primary-arrows .splide__arrow--next {
+  right: -25px;
+}
+
+.primary-arrows .splide__arrow--prev {
+  left: -25px;
+}
+
+.primary-arrow svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+.primary-arrows .splide__arrow:disabled {
+  opacity: 1;
+  cursor: auto;
+}
+
+.products-view-all-btn {
+  margin-top: 60px;
+}
+
+/* ----- Two column section ----- */
+.two-column-section {
+  padding-block: 240px 120px;
+}
+
+.two-column-wrapper {
+  --gap: 28px;
+  --column-width: 50%;
+  --column-max-width: 556px;
+  --offset: ((100vw - var(--scrollbar-width, 0px) - 100%) / 2);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.two-column-img-content {
+  flex-grow: 1;
+  margin-left: calc(var(--offset, 0px) * -1);
+}
+
+.two-column-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.two-column-respo-img {
+  display: none;
+}
+
+.two-column-content {
+  width: calc(var(--column-width, 50%) - var(--gap) / 2);
+  max-width: calc(var(--column-max-width, 9999px) - var(--gap) / 2);
+  flex-shrink: 0;
+  padding-top: var(--gap);
+}
+
+.two-column-caption {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1279px) {
+  /* ----- Products slider section ----- */
+  .primary-arrows .splide__arrow--next {
+    right: 0;
+  }
+
+  .primary-arrows .splide__arrow--prev {
+    left: 0;
+  }
+
+  /* ----- Two column section ----- */
+  .two-column-section {
+    padding-block: 140px 80px;
+  }
+}
+
 @media (max-width: 991px) {
   /* ----- Header ----- */
   .header-links-contents {
@@ -758,6 +960,24 @@ footer {
   .why-choosing-contents {
     width: 100%;
     max-width: 1000%;
+  }
+
+  /* ----- Products slider section ----- */
+  .products-slider {
+    margin-top: 60px;
+  }
+
+  .products-img {
+    aspect-ratio: 1 / 0.7;
+  }
+
+  .products-view-all-btn {
+    margin-top: 40px;
+  }
+
+  /* ----- Two column section ----- */
+  .two-column-wrapper {
+    flex-direction: column;
   }
 }
 
@@ -870,6 +1090,11 @@ footer {
 
   .why-choosing-contents {
     gap: 18px;
+  }
+
+  /* ----- Products slider section ----- */
+  .products-slider {
+    margin-top: 40px;
   }
 }
 

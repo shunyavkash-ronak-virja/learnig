@@ -29,3 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+const productsSlider = document.querySelectorAll(".products-slider");
+if (productsSlider.length) {
+  var splide = new Splide(".splide", {
+    perPage: 4,
+    gap: 42,
+    pagination: false,
+    breakpoints: {
+      1279: {
+        perPage: 3,
+        gap: 34,
+      },
+      991: {
+        perPage: 2,
+        gap: 28,
+      },
+      575: {
+        perPage: 1,
+      },
+    },
+  });
+  splide.mount();
+}
+
+function getScrollbarWidth() {
+  document.documentElement.style.setProperty(
+    "--scrollbar-width",
+    window.innerWidth - document.documentElement.clientWidth + "px",
+  );
+}
+
+(window.addEventListener("resize", getScrollbarWidth), getScrollbarWidth());
