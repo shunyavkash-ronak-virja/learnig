@@ -2,13 +2,13 @@ const header = document.getElementsByTagName("header");
 if (header.length) {
   const header = document.querySelector("header");
   const toggleBtn = document.querySelector(".toggle-btn");
-  const headerLinksWrapper = document.querySelector(".header-links-wrapper");
+  const headerLinksContents = document.querySelector(".header-links-contents");
   const dropDownContent = document.querySelectorAll(".drop-down-content");
 
   toggleBtn.addEventListener("click", () => {
     header.classList.toggle("active");
     toggleBtn.classList.toggle("active");
-    headerLinksWrapper.classList.toggle("active");
+    headerLinksContents.classList.toggle("active");
   });
 
   dropDownContent.forEach((menu) => {

@@ -2,6 +2,7 @@
   --primary-color: #e58411;
   --secondary-color: #1e1e1e;
   --secondary-color-80: #1e1e1ecc;
+  --secondary-color-90: #1e1e1ee6;
   --white: #ffffff;
   --white-15: #ffffff26;
   --white-20: #ffffff33;
@@ -17,8 +18,10 @@
   --gray: #8d8d8d;
   --gray-100: #7c7c7c;
   --sandybrown: #f6b76f;
+  --orange: #ff8c00;
   --turquoise: #00d6c9;
   --line-height-1_6: 1.6;
+  --line-height-1_85: 1.85;
 }
 
 /* ----- Global css ----- */
@@ -94,6 +97,31 @@ a {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.primary-btn {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  padding: 6px;
+  line-height: var(--line-height-1_85);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn-icon {
+  width: 48px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  color: var(--orange);
+  .primary-btn-icon {
+    transform: translateX(6px);
+  }
 }
 
 .primary-text-btn {
@@ -228,13 +256,6 @@ header {
   display: block;
 }
 
-.header-links-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
 .header-links-contents {
   display: flex;
   align-items: center;
@@ -294,6 +315,12 @@ header {
 .drop-down-item-link {
   width: 100%;
   padding: 6px 8px;
+}
+
+.header-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .header-cart-content {
@@ -647,6 +674,44 @@ footer {
   bottom: 22%;
 }
 
+/* ----- Why choosing us section ----- */
+.why-choosing-section {
+  padding-block: 120px;
+}
+
+.why-choosing-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.why-choosing-title {
+  width: 28%;
+  max-width: 270px;
+}
+
+.why-choosing-contents {
+  width: 72%;
+  max-width: 908px;
+  display: flex;
+  align-items: start;
+  gap: 28px;
+}
+
+.why-choosing-content {
+  max-width: 304px;
+}
+
+.why-choosing-content-title {
+  color: var(--secondary-color-90);
+}
+
+.why-choosing-content-description {
+  margin-block: 20px 14px;
+  line-height: var(--line-height-1_85);
+}
+
 @media (max-width: 991px) {
   /* ----- Header ----- */
   .header-links-contents {
@@ -678,6 +743,22 @@ footer {
   .hero-tool {
     display: none;
   }
+
+  /* ----- Why choosing us section ----- */
+  .why-choosing-section {
+    padding-block: 94px;
+  }
+
+  .why-choosing-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .why-choosing-title,
+  .why-choosing-contents {
+    width: 100%;
+    max-width: 1000%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -686,43 +767,30 @@ footer {
     display: flex;
   }
 
-  .respo-header-cart-content {
-    display: block;
-  }
-
-  .header-cart-content {
-    display: none;
-  }
-
-  .header-links-wrapper {
-    width: 100%;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 20px 16px;
-    background-color: var(--black-300);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .header-links-wrapper.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
   header.active {
     background-color: var(--black-300);
   }
 
   .header-links-contents {
     width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px 16px;
+    background-color: var(--black-300);
     align-items: start;
     flex-direction: column;
     gap: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-links-contents.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .header-links-item,
@@ -794,11 +862,19 @@ footer {
   .hero-input {
     font-size: 16px;
   }
+
+  /* ----- Why choosing us section ----- */
+  .why-choosing-section {
+    padding-block: 62px;
+  }
+
+  .why-choosing-contents {
+    gap: 18px;
+  }
 }
 
 @media (max-width: 575px) {
   /* ----- Header ----- */
-  .header-links-wrapper,
   .header-links-contents {
     gap: 16px;
   }
@@ -816,5 +892,18 @@ footer {
     margin-top: 40px;
     flex-direction: column;
     align-items: start;
+  }
+
+  /* ----- Why choosing us section ----- */
+  .why-choosing-contents {
+    flex-direction: column;
+  }
+
+  .why-choosing-content {
+    max-width: 100%;
+  }
+
+  .why-choosing-content-description {
+    margin-top: 10px;
   }
 }
