@@ -49,11 +49,9 @@ body {
   padding-inline: 20px;
   margin-inline: auto;
 }
-
 .container-small {
   max-width: 1064px;
 }
-
 @media (max-width: 767px) {
   .container {
     padding-inline: 16px;
@@ -154,6 +152,12 @@ a {
   color: var(--white);
 }
 
+.primary-caption {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3.1px;
+}
 .h1,
 h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   font-size: 80px;
@@ -186,7 +190,7 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 .h2,
 h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 42px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 @media (max-width: 991px) {
@@ -228,6 +232,12 @@ h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
 .h6,
 h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 18px;
+}
+@media (max-width: 575px) {
+  .h6,
+  h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
+    font-size: 16px;
+  }
 }
 
 /* ----- Header ----- */
@@ -834,6 +844,10 @@ footer {
   box-shadow: 0px 7.03px 19.53px 0px var(--black-6);
 }
 
+.splide.is-focus-in .primary-arrow:focus {
+  outline: none;
+}
+
 .primary-arrows .splide__arrow--next {
   right: -25px;
 }
@@ -862,19 +876,32 @@ footer {
   padding-block: 240px 120px;
 }
 
+.two-column-v2 {
+  padding-block: 120px;
+}
+
 .two-column-wrapper {
   --gap: 28px;
   --column-width: 50%;
-  --column-max-width: 556px;
+  --column-max-width: 598px;
   --offset: ((100vw - var(--scrollbar-width, 0px) - 100%) / 2);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--gap);
 }
 
 .two-column-img-content {
+  max-width: clamp(400px, 70vw, 740px);
   flex-grow: 1;
+}
+
+.two-column-v1 .two-column-img-content {
   margin-left: calc(var(--offset, 0px) * -1);
+}
+
+.two-column-v2 .two-column-img-content {
+  margin-right: calc(var(--offset, 0px) * -1);
 }
 
 .two-column-img {
@@ -891,11 +918,35 @@ footer {
   width: calc(var(--column-width, 50%) - var(--gap) / 2);
   max-width: calc(var(--column-max-width, 9999px) - var(--gap) / 2);
   flex-shrink: 0;
-  padding-top: var(--gap);
 }
 
 .two-column-caption {
   color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3.1px;
+}
+
+.two-column-title {
+  max-width: 420px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-block: 20px;
+}
+
+.two-column-description {
+  line-height: var(--line-height-1_85);
+  margin-bottom: 24px;
+}
+
+/* ----- Testimonials section ----- */
+.testimonials-section {
+  padding-block: 120px 214px;
+}
+
+.testimonials-title {
+  margin-top: 20px;
+  font-weight: 600;
 }
 
 @media (max-width: 1279px) {
@@ -910,7 +961,11 @@ footer {
 
   /* ----- Two column section ----- */
   .two-column-section {
-    padding-block: 140px 80px;
+    padding-block: 140px 100px;
+  }
+
+  .two-column-v2 {
+    padding-block: 100px;
   }
 }
 
@@ -976,8 +1031,39 @@ footer {
   }
 
   /* ----- Two column section ----- */
+  .two-column-section {
+    padding-block: 106px 80px;
+  }
+
+  .two-column-v2 {
+    padding-block: 80px;
+  }
+
   .two-column-wrapper {
     flex-direction: column;
+    --column-width: 100%;
+    --column-max-width: 100%;
+  }
+
+  .two-column-v2 .two-column-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .two-column-img-content {
+    width: 100%;
+    max-width: clamp(470px, 90vw, 870px);
+  }
+
+  .two-column-desktop-img {
+    display: none;
+  }
+
+  .two-column-respo-img {
+    display: block;
+  }
+
+  .two-column-title {
+    max-width: 686px;
   }
 }
 
@@ -1079,10 +1165,6 @@ footer {
     margin-bottom: 24px;
   }
 
-  .hero-input {
-    font-size: 16px;
-  }
-
   /* ----- Why choosing us section ----- */
   .why-choosing-section {
     padding-block: 62px;
@@ -1095,6 +1177,19 @@ footer {
   /* ----- Products slider section ----- */
   .products-slider {
     margin-top: 40px;
+  }
+
+  /* ----- Two column section ----- */
+  .two-column-section {
+    padding-block: 80px 50px;
+  }
+
+  .two-column-v2 {
+    padding-block: 50px;
+  }
+
+  .two-column-title {
+    max-width: 100%;
   }
 }
 
@@ -1130,5 +1225,14 @@ footer {
 
   .why-choosing-content-description {
     margin-top: 10px;
+  }
+
+  /* ----- Two column section ----- */
+  .two-column-title {
+    margin-block: 14px;
+  }
+
+  .two-column-description {
+    margin-bottom: 18px;
   }
 }
