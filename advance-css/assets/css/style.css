@@ -1,6 +1,7 @@
 :root {
   --primary-color: #e58411;
   --secondary-color: #1e1e1e;
+  --secondary-color-60: #1e1e1e99;
   --secondary-color-80: #1e1e1ecc;
   --secondary-color-90: #1e1e1ee6;
   --white: #ffffff;
@@ -19,6 +20,7 @@
   --gray: #8d8d8d;
   --gray-100: #7c7c7c;
   --sandybrown: #f6b76f;
+  --sandybrown-100: #f6973f;
   --orange: #ff8c00;
   --turquoise: #00d6c9;
   --line-height-1_6: 1.6;
@@ -839,32 +841,48 @@ footer {
   height: 50px;
   background: var(--white);
   color: var(--secondary-color);
+  border: none;
   border-radius: 100%;
   opacity: 1;
   box-shadow: 0px 7.03px 19.53px 0px var(--black-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
 }
 
-.splide.is-focus-in .primary-arrow:focus {
+.primary-arrow.disabled {
+  cursor: auto;
+
+  svg {
+    opacity: 0.6;
+  }
+}
+
+.primary-arrow:focus {
   outline: none;
 }
 
-.primary-arrows .splide__arrow--next {
+.primary-arrow-next {
   right: -25px;
 }
 
-.primary-arrows .splide__arrow--prev {
+.primary-arrow-prev {
   left: -25px;
+
+  svg {
+    transform: scaleX(-1);
+  }
 }
 
 .primary-arrow svg {
   width: 26px;
   height: 26px;
   fill: currentColor;
-}
-
-.primary-arrows .splide__arrow:disabled {
-  opacity: 1;
-  cursor: auto;
 }
 
 .products-view-all-btn {
@@ -949,14 +967,135 @@ footer {
   font-weight: 600;
 }
 
+.testimonials-wrapper {
+  position: relative;
+}
+
+.testimonials-slider {
+  margin-top: 60px;
+}
+
+.testimonials-section .primary-arrow {
+  top: 28%;
+  transform: translateY(-28%);
+}
+
+.testimonials-card {
+  min-height: 476px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 18px;
+}
+
+.testimonials-img-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.testimonials-content {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 18px;
+  padding: 18px;
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonials-avtar {
+  width: 66px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonials-avtar-img-layer {
+  width: 50px;
+  aspect-ratio: 1;
+  filter: blur(13px);
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.testimonials-avtar-img {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.testimonials-author-name {
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+
+.testimonials-author-caption {
+  font-size: 12px;
+  color: var(--secondary-color-60);
+  font-weight: 300;
+}
+
+.testimonials-description {
+  font-size: 14px;
+  max-width: 262px;
+  margin-block: 22px;
+}
+
+.testimonials-rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.testimonials-rating-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--sandybrown-100);
+
+  &.not-rating {
+    opacity: 30%;
+  }
+}
+
 @media (max-width: 1279px) {
   /* ----- Products slider section ----- */
-  .primary-arrows .splide__arrow--next {
+  .primary-arrow,
+  .testimonials-section .primary-arrow {
+    top: -48px;
+    transform: translateY(-48%);
+    box-shadow: 0 0 4px 0 var(--primary-color);
+  }
+
+  .primary-arrow-next {
     right: 0;
   }
 
-  .primary-arrows .splide__arrow--prev {
-    left: 0;
+  .primary-arrow-prev {
+    left: auto;
+    right: 60px;
   }
 
   /* ----- Two column section ----- */
@@ -966,6 +1105,15 @@ footer {
 
   .two-column-v2 {
     padding-block: 100px;
+  }
+
+  /* ----- Testimonials section ----- */
+  .testimonials-section {
+    padding-block: 100px 174px;
+  }
+
+  .testimonials-slider {
+    margin-top: 86px;
   }
 }
 
@@ -1064,6 +1212,11 @@ footer {
 
   .two-column-title {
     max-width: 686px;
+  }
+
+  /* ----- Testimonials section ----- */
+  .testimonials-section {
+    padding-block: 80px 134px;
   }
 }
 
@@ -1190,6 +1343,11 @@ footer {
 
   .two-column-title {
     max-width: 100%;
+  }
+
+  /* ----- Testimonials section ----- */
+  .testimonials-section {
+    padding-block: 50px 90px;
   }
 }
 

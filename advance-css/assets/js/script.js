@@ -32,10 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const productsSlider = document.querySelectorAll(".products-slider");
 if (productsSlider.length) {
-  var splide = new Splide(".splide", {
+  var splide = new Splide(".products-slider.splide", {
     perPage: 4,
     gap: 42,
     pagination: false,
+    perMove: 1,
     breakpoints: {
       1279: {
         perPage: 3,
@@ -61,3 +62,52 @@ function getScrollbarWidth() {
 }
 
 (window.addEventListener("resize", getScrollbarWidth), getScrollbarWidth());
+
+const testimonialsSection = document.querySelectorAll(".testimonials-section");
+if (testimonialsSection.length) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".testimonials-slider.splide", {
+      perPage: 3,
+      gap: 40,
+      pagination: false,
+      arrows: false,
+      perMove: 1,
+      breakpoints: {
+        991: {
+          perPage: 2,
+          gap: 28,
+        },
+        575: {
+          perPage: 1,
+        },
+      },
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", function () {
+      splide.go("-1");
+    });
+    document.getElementById("nextBtn").addEventListener("click", function () {
+      splide.go("+1");
+    });
+
+    function updateArrows() {
+      const prev = document.getElementById("prevBtn");
+      const next = document.getElementById("nextBtn");
+
+      if (splide.index === 0) {
+        prev.classList.add("disabled");
+      } else {
+        prev.classList.remove("disabled");
+      }
+
+      if (splide.index === splide.length - splide.options.perPage) {
+        next.classList.add("disabled");
+      } else {
+        next.classList.remove("disabled");
+      }
+    }
+
+    splide.on("mounted move", updateArrows);
+    splide.mount();
+  });
+}
