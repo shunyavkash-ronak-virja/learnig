@@ -1162,7 +1162,7 @@ footer {
 
   /* ----- Products slider section ----- */
   .products-slider {
-    margin-top: 60px;
+    margin-top: 98px;
   }
 
   .products-img {
@@ -1194,6 +1194,14 @@ footer {
 
   .two-column-desktop-img {
     display: none;
+  }
+
+  .two-column-v1 .two-column-img-content {
+    margin-right: calc(var(--offset, 0px) * -1);
+  }
+
+  .two-column-v2 .two-column-img-content {
+    margin-left: calc(var(--offset, 0px) * -1);
   }
 
   .two-column-respo-img {
@@ -1315,11 +1323,6 @@ footer {
 
   .why-choosing-contents {
     gap: 18px;
-  }
-
-  /* ----- Products slider section ----- */
-  .products-slider {
-    margin-top: 40px;
   }
 
   /* ----- Two column section ----- */
